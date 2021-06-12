@@ -20,7 +20,7 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
 
-        <p>Hello! I'm Eric. </p>
+        <p>The passion of the scientist, the precision of the artist. Everything here is a work in progress :)</p>
 
       <div>
 

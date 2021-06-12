@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import Link from 'next/link'
 
-export const siteTitle = "Eric's Next.js Website"
+export const siteTitle = "Eric's Blog"
 
 export default function Layout({ children, home }) {
   return (
