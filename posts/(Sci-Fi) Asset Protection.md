@@ -1,5 +1,5 @@
 Our attorney told us the bad news yesterday.
-
+lalala
 Earnestness, she says, is falling out of favor. The only thing that she thinks has any real potential anymore is playing off of specialization, maybe even an artistic specialization. But that's not an easy pivot for me. 
 
 I've been working towards shotgun pre-professional for the past eight years, with the standard empathy complexes. Not quite full shotgun but a balanced set of time sinks, generic enough but not too generic. The type that usually gets safe 0.03-0.04% adjusted yields across the board, year after year. 

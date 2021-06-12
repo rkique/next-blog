@@ -24,13 +24,13 @@ export default function Home({allPostsData}) {
 
       <div>
 
-          {allPostsData.map(({ id, date, size }) => (
+          {allPostsData.map(({ id, date, dateString, size }) => (
             <div className="dib f6 ba pa2 pv1 ma2 b--gray">
               <Link href={`/posts/${id}`}>
               <a>{id}</a> 
               </Link>
               <br />
-                <p>last modified {date.split("T")[0]}, size {size}</p>
+                <p>last modified {JSON.parse(dateString)}, size {size}</p>
               <br />
             </div>
           ))}
