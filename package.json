@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "date-fns": "^2.16.1",
+    "git-date-extractor": "^4.0.1",
     "gray-matter": "^4.0.2",
     "next": "^10.2.3",
     "react": "17.0.1",
