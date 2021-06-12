@@ -1,1 +1,2 @@
-git add . && git commit -m "md"
+git add . && git commit -m "md" 
+git push origin main
