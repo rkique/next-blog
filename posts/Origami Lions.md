@@ -1,0 +1,4 @@
+Currently we have confirmed 641 lions at the school.
+
+This means that we will need 859 more lions over the course of final semester (which is 18 weeks). This means we need about 47 lions per week.
+

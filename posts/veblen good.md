@@ -1,0 +1,1 @@
+A Veblen good is a good for which demand increases as the price increases. Veblen goods are typically high-quality goods that are made well, are exclusive, and are a status symbol. Veblen goods are generally sought after by affluent consumers who place a premium on the utility of the good.

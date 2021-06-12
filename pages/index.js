@@ -1,23 +1,42 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Link from 'next/link'
+import Layout, { siteTitle } from '../components/layout'
+import {getSortedPostsData} from '../lib/posts'
+import Date from '../components/date'
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Home({allPostsData}) {
   return (
-    <div className="container">
+    <Layout home>
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
       </Head>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+        <p>Hello! I'm Eric. </p>
 
-      <Footer />
-    </div>
+      <div>
+
+          {allPostsData.map(({ id, date, size }) => (
+            <div className="dib f6 ba pa2 pv1 ma2 b--gray">
+              <Link href={`/posts/${id}`}>
+              <a>{id}</a> 
+              </Link>
+              <br />
+                <p>last modified {date.split("T")[0]}, size {size}</p>
+              <br />
+            </div>
+          ))}
+
+      </div>
+
+    </Layout>
   )
 }

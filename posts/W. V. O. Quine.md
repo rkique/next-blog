@@ -1,0 +1,5 @@
+[[SSC & LW/@LW]]
+...Less Wrong-style philosophy is part of a movement within mainstream philosophy to massively reform philosophy in light of recent cognitive science - a movement that has been active for at least two decades. 
+https://www.lesswrong.com/posts/oTX2LXHqXqYg2u4g6/less-wrong-rationality-and-mainstream-philosophy
+
+Quine thought that philosophy was continuous with science - and where it wasn't, it was bad philosophy. He embraced empiricism and reductionism. He rejected the notion of libertarian free will. He regarded [[postmodernism]] as sophistry. Like Wittgenstein and Yudkowsky, Quine didn't try to straightforwardly solve traditional Big Questions as much as he either dissolved those questions or reframed them such that they could be solved. He dismissed endless semantic arguments about the meaning of vague terms like knowledge. He rejected a priori knowledge. He rejected the notion of privileged philosophical insight: knowledge comes from ordinary knowledge, as best refined by science.

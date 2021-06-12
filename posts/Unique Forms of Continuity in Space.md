@@ -1,0 +1,7 @@
+[[futurism]]
+
+"The figure in Unique Forms of Continuity in Space strides forth, a symbol of vitality and strength, yet its impetuous step rests lightly on the ground as if the opposing air gave the figure wings. It is muscular without muscles, and massive without weight. The rhythms of its forms triumph over the limitations of the human stride to suggest unending movement into infinite space. Of all Futurist works this best illustrates Boccioni 's often repeated term 'physical transcendentalism.' The physical seems to lift itself by its own strength into the realm of the spirit.
+
+The final armless image with its muscular contortions reminiscent of fluttering wet drapery owes more than a little to the originally despised forms of antiquity. The Victory of Samothrace and the speeding automobile have in a sense become one."
+
+Never has a higher and more imperative intimation of the purely plastic vision been achieved. Synthesis of articulation-established in the spiral expansion-fleshly synthesis-in the muscles in velocity-join here in a single, perfectly constructed body. The coldly enumerated qualities-almost Assyrian-in the analysis of human dynamism interweave inexpressibly among themselves. Material neither too burnished nor too flowing, outline leaping and fatigued at the same time: organism and setting: pure architecture."

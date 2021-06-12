@@ -1,0 +1,45 @@
+created: 20200626182810410
+modified: 20200628180337963
+revision: 7-1b1b569fe76f9c674ec1e18bd312a461
+tags: civics
+title: competitor-tribe empathy
+tmap.id: 5514c2ae-cafa-4bb8-af7b-7ec372284f27
+type: text/vnd.tiddlywiki
+
+As Mikhail Gorbachev returned from his summer home in the Balkans, he was informed that the Soviet Union had been dissolved. As the president of a country that no longer existed, all Gorbachev could do was declare so on TV. It was at this time in 26th of December on 1991, the Soviet flag was lowered over the Kremlin for the final time.
+
+Despite the ideological conflict between the US and the Soviet Bloc, many Americans, including myself, feel sad at the recounting of such a story. These are Americans who are not sympathetic to the Soviet cause in any way, and very much in support of the Soviet Bloc collapse. Yet we can't help but feel a certain empathy towards a shared experience-- at the hypothetical image of the American flag being lowered from the White House and taken away, and at the complete death of a set of national values that we believe in. The similarity and the empathy that two opposing groups share is the basis of the competitor tribe.
+
+Even if we deny our biases towards tribalism, its pretty clear that we continue to associate with different tribes and define certain ingroups and outgroups. In a wildly complex demographic group like the United States, it can be difficult to see where those lines lie. 
+
+Here, I'd like to highlight one pattern among different groups within American society: the idea of competitor-tribe empathy. This is almost certainly not an original idea, but I'd like to view its implications in the context of an ethnically and socially diverse democracy. Ultimately, I think that while competitor-tribe empathy remains an essential tenet of democracy, it has many disturbing implications that should be addressed in their individual contexts.
+
+Competitor-tribe empathy is the idea that we feel more empathy towards someone like us in character, than someone like us in principle. Consequently, our enemies, when they work within the same rules towards the same goal as us, are also a very important tribe in which we belong.
+
+This can be seen in the common principle of national identity between the American and Soviet superpowers.  It is perhaps most readily evident in the codes of chivalry in medieval Europe between dueling knights. It can be seen in the common American Dream between the rich and the entrepreneurial poor. And finally, it can be seen in common American values within Congress. Competitor-tribe empathy is not an empathy that causes one to give up ground to one's enemies -- it is an empathy that causes one to respect the rules of the game. Competitor-tribe empathy bears many similarities to  Rousseau's social contract, but in a decentralized and competitive setting.
+
+Where competitor tribe empathy stops is when certain groups believe that other groups are actively trying to tear down the tribe's common values, or violating the //rules of the game//. This is because while competitor-tribe empathy is //internally// rooted in principles of rational self-interest, it is really underpinned by an act of cooperation: adherence to a set of values that make competition fair. In a democracy, this would be adherence to democratic principles, civil debate, and freedom of speech. 
+
+The American competitor tribe is the quintessential democracy. At its strictest, the rules for belonging to an American competitor-tribe might be the following: 
+
+* Nothing should be given precedence over the fair and equal input that underlies democracy.: not environmental protection, racial equality, or seemingly obvious improvements to society. Democracy and its tenets are sacrosanct and immutable.
+
+* The expansion of presidential powers, congressional overreach, and popular revolution each in turn violate the sanctity the American democratic system, and make empathy impossible.
+
+These are not new ideas, and they might seem like common sense. Take the party game Nomic for example. [[Nomic]], invented by philosopher and researcher Peter Suber, is a game with a single unusual starting rule: all rules can be changed. Games of Nomic usually evolve into different democratic or autocratic setups, with different methods of amendment making, and lengthy discussions about loopholes and intended meaning. There emerges a common pattern to every vaguely democratic setup: the existence of a reset clause in the rules document, a "Big Red Button" that will revert the game back to some set of default rules. 
+
+This reset always involves two things: the democratic participation of its players as a prerequisite, and an unconditional priority given to the reset clause. Without either of these, democracy is vulnerable. I'm not sure if the Constitution should be the Reset Button for a game of American Nomic, but many people believe it to be the case. At any rate, the shared belief in such a democratic basis allows for empathy even among opposing actors.
+
+The empathy within a competitor-tribe resolves important issues with democracy. It's important to recognize this, even though you (and I) might remain critical of it as a whole. Political decisions //always// weigh heavily on someone, and unjust treatment can never be prevented, but only mitigated. Competitor-tribe empathy among opposing voting groups allow for these individual injustices to be superseded by knowledge of a collective vision -- one of American values, of freedom, democracy, and justice. This empathy is fundamentally important for democracy. It instills civility, respect, and understanding, where none would exist in an explicitly tribal conflict.
+
+However, we get into dilemmas when we consider competitor tribes in specific contexts; for one, competitor-tribe Congress. Who is more important: the people with which you work, who provide the backdrop for your life, and rely on one another for concessions and support-- or the approval of your constituents/ the now relatively abstract issues for which you fight for? Are you a congressman/woman, or a representative of a place that you no longer live in? Every physical indication from your life would point to your tribal status as a congressman/woman first and a representative (whatever //that// means) second. This clearly fuels corruption and detachment.
+
+And competitor-tribe empathy is also pragmatic and apolitical, meaning that it fails to instill any moral values into representative decision making. After all, a government is first and foremost meant to make good decisions for its people. When the consensus is //heavily// towards reconciliation and "common values" -- as in Johnson's Reconstruction after the Civil War-- you get empathy within the tribe, but with a blatant disregard for human rights. The result is Jim Crow, continued segregation, and systemic racism today.
+
+When taken to an extreme, its easy to see how competitor-tribe empathy can be abhorrent. Yet a lack of empathy is also dangerous, simply because it makes democracy prone to imploding. Because the nature of a competitor-tribe is shared beliefs between two or more parties, it is not enough that your actions do not threaten the rules of the game. For continued //credible// membership, it is necessary to convince all other parties that your actions do not threaten the rules of the game. 
+
+This is why addressing extremism in just causes is so necessary. If you are allowed to break the trust of the competitor-tribe by advocating for the dissolution of what were previously believed to be sacrosanct values, what prevents the other opposing groups from doing the same, in their own violent and less acceptable ways? "They broke the tribal contract first" is not good enough to justify behavior, because it is, by nature of symmetry, an argument for the other side as well. To maintain empathy from your competitors, you have to show that you play by the same rules-- that you are alike in character.
+
+ To be clear, the majority of groups advocating for a change within a democratic tribe do not advocate for significant violations of the tribal values themselves. Only a minority does so. However, when such a minority is not condemned by the majority, other competitors in the tribe will also see this as a violation of the rules and subsequently view them as out-members, irreconcilable and unreasonable.
+
+This is context agnostic. When racism is not condemned, it results in a lot of lost empathy. When violent revolution is not condemned, it also results in a lot of lost empathy.  Ultimately, it depends on how much the goodwill of competitors really means to a member. Losing the empathy of your competitor-tribe by violating the rules can absolutely be worth it at times. It depends on what you personally value, and how much you're willing to sacrifice to get there.
