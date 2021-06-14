@@ -53,6 +53,18 @@ export async function getStaticProps() {
     }
   }
 }
+function colorSize(size){
+  if (size = "long") { }
+
+  return (<div className="dib f5 ba pa1 ma1 b--gray">
+  <Link href={`/posts/${id}`}>
+  <a>{id}</a> 
+  </Link>
+    <p>{dateStringify(JSON.parse(dateString))}</p>
+    <span className="f6 bg-light-green br3 black ph2"> {size}</span>
+</div>)
+
+}
 function dateStringify(thisDate){
   thisDate = new Date(thisDate)
   let dateString
@@ -98,13 +110,8 @@ export default function Home({allPostsData}) {
 
           {allPostsData.map(({ id, date, dateString, size }) => (
             
-            <div className="dib f5 ba pa1 ma1 b--gray">
-              <Link href={`/posts/${id}`}>
-              <a>{id}</a> 
-              </Link>
-                <p>{dateStringify(JSON.parse(dateString))}</p>
-                <span className="f6 bg-light-green br3 black ph2"> {size}</span>
-            </div>
+            <previewBox id={id} dateString={dateString} size={size}/>
+
           ))}
       </div>
       <div class="fl w-30 pa2">
