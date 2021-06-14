@@ -94,7 +94,7 @@ export default function Home({allPostsData}) {
 
         <p>The passion of the scientist, the precision of the artist. Everything here is a work in progress :)</p>
 
-      <div class="fl w-50 pa2">
+      <div class="fl w-70 pa2">
 
           {allPostsData.map(({ id, date, dateString, size }) => (
             
@@ -107,7 +107,7 @@ export default function Home({allPostsData}) {
             </div>
           ))}
       </div>
-      <div class="fl w-50 pa2">
+      <div class="fl w-30 pa2">
         <Canvas>
     <ambientLight />
     <pointLight position={[10, 10, 10]} />
