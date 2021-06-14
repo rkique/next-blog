@@ -1,2 +1,0 @@
-#scratch
-tenga(s)(mos)()
