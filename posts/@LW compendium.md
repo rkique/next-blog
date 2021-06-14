@@ -1,3 +1,5 @@
+LW compendium
+
 ## Moloch
 
 ==Prisoner's Dilemma, Tragedy of Commons (core non-libertarian argument), Malthusian Trap (eliminating "culture" margins), Capitalism, the *Two Income Trap* in relation to housing, Agriculture (Jared Diamond's "worst mistake in human history"), Arms Races (particularly with regard to national military budget), ==
