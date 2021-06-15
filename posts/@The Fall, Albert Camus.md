@@ -2,7 +2,11 @@ This book is written from a unique perspective. At the beginning of the novel, a
 
 As a former famous lawyer who now identifies as a "judge-penitent", his confessions serve to permit him to live a life of superficial charity. Outwardly appearing as infinitely gracious, his service serves his own infinite self-obsession and disguises his complete lack of moral inhibition. By confessing the self-serving nature of his charitable actions, in a place like Amsterdam (the lowest circle of hell), he rises to a level where he cannot be judged. By proactively acknowledging of guilt, the judge-penitent offers the right to speak and live without the sting of judgement.
 
-However, the story ends with two major realizations. First, the lawyer reveals that the story he has told you (over the course of five days in a bar and walking in Amsterdam) is his way of avoiding moral guilt for the life he's lived. Second, in the implication that you are the person telling the story, a lawyer living in Paris, who one night on the bridges of the River Seine, failed to act when he heard the splash of a woman jumping.
+However, the story ends with two major realizations. 
+
+First, the lawyer reveals that the story he has told you (over the course of five days in a bar and walking in Amsterdam) IS his way of avoiding moral guilt for the life he's lived. 
+
+Second, in the implication that you ARE the person telling the story, a lawyer living in Paris, who one night on the bridges of the River Seine, failed to act when he heard the splash of a woman jumping.
 
 > I dominate at last, but forever. Once more I have found a height to which I am the only one to climb and from which I can judge everybody. 
 
