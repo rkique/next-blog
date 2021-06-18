@@ -98,8 +98,9 @@ export default function Home({allPostsData}) {
       <div class="fl w-70 pa2">
 
           {allPostsData.map(({ id, date, dateString, size }) => (
-            
-    <div className={"dib f5 ba pa1 ma1 b--gray " + ((size == "long") ? "bg-light-green" : "bg-white")}>
+    
+    <div className={"dib "+ ((dateString.includes("minutes") || dateString.includes("hours"))  ? "f3" : "f5" + " ba pa1 ma1 b--gray " +
+     ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-light-green" : "bg-white"))}>
     <Link href={`/posts/${id}`}>
      <a>{id}</a> 
      </Link>
