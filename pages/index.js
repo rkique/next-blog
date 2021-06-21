@@ -92,7 +92,7 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        <h1><a href="www.word.golf">WORD.GOLF</a></h1>
+        <h1><a href="https://www.word.golf">WORD.GOLF</a></h1>
         <p>The passion of the scientist, the precision of the artist. Everything here is a work in progress :)</p>
 
       <div class="fl w-70 pa2">
