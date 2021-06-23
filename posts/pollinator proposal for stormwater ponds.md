@@ -30,7 +30,9 @@ Once approved ...
 		- [ ] Hollywood Hills pond (grass, earth ramp down to wetland)
 		- [ ] The large Woodinville-Duvall pond where daisies currently grow
 		- **Most ponds have large grass spaces, which is why I believe this **
-- [ ] No maintenance necessary! The wildflowers will survive on their own.
+- [ ] No maintenance necessary! The wildflowers will survive on their own. 
+
+Overly ambitious and idealistic, maybe -- but anything is better than what we're doing now™
 
 ## outreach
 The "public" outreach aspect of this can be anything from nothing, to a small sign indicating the city's efforts in planting pollinator flowers (and explaining their benefits), to lowering line-of-sight obstructions (e.g. fences) for allowing public appreciation of flowers. 
