@@ -7,7 +7,7 @@ Pollinators, including bees, flies, and moths, are essential for agriculture. Th
 > Whether you are a farmer of many acres, land manager of a large tract of land, or a gardener with a small lot, you can increase the number of pollinators in your area by making conscious choices to include plants that provide essential habitat for bees, butterflies, moths, beetles, hummingbirds and other pollinators
 > Flowers provide nectar (high in sugar and necessary amino acids) and pollen (high in protein) to pollinators.
 
-## idea
+## concept
 We can make use of the grassland around the wetlands to plant no-maintenance pollinator-friendly flowers. Select a few attractive native plants (from the guide above) that are decent spreaders and which can put up a fight against invasive species, i.e. buttercup weeds. Seed them on high ground and hillsides within the stormwater reserve areas (not swamps). This seeding only needs to be done once, and it should require a low investment of time. Even if only a fifth of the ponds end up retaining flowers, its a vast improvement over no pollinator habitat at all.
 
 ## in practice
