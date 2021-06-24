@@ -32,13 +32,13 @@ From here this is my plan:
 	- [ ] https://www.bulkwildflowers.com/pnw-wildflower-seed-mix.html is cheapest pricing
 	- [ ] https://northwestmeadowscapes.com/products/native-pollinator-seed-mix-1?variant=35783828209815
 			- more expensive native mix
-- [ ] Hand scatter seeds while out mowing
+- [ ] I will hand scatter these seeds while out mowing
 - [ ] No maintenance necessary! The wildflowers will survive on their own. During the trim process this year/next year, if some wildflowers are cut it is not a big deal. We want to optimize for total mass of flowers, not any specific design.
 
-Anything is better than what we're doing now.
+In terms of pollinator policy, *anything is better than what we're doing now.*
 
-## outreach
+## addendum 1: outreach
 The "public" outreach aspect of this can be anything from nothing, to a small sign indicating the city's efforts in planting pollinator flowers (and explaining their benefits), to lowering line-of-sight obstructions (e.g. fences) for allowing public appreciation of flowers. It does not have to be put in place at the same time as the seeding -- it can be added much later or not at all.
 
-## addendum: stormwater ponds as public space
+## addendum 2: stormwater ponds as public space
 A remote but extremely appealing possibility is making non-swamp portions of stormwater ponds public in a trial period for neighborhood and community use (e.g. removing locks from the ponds at Hollywood Hills/ Woodinville Heights). This would not be the same as a regular park and would be largely community-maintained space, provided at the discretion of the City.
