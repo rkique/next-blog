@@ -22,18 +22,23 @@ Yearly care (as we are doing now) will not change much at all. The seasonal empl
 Public support for pollinator habitat restoration would be very high. Recent efforts in the city of Berlin doing something similar were extremely popular: an investment of 1.5 million euros for planting and maintaining 50 wildflower gardens over 3 years. 300 some species of wild bees in Germany, over half of which are endangered. They planted both endangered flowers which blossomed in two years, and popular ones like poppies and cornflowers (which blossom after a year).
 
 From here this is my plan:
-- [ ] Obtain satellite or similar imagery of the ponds
+- [ ] (optional) Obtain satellite or similar imagery of the ponds
 - [ ] Visit ponds and agree on spots for wildflowers
 		- [ ] e.g. the Woodinville Heights ponds (grass far apart from wetland)
 		- [ ] Hollywood Hills pond (grass, earth ramp down to wetland)
 		- [ ] The large Woodinville-Duvall pond where daisies currently grow
 		- **Most ponds have large grass spaces, which is why I believe this is an effective and meaningful approach to pollinator habitation**
+- [ ] obtain seeds
+	- [ ] https://www.bulkwildflowers.com/pnw-wildflower-seed-mix.html is cheapest pricing
+	- [ ] https://northwestmeadowscapes.com/products/native-pollinator-seed-mix-1?variant=35783828209815
+			- more expensive native mix
+- [ ] Hand scatter seeds while out mowing
 - [ ] No maintenance necessary! The wildflowers will survive on their own. During the trim process this year/next year, if some wildflowers are cut it is not a big deal. We want to optimize for total mass of flowers, not any specific design.
 
 Anything is better than what we're doing now.
 
 ## outreach
-The "public" outreach aspect of this can be anything from nothing, to a small sign indicating the city's efforts in planting pollinator flowers (and explaining their benefits), to lowering line-of-sight obstructions (e.g. fences) for allowing public appreciation of flowers. 
+The "public" outreach aspect of this can be anything from nothing, to a small sign indicating the city's efforts in planting pollinator flowers (and explaining their benefits), to lowering line-of-sight obstructions (e.g. fences) for allowing public appreciation of flowers. It does not have to be put in place at the same time as the seeding -- it can be added much later or not at all.
 
 ## addendum: stormwater ponds as public space
 A remote but extremely appealing possibility is making non-swamp portions of stormwater ponds public in a trial period for neighborhood and community use (e.g. removing locks from the ponds at Hollywood Hills/ Woodinville Heights). This would not be the same as a regular park and would be largely community-maintained space, provided at the discretion of the City.
