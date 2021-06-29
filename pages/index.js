@@ -86,37 +86,43 @@ function dateStringify(thisDate){
 }
 
 export default function Home({allPostsData}) {
-
+  
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        <h1><a href="https://www.word.golf">WORD.GOLF</a></h1>
-        <p>The passion of the scientist, the precision of the artist. Everything here is a work in progress :)</p>
+        <p>The passion of the scientist, the precision of the artist. <a href="https://word.golf">word.golf</a> <a href="https://synplifier.com">synplifier.com</a></p>
 
-      <div class="fl w-70 pa2">
-
-          {allPostsData.map(({ id, date, dateString, size }) => (
-    
-    <div className={"dib "+ ((dateString.includes("minutes") || dateString.includes("hours"))  ? "f3" : "f5" + " ba pa1 ma1 b--gray " +
-     ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-light-green" : "bg-white"))}>
-    <Link href={`/posts/${id}`}>
-     <a>{id}</a> 
-     </Link>
-    <p>{dateStringify(JSON.parse(dateString))}</p>
-    <span className="f6 bg-light-green b--gray ba br3 black ph2"> {size}</span>
-    </div>
-
-          ))}
+      <div className="cf pa2" >
+      <div class="fl w-100 w-100-ns ph2">
+                    {allPostsData.map(({ id, date, dateString, size, image }) => (
+              <Link href={`/posts/${id}`}>
+              <a> 
+                <div className={("pv1 grow dib v-top no-underline black bn boxy small-text br3 ma2 " +
+                  ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
+                  (typeof image == "undefined" ? "bg-light-yellow " : "bg-white ") }>
+                <p className= {"ma2 " + (typeof image == "undefined" ? "mt5 f4 " : "white ")} >
+                  <span className="blue fw7">{id}</span> <p className="blue">{dateStringify(JSON.parse(dateString))}</p> 
+                  <span className="small-text bg-gold br2 pv0 ph1"> {size}</span>
+                  </p>
+                <img src={image} className="small-image"></img>
+                </div>
+              </a>
+              </Link>
+                    ))
+                    }
       </div>
-      <div class="fl w-30 pa2">
+      </div>
+      
+      {/*
+      <div class="fl w-30 pa2 ab">
         <Canvas>
     <ambientLight />
     <pointLight position={[10, 10, 10]} />
   </Canvas>
       </div>
-
+       */}
     </Layout>
   )
 }

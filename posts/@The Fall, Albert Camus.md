@@ -1,3 +1,6 @@
+---
+image: http://irishrover.net/wp-content/uploads/2302472838_3d46616aeb_b.jpg
+---
 This book is written from a unique perspective. At the beginning of the novel, a stranger in a shady bar in Amsterdam introduces themself to you, marking you out as a "man of intelligence". The rest of the novel consists of his reflections and recollections of his life up until that point.
 
 As a former famous lawyer who now identifies as a "judge-penitent", his confessions serve to permit him to live a life of superficial charity. Outwardly appearing as infinitely gracious, his service serves his own infinite self-obsession and disguises his complete lack of moral inhibition. By confessing the self-serving nature of his charitable actions, in a place like Amsterdam (the lowest circle of hell), he rises to a level where he cannot be judged. By proactively acknowledging of guilt, the judge-penitent offers the right to speak and live without the sting of judgement.

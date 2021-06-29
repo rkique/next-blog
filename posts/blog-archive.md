@@ -1,4 +1,6 @@
-
+---
+image: https://www.nicepng.com/png/full/12-121936_books-pile-composition-book-the-owl.png
+---
 <head>
     <meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.gstatic.com">

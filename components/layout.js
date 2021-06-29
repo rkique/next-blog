@@ -8,18 +8,15 @@ export default function Layout({ children, home }) {
   return (
     <div className="center mw9">
       <Head>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-      
+      <script src="/../public/masonry.pkgd.min.js"></script>
       </Head>
       <header>
           <div>
-            <h2 className="blue f5 top-0">
-              <Link href="/">
-                <a>Eric Xia</a>
-              </Link>
-            </h2>
           </div>
-
       </header>
       <main>{children}</main>
       {!home && (

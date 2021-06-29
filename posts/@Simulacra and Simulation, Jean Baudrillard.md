@@ -1,3 +1,7 @@
+---
+image: https://images-na.ssl-images-amazon.com/images/I/31dVzO7bsTL._SX290_BO1,204,203,200_.jpg
+---
+
 [[jean baudrillard]]
 
 

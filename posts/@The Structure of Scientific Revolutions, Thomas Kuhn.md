@@ -1,3 +1,9 @@
+---
+image: https://images-na.ssl-images-amazon.com/images/I/41C5B4b-pGL._SX326_BO1,204,203,200_.jpg
+---
+
+
+
 [[Book List|book]]
 [[science & society]]
 (1962)

@@ -1,3 +1,6 @@
+---
+image: https://www.pngarts.com/files/3/Bee-Transparent.png
+---
 
 chrisb@ci.woodinville.wa.us
 leahu
@@ -28,17 +31,26 @@ From here this is my plan:
 		- [ ] Hollywood Hills pond (grass, earth ramp down to wetland)
 		- [ ] The large Woodinville-Duvall pond where daisies currently grow
 		- **Most ponds have large grass spaces, which is why I believe this is an effective and meaningful approach to pollinator habitation**
-- [ ] obtain seeds
+- [ ] obtain seeds. Cost is $40 per pound of seeds = 1,000 sq. ft of wildflower coverage. A 5 pound bag is probably enough, e.g. $200 investment from city
+-
 	- [ ] https://www.bulkwildflowers.com/pnw-wildflower-seed-mix.html is cheapest pricing
 	- [ ] https://northwestmeadowscapes.com/products/native-pollinator-seed-mix-1?variant=35783828209815
-			- more expensive native mix
+			- more expensive mix
 - [ ] I will hand scatter these seeds while out mowing
 - [ ] No maintenance necessary! The wildflowers will survive on their own. During the trim process this year/next year, if some wildflowers are cut it is not a big deal. We want to optimize for total mass of flowers, not any specific design.
 
 In terms of pollinator policy, *anything is better than what we're doing now.*
 
-## addendum 1: outreach
-The "public" outreach aspect of this can be anything from nothing, to a small sign indicating the city's efforts in planting pollinator flowers (and explaining their benefits), to lowering line-of-sight obstructions (e.g. fences) for allowing public appreciation of flowers. It does not have to be put in place at the same time as the seeding -- it can be added much later or not at all.
+## CITY GETS: outreach
+The "public" outreach aspect of this can be anything, depending on budget: from nothing, to a small sign indicating the city's efforts in planting pollinator flowers (and explaining their benefits), to lowering line-of-sight obstructions (e.g. fences) for allowing public appreciation of flowers. It does not have to be put in place at the same time as the seeding -- it can be added much later or not at all.
+
+
+
+
+
+
+
+
 
 ## addendum 2: stormwater ponds as public space
 A remote but extremely appealing possibility is making non-swamp portions of stormwater ponds public in a trial period for neighborhood and community use (e.g. removing locks from the ponds at Hollywood Hills/ Woodinville Heights). This would not be the same as a regular park and would be largely community-maintained space, provided at the discretion of the City.

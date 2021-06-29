@@ -1,3 +1,9 @@
+---
+image: https://images-na.ssl-images-amazon.com/images/I/51m17pvxnwL.jpg
+---
+
+
+
 [[Black Swan]]
 The collision of the abstract with reality
 

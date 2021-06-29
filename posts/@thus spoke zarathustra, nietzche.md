@@ -1,3 +1,7 @@
+---
+image: http://www.tsusinvasives.org/contentAsset/image/73272832-e525-44a2-99a3-c998ae23e768/fileAsset/filter/Resize/resize_h/225
+---
+
 [[Nietzsche_KINGMUN_notes]]
 
 Nietzche's writings features the overman/superman, someone who can transcend the traditional Christian morality which he describes in his earlier books (on the development of Christianity by slaves in ancient Rome).

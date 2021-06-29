@@ -1,3 +1,7 @@
+---
+image: https://images-na.ssl-images-amazon.com/images/I/41Y9V6AysTL._SX321_BO1,204,203,200_.jpg
+---
+
 ==How can one even begin to speak of dignity in labor when one secretly feels one’s job should not exist?==
 
 ### meta
