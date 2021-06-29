@@ -99,7 +99,7 @@ export default function Home({allPostsData}) {
                     {allPostsData.map(({ id, date, dateString, size, image }) => (
               <Link href={`/posts/${id}`}>
               <a> 
-                <div className={("pv1 grow dib v-top no-underline black bn boxy small-text br3 ma2 " +
+                <div className={("pv1 grow dib v-top no-underline black bn boxy small-text ma2 " +
                   ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
                   (typeof image == "undefined" ? "bg-light-yellow " : "bg-white ") }>
                 <p className= {"ma2 " + (typeof image == "undefined" ? "mt5 f4 " : "white ")} >

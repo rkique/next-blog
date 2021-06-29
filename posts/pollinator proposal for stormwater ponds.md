@@ -5,6 +5,7 @@ image: https://www.pngarts.com/files/3/Bee-Transparent.png
 chrisb@ci.woodinville.wa.us
 leahu
 
+# *current status: approved, awaiting Leah budget request to City*
 ## pollinator guide
 Pollinators, including bees, flies, and moths, are essential for agriculture. Their populations have declined in recent years, having lost the majority of their habitat to humans & human monoculture. From the Pacific Lowland Mixed Forest Province Guide to [*Selecting Plants for Pollinators*](https://www.pollinator.org/PDFs/Guides/PacificLowlandrx9FINAL.pdf) 
 
