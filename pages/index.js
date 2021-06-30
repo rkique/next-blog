@@ -101,7 +101,7 @@ export default function Home({allPostsData}) {
               <a> 
                 <div className={("pv1 grow dib v-top no-underline black bn boxy small-text ma2 " +
                   ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
-                  (typeof image == "undefined" ? "bg-light-yellow " : "bg-white ") }>
+                  (typeof image == "undefined" ? "bg-light-yellow " : "bg-white ") }> 
                 <p className= {"ma2 " + (typeof image == "undefined" ? "mt5 f4 " : "white ")} >
                   <span className="blue fw7">{id}</span> <p className="blue">{dateStringify(JSON.parse(dateString))}</p> 
                   <span className="small-text bg-gold br2 pv0 ph1"> {size}</span>
