@@ -1,3 +1,7 @@
+---
+image: https://www.ford-trucks.com/forums/attachment.php?attachmentid=26245&d=1280723395
+---
+
 Things have single functions, i.e. to lift something, carry it horizontally,  Secondary attributes -- safety latches, wheels, lights -- are necessary additions because of the complications of the primary function.
 
 What are the important primary functions? Carrying things sideways is important because we want to be able to sort everything on earth for our own uses. 

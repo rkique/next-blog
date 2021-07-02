@@ -1,3 +1,8 @@
+---
+image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328326656l/6587888.jpg
+---
+
+
 https://www.ribbonfarm.com/2010/07/26/a-big-little-idea-called-legibility/
 
 [[Le Corbusier]]

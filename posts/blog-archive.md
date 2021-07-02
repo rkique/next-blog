@@ -1,5 +1,5 @@
 ---
-image: https://www.nicepng.com/png/full/12-121936_books-pile-composition-book-the-owl.png
+image: https://d1wumrtbuo797i.cloudfront.net/thumb-large-Decorative-4783.jpg
 ---
 <head>
     <meta charset="utf-8">
