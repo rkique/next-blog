@@ -30,15 +30,14 @@ export async function getStaticPaths() {
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article className="measure center">
+        <article className="measure-wide center copy">
+        <h1>{postData.id}</h1>
             <h1>{postData.title}</h1>
             <div>
                 <p>{postData.date}</p>
             </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}} />
         <br />
-        <hr></hr>
-        {postData.id}
         </article>
       </Layout>
     )

@@ -150,5 +150,5 @@ Nietzche finds the "companion of lessers" distasteful
 
 > Your neighbors will always be poisonous flies; what is great in you- that itself must make them more poisonous, and always more fly-like. Flee, my friend, into your solitude- and there, where a rough strong breeze blows. It is not your lot to shoo flies
 
-And then the overt sexism begins.
+etc. etc.
 
