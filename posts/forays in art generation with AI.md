@@ -3,14 +3,6 @@ image: https://i.imgur.com/WYkcxdF.png
 ---
 
 Read [this piece](https://ml.berkeley.edu/blog/posts/clip-art/) which inspired me.
-Some of the examples there:
-“The Yellow Smoke That Rubs Its Muzzle On The Window-Panes”
-![[Pasted image 20210702162503.png]]
-"Dancing in the moonlight"
-![[Pasted image 20210702162613.png]]
-This one is particularly impressive: "At the end of everything, crumbling buildings and a weapon to pierce the sky"
-
-![[Pasted image 20210702162403.png]]
 
 I haven't touched AI art generation in a while and it's come really far with CLIP and DALL-E, which is exciting. What I worry about is the way it reinforces the cyclical nature of fashion, regurgitates previous (through prompt programming, the transition from physically making art to a curation based search activity) are only interesting/forceful if they're evocative of past artistic movements. So no new content is really being made. 
 
