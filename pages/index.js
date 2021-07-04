@@ -92,7 +92,7 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        <p>The passion of the scientist, the precision of the artist. <a href="https://word.golf">word.golf</a> <a href="https://synplifier.com">synplifier.com</a></p>
+        <p>The passion of the scientist, the precision of the artist. </p>
 
       <div className="cf w-100 w-100-ns pa0 ma0" >
       <div className="fl w-100 w-100-ns pa0 ma0">
