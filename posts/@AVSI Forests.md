@@ -1,3 +1,6 @@
+---
+image: https://images.unsplash.com/photo-1487786839270-062d3faa901c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNTU5MzY4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80
+---
 ## key facts
 - We currently live in an interglacial period.
 - The Pleistocene is the most recent geological period and goes up to 18,000 BP
