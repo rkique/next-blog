@@ -16,9 +16,6 @@ export default function Layout({ children, home }) {
       </Head>
       <header>
           <div>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
           </div>
       </header>
       <main>{children}</main>

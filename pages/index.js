@@ -86,26 +86,24 @@ function dateStringify(thisDate){
 }
 
 export default function Home({allPostsData}) {
-  var randomColor = "bg-light-yellow "
+  var randomColor = " "
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        <p>The passion of the scientist, the precision of the artist. </p>
-
       <div className="cf w-100 w-100-ns pa0 ma0" >
       <div className="fl w-100 w-100-ns pa0 ma0">
                     {allPostsData.map(({ id, date, dateString, size, image }) => (
               <Link href={`/posts/${id}`}>
               <a> 
-                <div className={("pv1 grow dib v-top no-underline black bn boxy small-text ma0 pa2" +
+                <div className={("pv1 dim dib v-top no-underline black bn boxy small-text ma0 pa2" +
                   ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
                   (typeof image == "undefined" ? randomColor : "bg-white ") }> 
                 
-                <p className= {"ma2 " + (typeof image == "undefined" ? "mt5 f4 " : "white ")} >
-                  <span className="blue fw7">{id}</span> <p className="blue">{dateStringify(JSON.parse(dateString))}</p> 
-                  <span className="small-text bg-gold br2 pv0 ph1"> {size}</span>
+                <p className= {"ma2 " + (typeof image == "undefined" ? "mt5 f6 dark-green" : "near-black ")} >
+                  <span className="fw7">{id}</span> <p className="f6">{dateStringify(JSON.parse(dateString))}</p> 
+                  <span className="small-text bg-gold black br2 pv0 ph1 f6"> {size}</span>
                   </p>
                 <img src={image} className="small-image"></img>
                 </div>

@@ -30,7 +30,7 @@ export async function getStaticPaths() {
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article className="measure-wide center copy">
+        <article className="measure-wide center copy f6">
         <h1>{postData.id}</h1>
             <h1>{postData.title}</h1>
             <div>
