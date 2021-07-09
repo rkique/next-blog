@@ -1,5 +1,6 @@
-FYS Preferences should be submitted on July 6-15th. SHIP waiver should be submitted before July 30th. Otherwise I have no other responsibilities.
 
+FYS Preferences should be submitted on July 6-15th. SHIP waiver should be submitted before July 30th. Otherwise I have no other responsibilities.
+Should definitely browse the courses website though, so many offered and so little time. I will have to narrow it down to 4 courses (and 1 RISD course?)
 
 Interesting FYS courses:
 
