@@ -2,28 +2,49 @@ html,
 body {
   white-space: pre-wrap;
   font-family: sans-serif;
+  transition-duration: 0s;
 }
+
+.grid{
+  position: relative;
+  background-color: #111;
+}
+.grid-item { 
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  transition-duration: 0s;
+  
+}
+
+
+.grid-item:hover{
+  background-color: pink
+}
+.large-item { width: 240px; height: auto; margin: 0px 0px; }
+
 
 * {
   box-sizing: border-box;
 }
 
-.boxy {
-  width: 18em;
-  height: 14em;
-  overflow: hidden;
-}
 
 .small-image{
-  width: 12em;
+  width: 400px;
 }
+
 
 .small-text{
   font-size: 12px;
+  top: 500px;
 }
 
-.small-text *{
+.small-image-text{
+  font-size: 12px;
+  top: 60%;
+  position: absolute;
 }
+
 
 a:visited{
   color: #3c9172

@@ -12,17 +12,17 @@ export default function Layout({ children, home }) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-      <script src="/../public/masonry.pkgd.min.js"></script>
       </Head>
       <header>
           <div>
           </div>
       </header>
       <main>{children}</main>
-      {!home && (
+      {!home && ( 
         <div className={styles.backToHome}>
         </div>
       )}
+      
     </div>
   ) 
 }

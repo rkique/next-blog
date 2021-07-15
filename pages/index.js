@@ -6,6 +6,7 @@ import * as THREE from 'three'
 import ReactDOM from 'react-dom'
 import React, { useRef, useState, Suspense } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
+import Masonry from 'react-masonry-css'
 
 /*function Image() {
   const texture = useLoader(THREE.TextureLoader, "https://www.eric-xia.com/images/arrowhead.png")
@@ -86,24 +87,27 @@ function dateStringify(thisDate){
 }
 
 export default function Home({allPostsData}) {
-  var randomColor = " "
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className="cf w-100 w-100-ns pa0 ma0" >
-      <div className="fl w-100 w-100-ns pa0 ma0">
+
+      <script src="/../public/masonry.pkgd.min.js"></script>
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js">
+      
+      </script>
+      <div className="fl w-100 w-100-ns pa0 ma0 grid" data-masonry={'{"itemSelector": ".grid-item", "columnWidth": 120 }'}>
                     {allPostsData.map(({ id, date, dateString, size, image }) => (
               <Link href={`/posts/${id}`}>
               <a> 
-                <div className={("pv1 dim dib v-top no-underline black bn boxy small-text ma0 pa2" +
+                <div className={("pa0 dib v-top no-underline black bn boxy ma0 pa0 grid-item " +
                   ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
-                  (typeof image == "undefined" ? randomColor : "bg-white ") }> 
+                  (typeof image == "undefined" ? "bg-white" : "bg-yellow large-item ") }> 
                 
-                <p className= {"ma2 " + (typeof image == "undefined" ? "mt5 f6 dark-green" : "near-black ")} >
+                <p className= {(typeof image == "undefined" ? "small-text " : "bg-yellow small-image-text ") + " ma2 " + (typeof image == "undefined" ? "mt3 f6 dark-green" : "near-black ")} >
                   <span className="fw7">{id}</span> <p className="f6">{dateStringify(JSON.parse(dateString))}</p> 
-                  <span className="small-text bg-gold black br2 pv0 ph1 f6"> {size}</span>
+                  <span className="small-text bg-gold black br2 pv0 ph1 f6 "> {size}</span>
                   </p>
                 <img src={image} className="small-image"></img>
                 </div>
@@ -112,10 +116,8 @@ export default function Home({allPostsData}) {
                     ))
                     }
       </div>
-      </div>
-      
       {/*
-      <div class="fl w-30 pa2 ab">
+      <div className="fl w-30 pa2 ab">
         <Canvas>
     <ambientLight />
     <pointLight position={[10, 10, 10]} />
