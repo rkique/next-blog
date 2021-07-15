@@ -1,5 +1,5 @@
 ---
-image: https://images-na.ssl-images-amazon.com/images/I/41C5B4b-pGL._SX326_BO1,204,203,200_.jpg
+image: https://d3525k1ryd2155.cloudfront.net/h/236/169/909169236.0.x.jpg
 ---
 
 
