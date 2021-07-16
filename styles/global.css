@@ -8,6 +8,7 @@ body {
 .grid{
   position: relative;
   background-color: #111;
+  
 }
 .grid-item { 
   width: 120px;
@@ -17,9 +18,32 @@ body {
   
 }
 
+.link-item{
+  width: 240px;
+  height: 60px;
+  background-color: rgb(165, 249, 255);
+  overflow-wrap: break-word;
+}
 
+.link-item .hidelink {
+  display: none;
+}
+.link-item .mt3{
+  margin-top: 12px;
+}
+
+.link-item .ma2{
+  width: fit-content;
+}
+.link-item .fw7{
+  overflow-wrap: break-word;
+  font-weight: 300;
+  margin-top: 0px;
+  font-size: 16px;
+  color: #111;
+}
 .grid-item:hover{
-  background-color: pink
+  background-color: rgb(5, 252, 198)
 }
 .large-item { width: 240px; height: auto; margin: 0px 0px; }
 

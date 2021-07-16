@@ -98,16 +98,23 @@ export default function Home({allPostsData}) {
       
       </script>
       <div className="fl w-100 w-100-ns pa0 ma0 grid" data-masonry={'{"itemSelector": ".grid-item", "columnWidth": 120 }'}>
-                    {allPostsData.map(({ id, date, dateString, size, image }) => (
-              <Link href={`/posts/${id}`}>
+                    {allPostsData.map(({ id, date, dateString, size, image, link }) => (
+              <Link href={(typeof link == "undefined" ? `/posts/${id}` : link)}>
               <a> 
-                <div className={("pa0 dib v-top no-underline black bn boxy ma0 pa0 grid-item " +
-                  ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
-                  (typeof image == "undefined" ? "bg-white" : "bg-yellow large-item ") }> 
                 
-                <p className= {(typeof image == "undefined" ? "small-text " : "bg-yellow small-image-text ") + " ma2 " + (typeof image == "undefined" ? "mt3 f6 dark-green" : "near-black ")} >
-                  <span className="fw7">{id}</span> <p className="f6">{dateStringify(JSON.parse(dateString))}</p> 
-                  <span className="small-text bg-gold black br2 pv0 ph1 f6 "> {size}</span>
+                <div className={
+                  ("pa0 dib v-top no-underline black bn boxy ma0 pa0 grid-item " +
+                  ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
+                  (typeof image == "undefined" ? "bg-white " : "bg-yellow large-item ") +
+                  (typeof link == "undefined" ? "" : "link-item")
+                  }> 
+                
+                <p className= {
+                  (typeof image == "undefined" ? "bg-transparent small-text mt3 f6 dark-green " : "bg-yellow small-image-text near-black  ") 
+                + " ma2 " 
+                } >
+                  <span className="fw7">{id}</span> <p className="f6 hidelink">{dateStringify(JSON.parse(dateString))}</p> 
+                  <span className="small-text bg-gold black br2 pv0 ph1 f6 hidelink"> {size}</span>
                   </p>
                 <img src={image} className="small-image"></img>
                 </div>
