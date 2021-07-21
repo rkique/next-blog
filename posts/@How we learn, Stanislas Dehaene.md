@@ -1,7 +1,3 @@
----
-image: https://www.porchlightbooks.com/globalassets/book-covers/9780525559900.jpg?u=637399946360400000
----
-
 Revisiting off the cuff:
 
 **The popular theory that babies lack object permanence is false. We are born with important starting assumptions, from evolutionary instincts, which feed their mental models of the world. We start out assuming the continued existence of objects, the coherency of solid objects, and intuition about probability. **
