@@ -88,3 +88,6 @@ Science is interesting
 > experiment, experiments, experimental, study, discovery, laboratory, technique, experimentation, theory, testing, method, methods, lab, researchers, studies, research, evolution, scientists, program, analysis, techniques, project, simulation, idea, concept, phase, scientific, conceived, pioneered, approach, science, therapy, conducted, tests, cloning, process, fusion, work, developed, invention, successful
 
 > View more neighbors at word.golf/experiment
+
+
+Word golf is a competitive sport 
