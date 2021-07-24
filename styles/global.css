@@ -35,9 +35,7 @@ blockquote {
 }
 
 .grid-item:hover{
-  width: 480px;
-  height: 480px;
-    background-color: rgb(252, 5, 161)
+    background-color: rgb(202, 27, 44)
 }
 
 .link-item{
