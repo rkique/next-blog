@@ -98,15 +98,17 @@ export default function Home({allPostsData}) {
       
       </script>
       <div className="fl w-100 w-100-ns pa0 ma0 grid" data-masonry={'{"itemSelector": ".grid-item", "columnWidth": 120 }'}>
-                    {allPostsData.map(({ id, date, dateString, size, image, link }) => (
+                    {allPostsData.map(({ id, date, dateString, size, bigness, image, link}) => (
               <Link href={(typeof link == "undefined" ? `/posts/${id}` : link)}>
               <a> 
                 
                 <div className={
                   ("pa0 dib v-top no-underline black bn boxy ma0 pa0 grid-item " +
                   ((dateString.includes("minutes") || dateString.includes("hours")) ? "bg-orange " : "bg-white ")) +
+                  (typeof bigness == "undefined" ? " " : " hero-item ") +
                   (typeof image == "undefined" ? "bg-white " : "bg-yellow large-item ") +
                   (typeof link == "undefined" ? "" : "link-item")
+                
                   }> 
                 
                 <p className= {
