@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Eric's Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+	<body>
+        <p><a href="index.html">go back</a></p>
+        <h1>Synplifier </h1>
+<h2>edit: a relational network of terms and protocols is up at: <a href="https://www.synplifier.com/">https://www.synplifier.com/</a></h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bEU3AGqW_ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<p>This weekend I had the opportunity to participate in Def Hacks Virtual 2020, an online hackathon with tons of prizes and interesting workshops. The whole experience was incredibly fun, with thousands of participants from around the world and hundreds of interesting projects developed.
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p> I am excited to announce that our project <a href="https://devpost.com/software/synplifier">Synplifier </a>won the Grand Prize at Def Hacks, receiving a grant of 1k cash and 10k in AWS credits from the 1517 Fund. I'm grateful for the support we received from the organizing team-- as primarily a college hackathon, the competition was definitely very tough. After developing the proof-of-concept over these past two days, I can see a lot of potential in it and will be continuing to develop it. My work was heavily inspired by my experiences on the SoundBio iGEM team last year, and also by the COVID-19 community project at  the <a href="https://sound.bio/">SoundBio Lab</a>. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This post will be mainly taken from the Devpost project, which you can view <a href="https://devpost.com/software/synplifier">here</a> as well. The code is accessible on <a href="https://github.com/rkique/synplifier">Github</a>, and you can demo this very early version yourself at my teammate's <a href="https://ujjainidas.github.io/synplifier/">Pages</a>. My teammate Ujjaini, also a rising senior, was incredibly helpful throughout the hackathon. I couldn't have done it without her.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Synplifier</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>As a way to grow diagnostic reagents from anywhere around the world, synthetic biology should allow for a proliferation of DIY viral testing. Yet the potential of synthetic biology remains locked behind complex lab protocols and largely restricted to highly specialized research fields. While the key to its potential, small DNA pieces known as plasmids, can easily travel around the world, the knowledge required to use them fails to do the same.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Synplifier allows scientists to translate production protocols into robust and user friendly walkthroughs. Think of it as a compiler for synthetic biology protocols-- going first from an academic lab protocol to standardized commands, and from standardized commands to a step-by-step breakdown. This simplification process relies on the <strong>modular nature of synthetic biology protocols.</strong> Essential protocols in synthetic biology-- growing, transforming, and inducing bacteria--are not difficult operations. At the most granular level,&nbsp;<em>much can be reduced to the simple transfer of liquids or raising and lowering temperatures</em>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":227,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="http://eric-xia.com/wp-content/uploads/2020/06/transfer-1.png" alt="" class="wp-image-227"/><figcaption>Diagram demonstrating how Synplifier commands (which describe lab work) rely on two core functions. This is not true for many synthetic biology operations, but the basics are all you need to grow testing reagents.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>To demonstrate just how accessible synthetic biology can be, we took a&nbsp;<a href="https://mammoth.bio/wp-content/uploads/2020/02/A-protocol-for-rapid-detection-of-the-2019-novel-coronavirus-SARS-CoV-2-using-CRISPR-diagnostics-SARS-CoV-2-DETECTR.pdf">COVID diagnostic protocol</a>&nbsp;and wrote it into our pseudo compiler, a javascript p5js application. The result is a series of 86 simple commands (think “move 5ml of liquid from red cup to blue flask”) that can be followed without scientific literacy, fine motor control, or even knowledge of the English language. When developed in tandem with the test production kits, synplifier would be instrumental in the creation of test production capabilities&nbsp;<em>anywhere in the world</em>. In doing so, Synplifier and Synbio approaches to diagnostics aim to improve the lives of many--not through one time test distribution, but by investing in long term production.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>How we built it</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The core functionality was developed in Javascript. The visualization and a prototype development environment are hosted on a static HTML page, with heavy use of P5.js for agile visualization.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Challenges we ran into</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>One challenging part of the experience was integrating the logic into an effective visualization. Our initial goal was to create a scaffold for building AR walkthroughs in EchoAR, but we ultimately pulled away from its exciting possibilities to focus on the core product-- the simplification process itself.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>What we learned</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>By developing this project, we were able to dive into the construction of knowledge systems and human computer interaction. We also obtained a greater understanding of synthetic biology and LAMP-DETECTR procedures through writing functions to formalize their specifications. And of course, we also learned about styling pages and libraries such as Bootstrap.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>What’s next for Synplifier</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>We see Synplifier as a very strong proof of concept for an LIMS with a unique focus. As of now, Synplifier is effective in providing archetypal 2-dimensional visualizations of lab procedures, with a limited range of flexibility. We hope to increase its functionalities greatly moving forward and get user feedback from both the scientific community and other interested parties. We also hope to look further into distributed diagnostics and how Synplifier might work in conjunction with labs to reach vulnerable and at-risk communities.</p>
+<!-- /wp:paragraph -->
+<a href="http://eric-xia.com/">
+    <img src="images/whiteicon.PNG" class="icon">
+    </a>
+    </body>
+</html>
