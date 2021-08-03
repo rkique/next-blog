@@ -4,7 +4,12 @@ array = ["I miss the rage",
 "in the caverns of order our hands shall forge bombs",
 "there is no speed limit",
 "my friends are going to save the world",
-"stay changed"
+"stay changed",
+"breathe deeply",
+"K.I.S.S.",
+"form follows function",
+"how many ways to use a paperclip?",
+"we lack courage, not genius"
 ]
 
 function shuffleArray(array) {

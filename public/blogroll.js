@@ -6,7 +6,8 @@ links = [
     "https://whitehotharlots.tumblr.com/",
     "https://www.piratewires.com/",
     "https://kneelingbus.substack.com/",
-    "https://www.xkcd.com"
+    "https://www.xkcd.com",
+    "https://www.ribbonfarm.com"
    ]
 
 document.getElementById("random_blog").href = links[Math.floor(Math.random()*links.length)];
