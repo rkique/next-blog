@@ -86,6 +86,7 @@ body{
      }
 
 #main {
+    position: relative;
     padding-bottom: 400px;
     background-color: var(--bg-color);
     margin: 0 auto;
@@ -113,7 +114,6 @@ body{
 
 .rightbar:hover{
     right: 0px;
-    background-color: rgb(255, 255, 255);
 }
 #topbar *{
         vertical-align: top;
@@ -122,8 +122,8 @@ body{
 </style>
 
 <body>
-
-<div class="rightbar" href="https://eric-xia.com/viz.html">  
+    <a href="https://eric-xia.com/viz.html">
+<div class="rightbar">  
         <style>
             .img {position: absolute}
             .gans {width: 14em;  transform: rotate(348deg); top: 100px;}
@@ -138,21 +138,39 @@ body{
         <img class="img algo" src="images/algo.jpg">
         <img class="img tiling" src="images/tiling.png">
         
-</div>
+</div></a>
 
 <div id="topbar">
     <p style="font-size: 22px; color: #0000ff; position: absolute; right: 0px; top: 0px; margin-top: 0px; z-index: 999; text-align:left;" id="quotes"></p>
-    
     <a href="https://www.word.golf" style="text-decoration: none; background-color: #ffff00; color: #000">⤺ go word golfing</a>
-    <a href="https://www.nintil.com" style="text-decoration: none; background-color: #ffb617; color: #000">⤺ visit a blog I like</a>
+    <a href="https://www.nintil.com" id="random_blog" style="text-decoration: none; background-color: #ffb617; color: #000">⤺ visit a blog I like</a>
     
                 <script src="topbar_script.js"></script>
 </div>
 
+<script src="blogroll.js"></script>
 
 <div id="main"> 
+    <style>
+        #byline{   
+            position: absolute;
+            text-align: justify;
+            margin-left: 5em;
+            right: 0px;
+            top: 0px;
+            vertical-align: bottom;
+            width: 22em;
+            font-size: 13px;
 
-    <h1 style="font-size: 64px; display: inline; text-align: center; color: #444">eric's blog ⣪</h1>
+        }
+    </style>
+    <h1 style="font-size: 64px; display: inline; text-align: center; color: #444">eric's blog ⣪</h1> <div id="byline"><p style="display: inline">Eric Xia is a freshman at Brown University interested in crossdisciplinary endeavors. He is currently developing a metaphysical sport known as word golfing, which uses word vectors to capture semantic qualities within the english language. </p>  </div>
+
+
+<h3>August 3rd <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
+<p>
+    The site has been reverted to its original state, prioritizing the blog above the visualization (which you can find on the right side!). However, the workflow is still much improved with editing in VSCODE and pushing changes to a git repo. The tradeoff is that I lose AWStats, the benefit is that I don't actually have to pay for hostgator anymore.
+</p>
 <h3>June 12th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span> </h3>
 <p> So much done today! </p>
 <p>Spent the morning getting timestamps working, using a helper utility to scrape git last modified dates for each markdown file. That way when the files are built on the server the date is the correct one.  </p>
