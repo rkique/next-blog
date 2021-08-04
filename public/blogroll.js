@@ -12,13 +12,13 @@ links = [
     "https://www.ribbonfarm.com/2017/08/17/the-premium-mediocre-life-of-maya-millennial/",
     "https://mattlakeman.org/",
     "https://www.strongtowns.org/",
-    "https://www.strongtowns.org/journal/2021/1/6/college-campuses-as-a-model-for-urban-planning"
+    "https://www.strongtowns.org/journal/2021/1/6/college-campuses-as-a-model-for-urban-planning",
     "https://guzey.com/advice/",
     "https://nadiaeghbal.com/",
-    "https://danluu.com/"
+    "https://danluu.com/",
     "https://ansuz.sooke.bc.ca/",
     "https://sive.rs/kimo",
-    "https://99percentinvisible.org/"
+    "https://99percentinvisible.org/",
     "https://www.benkuhn.net/hard/",
     "https://iquilezles.org/",
     "https://www.yiningkarlli.com/",
@@ -39,9 +39,11 @@ links = [
     "https://alexdanco.com/",
     "https://www.overcomingbias.com/2009/09/this-is-the-dream-time.html",
     "synthesis.cc",
-    "https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories/"
+    "https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories/",
     "itsnicethat.com",
-    
+    "https://constructionphysics.substack.com/p/construction-costs-around-the-world",
+    "https://constructionphysics.substack.com/p/where-are-the-robotic-bricklayers",
+    "https://astralcodexten.substack.com/"
 ]
 
 document.getElementById("random_blog").href = links[Math.floor(Math.random()*links.length)];
