@@ -7,7 +7,41 @@ links = [
     "https://www.piratewires.com/",
     "https://kneelingbus.substack.com/",
     "https://www.xkcd.com",
-    "https://www.ribbonfarm.com"
-   ]
+    "https://www.ribbonfarm.com",
+    "https://www.ribbonfarm.com/series/mediocratopia-2/",
+    "https://www.ribbonfarm.com/2017/08/17/the-premium-mediocre-life-of-maya-millennial/",
+    "https://mattlakeman.org/",
+    "https://www.strongtowns.org/",
+    "https://www.strongtowns.org/journal/2021/1/6/college-campuses-as-a-model-for-urban-planning"
+    "https://guzey.com/advice/",
+    "https://nadiaeghbal.com/",
+    "https://danluu.com/"
+    "https://ansuz.sooke.bc.ca/",
+    "https://sive.rs/kimo",
+    "https://99percentinvisible.org/"
+    "https://www.benkuhn.net/hard/",
+    "https://iquilezles.org/",
+    "https://www.yiningkarlli.com/",
+    "https://www.benkuhn.net/weeklyessays/",
+    "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+    "https://slatestarcodex.com/2014/12/17/the-toxoplasma-of-rage/",
+    "https://www.lesswrong.com/",
+    "https://www.qualiaresearchinstitute.org/",
+    "https://www.ribbonfarm.com/2013/04/10/a-beginners-guide-to-immortality/",
+    "http://adventurebuilders.club/",
+    "https://www.experimentaljetset.nl/",
+    "https://melonking.net",
+    "https://wesdesilvestro.com/",
+    "https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/",
+    "https://jsomers.net/",
+    "https://jsomers.net/i-should-have-loved-biology/",
+    "https://mindingourway.com/",
+    "https://alexdanco.com/",
+    "https://www.overcomingbias.com/2009/09/this-is-the-dream-time.html",
+    "synthesis.cc",
+    "https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories/"
+    "itsnicethat.com",
+    
+]
 
 document.getElementById("random_blog").href = links[Math.floor(Math.random()*links.length)];
