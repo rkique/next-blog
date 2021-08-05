@@ -43,7 +43,9 @@ links = [
     "itsnicethat.com",
     "https://constructionphysics.substack.com/p/construction-costs-around-the-world",
     "https://constructionphysics.substack.com/p/where-are-the-robotic-bricklayers",
-    "https://astralcodexten.substack.com/"
+    "https://astralcodexten.substack.com/",
+    "https://samplesize.one/blog/posts/my_year_in_data/",
+    "https://julian.digital/2020/08/06/proof-of-x/"
 ]
 
 document.getElementById("random_blog").href = links[Math.floor(Math.random()*links.length)];
