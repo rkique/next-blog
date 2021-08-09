@@ -192,10 +192,57 @@ body{
     <h1 style="font-size: 64px; display: inline; text-align: center; color: #444">eric's blog ⣪</h1> <div id="byline"><p style="display: inline; margin-bottom: 0px;">Eric Xia is a freshman at Brown University interested in crossdisciplinary endeavors. He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
         <p style="font-size: 28px; margin-top: 0px;">𓃵 𓃞 𓃒 𓃓 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 𓃞</p>
      </div>
+     <h3>August 8th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
+     <p>Using <a href="https://github.com/LuminosoInsight/wordfreq">zipf_frequency</a> to sort prompts into different classes: 1.8 to 2.8, 2.8 to 3.2, 3.2 to 3.5, 3.5 to 3.65, 3.65 to 3.8, 3.8 to 4, 4 to 4.2, 4.2 to 4.5, 4.5 to 7 (base-10 log scale of occurrences per billion words, so 3 is once per million) The default is now drawing from a nice midrange of 3.5 to 3.65, which is 410 words long. 
+        </p>
+        <p>Here's a sample from 3.5-3.65: <b>columnist
+            postage
+            lantern
+            insurer
+            destroyer
+            staircase
+            safeguard
+            browse
+            asbestos
+            emblem</b></p>
+
+
+        <p>Here's a sample from 1.8-2.8: <b>
+            despondency
+            vulgarity
+            operandi
+            cuticle
+            marionette
+            inhabitant
+            parishioner
+            puller
+            insolence
+            undergrowth
+            fecundity
+        </b>
+        </p>
+
+        <p>And here's a sample from 4.2-4.5: <b>
+            lieutenant
+            tennis
+            copper
+            tiger
+            pub
+            threatened
+            laptop
+            detective
+            database
+            currency
+        </b>
+        </p>
+
+        
+        <p>These filters are currently being applied to a list of 7,000 english nouns from <a href="https://github.com/martinsvoboda/nouns/blob/master/nouns/en_nouns.txt">Universal Dependencies</a>. I might look for a larger dataset later.</p>
      <h3>August 6th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
+     
      <h3> locally optimized play in wordspace</h3>
      <p> Got around to building a testing engine which golfs perfectly locally, in that it will always choose the word rated with the highest similarity score to the target. The results show about 1 out of 5 runs have no reasonable path, and that most optimal runs are between 3 to 6 steps. The quality of the associations made is surprisingly good. </p>
-     <p> We can see that 3 and 4 step runs dominate, with a few easy 2 step runs and hard 5 step runs. The maximum number of steps necessary is still just 6! Six degrees of separation holds for english words with 200 connections each.  </p>
+     <p> We can see that 3 and 4 step runs dominate, with a few easy 2 step runs and hard 5 step runs. The maximum number of steps necessary is still just 7! Six degrees of separation holds for english words with 200 connections each.  </p>
      <img src="images/run_data.png">
      
      <p> Logs follow: </p>
