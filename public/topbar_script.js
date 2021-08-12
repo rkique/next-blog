@@ -1,15 +1,13 @@
-array = ["I miss the rage", 
+array = [
 "beneath the pavingstones-- the beach!!",
 "we stand on the last promontory of the centuries...",
 "in the caverns of order our hands shall forge bombs",
 "there is no speed limit",
-"my friends are going to save the world",
 "stay changed",
-"breathe deeply",
 "K.I.S.S.",
 "form follows function",
-"how many ways to use a paperclip?",
-"we lack courage, not genius"
+"we lack courage, not genius",
+"my friends are going to save the world",
 ]
 
 function shuffleArray(array) {
