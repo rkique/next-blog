@@ -5,6 +5,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -12,8 +13,8 @@
 :root {
   --hl-color: #666;
   --text-color: #555;
-  --bg-color: #eee;
-  --link-color: #cb4b16;
+  --bg-color: rgb(252, 247, 247);
+  --link-color: #d46000;
 }
 
 
@@ -30,7 +31,7 @@
 }
 
 #outlineContainer a{
-    background-color: #ddd;
+    border: 1px solid grey;
 }
 
 
@@ -45,11 +46,19 @@ h1,h2,h3,h4,h5,h6{
     color:  var(--text-color);
 }
 
+::selection {
+  background-color: rgb(248, 227, 105);
+  color: rgb(0,0,0)
+}
+
+
+
 #main h3{
     padding: 0.1em 0.3em;
-    background-color: #ddd;
-    margin: 1em 0em;
+    margin: 0.5em 0em;
+    border: 1px solid grey;
     color: var(--text-color);
+    background-color: 
 }
 a { 
     font-family: sans-serif;
@@ -69,7 +78,7 @@ a {
 html {
     font-size: 21px;
     line-height: 1.25;
-    font-family: 'Padauk', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color:  var(--hl-color);
     padding-top: 0px;
     min-height: 100%;
@@ -77,9 +86,8 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: #70bg32;
-    background-repeat:no-repeat;
-    background: var(--bg-color)
+    background-repeat: no-repeat;
+    background: var(--bg-color);
 }
 body{
     margin-top: 0px;
@@ -131,6 +139,10 @@ body{
     width: 180px;
     height: 100%;
     transition: right 0.4s ease-in-out;
+}
+
+.rightbar *::selection{
+    background-color:cyan
 }
 
 .rightbar:hover{
@@ -186,13 +198,28 @@ body{
             vertical-align: bottom;
             width: 22em;
             font-size: 13px;
+            font-family: "Padauk"
 
         }
+        #raspberry{
+            background-image: url(https://images.unsplash.com/photo-1617999904549-efcb2671e94c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-family: 'Public Sans';
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 64px;
+            display: inline;
+            text-align: center;
+            margin-bottom: 2.2em;
+        }
     </style>
-    <h1 style="font-size: 64px; display: inline; text-align: center; color: #444">eric's blog ⣪</h1> <div id="byline"><p style="display: inline; margin-bottom: 0px;">Eric Xia is a freshman at Brown University interested in crossdisciplinary endeavors. He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
+    <h1 id="raspberry">eric's blog ⣪</h1> <div id="byline"><p style="display: inline; margin-bottom: 0px;">Eric Xia is a freshman at Brown University interested in crossdisciplinary endeavors. He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
         <p style="font-size: 28px; margin-top: 0px;">𓃵 𓃞 𓃒 𓃓 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 𓃞</p>
      </div>
-
+     <br><br>
      <h3> if you can read this text, you are too close</h3>
      <p> This concept (seen on the back of a truck on the highway) has a few different versions. You could imagine a memetic in a language, perhaps on a dead alien planet: "if you can decipher this text you are doomed". Probably already a SF staple but we'll see.</p>
      <h3>primacy in images </h3>
