@@ -1,13 +1,16 @@
 array = [
-"beneath the pavingstones-- the beach!!",
-"we stand on the last promontory of the centuries...",
-"in the caverns of order our hands shall forge bombs",
+"biological improvisation kills determinism", 
+"meaningness is evident",
+"the dawn is eternal, only we get older",
+"we lack courage, not genius",
+"my friends are going to save the world",
 "there is no speed limit",
 "stay changed",
 "K.I.S.S.",
+"in caverns of order our hands will forge bombs",
+"we stand on the last promontory of the centuries...",
 "form follows function",
-"we lack courage, not genius",
-"my friends are going to save the world",
+"beneath the pavingstones-- the beach!!"
 ]
 
 function shuffleArray(array) {
