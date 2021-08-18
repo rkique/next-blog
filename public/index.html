@@ -12,6 +12,7 @@
 <style>
 
 :root {
+    --hl: rgb(253, 251, 216);
   --hl-color: #666;
   --text-color: #555;
   --bg-color: rgb(252, 247, 247);
@@ -49,11 +50,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 ul{
-    margin: 0.2em 0em;
+    margin: 0.75em 0em;
 }
 
 ::selection {
-  background-color: rgb(248, 227, 105);
+  background-color: var(--hl);
   color: rgb(0,0,0)
 }
 
@@ -136,6 +137,9 @@ body{
     top: 2px;
     text-align: center;
 
+}
+.hl{
+    background-color: var(--hl)
 }
 
 
@@ -228,23 +232,26 @@ body{
         #raspberry-box{
             transform: scale(1,1.1);
         }
+        em{
+            font-style: normal;
+            background-color: var(--hl);
+
+        }
     </style>
-    <div id="raspberry-box"><h1 id="raspberry">eric's blog ⣪</h1></div> <div id="byline"><p style="display: inline; margin-bottom: 0px;">Eric Xia is a freshman at Brown University interested in the recently possible. He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
+    <div id="raspberry-box"><h1 id="raspberry">eric's blog ⣪</h1></div> <div id="byline"><p style="display: inline; margin-bottom: 0px;"><em>Eric Xia is a freshman at Brown University interested in the recently possible.</em> He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
      </div>
      <h3>How I work</h3>
-     <p>My preferred way to work is to always multitask. However, I try to choose my activities carefully and always work on just two complementary tasks. The fulfillment from completing an easier task bootstraps the harder one.</p>
+     <p><em>My preferred way to work is to always multitask.</em> However, I try to choose my activities carefully and always work on just two complementary tasks. <em> The fulfillment from completing an easier task bootstraps the harder one.</em></p>
      <h4 id="freebies">freebies</h4>
-     <ul>
+     <ul style="font-size: 12px;">
      <li>preferred clothing items available, dressing appropriately</li>
      <li>putting in contact lens, brushing teeth</li>
      <li>charged phone and airpods</li>
      <li>filled water bottles</li>
      <li>listening to high tempo &amp; familiar music</li>
-     <li>cold shower with conditioner</li>
+     <li>cold shower with conditioner</em></li>
      <li>hot coffee or bangs</li>
-     </ul>
      <hr>
-     <ul>
      <li>waking up before 6:00 am</li>
      <li>working outside of room</li>
      <li>convenient breakfast (rxbar + banana, cucumber bagel, or IHOP)</li>
@@ -252,8 +259,8 @@ body{
      <li>clean room, laundry done</li>
      </ul>
      <h4 id="easy-symbiotic-pairs">easy symbiotic pairs</h4>
-     <p>These activity pairs, combining an easy and medium activity, are great for easing into the day because they alternate a short feedback loop with a medium feedback loop.</p>
-     <ul>
+     <p>These activity pairs, combining an easy and medium activity, are great for easing into the day because <em>they alternate a short feedback loop with a medium feedback loop.</em></p>
+     <ul style="font-size: 12px;">
      <li>short sets of pushups + calculation or memorization work (calculus, math)</li>
      <li>listening to NPR + making deliveries for doordash</li>
      <li>listening to music[^1] + going to the gym</li>
@@ -262,8 +269,8 @@ body{
      <li>discovering new music + cleaning accessories, small repair activities</li>
      </ul>
      <h4 id="hard-symbiotic-pairs">hard symbiotic pairs</h4>
-     <p>These pairs are best done when in the zone because at least one of them require a longer feedback loop. </p>
-     <ul>
+     <p>These pairs are best done when <em>in the zone</em> because at least one of them require a longer feedback loop. </p>
+     <ul style="font-size: 12px;">
      <li>taking careful notes + reading and understanding theory [^2]</li>
      <li>writing a blog update + making creative decisions for word golf</li>
      <li>implementing code for word golf + learning new quantitative topics</li>
@@ -276,17 +283,17 @@ body{
 
 
      <h3>August 18th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
-     <p> I think that adjectives are worth keeping. Parts of speech: noun, pronoun, adjective, determiner, verb, adverb, preposition, conjunction, and interjection. Keep nouns, adjectives, verbs? I think that could work. </p>
+     <p> I think that adjectives are worth keeping. Parts of speech: noun, pronoun, adjective, determiner, verb, adverb, preposition, conjunction, and interjection. <em>Keep nouns, adjectives, verbs? I think that could work.</em> </p>
      <p> Ok all_nouns is way too slow to search for and times out too frequently. I'll have to fix this tonight. </p>
      <hr>
      <p>
-         Moving fast and breaking things. Word golfing is now restricted to just nouns, as tagged by nlkt/ wordnet. This brings the total space from 470k to 80k words, and greatly improves legibility at the cost of diversity. 
+         Moving fast and breaking things. <em>Word golfing is now restricted to just nouns</em>, as tagged by nlkt/ wordnet. This brings the total space from 470k to 80k words, and greatly improves legibility at the cost of diversity. 
      </p>
      <p> I want to find an easy side project for the rest of the summer to counterbalance my creative work. I'm packed for college already, I have a couple of meetings lined up -- looking for a short research rabbit hole, book review etc.. I could spend more time on learning chinese characters. But in terms of what's useful + pertinent I should just be reviewing math. The downside of that is that it isn't easy. Maybe I'll watch math youtube videos.</p>
-     <p>Ok, committment is to find some easy math to do.</p>
+     <p><em>Ok, committment is to find some easy math to do.</em></p>
 
      <h3>August 16th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
-     <p>Principle: the player should never, ever get lost and quit out of frustration. Curve ramp is next to implement.</p>
+     <p><em>Principle: the player should never, ever get lost and quit out of frustration. </em>Curve ramp is next to implement.</p>
      <p>So insane. eight lines of python "in" to remove verbs adverbs adjectives and whatnot and it works amazingly well.</p>
      <p>Ok, it is 6 in the morning. Time to sleep.</p>
      <hr>
@@ -295,21 +302,21 @@ body{
      <p>This is working beautifully. I've fixed every problem I had below.</p>
      <hr>
      <p>OH MY GOD!!</p>
-     <p>There's a reason why using rigged prompt sets is so good, and its because when you curve towards a nearby target it's an additional filter pass for strange neighbors of the original word. This means for rigged targets, the curve is able to solidify the original aesthetic while simultaneously pointing towards the target. </p>
+     <p><em>There's a reason why using rigged prompt sets is so good, and its because when you curve towards a nearby target it's an additional filter pass for strange neighbors of the original word. </em>This means for rigged targets, the curve is able to solidify the original aesthetic while simultaneously pointing towards the target. </p>
      <h3>August 15th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
      <p>There's a lot of things to do... but there aren't really any things to do.</p>
      <p>I've finished my placement, and I've decided tentatively what courses I want to take first semester: CS, computational molecular bio, linalg, and my first year seminar.</p>
-     <p> As always there's a bunch of things that I want to understand: macroeconomics, chinese characters, multivariable calc. I think I'm starting to get the hang of photoshop. And of course there's a ton of experiments to do for word golf. But I shouldn't approach these things like a sprint in these last few days -- I'll have a lot more time to learn & to build. I'll just try to keep up some steady progress, some momentum going into the school year.</p>
+     <p> As always there's a bunch of things that I want to understand: macroeconomics, chinese characters, multivariable calc. I think I'm starting to get the hang of photoshop. And of course there's a ton of experiments to do for word golf. <em>But I shouldn't approach these things like a sprint in these last few days -- I'll have a lot more time to learn & to build. I'll just try to keep up some steady progress, some momentum going into the school year.</em></p>
      <p> Just off the top of my head, what needs to be done for word golf: build in a historical tree structure (not sure if this is even the right thing), build a front page with themed sets, prototype themed sets. There are several offshoot projects that I have not even gotten the chance to think through fully: little alchemy, a poetic word generator based on neighbor word topography, and the potential for (linguistic, psychological, communication) research tools based on full 200/400 word lists. </p>
      <p> I'm experimenting with displaying 90 curved words down to 7 curved words, which is much more parseable but less beautiful. I guess when you move from word to word the neighbors still form a shifting window into wordspace, which is marginally cool but not crazy enough. Balancing beauty and speed -- how do we approach that problem?  </p>
      <p> Thought: what if worse neighbors disappear as time goes on? That seems effective for maintaining skill gap and speed -- but the issue is still that a single word's location is aesthetically tied to the current word and not the target, so the homing effect is disorienting. The idea of movement is itself somewhat unnatural. </p>
      <p> A previously considered possibility: discard the target word, simply have the user navigate through a curve set up against random wordspace. </p>
      <p> What about a kind of pruning, where the user clicks to discard words which are not neighbors? That could be interesting, where the aesthetic effect increases with the players work. But that would make for a confusing mess to begin with... but aybe not more than the current confusion at the unrelatenedness of the start word. Yet its also not natural to search for unrelated words.  </p>
      <p> Or inspired by alchemy, where a word is presented and you need to find the two words which will produce it when combined semantically. That might come down to just locating neighbor words, however. </p>
-     <p> The current vision for a golf sport is well defined, but golf isn't good enough.
+     <p> Feeling right now that the current vision for a golf sport is well defined, but golf isn't good enough.
          </p>
          <p>
-     Then again, maybe it is. There are too many failed paths -- this can be solved by rigged prompt sets e.g. curated prompts sets drawn exclusively from 2/3 step linked neighbors, and tightening the curve when the user strays too far away. The words are not close enough or strangely linked: this can be solved with better data (in particular, excluding newspapers) and lowering the pool amount. Smaller pool = harder but more coherent. So I think small pool + rigged custom prompts could be the right way to go. I have not made any attempt at rigged prompts yet, I need to test that out because it could be a game changer. It is always good to keep in mind: diversity kills intent like a firehose to a flowerbed. </p>
+    <em>Then again, maybe it is. There are too many failed paths -- this can be solved by rigged prompt sets e.g. curated prompts sets drawn exclusively from 2/3 step linked neighbors, and tightening the curve when the user strays too far away. The words are not close enough or strangely linked: this can be solved with better data (in particular, excluding newspapers) and lowering the pool amount. Smaller pool = harder but more coherent. So I think small pool + rigged custom prompts could be the right way to go.</em> I have not made any attempt at rigged prompts yet, I need to test that out because it could be a game changer. It is always good to keep in mind: diversity kills intent like a firehose to a flowerbed. </p>
          
     <p>I have a lot of experiments to do :) </p>
 
@@ -318,7 +325,7 @@ body{
      <hr>
      <p>Here's the vision: 
          <ul>
-             <li>word golf is beautiful when it deals with highly specific words that capture a range of well-directed and evocative concepts. See below: hideaways, sluice, shade, seance, doorknob, votive. This problem of finding expressive words is exactly analogous to writing poetry. You cannot say something is "mystical" or "awe-inspiring" because adjectives are easily dulled by their use in a million of boring contexts. You have to dig deeper into the public psyche.  </li>
+             <li>word golf is beautiful when it deals with highly specific words that capture a range of well-directed and evocative concepts. See below: hideaways, sluice, shade, seance, doorknob, votive. <em>This problem of finding expressive words is exactly analogous to writing poetry. You cannot say something is "mystical" or "awe-inspiring" because adjectives are easily dulled by their use in a million of boring contexts. You have to dig deeper into the public psyche. </em> </li>
              <li>Attention is our scarcest resource and everyone hates computational poetry. "Freeplay mode" should be killed immediately. Instead, move towards releasing small sets of curated words. Incidentally, this solves the weak motivation for competition problem. </li>
              <li>The main page has to be absolutely perfect. Tile display like  <a href="https://tachyons.io/components/collections/posters/index.html">this</a> and great posters. Some word sets are free, others require an account.</li>
              <li>The word sets have to be absolutely perfect. </li>
@@ -347,8 +354,8 @@ body{
      <p>
         <p>Consider the range of images created in an attempt to express a primal message, from childhood scribbles to photorealistic renders of elaborate scenes. Neither the scribbles nor render approximates real life in their construction (the scribbles don't try to). Both are products which cannot be reused, which cannot penetrate any more than simply by viewing them. There is no practice in visual art which can achieve immortality: a monk spending their entire life illuminating a manuscript does no worse than a professional artist or animator today. If you can see the primal vision within a scribble as well as you can of a Pixar movie there is no difference in their effectiveness. </p>
         <p>The nature of the scribble is more earnestly primal, attempting to convey a truth which has not been exposed to the brittling effect of reality. Reality makes images more brittle because while it provides a medium for communication, those images never approach reality itself, due to their expressed purpose as images. Forced to choose between an idea and the impossible task of communicating it, an image will trade its primacy for a communicable approximation.</p>
-        <p>But actually this is not really true. Although it cannot convey its original message to an onlooker a scribble can still convey an abstract idea of itself. It can convey a communicable message of a primal message. In the failure of another person&#39;s earnest attempt to draw something exactly the way they see it, it is possible to glimpse your own attempt. </p>
-        <p>In contrast, a photorealistic render can convey a communicable message primally, in the sense that if you did somehow think the message on screen it would appear to be that exact same primal message. Inevitably, we don&#39;t. But it is an approximation of primacy in a different sense than the scribble.</p>
+        <p>But actually this is not really true. <em>Although it cannot convey its original message to an onlooker a scribble can still convey an abstract idea of itself. It can convey a communicable message of a primal message. In the failure of another person&#39;s earnest attempt to draw something exactly the way they see it, it is possible to glimpse your own attempt. </em></p>
+        <p>In contrast, a photorealistic render can convey a communicable message primally, in the sense that if you did somehow think the message on screen it would appear to be that exact same primal message. Inevitably, we don&#39;t. But <em> it is an approximation of primacy in a different sense than the scribble.</em></p>
         <p>These two extremes provide a justification for all kinds of visual expression, from the painstakingly inefficient to extreme facility. As long as something is made with an authentic vision, it can convey a message that means something to someone.</p>
         
      </p>
@@ -407,108 +414,23 @@ body{
      
      <p> Logs follow: </p>
      <pre>
-        run completed as: ['jaguar', 'automobile']
-        run completed as: ['king', 'wrote', 'newspaper']
-        run completed as: ['pendulum', 'paddle', 'boat']
-        run completed as: ['crescent', 'large', 'supply', 'equipment']
-        no path under 100 steps
-        run completed as: ['piano', 'organ', 'cell']
-        run completed as: ['panel', 'presentation', 'audience']
-        run completed as: ['floor', 'mezzanine', 'spillway', 'armature', 'capacitor']
-        run completed as: ['student', 'leadership', 'intelligence']
-        run completed as: ['skull', 'slab', 'obelisk']
-        no path under 100 steps
-        no path under 100 steps
-        run completed as: ['animal', 'example', 'intended', 'drive']
-        run completed as: ['quartz', 'optical', 'cellular', 'telephone']
-        run completed as: ['investigation', 'board', 'faculty', 'student']
-        run completed as: ['blacksmith', 'factory', 'facility', 'prison']
-        no path under 100 steps
-        run completed as: ['talk', 'today', 'opened', 'museum']
-        run completed as: ['language', 'understanding', 'relationship']
-        run completed as: ['authority', 'health', 'human', 'animal']
-        run completed as: ['director', 'review', 'publication']
-        no path under 100 steps
-        run completed as: ['truss', 'structure', 'analysis']
-        run completed as: ['birth', 'living', 'bedroom']
-        no path under 100 steps
-        run completed as: ['stallion', 'sheep', 'countryside']
-        run completed as: ['pyromaniac', 'psychopath', 'killer', 'true', 'history']
-        no path under 100 steps
-        run completed as: ['cantaloupe', 'quart', 'tub', 'radiator']
-        run completed as: ['castle', 'facade', 'cornice']
-        no path under 100 steps
-        run completed as: ['momentum', 'uncertainty', 'danger']
-        run completed as: ['window', 'features', 'video', 'arcade']
-        run completed as: ['retirement', 'addition', 'common', 'species']
-        no path under 100 steps
-        run completed as: ['archway', 'gate', 'shop', 'factory']
-        run completed as: ['sugar', 'water', 'nearby', 'mansion', 'palace']
-        run completed as: ['firefighter', 'veteran', 'tough', 'challenge']
-        no path under 100 steps
-        run completed as: ['cocktail', 'plastic', 'metal']
-        run completed as: ['dress', 'traditional', 'established', 'authority']
-        no path under 100 steps
-        no path under 100 steps
-        run completed as: ['gymnast', 'woman', 'servant', 'gentleman']
-        run completed as: ['membership', 'growing', 'grown', 'fruit']
-        run completed as: ['crystal', 'flat', 'profit']
-        run completed as: ['bismuth', 'impurities', 'accumulation', 'sudden', 'absence']
-        run completed as: ['provision', 'specifically', 'primarily', 'composed', 'piano', 'clarinet']
-        run completed as: ['village', 'leaving', 'avoid', 'danger']
-        run completed as: ['campaign', 'change', 'effects', 'pollution', 'noise']
-        run completed as: ['review', 'science', 'space', 'astronaut']
-        run completed as: ['mountain', 'covered', 'plastic']
-        run completed as: ['terrace', 'room', 'talk', 'desire']
-        run completed as: ['pleasure', 'visitors', 'exhibition']
-        no path under 100 steps
-        run completed as: ['interview', 'taped', 'finger', 'cuff', 'bracelet']
-        run completed as: ['stallion', 'charmer', 'aesthete', 'alchemist']
-        run completed as: ['coffee', 'grown', 'country', 'community', 'youth']
-        no path under 100 steps
-        run completed as: ['dandelion', 'stale', 'bitter', 'debate', 'argument']
-        run completed as: ['elephant', 'hog', 'satay', 'spreader', 'armature', 'capacitor']
-        run completed as: ['scimitar', 'stakes', 'distance', 'rail']
-        run completed as: ['space', 'reality']
-        run completed as: ['nation', 'voters', 'opinion']
-        run completed as: ['grass', 'hard', 'moment', 'silence']
-        run completed as: ['antibiotic', 'treatment', 'control', 'government']
-        no path under 100 steps
-        run completed as: ['necromancer', 'torment', 'tragedies', 'events', 'history']
-        run completed as: ['horse', 'train', 'plane']
-        run completed as: ['rain', 'traffic', 'railway', 'branch']
-        run completed as: ['program', 'classes', 'boarding', 'sailing', 'dinghy']
-        run completed as: ['eclipse', 'evolution', 'culture']
-        no path under 100 steps
-        no path under 100 steps
-        run completed as: ['sleep', 'room', 'space']
-        no path under 100 steps
-        run completed as: ['estate', 'established', 'institution']
-        run completed as: ['pheasant', 'hunting', 'looking', 'opportunity', 'challenge']
-        run completed as: ['fish', 'mammals', 'mammalian', 'maturation', 'lifespan']
-        run completed as: ['champion', 'titles', 'cards', 'license']
-        no path under 100 steps
-        no path under 100 steps
-        run completed as: ['sleep', 'room', 'space']
-        run completed as: ['necromancer', 'zombie', 'film', 'success']
-        no path under 100 steps
-        run completed as: ['valley', 'site', 'museum']
-        run completed as: ['mountain', 'atop', 'mounted', 'turret']
-        run completed as: ['aficionado', 'traveler', 'tourist']
-        run completed as: ['hell', 'idiot', 'gentleman']
-        run completed as: ['land', 'attempt', 'arrest', 'murder']
-        run completed as: ['momentum', 'speed', 'engine']
-        no path under 100 steps
-        run completed as: ['pressure', 'flow', 'function', 'vector']
-        no path under 100 steps
-        run completed as: ['theatre', 'role', 'serious', 'danger']
-        no path under 100 steps
-        no path under 100 steps
-        run completed as: ['momentum', 'drive', 'parking', 'overlooking', 'terrace']
-        no path under 100 steps
-        no path under 100 steps
-        run completed as: ['glass', 'jars', 'strawberries', 'cantaloupe']
-        
+run completed as: ['jaguar', 'automobile']
+run completed as: ['king', 'wrote', 'newspaper']
+run completed as: ['pendulum', 'paddle', 'boat']
+run completed as: ['crescent', 'large', 'supply', 'equipment']
+no path under 100 steps
+run completed as: ['piano', 'organ', 'cell']
+run completed as: ['panel', 'presentation', 'audience']
+run completed as: ['floor', 'mezzanine', 'spillway', 'armature', 'capacitor']
+run completed as: ['student', 'leadership', 'intelligence']
+run completed as: ['skull', 'slab', 'obelisk']
+no path under 100 steps
+no path under 100 steps
+run completed as: ['animal', 'example', 'intended', 'drive']
+run completed as: ['quartz', 'optical', 'cellular', 'telephone']
+run completed as: ['investigation', 'board', 'faculty', 'student']
+run completed as: ['blacksmith', 'factory', 'facility', 'prison']
+        ...
      </pre>
      <h3>August 5th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
      <p> Will be busy with personal things today but I will get some time this week to really dive into the backend & maybe move off of Elastic Beanstalk. ++ in preparation for my first year seminar -- ANTH0066J - ­So You Want to Change the World -- I want to learn a bit more about economics, and finish Energy by Richard Rhodes. </p>
