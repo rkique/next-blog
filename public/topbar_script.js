@@ -1,16 +1,21 @@
 array = [
-"biological improvisation kills determinism", 
-"meaningness is evident",
-"the dawn is eternal, only we get older",
-"we lack courage, not genius",
-"my friends are going to save the world",
-"there is no speed limit",
-"stay changed",
-"K.I.S.S.",
-"in caverns of order our hands will forge bombs",
+"I never found beauty in longing for the impossible",
 "we stand on the last promontory of the centuries...",
+"biological improvisation kills determinism", 
+"your fourth grade self against the world",
+"you don't need to work on hard problems",
+"my friends are going to save the world",
+"you don't need to pay someone to live intentionally",
+"there is no speed limit",
+"Keep it simple, stupid!",
+"reject externally imposed dreams",
+"Universal Basic Paraglider",
+"don't be a tourist",
+"meaninglessness is a symptom",
+"you don't get to tell me what to care about!",
+"we lack courage, not genius",
 "form follows function",
-"beneath the pavingstones-- the beach!!"
+"beneath the pavingstones, the beach"
 ]
 
 function shuffleArray(array) {
@@ -47,5 +52,5 @@ if(idxidx < idxArray.length)
 }
 }
 changeQuote()
-setInterval(function(){changeQuote()}, 4000)
-setInterval(function(){spreadText()},30)
+setInterval(function(){changeQuote()}, 3600)
+setInterval(function(){spreadText()},20)
