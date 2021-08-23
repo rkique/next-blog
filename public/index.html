@@ -19,6 +19,10 @@
   --link-color: #d46000;
 }
 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 
 #outlineContainer{
     position: fixed;
@@ -53,6 +57,7 @@ ul{
     margin: 0.75em 0em;
 }
 
+
 ::selection {
   background-color: var(--hl);
   color: rgb(0,0,0)
@@ -73,7 +78,9 @@ a {
     text-decoration-color:  var(--link-color);
     text-decoration-thickness: 3px;
 }
-
+a:hover{
+    font-style: oblique;
+}
 .hhover{
     transition: all .2s ease-in-out;
 }
@@ -121,7 +128,9 @@ body{
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-
+a::hover{
+    font-style:oblique;
+}
 #main {
     position: relative;
     padding-bottom: 400px;
@@ -144,8 +153,7 @@ body{
 
 #quotes{
     font-family: "Padauk";
-    font-size: 15px;
-     color: #1e05ff; 
+     color: #000;
      position: absolute; 
      right: 0px; 
      top: 0px; 
@@ -164,7 +172,7 @@ body{
 }
 
 .rightbar *::selection{
-    background-color:cyan
+    background-color: #3eafdb
 }
 
 .rightbar:hover{
@@ -181,7 +189,7 @@ body{
 <div class="rightbar">  
         <style>
             .img {position: absolute}
-            .gans {width: 14em;  transform: rotate(348deg); top: 100px;}
+            .gans {width: 18em; top: 100px;}
             .printer {width: 6em; top: 380px; left: 40px;}
             .gravel {width: 9em; top: 460px; left: -120px;} 
             .algo {width: 12em; top: 210px; left: -70px; z-index: -1} 
@@ -198,11 +206,11 @@ body{
 <p id="quotes"></p>
     
 <div id="topbar">
-    <a href="https://www.word.golf" style="text-decoration: none; background-color: #ffff00; color: #000">⤺ go word golfing</a>
-    <a href="https://www.nintil.com" id="random_blog" style="text-decoration: none; background-color: #ffb617; color: #000">⤺ visit a blog I like</a>
+    <a href="https://www.word.golf" style="text-decoration: none; color: var(--link-color); color: #000">⤺ go word golfing</a>
+    <a href="https://www.nintil.com" id="random_blog" style="text-decoration: none; color: var(--link-color); color: #000">⤺ visit a blog I like</a>
 
-    <a href="https://www.eric-xia.com/blogroll.js" id="random_blog" style="text-decoration: none; border: 2px solid #ffb617; color: #000">or, view all</a>
-    <a href="https://www.linkedin.com/in/exia" style="margin-left: 3em; text-decoration: none; background-color: #3eafdb; color: #1a4b5e" > <span style="font-size: 44px;">𓅯</span> LinkedIn</a>
+    <a href="https://www.eric-xia.com/blogroll.js" id="random_blog" style="text-decoration: none; color: #000">, or view all</a>
+    <a href="https://www.linkedin.com/in/exia" style="margin-left: 3em; text-decoration: none; color: #1a4b5e" > <span style="font-size: 44px;">𓅯</span> <span style="font-style: normal">LinkedIn</span></a>
     
                 <script src="topbar_script.js"></script>    
 </div>
@@ -215,7 +223,7 @@ body{
             position: absolute;
             text-align: justify;
             margin-left: 12em;
-            right: -8em;
+            right: -1em;
             top: 0px;
             vertical-align: bottom;
             width: 22em;
@@ -233,7 +241,7 @@ body{
             letter-spacing: -0.06em;
             font-weight: 600;
             background-repeat: repeat;
-            background-size: 60%;
+            background-size: 85%;
             background-position: 0px;
             font-size: 72px;
             display: inline;
@@ -249,7 +257,7 @@ body{
 
         }
     </style>
-    <div id="raspberry-box"><h1 id="raspberry">eric's blog ⣪</h1></div> <div id="byline"><p style="display: inline; margin-bottom: 0px;"><em>Eric Xia is a freshman at Brown University interested in the recently possible.</em> He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
+    <div id="raspberry-box"><h1 id="raspberry">eric's blog </h1></div> <div id="byline"><p style="display: inline; margin-bottom: 0px;"><em>Eric Xia is a freshman at Brown University interested in the recently possible.</em> He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
      </div>
 
      <h3>August 22nd <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
