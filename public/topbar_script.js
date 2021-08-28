@@ -1,21 +1,15 @@
 array = [
-"I never found beauty in longing for the impossible",
-"we stand on the last promontory of the centuries...",
-"biological improvisation kills determinism", 
-"your fourth grade self against the world",
-"you don't need to work on hard problems",
-"my friends are going to save the world",
-"you don't need to pay someone to live intentionally",
-"there is no speed limit",
-"Keep it simple, stupid!",
-"reject externally imposed dreams",
-"Universal Basic Paraglider",
-"don't be a tourist",
-"meaninglessness is a symptom",
-"you don't get to tell me what to care about!",
-"we lack courage, not genius",
-"form follows function",
-"beneath the pavingstones, the beach"
+    "read a bit and then stop reading",
+    "don't be a tourist",
+    "your fourth grade self against the world",
+    "there are only a few hard things",
+    "reject externally imposed dreams",
+    "we lack courage, not genius",
+    "my heart is in the work",
+    "you don't have to pay someone to live intentionally",
+    "refuse to pass over that which cannot be said",
+    "biological improvisation kills determinism",
+    "make the future past prediction"
 ]
 
 function shuffleArray(array) {
