@@ -281,6 +281,8 @@ a::hover{
     <div id="raspberry-box"><h1 id="raspberry">eric's blog </h1></div> <div id="byline"><p style="display: inline; margin-bottom: 0px;"><em>Eric Xia is a freshman at Brown University interested in the recently possible.</em> He is currently developing a text-based sport known as word golfing, which uses word vectors to model semantic shifts within the english language. </p> 
      </div>
      <h3>August 27th <span style="font-size: 14px; text-align: right; display: inline;">2021 CE</span></h3>
+     <p>I'll put the prompts into JSON format, with neighbors and definitions prepopulated. Then I'll give each prompt a unique ID out of 350. Then, I'll store successful runs in MySQL for each ID. This will provide a real backbone for competition. </p>
+     <hr>
      <p>Doing back-of-the-envelope science™ aka throw CSV files into GSheets to trim down initial load times. We can see that the way we calculate neighbors can be improved to more consistently get below 0.6 seconds. Ideally, we should calculate the results beforehand, and make a txt file which provides the results just by looking them up. </p>
      <p>I've been procrastinating doing this because that would require 1. small custom sets & 2. a curatorial touch, which I have been lacking recently. </p>
      <p>Luckily, retrieving definitions is the more consistently costly half and can also be fixed by prepopulating a text file. I'll work on that next. </p>
