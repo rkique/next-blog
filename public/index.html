@@ -310,7 +310,7 @@ a::hover{
      <p><i>Not just including self-help books about theories of people or everything, because Dale Carnegie's How To Win Friends and Influence People isn't especially temporally relevant. The above are mentioned as trends in thinking that I have actually noticed in conversation.</i></p>
      <p>Read a little bit and then stop reading, don't get intimidated, (hyper)text will inevitably be presented at a saturation limit, most philosophers probably don't understand Kant, Nihilism is not bad if you're happy, Postmodernism: pretty dumb, there were very few legitimate art "movements" and none anymore</p>
      <p>Baseline teenage literature: John Greene/Paper Towns/something? Wallflower something</p>
-     <p><a href="https://www.eric-xia.com/index.html#55">Survivalist Literature as an Existential Plea</a></p> 
+     <p><a href="https://www.eric-xia.com/index.html#27">Survivalist Literature as an Existential Plea</a></p> 
      <p><a href="https://www.ribbonfarm.com/2013/04/10/a-beginners-guide-to-immortality/">Ribbonfarm's A Beginner's Guide to Immortality</a></p>
      <p>Feynman: "You can know the name of that bird in all the languages of the world, but when you're finished, you'll know absolutely nothing whatever about the bird. You'll only know about humans in different places, and what they call the bird".</p>
      <p>Tomorrowland, nanotechnology, the end of the future, life in 2000 will be like... </p>
@@ -1519,12 +1519,12 @@ if(window.innerWidth >= 991){
     headings = document.getElementsByTagName("h3")
     for(i = 0; i<headings.length; i++)
     {
-      headings[i].id = i;
+      headings[i].id = headings.length-i;
       var p = document.createElement('p');
       var a = document.createElement('a');
       var linkText = document.createTextNode(headings[i].textContent);
       a.appendChild(linkText);
-      a.href = "#"+i;
+      a.href = "#"+String(headings.length-i);
       outlineContainer = document.getElementById("outlineContainer")
       p.appendChild(a);
       outlineContainer.appendChild(p);
