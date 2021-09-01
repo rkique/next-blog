@@ -1,4 +1,5 @@
 array = [
+    "be daylight to civilization's lamplight",
     "read a bit and then stop reading",
     "don't be a tourist",
     "your fourth grade self against the world",
