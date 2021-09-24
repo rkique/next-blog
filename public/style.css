@@ -1,8 +1,8 @@
 body {
     margin: 0 auto;
-    max-width: 540px;
+    max-width: 42em;
     font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
     color: #566b78;
     padding: 4em 2em; 
