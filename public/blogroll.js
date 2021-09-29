@@ -45,7 +45,21 @@ links = [
     "https://constructionphysics.substack.com/p/where-are-the-robotic-bricklayers",
     "https://astralcodexten.substack.com/",
     "https://samplesize.one/blog/posts/my_year_in_data/",
-    "https://julian.digital/2020/08/06/proof-of-x/"
+    "https://julian.digital/2020/08/06/proof-of-x/",
+    "https://cultdeadcow.com/",
+    "https://sadgrl.online/",
+    "https://substack.net/",
+    "https://nightfall.city/main-street/",
+    "https://www.someweekendreading.blog/",
+    "https://pluralistic.net/",
+    "https://www.smbc-comics.com/",
+    "http://hyperboleandahalf.blogspot.com/",
+    "https://www.ribbonfarm.com/2021/05/27/space-luck/",
+    "https://www.smbc-comics.com/comic/art-3",
+    "https://www.smbc-comics.com/comic/pleasure",
+    "https://www.readthegeneralist.com/briefing/stripe",
+    "https://danco.substack.com/p/snippets-2-episode-1",
+    
 ]
 
 document.getElementById("random_blog").href = links[Math.floor(Math.random()*links.length)];
