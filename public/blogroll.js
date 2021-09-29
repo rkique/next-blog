@@ -58,8 +58,7 @@ links = [
     "https://www.smbc-comics.com/comic/art-3",
     "https://www.smbc-comics.com/comic/pleasure",
     "https://www.readthegeneralist.com/briefing/stripe",
-    "https://danco.substack.com/p/snippets-2-episode-1",
-    
+    "https://danco.substack.com/p/snippets-2-episode-1"
 ]
 
 document.getElementById("random_blog").href = links[Math.floor(Math.random()*links.length)];
