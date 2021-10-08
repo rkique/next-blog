@@ -10,7 +10,8 @@ array = [
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
-    "make the future past prediction"
+    "make the future past prediction",
+    "people before tribes"
 ]
 
 function shuffleArray(array) {
