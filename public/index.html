@@ -73,11 +73,6 @@ ul{
 }
 
 
-::selection {
-  background-color: var(--hl);
-  color: rgb(0,0,0)
-}
-
 
 
 #main h3{
@@ -125,8 +120,8 @@ html {
 #main {
     position: relative;
     padding-bottom: 400px;
-    background-color: var(--bg-color);
-    margin: 0 auto;
+    background-color:var(--bg-color);
+    margin: auto;
     margin-top: 0.5em;
     width: 600px;
     color:  var(--text-color);
@@ -178,7 +173,10 @@ a::hover{
 }
 #topbar{
     left: 5px;
+    line-height: 0.98;
     top: 2px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     text-align: center;
 
 }
@@ -200,7 +198,7 @@ a::hover{
 .rightbar{
     position: absolute;
     top: 0px;
-    right: -40px;
+    right: -60px;
     width: 180px;
     height: 100%;
     transition: right 0.4s ease-in-out;
@@ -220,24 +218,14 @@ a::hover{
 </style>
 
 <body>
-    <a href="https://eric-xia.com/viz.html">
 <div class="rightbar">  
         <style>
-            .img {position: absolute}
-            .gans {width: 22em; top: 100px;}
-            .printer {width: 6em; top: 380px; left: 40px;}
-            .gravel {width: 16em; top: 60px; left: -120px;} 
-            .algo {width: 12em; top: 210px; left: -70px; z-index: -1} 
-            .tiling {width: 12em; top: 500px; left: 10px; z-index: -1} 
-            .explore {width: 12em; top: 450px; left: -200px; z-index: 2} 
+            .explore {width: 12em; margin-top: 400px; top: 450px; margin-left: -40px; z-index: 2} 
         </style>    
 
-        <img class="img gravel" src="images/gravel.PNG">
-        <img class="img algo" src="images/algo.jpg">
-        <img class="img tiling" src="images/tiling.png">
-        <img class="img explore" src="images/explore.PNG">
+<a href="https://eric-xia.com/viz.html"><img class="img explore" src="images/explore.PNG"></a>
         
-</div></a>
+</div>
 
 <p id="quotes"></p>
     
@@ -268,7 +256,7 @@ a::hover{
 
         }
         #raspberry{
-            background-image: url('images/machine_girl_smallest.png');
+            background-image: url('images/raven2.png');
             -webkit-background-clip: text;
             background-clip: text;
             font-family: 'Public Sans';
@@ -277,7 +265,7 @@ a::hover{
             letter-spacing: -0.06em;
             font-weight: 600;
             background-repeat: repeat;
-            background-size: 85%;
+            background-size: 95%;
             background-position: 0px;
             font-size: 72px;
             display: inline;
@@ -285,7 +273,7 @@ a::hover{
 
         }
         #raspberry-box{
-            transform: scale(1,1.1);
+            transform: scale(1.2,1.4);
         }
         em{
             font-style: normal;
@@ -307,7 +295,7 @@ a::hover{
             margin-top: 0.1em;
         }
     </style>
-    <div id="raspberry-box"><h1 id="raspberry">eric's blog </h1></div> <div id="byline"><p style="display: inline; margin-bottom: 0px;"><em>Eric Xia lives in Lynnwood, Washington, and is on a year of medical leave before enrolling at Brown University next fall.</em> He is creating an online sport known as word golf which uses word vectors to model flights of thought within the English language. </p> 
+    <div id="raspberry-box"><h1 id="raspberry">eric's blog </h1></div> <div id="byline"><p style="display: inline; margin-bottom: 0px;"><em>Eric Xia lives in Lynnwood, Washington, and is on medical leave before enrolling at Brown University next fall. His interests include biology, philosophy, art, and computer science. </em> He is making a sport known as word golf (<a href="https://www.word.golf">word.golf</a>) which uses word vectors to model language. </p> 
      </div>
      <script src="https://yesterwebring.neocities.org/script-text.js"></script>
      <webring-css site="https://eric-xia.com/"></webring-css>
