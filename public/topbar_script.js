@@ -11,7 +11,8 @@ array = [
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
     "make the future past prediction",
-    "people before tribes"
+    "people before tribes",
+    "don't immanentize the eschaton"
 ]
 
 function shuffleArray(array) {
