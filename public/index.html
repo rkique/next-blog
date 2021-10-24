@@ -27,12 +27,26 @@
         --link-color: #d46000;
     }
 
-    ::-webkit-scrollbar {
-        width: 0;
-        /* Remove scrollbar space */
-        background: transparent;
-        /* Optional: just make scrollbar invisible */
-    }
+    /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
     #outlineContainer {
         position: fixed;
@@ -132,7 +146,7 @@
         background-color: var(--bg-color);
         margin: auto;
         margin-top: 0.5em;
-        width: 600px;
+        width: 620px;
         color: var(--text-color);
     }
 
@@ -287,15 +301,15 @@
                 vertical-align: bottom;
                 width: 22em;
                 font-size: 13px;
-                font-family: "Padauk"
+                font-family: sans-serif
 
             }
 
             #raspberry {
-                background-image: url('images/raven.png');
+                background-image: url('images/horse.png');
                 -webkit-background-clip: text;
                 background-clip: text;
-                font-family: 'Public Sans';
+                font-family: sans-serif;
                 -webkit-text-fill-color: transparent;
                 color: transparent;
                 letter-spacing: -0.06em;
@@ -306,11 +320,13 @@
                 font-size: 72px;
                 display: inline;
                 text-align: center;
+   
 
             }
 
             #raspberry-box {
                 transform: scale(1.2, 1.4);
+                margin-bottom: 20px;
             }
 
             em {
@@ -355,6 +371,36 @@
 
 
         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            var lazyloadImages = document.querySelectorAll("img.image");    
+            var lazyloadThrottleTimeout;
+            
+            function lazyload () {
+                if(lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+                }    
+                
+                lazyloadThrottleTimeout = setTimeout(function() {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function(img) {
+                        if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        }
+                    });
+                    if(lazyloadImages.length == 0) { 
+                    document.removeEventListener("scroll", lazyload);
+                    window.removeEventListener("resize", lazyload);
+                    window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+            
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+            });
+
             window.onload = () => {if (window.innerWidth >= 991) {
                 headings = document.getElementsByTagName("h3")
                 displayAll(headings)
@@ -460,12 +506,12 @@
         <p> Halfway through <i>SPQR</i> by Mary Beard, a history of Rome. Also saw <i>Dune</i> tonight! I loved the book and found the movie to handle it well, particularly the soft science/organic technology and hand-to-hand combat. It's not an easy book to make a movie from. Ready to make more spec art... </p>
         <p>On week 7 of Coursera Machine Learning.</p> 
         <h3>inktober:: the factory factory</h3>
-        <img class="image" src="images/IMG_2061 (1).jpg">
+        <img class="image" data-src="images/IMG_2061 (1).jpg">
         <h3>inktober:: loop</h3>
-        <img class="image" src="images/loop2.jpg">
+        <img class="image" data-src="images/loop2.jpg">
 
         <h3>inktober:: collide</h3>
-        <img class="image" src="images/collide.PNG">
+        <img class="image" data-src="images/collide.PNG">
         <h3>Ribbonfarm on character</h3>
         <a href="https://www.ribbonfarm.com/2017/01/19/the-antiheroine-unveiled/">The Heroine Unveiled (2017)</a>
         <p>In which Sonya Mann nominates "maladjusted party girl" for the modern antiheroine.
@@ -482,9 +528,9 @@
             the Marshall Plan. On week five of Coursera Machine Learning!</p>
 
         <h3> Inktober:: the night of broken glass</h3>
-        <img class="image" src="images/sour.jpg">
+        <img class="image" data-src="images/sour.jpg">
         <h3>Inktober:: watch</h3>
-        <img class="image" src="images/watch.jpg"></img>
+        <img class="image" data-src="images/watch.jpg"></img>
         <h3>October 10th <span class="tt">2021 CE</span></h3>
         <p>
             Halfway through <i>Humanity</i> by Jonathan Glover on 20th century atrocities, and the ethics of war. It's
@@ -525,14 +571,14 @@
         </ul>
         </p>
         <h3>Inktober:: Fan</h3>
-        <img class="image" src="images/IMG_1808.jpg">
+        <img class="image" data-src="images/IMG_1808.jpg">
         <h3>Inktober:: 5, 4, and 3</h3>
         <p>I'm starting 5 days late haha. Here's "raven", "knot", and "vessel".</p>
-        <img class="image" src="images/raven.PNG">
-        <img class="image" src="images/knot.PNG">
-        <img class="image" src="images/vessel.PNG">
+        <img class="image" data-src="images/raven.PNG">
+        <img class="image" data-src="images/knot.PNG">
+        <img class="image" data-src="images/vessel.PNG">
         <h3><i>:: Mare Serenitatis Circumlunar Corporate Republic</i></h3>
-        <img class="image" src="images/IMG_1725.jpg">
+        <img class="image" data-src="images/IMG_1725.jpg">
         <h3><i>When Breath Becomes Air</i></h3>
         <p><i>When Breath Becomes Air</i> is a book written by a neurosurgeon with a English and Biology major from
             Stanford, who was diagnosed with stage IV lung cancer and died. I'm sympathetic to his Spinoza's god and
@@ -548,20 +594,20 @@
             Kalanithi. On week 4 of Coursera Machine Learning.</i></p>
 
         <h3>:: space shelters!</h3>
-        <img class="image" src="images/shelter.jpg">
+        <img class="image" data-src="images/shelter.jpg">
         <h3>:: PKD electric horses :) </h3>
-        <img class="image" src="images/horse.PNG">
+        <img class="image" data-src="images/horse.PNG">
         <h3>::dyson sphere & more sketches </h3>
         <p>Drawn in graphite and then composited in krita</p>
-        <img class="image" src="images/IMG_1615.jpg">
-        <img class="image" src="images/IMG_1642.jpg">
-        <img class="image" src="images/IMG_1264 (1).jpg">
-        <img class="image" src="images/IMG_1344.jpg">
-        <img class="image" src="images/IMG_1386.jpg">
-        <img class="image" src="images/IMG_1430.jpg">
-        <img class="image" src="images/IMG_1457.jpg">
-        <img class="image" src="images/IMG_1472.jpg">
-        <img class="image" src="images/IMG_1506.jpg">
+        <img class="image" data-src="images/IMG_1615.jpg">
+        <img class="image" data-src="images/IMG_1642.jpg">
+        <img class="image" data-src="images/IMG_1264 (1).jpg">
+        <img class="image" data-src="images/IMG_1344.jpg">
+        <img class="image" data-src="images/IMG_1386.jpg">
+        <img class="image" data-src="images/IMG_1430.jpg">
+        <img class="image" data-src="images/IMG_1457.jpg">
+        <img class="image" data-src="images/IMG_1472.jpg">
+        <img class="image" data-src="images/IMG_1506.jpg">
 
         <h3>You can't chase dreams by changing clothes </h3>
         <p>
@@ -1161,7 +1207,7 @@
         <p> We can see that 3 and 4 step runs dominate, with a few easy 2 step runs and hard 5 step runs. The maximum
             number of steps necessary is still just 7! Six degrees of separation holds for english words with 200
             connections each. </p>
-        <img src="images/run_data.png">
+        <img data-src="images/run_data.png">
 
         <p> Logs follow: </p>
         <pre>
@@ -1402,9 +1448,9 @@ run completed as: ['blacksmith', 'factory', 'facility', 'prison']
         <p>Something is very, very wrong. I'll have to migrate off of Elastic Beanstalk. Sigh.</p>
         <h3>June 3nd <span class="tt">2021 CE</span> </h3>
         <p>Fishing at Rusty Lake :)</p>
-        <img src="https://eric-xia.com/images/window.jpg" style="width: 100%">
-        <img src="https://eric-xia.com/images/IMG_8733.jpg" style="width: 100%">
-        <img src="https://eric-xia.com/images/IMG_8780.JPG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/window.jpg" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/IMG_8733.jpg" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/IMG_8780.JPG" style="width: 100%">
 
         <h3>June 2nd <span class="tt">2021 CE</span> </h3>
         <p>switched load balancer so <a href="http://www.word.golf/">http://www.word.golf/</a> redirects to https now.
@@ -1521,15 +1567,15 @@ impact and seen create indeed
 </pre>
         <h3>May 31th <span class="tt">2021 CE</span> </h3>
         <p> 7:03 am got a SSL certificate</p>
-        <img src="https://eric-xia.com/images/lock.PNG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/lock.PNG" style="width: 100%">
         <p>4:41 am: it's getting light outside</p>
         <hr>
         <p>Over the moon rn</p>
-        <img src="https://eric-xia.com/images/runs_1.PNG" style="width: 100%">
-        <img src="https://eric-xia.com/images/runs_2.PNG" style="width: 100%">
-        <img src="https://eric-xia.com/images/group.PNG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/runs_1.PNG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/runs_2.PNG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/group.PNG" style="width: 100%">
         <h3>May 29th <span class="tt">2021 CE</span> </h3>
-        <img src="https://eric-xia.com/images/wsss.PNG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/wsss.PNG" style="width: 100%">
         <p>features todo:</p>
         <p>SAVING RUNS (to SQLite)</p>
         <ul>
@@ -1715,7 +1761,7 @@ impact and seen create indeed
         <h3>May 20th <span class="tt">2021 CE</span> </h3>
         <p>Using <a href="http://tachyons.io/">tachyons.css</a> makes me want to drop everything and just do graphic
             design</p>
-        <img src="https://eric-xia.com/images/tachyons.PNG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/tachyons.PNG" style="width: 100%">
         <hr>
         <p>Four runthroughs of the new mechanism. The first word is always taken from a list of 1,000 most common
             english words. The next word, illustrating the "correct" path, is then a random choice from the 10 nearest
@@ -1724,7 +1770,7 @@ impact and seen create indeed
             back, and the existence of very similar words e.g. Judge and Judges. </p>
         <p> Otherwise it's quite exciting. The idea is that running through something of this length should take maybe
             30 seconds max, as the user makes quick instinctive decisions as to which word is more related. </p>
-        <img src="https://eric-xia.com/images/word_ex.PNG" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/word_ex.PNG" style="width: 100%">
         <p>Current idea: choose between closest neighbor and random. Choosing correctly takes you on a walk through
             word-space.</p>
         <hr>
@@ -1733,7 +1779,7 @@ impact and seen create indeed
 
         <h3>May 19th <span class="tt">2021 CE</span> </h3>
         <p>hmm</p>
-        <img src="https://eric-xia.com/images/IMG_8363.jpg" style="width: 100%">
+        <img data-src="https://eric-xia.com/images/IMG_8363.jpg" style="width: 100%">
         <iframe src="https://drive.google.com/file/d/1ZZIso5glGA1XTeZpMFLYjS7_mJzU6AD7/preview" width="640"
             height="480"></iframe>
 
@@ -1820,7 +1866,7 @@ impact and seen create indeed
             though, including writing copy.</p>
         <h3>May 13th <span class="tt">2021 CE</span></h3>
         <p>Still thinking about this</p>
-        <img src="https://www.eric-xia.com/images/deweycategories.jpg" style="width: 100%">
+        <img data-src="https://www.eric-xia.com/images/deweycategories.jpg" style="width: 100%">
         <hr>
         <p></p>Coding. I have a MVP and it is so fast. This is so exciting
         <p>I also decided to put some effort into an artist statement for the senior show. It comes off as overly angsty
@@ -1830,7 +1876,7 @@ impact and seen create indeed
             <p>I want to close the distance between art and daily life, and the three projects I&#39;m proudest of from
                 this year each try to do this.</p>
             <br><br>
-            <img src="https://www.eric-xia.com/images/paperclip real.PNG" style="width: 100%">
+            <img data-src="https://www.eric-xia.com/images/paperclip real.PNG" style="width: 100%">
             <br><br>
             <p>The first one visualizes the possible uses for a paperclip.
                 Taking 3,001 responses to a research study that asked its participants how many uses of a paperclip they
@@ -1908,7 +1954,7 @@ impact and seen create indeed
         </ul>
         <h3>May 8th <span class="tt">2021 CE</span></h3>
         painting from today:
-        <img src="https://www.eric-xia.com/images/POWER.jpg" style="width: 100%">
+        <img data-src="https://www.eric-xia.com/images/POWER.jpg" style="width: 100%">
         <p><a href="zizeknotes">And here are some notes from the <em>The Sublime Object of Ideology</em></a> by Zizek
         </p>.
         <h3>May 6th <span class="tt">2021 CE</span></h3>
@@ -1916,7 +1962,7 @@ impact and seen create indeed
         <p>Two videos are playing at once, "lofi hip hop indie beats" and "15 sorting algorithms in six minutes".
             dissonance/mindless sisyphean progression from chaos to order, and the dreamy, detached use of lofi music as
             a coping mechanism</p>
-        <img src="https://www.eric-xia.com/images/IMG_7544.jpg" style="width: 100%">
+        <img data-src="https://www.eric-xia.com/images/IMG_7544.jpg" style="width: 100%">
         <h3>thought-terminating cliches </h3>
         <p><a
                 href="https://en.wikipedia.org/wiki/Thought-terminating_clich%C3%A9">https://en.wikipedia.org/wiki/Thought-terminating_clich%C3%A9</a>

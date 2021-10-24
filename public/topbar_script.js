@@ -1,19 +1,18 @@
 array = [
-    "daylight to lamplight",
-    "read a bit and then stop reading",
     "don't be a tourist",
     "your fourth grade self against the world",
     "there are only a few hard things",
     "reject externally imposed dreams",
     "we lack courage, not genius",
-    "my heart is in the work",
     "reality is that which, when you stop believing in it, doesn't go away",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
     "make the future past prediction",
     "people before tribes",
-    "don't immanentize the eschaton"
+    "daylight to lamplight",
+    "read a bit and then stop reading",
+    "my heart is in the work",
 ]
 
 function shuffleArray(array) {
