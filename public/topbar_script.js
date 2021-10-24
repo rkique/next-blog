@@ -7,6 +7,7 @@ array = [
     "reject externally imposed dreams",
     "we lack courage, not genius",
     "my heart is in the work",
+    "reality is that which, when you stop believing in it, doesn't go away",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
