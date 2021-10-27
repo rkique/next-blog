@@ -1,18 +1,18 @@
-array = [
+array = [    
+    "reject externally imposed dreams",
     "don't be a tourist",
     "your fourth grade self against the world",
-    "there are only a few hard things",
-    "reject externally imposed dreams",
     "we lack courage, not genius",
-    "reality is that which, when you stop believing in it, doesn't go away",
+    "daylight to lamplight",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
     "make the future past prediction",
     "people before tribes",
-    "daylight to lamplight",
     "read a bit and then stop reading",
     "my heart is in the work",
+    "there are only a few hard things",
+    "reality is that which, when you stop believing in it, doesn't go away"
 ]
 
 function shuffleArray(array) {
@@ -49,5 +49,5 @@ if(idxidx < idxArray.length)
 }
 }
 changeQuote()
-setInterval(function(){changeQuote()}, 3600)
+setInterval(function(){changeQuote()}, 5000)
 setInterval(function(){spreadText()},20)
