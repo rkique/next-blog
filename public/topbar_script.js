@@ -1,6 +1,7 @@
 array = [    
     "reject externally imposed dreams",
     "don't be a tourist",
+    "I am a wild horse",
     "your fourth grade self against the world",
     "we lack courage, not genius",
     "daylight to lamplight",
