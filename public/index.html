@@ -124,7 +124,7 @@
     }
 
     html {
-        font-size: 1.1rem;
+        font-size: 14px;
         line-height: 1.25;
         font-family: 'Work Sans', sans-serif;
         color: var(--hl-color);
@@ -143,7 +143,7 @@
     #main {
         position: relative;
         padding-bottom: 400px;
-        background-color: var(--bg-color);
+        background-color: white;
         margin: auto;
         margin-top: 0.5em;
         width: 620px;
@@ -152,6 +152,12 @@
 
     .image {
         width: 100%;
+        margin: 1em 0em;
+    }
+    
+    .image2 {
+        width: 45%;
+        display: inline;
         margin: 1em 0em;
     }
 
@@ -229,8 +235,9 @@
     }
 
     #quotes {
+        background-color: blue;
+        color: white;
         border: 1px solid black;
-        color: black;
         position: absolute;
         right: 0px;
         top: 0px;
@@ -283,7 +290,7 @@
         <a style="text-decoration: none;" href="portfolio.html">(Visual) (Art) Portfolio</a>
 
         <a href="https://www.word.golf"
-            style="text-decoration: none; color: var(--link-color); color: #000; background-color: rgb(255, 217, 0); color:black; font-size: 32px;">⤺
+            style="text-decoration: none; color: var(--link-color); color: #000; background-color: rgb(255, 217, 0); color:black;">⤺
             go word golfing</a>
         <a href="https://www.nintil.com" id="random_blog"   
             style="text-decoration: none; color: var(--link-color); color: #000">⤺ visit a blog I like</a>
@@ -315,7 +322,7 @@
             }
 
             #raspberry {
-                background-image: url('images/horse.png');
+                background-image: url('images/instagram3.png');
                 -webkit-background-clip: text;
                 background-clip: text;
                 font-family: sans-serif;
@@ -324,12 +331,11 @@
                 letter-spacing: -0.06em;
                 font-weight: 600;
                 background-repeat: repeat;
-                background-size: 135%;
-                background-position: 30px;
+                background-size: 100%;
+                background-position: 0px;
                 font-size: 72px;
                 display: inline;
                 text-align: center;
-   
 
             }
 
@@ -465,15 +471,7 @@
                 if(isArtActive){
                     f = headings.filter(t => isArt(t, isArtActive))
                     for(i = 0; i<f.length; i++)
-                    {Rotorcycle -- 10 models in US army use (1960s)
-Aeronca C-2
-Hiller X-44
-Nagler Rolz 54
-Cosmos Phase II
-Double Eagle II
-Gittens Gyro 2000
-Ikenga 530Z
-Monnett Moni
+                    {
                         arr.push(f[i])
                     }
                 }
@@ -521,8 +519,26 @@ Monnett Moni
                 <div id="linksContainer"></div>
             </div>
         </div>
+        <h3>December 5th <span class="tt">2021 CE</span></h3>
+        <p>Hey, still alive.</p>
+        <ul>
+            <li>Been working through the Coursera machine learning course. There are a ton of programming assignments and I didn't do them in sequence with the videos. Still, over halfway done with them!</li>
+            <li>Lots of word golf work its going well.</li>
+            <li>I realy want to rewrite my blog to a more immediately interesting form. It can have a microupdate section, and then a projects section to highlight cool things.</li>
+            <hr>
+            <li>Read <i>Sinopticon</i>, an anthology of chinese science fiction from this year. It's really touching and inspiring. There's a perceptiveness unique to chinese writing that american english can't come close to. The closest thing is borges and that's also translated.  </li>
+            <li>Also read <i>Breakfast of Champions</i> by Kurt Vonnegut and <i>Envisioning Information</i> by Edward Tufte (really good). Also started reading <i>Cryptonomicon</i> (I'm getting sick of Neal Stephenson's social theories of hobbit and dwarve culture), <i>Infinite Jest</i> , "the first great internet novel" (it's really good), <i>Red Mars</i> (first of the trilogy), and reviewing <i>Div Grad Curl</i>. </li>
+            <li>Made a bunch of drawings since Inktober. I'll put interesting ones below. </li>
+        </ul>
 
-        <h3> November 16th 2021 </h3>
+        <h3>::November drawings</h3>
+        <img class="image2" src="images/grimdark.jpg">
+        <img class="image2" src="images/IMG_3742.jpg">
+        <img class="image2" src="images/granary.jpg">
+        <img class="image2" src="images/collage (1).PNG">
+        <img class="image" src="images/IMG_3439.jpg">
+
+        <h3> November 16th <span class="tt">2021 CE</span> </h3>
 
         <ul>
             <li><b>How do we make single use things beautiful,e.g. waxed cups or plastic bags.</b> Mostly I was thinking about manufacturing a colorful thermosensitive material which would set very slowly. After an hour of being held the sides of the cup would form muted gradients as with a ceramic glaze. To avoid graffiti, the effects of the heat would have to propagate symmetrically around the cup, as in <i>drawsilk</i>. Thermosensitive materials exist, like what they use in mood rings, but I don't know if it works on thin plastic.</li>
@@ -562,14 +578,14 @@ Monnett Moni
             <li>added histograms for each prompt with Plotly</li>
         </ul>
         <p>Very excited to show off this histogram: </p>
-        <img class="image" src="images/graph.PNG">
+        <img class="image" data-src="images/graph.PNG">
         <p>This is for the 21st prompt, which is <em>smile to dinner</em>. It's a fairly easy prompt, so the distribution is skewed left, but I think it will also be bimodal. Not everyone finds a straight path; some instead end up <i>putting</i> around related words and ending up with 6-9 jumps. Par is 3 here; you can achieve 2 however :)  </p>
         <p>Record number of visitors yesterday. Let's hope it sticks...</p>
         <h3>inktober:: connect (renaissance)</h3>
-        <img class="image" src="images/IMG_2238.jpg">
+        <img class="image" data-src="images/IMG_2238.jpg">
         <h3>:: two quick sketches</h3>
-        <img class="image" src="images/IMG_2192.jpg">
-        <img class="image" src="images/IMG_2193.jpg">
+        <img class="image" data-src="images/IMG_2192.jpg">
+        <img class="image" data-src="images/IMG_2193.jpg">
         <h3><a href="https://calvinanddune.tumblr.com/"> Calvin and Muad'Dib</a></h3>
         <img class="image" data-src="images/eternity.jpg">
         <h3>October 23rd <span class="tt">2021 CE</span></h3>
