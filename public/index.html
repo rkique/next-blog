@@ -49,6 +49,7 @@
 
 
     #outlineContainer {
+        direction:rtl; 
         position: fixed;
         cursor: grab;
         overflow: auto;
@@ -64,6 +65,27 @@
         border: 1px solid grey;
     }
 
+    
+    #outlineContainer {
+        direction:rtl; 
+        position: fixed;
+        cursor: grab;
+        overflow: auto;
+        width: 14%;
+        left: 0px;
+        top: 0;
+        bottom: 0;
+        color: var(--text-color);
+        font-size: 12px;
+    }
+
+    #outlineContainerInternals{
+        direction: ltr;
+    }
+    
+    #linksContainer {
+        margin-left: 0.6em;
+    }
 
 
     p {
@@ -124,6 +146,9 @@
     }
 
     html {
+        background: rgb(253,187,45);
+background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,216,133,1) 8%, rgba(255,233,185,1) 23%, rgba(255,245,223,1) 36%, rgba(255,255,255,1) 100%);
+        background-attachment: fixed;
         font-size: 14px;
         line-height: 1.25;
         font-family: 'Work Sans', sans-serif;
@@ -131,19 +156,12 @@
         padding-top: 0px;
         min-height: 100%;
         height: 900px;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background: var(--bg-color);
         overflow-x: hidden;
     }
 
     #main {
         position: relative;
         padding-bottom: 400px;
-        background-color: white;
         margin: auto;
         margin-top: 0.5em;
         width: 620px;
@@ -156,7 +174,7 @@
     }
     
     .image2 {
-        width: 45%;
+        width: 49%;
         display: inline;
         margin: 1em 0em;
     }
@@ -235,7 +253,7 @@
     }
 
     #quotes {
-        background-color: blue;
+        background-color: rgb(0, 140, 255);
         color: white;
         border: 1px solid black;
         position: absolute;
@@ -508,7 +526,7 @@
 
         <div style="overflow: hidden">
             <div id="outlineContainer">
-               
+                <div id="outlineContainerInternals">
                 
                 <span> see art</span>
                 <input type="checkbox" onclick="toggleArt()" checked=true id="artbox" name="art" value="art">
@@ -517,6 +535,7 @@
                 <span>daily</span>
                 <input type="checkbox" onclick="toggleDaily()"  id="dailybox" name="daily" value="daily">
                 <div id="linksContainer"></div>
+                </div id="outlineContainerInternals">
             </div>
         </div>
         <h3>December 5th <span class="tt">2021 CE</span></h3>
@@ -532,10 +551,11 @@
         </ul>
 
         <h3>::November drawings</h3>
+        <img class="image" src="images/civilization.jpg">
         <img class="image2" src="images/grimdark.jpg">
-        <img class="image2" src="images/IMG_3742.jpg">
-        <img class="image2" src="images/granary.jpg">
         <img class="image2" src="images/collage (1).PNG">
+        <img class="image2" src="images/granary.jpg">
+        <img class="image2" src="images/IMG_3742.jpg">
         <img class="image" src="images/IMG_3439.jpg">
 
         <h3> November 16th <span class="tt">2021 CE</span> </h3>
