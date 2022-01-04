@@ -13,7 +13,7 @@ array = [
     "read a bit and then stop reading",
     "my heart is in the work",
     "there are only a few hard things",
-    "reality is that which, when you stop believing in it, doesn't go away"
+    "everything is walking distance if I want it to be"
 ]
 
 function shuffleArray(array) {
