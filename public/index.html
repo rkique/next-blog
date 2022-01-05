@@ -10,7 +10,7 @@
     </script>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=1538px">
+    <meta name="viewport" content="width=1538px; height=538px">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
@@ -191,6 +191,8 @@
         width: 100%;
     }
     @media screen and (max-width: 992px) {
+
+
         .rightbar {
             display: none;
         }
@@ -403,9 +405,20 @@
         line-height: 0.95;
         letter-spacing: -0.04rem;
     }
+
+    #mobile{
+        position: absolute;
+        margin: 0 auto;
+        top: 1500px;
+        left: 100px;
+        line-height: 0.8;
+        font-size: 180px;
+        }
+        
 </style>
 
 <body>
+    <div id="mobile" class="white f1"> Tilt your phone! </p></div>
     <div id="first_row" class="cf f5">
         <a class="fl w-15 pa2 bg-yellow" href="https://eric-xia.com/viz.html" >HIGH SCHOOL PROJECTS </a>
         <a class="fl bg-dark-red washed-red pa2 w-10" href="portfolio.html">(Visual) (Art) Portfolio</a>
