@@ -188,7 +188,7 @@
     }
     #media {
         max-width: 200%;
-        width: 100%;
+        width: 105%;
     }
     @media screen and (max-width: 992px) {
 
@@ -396,7 +396,7 @@
         letter-spacing: 0.03rem;
         font-size: 10px;
     }
-    .clothes b{
+    .myhouse b, .clothes b{
         letter-spacing: -0.04rem;
         font-size: 13px;
     }
@@ -414,7 +414,7 @@
         line-height: 0.8;
         font-size: 180px;
         }
-        
+
 </style>
 
 <body>
@@ -463,9 +463,9 @@
         </div>
 
     <div id="second_row" class="cf f5">
-        <div class="fl w-30">
-            <h1 class="" id="raspberry">ERIC'S BLOG </h1>
-        </div>
+        <div class="fl w-60">
+            <p class="ma0 pa0" id="raspberry">ERIC XIA'S BLOG </p>
+        </div>  
         <div class="fl w-30 tr">
         </div>
         <script src="topbar_script.js"></script>
@@ -537,9 +537,9 @@
         
         <div class="absolute left-0 bottom-0 w-30 ba h-25" id="essays-blog">
             <a class="fl w-50 h-50 tl pv1 f6 bg-orange black myhouse" href="https://www.eric-xia.com/myhouse.html">
-                If you ask a kid to draw a house, they will draw a slatted box with a cross on a window and a simple door; every house here and everywhere is an amalgation of similar details. It is a few large boxes, upwards chevrons, windows. My house is that American house. There is an American house just as there is an American strip mall or an American highway, even beyond their stereotypes. So was my last house in Oregon.
+                If you ask a kid to draw a house, they will draw a slatted box with a cross on a window and a simple door; every house here and everywhere is an amalgation of similar details. It is a few large boxes, upwards chevrons, windows. My house is that <b>American house</b>. There is an American house just as there is an American strip mall or an American highway, even beyond their stereotypes. So was my last house in Oregon.
             </a>
-            <a class="fl w-50 h-50 tc cond f4 pv1 bg-blu black" href="culture.html">My Cultural Influences</a>
+            <a class="fl w-50 h-50 tc cond f4 pv1 bg-blu black" id="culture" href="culture.html"><p>My Cultural Influences</p></a>
             <a class="fl w-75 h-50 justify f6 pa0 bg-yello black clothes" href="clothes.html"><b>"The problem with these aesthetics, which influence almost everyone I know, is that they are fashion movements masquerading as intellectual ones.</b> They are only superficial signifiers of the profound. It draws you very close because it is exactly your dream. Then it tells you can get closer to your visions by moving positionally, within society, without ever really doing the work. This is how you begin to chase dreams by changing clothes..."</a>
             <a class="fl w-25 h-50 tc cond f4 pa4 bg-washed-green black" href="https://www.eric-xia.com/lynnwood.html">Ghosts and Shells</a>
     
@@ -588,6 +588,22 @@
                 background-position: 0px;
             }
         
+            #culture { 
+                background-image: url('images/civsm.jpg');
+                color: black;
+                filter: invert();
+                background-repeat: repeat;
+                background-size: 100%;
+                background-position: 0px;
+            }
+            
+            #culture p{
+                margin-top: 20px;
+                background: white;
+                letter-spacing: -0.06em;
+                font-weight: 600;
+
+            }
             .cond{
                 letter-spacing: -0.07em;
                 font-weight: 600;
@@ -595,11 +611,12 @@
             #raspberry {
                 color: white;
                 letter-spacing: -0.07em;
-                font-weight: 600;
+                font-weight: 300;
+                line-height: 1;
                 background-repeat: repeat;
                 background-size: 100%;
                 background-position: 0px;
-                font-size: 72px;
+                font-size: 84px;
                 display: inline;
                 text-align: center;
 
