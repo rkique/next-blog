@@ -1,197 +1,267 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8">
-	<title>Eric&#39;s Website</title>
-	<link href="style.css" rel="stylesheet" />
+
+<head>
+    <meta charset="utf-8">
+    <title>Eric&#39;s Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-    <p><a href="index.html">go back</a></p>
-
-<h1>Esperanto &amp; Word2Vec</h1>
-
-<pre>
+    <div class="main">
+        <p><a href="index.html">go back</a></p>
+        <h1>Esperanto & Word2Vec</h1>
+        <blockquote>
     "A picture held us captive. And we could not get outside it, for it lay in our language and language seemed to repeat it to us inexorably.”
     ― Ludwig Wittgenstein, Philosophical Investigations
-</pre>
-<p>
-    This post is about my junior spring independent study.
-</p>
+        </blockquote>
+        <p>
+            This post is about an independent study I conducted during my junior year of high school. Following my success with <a href="gans.html">training generative adversarial networks in the fall </a>, I turned to a more theoretical -- but more interesting --  area of study. 
+        </p>
 
-<p>
-    It began with the idea that there were two ways we saw
-    relationships between words.
-</p>
-<p>
-    The first was <b>internal</b>. We look at a word, and derive relationships from
-    its <em>literal structure</em>: the length of the words, the roots and
-    modifiers within it that we recognized. <em>Runner</em> has something to do
-with <em>Run</em> (and whatever <em>er </em>should mean). <em>Optogenetics </em>has something to do with optics and genetics. <em>Nonfiction</em> has something to do with fiction.
-</p>
-<p>
-    The second was <b>external</b>. We look at a word, and derive relationships from
-the words around it. Subject object verb. The <em>cat</em> is  <em>eating fish</em>. The cat can eat things. The fish can be eaten. We
-learn that cats and fish have some kind of relationship by their <em>context.</em>
-</p>
-<img src="eo-images/twointerpretations.png" class="image">
-<p>
-    Going a little deeper: even if we were making two separate interpretations
-    while we read, there should only exist a single true interpretation of
-    concepts within a language, right? After all, the purpose of language was
-    to convey ideas, and you could hardly do that if people had different
-    images for different words.
-</p>
-<p>
-    Linguistic relativism might occur in a few places, but for the most part, language usually serves its purpose: communicating common concepts. 
-    Some Platonic ontology existed, a set of relationships which internal and
-    external interpretations were only reflections.
-</p>
-<p>
-    In that case, the two ways we made relationships between words, internal
-    and external, should lead to the same results. Working to show this, with
-    satisfying <em>visual and</em> <em>visceral scale,</em> was my goal with
-    this independent study.
-</p>
-<img src="eo-images/besimpleworld.png" class="image">
-<p>
-    I had ideas on how to visualize the two ways.
-</p>
-<p>
-One way to explore the internal representation could be found in    <a href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a>, an
-    artificial language built out of a regular system of modifiers. I’ve been
-    learning Esperanto on the side for a couple of years now, and I’ve always
-    found the structures between its words fascinating.
-</p>
-<p>
-    The best way to visualize external representations would have been a human brain,
-    but as that was not an option, I went with <a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Word2Vec</a>, a neural
-    network which could capture contextual information in the form of word
-    embeddings.
-</p>
-<p>
-    The roadmap for the rest of the independent study fell into place after I
-    had determined these angles of attack. I would first create Word2Vec word
-    embeddings for an Esperanto dataset, mapping the similarity of different
-    Esperanto words in multi-dimensional space. Word2Vec derived meaning from
-    the context of words alone, their position relative to others -- which was
-    just what we wanted.
-</p>
-<p>
-    Then, taking advantage of Esperanto’s regular morpheme system, I could
-    annotate those word embeddings with their morpheme associated meanings, and
-    look for connections between <strong>positions</strong> -- the context
-    derived, external meaning of words -- and <strong>morphemes </strong>-- the
-    semantic, internal meaning of words.
-</p>
-<p>
-    The results of this independent study were very cool. I think I succeeded
-    in showing the connections between the two interpretations, and for pretty
-    diverse subjects as well.
-</p>
-<h2>
-    Explanation of the result
-</h2>
-<p>
-    In Esperanto, very simple nouns can be created from roots by adding an <em>-o </em>ending. We can, however, modify these nouns with different suffixes that denote a different form of the original noun. 
-</p>
-<p>
-    For example:
-</p>
-<p>
-The suffix <em>-ulo</em> corresponds to the -person form (e.g. sales    <em>person</em>).
-</p>
-<p>
-    The suffix <em>-ero</em> corresponds to the piece or fragment form (e.g.
-    bread<em>crumb</em>).
-</p>
-<p>
-The suffix <em>-ino</em> corresponds to the female counterpart (e.g. super    <em>woman</em>).
-</p>
-<p>
-    Through Word2Vec embeddings of Esperanto, I was able to show that
-    transformations from the Esperanto root word to its suffixed version were
-    consistent across many different roots, for specific suffixes. These
-    transformations, known as morphological derivatives, could be identified as
-    vectors.
-</p>
-<p>
+        <p>
+            It began with the idea that there were two ways we saw
+            relationships between words.
+        </p>
+        <p>
+            The first was <b>internal</b>. We look at a word, and derive relationships from
+            its <em>literal structure</em>: the length of the words, the roots and
+            modifiers within it that we recognized. <em>Runner</em> has something to do
+            with <em>Run</em> (and whatever <em>er </em>should mean). <em>Optogenetics </em>has something to do with
+            optics and genetics. <em>Nonfiction</em> has something to do with fiction.
+        </p>
+        <p>
+            The second was <b>external</b>. We look at a word, and derive relationships from
+            the words around it. Subject object verb. The <em>cat</em> is <em>eating fish</em>. The cat can eat things.
+            The fish can be eaten. We
+            learn that cats and fish have some kind of relationship by their <em>context.</em>
+        </p>
+        <img src="eo-images/twointerpretations.png" class="image">
+        <p>
+            Going a little deeper: even if we were making two separate interpretations
+            while we read, there should only exist a single true interpretation of
+            concepts within a language, right? After all, the purpose of language was
+            to convey ideas, and you could hardly do that if people had different
+            images for different words.
+        </p>
+        <p>
+            Linguistic relativism might occur in a few places, but for the most part, language usually serves its
+            purpose: communicating common concepts.
+            Some Platonic ontology existed, a set of relationships which internal and
+            external interpretations were only reflections.
+        </p>
+        <p>
+            In that case, the two ways we made relationships between words, internal
+            and external, should lead to the same results. Working to show this, with
+            satisfying <em>visual and</em> <em>visceral scale,</em> was my goal with
+            this independent study.
+        </p>
+        <img src="eo-images/besimpleworld.png" class="image">
+        <p>
+            I had ideas on how to visualize the two ways.
+        </p>
+        <p>
+            To explore the internal representations of language, I could use <a
+                href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a>, an
+            artificial language built out of a regular system of modifiers. I’ve been
+            learning Esperanto on the side for a couple of years now, and I’ve always
+            found the structures between its words fascinating.
+        </p>
+        <p>
+            The best way to visualize external representations would have been a human brain,
+            but as that was not an option, I went with <a
+                href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Word2Vec</a>,
+            a neural
+            network which could capture contextual information in the form of word
+            embeddings.
+        </p>
+        <p>
+            The roadmap for the rest of the independent study fell into place after I
+            had determined these angles of attack. I would first create Word2Vec word
+            embeddings for an Esperanto dataset, mapping the similarity of different
+            Esperanto words in multi-dimensional space. Word2Vec derived meaning from
+            the context of words alone, their position relative to others -- which was
+            just what we wanted.
+        </p>
+        <p>
+            Then, taking advantage of Esperanto’s regular morpheme system, I could
+            annotate those word embeddings with their morpheme associated meanings, and
+            look for connections between <strong>positions</strong> -- the context
+            derived, external meaning of words -- and <strong>morphemes </strong>-- the
+            semantic, internal meaning of words.
+        </p>
+        <p>
+            The results of this independent study were very cool. I think I succeeded
+            in showing the connections between the two interpretations, and for pretty
+            diverse subjects as well.
+        </p>
+        <h2>
+            Explanation of the result
+        </h2>
+        <p>
+            In Esperanto, very simple nouns can be created from roots by adding an <em>-o </em>ending. We can, however,
+            modify these nouns with different suffixes that denote a different form of the original noun.
+        </p>
+        <p>
+            For example:
+        </p>
+        <p>
+            The suffix <em>-ulo</em> corresponds to the -person form (e.g. sales <em>person</em>).
+        </p>
+        <p>
+            The suffix <em>-ero</em> corresponds to the piece or fragment form (e.g.
+            bread<em>crumb</em>).
+        </p>
+        <p>
+            The suffix <em>-ino</em> corresponds to the female counterpart (e.g. super <em>woman</em>).
+        </p>
+        <p>
+            Through Word2Vec embeddings of Esperanto, I was able to show that
+            transformations from the Esperanto root word to its suffixed version were
+            consistent across many different roots, for specific suffixes. These
+            transformations, known as morphological derivatives, could be identified as
+            vectors.
+        </p>
+        <p>
 
-    In this way, I was able to quantify relationships between the words as
-    vectors in <strong>ℝ</strong>2, or changes in 2D space.  </p>
-    <p>  
-    And there, we saw
-    internal jumps--from a word to its suffixed counterpart-- mirrored again
-    and again by external jumps, from one position in the context embedding to
-    another.
-</p>
+            In this way, I was able to quantify relationships between the words as
+            vectors in <strong>ℝ</strong>2, or changes in 2D space. </p>
+        <p>
+            And there, we saw
+            internal jumps--from a word to its suffixed counterpart-- mirrored again
+            and again by external jumps, from one position in the context embedding to
+            another.
+        </p>
 
-<p><a href="#final">Click here to jump to the results!</a></p>
+        <p><a href="#final">Click here to jump to the results!</a></p>
 
-<h2>Word2Vec</h2>
+        <h2>Word2Vec</h2>
 
-<p>My exploration started with familiarizing myself with the Word2Vec neural network, which represents the meaning of words in a vector format. I used <a href="https://radimrehurek.com/gensim/models/word2vec.html">gensim&#39;s Word2Vec </a>to streamline the process as much as possible. Gensim is a Python library that makes topic modeling, or the process of clustering similar word groups and expressions, extremely easy. All I had to do was import the Word2Vec model from gensim and read the documentation.</p>
+        <p>My exploration started with familiarizing myself with the Word2Vec neural network, which represents the
+            meaning of words in a vector format. I used <a
+                href="https://radimrehurek.com/gensim/models/word2vec.html">gensim&#39;s Word2Vec </a>to streamline the
+            process as much as possible. Gensim is a Python library that makes topic modeling, or the process of
+            clustering similar word groups and expressions, extremely easy. All I had to do was import the Word2Vec
+            model from gensim and read the documentation.</p>
 
-<p>Although Word2Vec was not the focus of my study, I will try to give a brief description of what Word2Vec does. By scanning through training text, Word2Vec is a way of creating a set of <i>word embeddings</i>. These word embeddings are positions in space, usually multi-dimensional, and they convey semantic meaning: close words are more similar in meaning than distant words.</p>
+        <p>Although Word2Vec was not the focus of my study, I will try to give a brief description of what Word2Vec
+            does. By scanning through training text, Word2Vec is a way of creating a set of <i>word embeddings</i>.
+            These word embeddings are positions in space, usually multi-dimensional, and they convey semantic meaning:
+            close words are more similar in meaning than distant words.</p>
 
-<p>To create these word embeddings, Word2Vec first initialises every word it sees into a random position (technically, these positions are the hidden layer of the network). It then processes the text word by word, calibrating the positions of words accordingly based on their context.</p>
+        <p>To create these word embeddings, Word2Vec first initialises every word it sees into a random position
+            (technically, these positions are the hidden layer of the network). It then processes the text word by word,
+            calibrating the positions of words accordingly based on their context.</p>
 
-<p>I used the Skipgram Word2Vec model, the standard way to build word embeddings. The main way that it does so is by increasing the associations between word pairs seen in the same context (these pairs of words are more likely to be related). This is equivalent to moving the second vector, corresponding to a neighboring word, towards the first word vector, which corresponds to the focus word.</p>
+        <p>I used the Skipgram Word2Vec model, the standard way to build word embeddings. The main way that it does so
+            is by increasing the associations between word pairs seen in the same context (these pairs of words are more
+            likely to be related). This is equivalent to moving the second vector, corresponding to a neighboring word,
+            towards the first word vector, which corresponds to the focus word.</p>
 
-<p><img src="https://qph.fs.quoracdn.net/main-qimg-f67c1f75768f7475382e28994723d0b6.webp" /></p>
+        <p><img src="https://qph.fs.quoracdn.net/main-qimg-f67c1f75768f7475382e28994723d0b6.webp" /></p>
 
-<p><a href="https://qr.ae/pNPpgZ">source</a></p>
+        <p><a href="https://qr.ae/pNPpgZ">source</a></p>
 
-<p>It also employs a few other methods to train effectively. One is an approach called subsampling, where very frequent words are sometimes dropped from the training process. Another is negative sampling, where a small random sampling of vectors is moved away from each focus word. These push and pull actions result in a loosely clustered cloud of word embeddings, which looks something like <a href="http://www.cs.toronto.edu/~hinton/turian.png">this</a> after dimensional reduction.</p>
+        <p>It also employs a few other methods to train effectively. One is an approach called subsampling, where very
+            frequent words are sometimes dropped from the training process. Another is negative sampling, where a small
+            random sampling of vectors is moved away from each focus word. These push and pull actions result in a
+            loosely clustered cloud of word embeddings, which looks something like <a
+                href="http://www.cs.toronto.edu/~hinton/turian.png">this</a> after dimensional reduction.</p>
 
-<p>Word2Vec got a lot of publicity due to a unique attribute of its vector representations: they seemed to be able to represent different analogies between words.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>Word2Vec got a lot of publicity due to a unique attribute of its vector representations: they seemed to be
+            able to represent different analogies between words.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>With the word vectors generated by the model, you could perform a sort of arithmetic with the vectors, capturing the relationships between the words. If &quot;word&quot; denotes the Word2Vec vector representation of a word, then &ldquo;king&rdquo; - &ldquo;man&rdquo; + &ldquo;woman&rdquo; is closest to &quot;queen&quot; in position. In this way, the vector operation itself captured some quality about the relationship between two words: in this case, gender.</p>
+        <p>With the word vectors generated by the model, you could perform a sort of arithmetic with the vectors,
+            capturing the relationships between the words. If &quot;word&quot; denotes the Word2Vec vector
+            representation of a word, then &ldquo;king&rdquo; - &ldquo;man&rdquo; + &ldquo;woman&rdquo; is closest to
+            &quot;queen&quot; in position. In this way, the vector operation itself captured some quality about the
+            relationship between two words: in this case, gender.</p>
 
-<figure class="wp-block-image is-resized"><img alt="Why does King - Man + Woman = Queen? Understanding Word Analogies ..." height="278" src="https://kawine.github.io/blog/assets/parallelogram.png" width="613" />
-<i>The classic Word2Vec diagram demonstrating how word vectors can encapsulate semantic meaning.</i>
-</figure>
+        <figure class="wp-block-image is-resized"><img
+            height="278"
+                src="https://kawine.github.io/blog/assets/parallelogram.png" width="613" />
+            <i>The classic Word2Vec diagram demonstrating how word vectors can encapsulate semantic meaning.</i>
+        </figure>
 
-<h2>Esperanto</h2>
+        <h2>Esperanto</h2>
 
-<p> The artificial and regular language, <a href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a>. </p> <p>Esperanto also has fairly quantifiable relationships between words, due to the way that the language was based on a system of roots and modifiers.</p>
+        <p>Esperanto is an artificial language invented by a Polish ophthalmologist, L.L. Zamenhof. He invented
+            Esperanto with the goal of promoting international communication without resorting to the use of one
+            language to bridge cultures. Consequently, it is made to be as easy as possible to learn. This focus on
+            transparency and universality means that Esperanto relies on a highly constant and predictable <a
+                href="https://en.wikipedia.org/wiki/Esperanto_vocabulary#Origins">derivational morphology. </a></p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
+        <p>There are systems of modifiers that apply to almost all roots:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:image -->
 
-<p>Esperanto is an artificial language invented by a Polish ophthalmologist, L.L. Zamenhof. He invented Esperanto with the goal of promoting international communication without resorting to the use of one language to bridge cultures. Consequently, it is made to be as easy as possible to learn. This focus on transparency and universality means that Esperanto relies on a highly constant and predictable <a href="https://en.wikipedia.org/wiki/Esperanto_vocabulary#Origins">derivational morphology. </a></p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <figure class="wp-block-image"><img alt="Why did they make Esperanto? What is its history? - Quora"
+                src="https://qph.fs.quoracdn.net/main-qimg-b312677d83894eda26f74aec3e6c69d0.webp" /></figure>
+        <!-- /wp:image -->
+        <!-- wp:paragraph -->
 
-<p>There are systems of modifiers that apply to almost all roots:</p>
-<!-- /wp:paragraph --><!-- wp:image -->
+        <p>This makes the language predictable, and more rooted in literal alphabetical characters than English.
+            Esperantists are often able to make up new words, substituting them in regular conversation because of the
+            regular and constant nature of wordbuilding in the language. Almost all Esperanto words fall into a word
+            family sharing a root word, and modifiers often (but not always) denote a similar semantic modification.</p>
 
-<figure class="wp-block-image"><img alt="Why did they make Esperanto? What is its history? - Quora" src="https://qph.fs.quoracdn.net/main-qimg-b312677d83894eda26f74aec3e6c69d0.webp" /></figure>
-<!-- /wp:image --><!-- wp:paragraph -->
+        <p>The way that Esperanto wordbuilding doesn&#39;t modify its constituent morphemes makes it an
+            <em>aggluginative </em>language. This makes searching for morphemes, as substrings of words, extremely easy.
+            A morpheme on its own, like &quot;ek&quot;, is going to modify another word in the same way.</p>
+        <p> This meant that annotation of the texts would be very straightforward, code-wise: identify important
+            substrings within the word embeddings and highlight them.</p>
 
-<p>This makes the language predictable, and more rooted in literal alphabetical characters than English. Esperantists are often able to make up new words, substituting them in regular conversation because of the regular and constant nature of wordbuilding in the language. Almost all Esperanto words fall into a word family sharing a root word, and modifiers often (but not always) denote a similar semantic modification.</p>
+        <h2>Tekstaro</h2>
 
-<p>The way that Esperanto wordbuilding doesn&#39;t modify its constituent morphemes makes it an <em>aggluginative </em>language. This makes searching for morphemes, as substrings of words, extremely easy. A morpheme on its own, like &quot;ek&quot;, is going to modify another word in the same way.</p><p> This meant that annotation of the texts would be very straightforward, code-wise: identify important substrings within the word embeddings and highlight them.</p>
+        <p>I found a training corpus in the <a href="https://tekstaro.com/">Tekstaro</a>, a collection of free texts
+            collected for language analysis purposes. It consisted of a lot of biographies, writings by Zamenhof and his
+            fellow proponents and a few classics like <em>Alice in Wonderland</em> as well. It was pretty fascinating,
+            and I tried to make the most of my limited Esperanto abilities:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:quote -->
 
-<h2>Tekstaro</h2>
-
-<p>I found a training corpus in the <a href="https://tekstaro.com/">Tekstaro</a>, a collection of free texts collected for language analysis purposes. It consisted of a lot of biographies, writings by Zamenhof and his fellow proponents and a few classics like <em>Alice in Wonderland</em> as well. It was pretty fascinating, and I tried to make the most of my limited Esperanto abilities:</p>
-<!-- /wp:paragraph --><!-- wp:quote -->
-
-<pre>
-<p>La homaranismo estas instruo, kiu, ne deŝirante la homon de lia natura patrujo, nek de lia lingvo, nek de lia religianaro, donas al li la eblon eviti ĉian malverecon kaj kontraŭparolojn en siaj nacia-religiaj principoj kaj komunikiĝadi kun homoj de ĉiuj lingvoj kaj religioj sur fundamento neŭtrale-homa, sur principoj de reciproka frateco, egaleco kaj justeco.</p>
+        <blockquote>
+            La homaranismo estas instruo, kiu, ne deŝirante la homon de lia natura patrujo, nek de lia lingvo, nek de lia religianaro, donas al li la eblon eviti ĉian malverecon kaj kontraŭparolojn en siaj nacia-religiaj principoj kaj komunikiĝadi kun homoj de ĉiuj lingvoj kaj religioj sur fundamento neŭtrale-homa, sur principoj de reciproka frateco, egaleco kaj justeco.
+        </blockquote>
 </pre><i>Homaranismo, a 1906 exposition on the philosophical underpinnings of Esperanto</i>
-<!-- /wp:quote --><!-- wp:paragraph -->
+        <!-- /wp:quote -->
+        <!-- wp:paragraph -->
 
-<p>Altogether, it was 105 texts of varying lengths. When converted into txt files and compressed into a .zip, it was about 25 MB. This was a little low for Word2Vec purposes, but it turned out to be just about good enough. I was also initially a bit worried that the subject matter of the Tekstaro would impact the vocabulary and word embeddings too much, but based on my understanding of the language, the vocabulary was more or less typical of an Esperanto text. There were quite a few Anglicisms in the text, but that would have been a problem with a lot of other languages, and didn&#39;t really affect the end result too much.</p>
-<!-- /wp:paragraph --><!-- wp:heading -->
+        <p>Altogether, it was 105 texts of varying lengths. When converted into txt files and compressed into a .zip, it
+            was about 25 MB. This was a little low for Word2Vec purposes, but it turned out to be just about good
+            enough. I was also initially a bit worried that the subject matter of the Tekstaro would impact the
+            vocabulary and word embeddings too much, but based on my understanding of the language, the vocabulary was
+            more or less typical of an Esperanto text. There were quite a few Anglicisms in the text, but that would
+            have been a problem with a lot of other languages, and didn&#39;t really affect the end result too much.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:heading -->
 
-<h2>Putting it all together</h2>
-<!-- /wp:heading --><!-- wp:paragraph -->
+        <h2>Putting it all together</h2>
+        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
 
-<p>With the help of an excellent tutorial from <a href="https://kavita-ganesan.com/gensim-word2vec-tutorial-starter-code/#.XuGuUUVKjb0">Kavita Ganesan</a>, I was able to get off the ground quickly and produce several&nbsp;visualizations very quickly. I then used sklearn's TSNE to reduce the dimensions of the word embeddings, from 150 to 2, and matplotlib to visualize the resulting word positions.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>With the help of an excellent tutorial from <a
+                href="https://kavita-ganesan.com/gensim-word2vec-tutorial-starter-code/#.XuGuUUVKjb0">Kavita
+                Ganesan</a>, I was able to get off the ground quickly and produce several&nbsp;visualizations very
+            quickly. I then used sklearn's TSNE to reduce the dimensions of the word embeddings, from 150 to 2, and
+            matplotlib to visualize the resulting word positions.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>The resulting images provide what can be seen as a cross-section of the Esperanto language, revealing its inner structure. It clearly demonstrates the connections between parts of speech as labeled by Esperanto, or the highlighting, and the Word2Vec context-derived meaning, or the position:</p>
-<!-- /wp:paragraph --><!-- wp:code -->
+        <p>The resulting images provide what can be seen as a cross-section of the Esperanto language, revealing its
+            inner structure. It clearly demonstrates the connections between parts of speech as labeled by Esperanto, or
+            the highlighting, and the Word2Vec context-derived meaning, or the position:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:code -->
 
-<pre class="wp-block-code">
+        <pre class="wp-block-code">
 <code>      #noun (&quot;o&quot; ending) firebrick red      
       #adjective (&quot;a&quot;) orange
       #adverb (&quot;e&quot;) wheat    
@@ -203,88 +273,130 @@ The suffix <em>-ino</em> corresponds to the female counterpart (e.g. super    <e
       #darkorchid (os) is future
       #imperative verb (us) navy
       #other is black (numbers, anglicisms, etc.)</code></pre>
-<!-- /wp:code --><!-- wp:paragraph -->
+        <!-- /wp:code -->
+        <!-- wp:paragraph -->
 
-<a href="eo-images/monster_tsne.png"><img src="eo-images/monster_tsne.png" /></a>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <a href="eo-images/monster_tsne.png"><img src="eo-images/monster_tsne.png" /></a>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p><i>(Each of these super high resolution images can be clicked to open a zoomable version)</i></p>
+        <p><i>(Each of these super high resolution images can be clicked to open a zoomable version)</i></p>
 
-<p> The code, and an explanation of the steps I took are in a Google Colab notebook: </p>
+        <p> The code, and an explanation of the steps I took are in a Google Colab notebook: </p>
 
-<p><a href="https://colab.research.google.com/drive/11ZET7TxbbGt6ntNsreXlBVTLppmIcpcr?usp=sharing" rel="noreferrer noopener" target="_blank"><strong>EOWord2Vec.ipynb</strong></a></p>
+        <p><a href="https://colab.research.google.com/drive/11ZET7TxbbGt6ntNsreXlBVTLppmIcpcr?usp=sharing"
+                rel="noreferrer noopener" target="_blank"><strong>EOWord2Vec.ipynb</strong></a></p>
 
-<p>This would form my basic model generation file that I would rely on later.</p>
+        <p>This would form my basic model generation file that I would rely on later.</p>
 
-<p>Key technical pointers:</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>Key technical pointers:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>Every visualization requires two files.</p>
-<!-- /wp:paragraph --><!-- wp:list {"ordered":true} -->
+        <p>Every visualization requires two files.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:list {"ordered":true} -->
 
-<ol>
-	<li>&nbsp;A txt file full of floating point pairs (x,y) to provide the <em>coordinates</em> (the model-produced word embeddings, reduced through tSNE)</li>
-	<li>A .wv file to provide the word vectors that we reference as the <em>vocabulary</em></li>
-</ol>
-<p>	After initial model generation, I quickly realized that I could iterate much faster with a separate notebook for visualization, that worked purely off of the above two.</p>
+        <ol>
+            <li>&nbsp;A txt file full of floating point pairs (x,y) to provide the <em>coordinates</em> (the
+                model-produced word embeddings, reduced through tSNE)</li>
+            <li>A .wv file to provide the word vectors that we reference as the <em>vocabulary</em></li>
+        </ol>
+        <p> After initial model generation, I quickly realized that I could iterate much faster with a separate notebook
+            for visualization, that worked purely off of the above two.</p>
 
-<p>Through various modifications to the visualization methods,&nbsp;I produced a set of visualization utilities that I will quickly explain and&nbsp;give a brief demo. This also demonstrates the evolution of my thinking over time. The most interesting visualization&nbsp;is at the end if you want to skip there.</p>
-<!-- /wp:paragraph --><!-- wp:list {"ordered":true} -->
+        <p>Through various modifications to the visualization methods,&nbsp;I produced a set of visualization utilities
+            that I will quickly explain and&nbsp;give a brief demo. This also demonstrates the evolution of my thinking
+            over time. The most interesting visualization&nbsp;is at the end if you want to skip there.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:list {"ordered":true} -->
 
-<ol>
-	<li><a href="https://colab.research.google.com/drive/1ZYqV2EsJDiY18FMINwQ8PxgnVdAgQubN?usp=sharing"><strong>EOWord2VecPOSAnnotations.ipynb</strong></a></li>
-</ol>
+        <ol>
+            <li><a
+                    href="https://colab.research.google.com/drive/1ZYqV2EsJDiY18FMINwQ8PxgnVdAgQubN?usp=sharing"><strong>EOWord2VecPOSAnnotations.ipynb</strong></a>
+            </li>
+        </ol>
 
-<a href="eo-images/auto_color.png"><img src="eo-images/auto_color.png"></a>
+        <a href="eo-images/auto_color.png"><img src="eo-images/auto_color.png"></a>
 
-<p>This notebook produces the&nbsp;the same visualization as earlier, but is completely separate from the original EOWord2Vec.py, (used for model generation purposes only at this point)., generating completely off of the given files. It&rsquo;s also nicely broken up into imports, annotations, and plot generation. Above, I've generated a visualization color coded for parts of speech,&nbsp;much as I had done before. However, this one uses a new set of word embeddings, for a&nbsp;200 occurrence minimum, greatly reducing the amount of vocabulary and improving the distinctions between groups.</p>
-<p>I also implemented an automatic coloring system with Matplotlib&rsquo;s <em>colorarray</em>(which simply found colors that were as far apart from one another as possible, given the number of morphemes).</p>
+        <p>This notebook produces the&nbsp;the same visualization as earlier, but is completely separate from the
+            original EOWord2Vec.py, (used for model generation purposes only at this point)., generating completely off
+            of the given files. It&rsquo;s also nicely broken up into imports, annotations, and plot generation. Above,
+            I've generated a visualization color coded for parts of speech,&nbsp;much as I had done before. However,
+            this one uses a new set of word embeddings, for a&nbsp;200 occurrence minimum, greatly reducing the amount
+            of vocabulary and improving the distinctions between groups.</p>
+        <p>I also implemented an automatic coloring system with Matplotlib&rsquo;s <em>colorarray</em>(which simply
+            found colors that were as far apart from one another as possible, given the number of morphemes).</p>
 
 
 
 
-<ol start="2">
-	<li><a href="https://colab.research.google.com/drive/13msoeHpsywyngwomI-90o7DToh7ygEDJ"><strong>EOWord2VecSingleHighlight.ipynb</strong></a></li>
-</ol>
-<a href="eo-images/ek_solo.png"><img src="eo-images/ek_solo.png" /></a>
+        <ol start="2">
+            <li><a
+                    href="https://colab.research.google.com/drive/13msoeHpsywyngwomI-90o7DToh7ygEDJ"><strong>EOWord2VecSingleHighlight.ipynb</strong></a>
+            </li>
+        </ol>
+        <a href="eo-images/ek_solo.png"><img src="eo-images/ek_solo.png" /></a>
 
-<p>This notebook just searches for and highlights all words containing a single morpheme, e.g. &ldquo;parol&rdquo; (to talk). This was&nbsp;pretty helpful early on so I could look at single families. The example above contains all vocabulary&nbsp;with the morpheme&nbsp;&ldquo;ek&rdquo; (which denotes outside or external).
-</p>
+        <p>This notebook just searches for and highlights all words containing a single morpheme, e.g.
+            &ldquo;parol&rdquo; (to talk). This was&nbsp;pretty helpful early on so I could look at single families. The
+            example above contains all vocabulary&nbsp;with the morpheme&nbsp;&ldquo;ek&rdquo; (which denotes outside or
+            external).
+        </p>
 
-<ol start="3">
-	<li><strong><a href="https://colab.research.google.com/drive/16GiPWql-iKmAzbN-BQquhBNn421b-Y4W?usp=sharing">EOWord2Vec3letters+.ipynb</a></strong></li>
-</ol>
+        <ol start="3">
+            <li><strong><a
+                        href="https://colab.research.google.com/drive/16GiPWql-iKmAzbN-BQquhBNn421b-Y4W?usp=sharing">EOWord2Vec3letters+.ipynb</a></strong>
+            </li>
+        </ol>
 
-<a href="eo-images/3+morphemes.png"><img src="eo-images/3+morphemes.png" /></a>
-<p>The first iteration where I used the full list of morphemes:</p>
+        <a href="eo-images/3+morphemes.png"><img src="eo-images/3+morphemes.png" /></a>
+        <p>The first iteration where I used the full list of morphemes:</p>
 
-<pre>
+        <pre>
 <code>[&#39;bo&#39;],[&#39;dis&#39;],[&#39;ek&#39;],[&#39;eks&#39;],[&#39;fi&#39;],[&#39;ge&#39;],[&#39;mal&#39;],[&#39;mis&#39;],[&#39;pra&#39;],[&#39;re&#39;],[&#39;adiado&#39;],[&#39;ao&#39;],[&#39;ano&#39;],[&#39;aro&#39;],[&#39;jo&#39;],[&#39;ebl&#39;],[&#39;ec&#39;],[&#39;eg&#39;],[&#39;ejo&#39;],[&#39;ema&#39;],[&#39;enda&#39;],[&#39;ero&#39;],[&#39;estro&#39;],[&#39;et&#39;],[&#39;io&#39;],[&#39;ido&#39;],[&#39;igi&#39;],[&#39;ii&#39;],[&#39;ilo&#39;],[&#39;ino&#39;],[&#39;inda&#39;],[&#39;ingo&#39;],[&#39;ismo&#39;],[&#39;isto&#39;],[&#39;njo&#39;],[&#39;obl&#39;],[&#39;on&#39;],[&#39;op&#39;],[&#39;ujo&#39;],[&#39;ulo&#39;],[&#39;um&#39;],[&#39;ant&#39;],[&#39;ad&#39;],[&#39;adi&#39;],[&#39;ado&#39;],[&#39;ajho&#39;],[&#39;ajxo&#39;],[&#39;ao&#39;],[&#39;al&#39;],[&#39;am&#39;],[&#39;an&#39;],[&#39;ano&#39;],[&#39;anta&#39;],[&#39;ante&#39;],[&#39;anto&#39;],[&#39;ar&#39;],[&#39;aro&#39;],[&#39;as&#39;],[&#39;at&#39;],[&#39;ata&#39;],[&#39;ato&#39;]</code></pre>
 
-<p>I ended up only searching for morphemes with 3 or more letters because two letter morphemes (like &ldquo;as&rdquo; or &ldquo;io&rdquo;) had too many false matches. It&rsquo;s also ordered by length because we want to find rare morphemes to highlight first before less rare ones (and in some cases, morphemes like &ldquo;ado&rdquo; would completely dominate over &ldquo;adiado&rdquo;).&nbsp;</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>I ended up only searching for morphemes with 3 or more letters because two letter morphemes (like
+            &ldquo;as&rdquo; or &ldquo;io&rdquo;) had too many false matches. It&rsquo;s also ordered by length because
+            we want to find rare morphemes to highlight first before less rare ones (and in some cases, morphemes like
+            &ldquo;ado&rdquo; would completely dominate over &ldquo;adiado&rdquo;).&nbsp;</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>I trained Word2Vec on the 20 occurrence minimum setting this time, producing a word embedding in between other two vocab sizes.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph --> 
+        <p>I trained Word2Vec on the 20 occurrence minimum setting this time, producing a word embedding in between
+            other two vocab sizes.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>The visualization produced (above) is interesting, but a little overcluttered.</p>
+        <p>The visualization produced (above) is interesting, but a little overcluttered.</p>
 
-<p>I annotated this visualization by hand because I thought I saw some cool patterns. I first noticed that the infinitive to speak, <em>paroli,</em> was in the middle of the infinitive cloud (on the bottom left), and that there were many variants of the original nearby. I sketched a little connector graph.</p>
+        <p>I annotated this visualization by hand because I thought I saw some cool patterns. I first noticed that the
+            infinitive to speak, <em>paroli,</em> was in the middle of the infinitive cloud (on the bottom left), and
+            that there were many variants of the original nearby. I sketched a little connector graph.</p>
 
-<p>The first is for the locations on the graph of a group of infinitives (-i ending): <em>alparoli, paroligi, priparoli, elparoli, ekparoli, interparoli -- </em>all represented by their morphemes, plotted as in the visualization, and connected to the root word <em>paroli</em> denoted by the asterisk (*).&nbsp;</p>
-<!-- /wp:paragraph -->
+        <p>The first is for the locations on the graph of a group of infinitives (-i ending): <em>alparoli, paroligi,
+                priparoli, elparoli, ekparoli, interparoli -- </em>all represented by their morphemes, plotted as in the
+            visualization, and connected to the root word <em>paroli</em> denoted by the asterisk (*).&nbsp;</p>
+        <!-- /wp:paragraph -->
 
-<p><img src="images/parolimapp2.jpeg" /> <!-- wp:paragraph --></p>
+        <p><img src="images/parolimapp2.jpeg" /> <!-- wp:paragraph -->
+        </p>
 
-<p>The second is for the same type of connector graph for the cloud of past tense verbs: <em>alparolis, priparolis, elparolis, reparolis, interparolis, and ekparolis</em>, all represented by their morphemes, also plotted spatially as they appeared in the visualization, and connected to the root word <em>parolis</em> denoted by the asterisk (*).</p>
-<!-- /wp:paragraph -->
+        <p>The second is for the same type of connector graph for the cloud of past tense verbs: <em>alparolis,
+                priparolis, elparolis, reparolis, interparolis, and ekparolis</em>, all represented by their morphemes,
+            also plotted spatially as they appeared in the visualization, and connected to the root word
+            <em>parolis</em> denoted by the asterisk (*).</p>
+        <!-- /wp:paragraph -->
 
-<p><img src="images/parolismapp.jpeg" /> <!-- wp:paragraph --></p>
+        <p><img src="images/parolismapp.jpeg" /> <!-- wp:paragraph -->
+        </p>
 
-<p>You&rsquo;ll notice that I listed the above in a clockwise fashion as they appeared on the word embedding graph. Why? The definitions of the words is as follows:</p>
-<!-- /wp:paragraph --><!-- wp:code -->
+        <p>You&rsquo;ll notice that I listed the above in a clockwise fashion as they appeared on the word embedding
+            graph. Why? The definitions of the words is as follows:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:code -->
 
-<pre class="wp-block-code">
+        <pre class="wp-block-code">
 <code>&lt;most formal&gt;
 Alparoli: to address
 Paroligi: to make somebody talk
@@ -293,80 +405,131 @@ Elparoli: to enunciate
 Ekparoli: to begin talking
 Interparoli: to converse
 &lt;least formal&gt;</code></pre>
-<!-- /wp:code --><!-- wp:paragraph -->
+        <!-- /wp:code -->
+        <!-- wp:paragraph -->
 
-<p>The clockwise order of the words seemed to correlate to a certain <em>formal/informalness </em>scale, and both the infinitive and the past tense groups seemed to display this! I thought this was pretty interesting, but obviously it was just one example. It became clear that we couldn&rsquo;t really digest the information at this scale, so I decided to move on in the end.&nbsp;</p>
-<!-- /wp:paragraph --><!-- wp:list {"ordered":true,"start":4} -->
+        <p>The clockwise order of the words seemed to correlate to a certain <em>formal/informalness </em>scale, and
+            both the infinitive and the past tense groups seemed to display this! I thought this was pretty interesting,
+            but obviously it was just one example. It became clear that we couldn&rsquo;t really digest the information
+            at this scale, so I decided to move on in the end.&nbsp;</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:list {"ordered":true,"start":4} -->
 
-<ol start="4">
-	<li><strong><a href="https://colab.research.google.com/drive/1PipJUkxokftW3kdTESgWhDtl09pLVkgp?usp=sharing">EOWord2VecArrows.ipynb</a></strong></li>
-</ol>
-<!-- /wp:list --><!-- wp:paragraph -->
+        <ol start="4">
+            <li><strong><a
+                        href="https://colab.research.google.com/drive/1PipJUkxokftW3kdTESgWhDtl09pLVkgp?usp=sharing">EOWord2VecArrows.ipynb</a></strong>
+            </li>
+        </ol>
+        <!-- /wp:list -->
+        <!-- wp:paragraph -->
 
-<p>The idea of these little radial connector graphs stuck with me though, and so what I did next was generate one for every possible root word, with each arrow pointing to a variation (root+morpheme). Then I could make the same attributions among many different morphemes!&nbsp; I did this with the help of a dictionary with each possible base entry as a key etc. etc. I believe this ran in something like O(n^3) time but honestly, who cares at this point.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>The idea of these little radial connector graphs stuck with me though, and so what I did next was generate
+            one for every possible root word, with each arrow pointing to a variation (root+morpheme). Then I could make
+            the same attributions among many different morphemes!&nbsp; I did this with the help of a dictionary with
+            each possible base entry as a key. This ran in something like O(n^3) time but
+            who cares at this point.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>Here&rsquo;s a word family for &ldquo;ali&rdquo;, which is supposed to represent correlatives, but I think there were a lot of false matches. Arrows go from ali pointing to each variation.</p>
-<!-- /wp:paragraph --><!-- wp:code -->
+        <p>Here&rsquo;s a word family for &ldquo;ali&rdquo;, which is supposed to represent correlatives, but I think
+            there were a lot of false matches. Arrows go from ali pointing to each variation.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:code -->
 
-<pre class="wp-block-code">
+        <pre class="wp-block-code">
 <code>[&#39;ali&#39;, &#39;alia&#39;, &#39;aliaj&#39;, &#39;realigi&#39;, &#39;faligis&#39;, &#39;aliuloj&#39;, &#39;alie&#39;, &#39;falis&#39;, &#39;alian&#39;, &#39;italion&#39;, &#39;italio&#39;, &#39;aliajn&#39;, &#39;analizo&#39;, &#39;aŭstralio&#39;, &#39;normaligi&#39;, &#39;batali&#39;, &#39;analizoj&#39;, &#39;aŭstraliaj&#39;, &#39;aŭstralia&#39;, &#39;analizojn&#39;, &#39;aliĝi&#39;, &#39;kapitalismo&#39;, &#39;novliberalismo&#39;, &#39;kapitalistoj&#39;, &#39;socialismo&#39;, &#39;ĵurnalisto&#39;, &#39;socialisma&#39;, &#39;alimaniere&#39;, &#39;aliflanke&#39;, &#39;anglalingva&#39;, &#39;aliloke&#39;, &#39;malicaj&#39;, &#39;totalisma&#39;, &#39;anglalingvanoj&#39;, &#39;koalicio&#39;....]</code></pre>
-<!-- /wp:code --><!-- wp:paragraph -->
+        <!-- /wp:code -->
+        <!-- wp:paragraph -->
 
-<p>This visualization technique was cool! The arrows looked very minimalistic and there were some underlying structures that seemed to be emerging. I still couldn&rsquo;t make much use out of it though, especially considering that some word groups had more than 200 different arrows. I never annotated these graphs.&nbsp;</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>This visualization technique was cool! The arrows looked very minimalistic and there were some underlying
+            structures that seemed to be emerging. I still couldn&rsquo;t make much use out of it though, especially
+            considering that some word groups had more than 200 different arrows. I never annotated these graphs.&nbsp;
+        </p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>Here is every word family with more than 30 arrows:</p>
-<!-- /wp:paragraph --><!-- wp:image -->
+        <p>Here is every word family with more than 30 arrows:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:image -->
 
-<a href="eo-images/arrows.png"><img src="eo-images/arrows.png" /></a>
+        <a href="eo-images/arrows.png"><img src="eo-images/arrows.png" /></a>
 
-<!-- /wp:image --><!-- wp:paragraph -->
+        <!-- /wp:image -->
+        <!-- wp:paragraph -->
 
-<p>Still think it looks sick though.</p>
-<!-- /wp:paragraph --><!-- wp:list {"ordered":true,"start":5} -->
+        <p>Still think it looks sick though.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:list {"ordered":true,"start":5} -->
 
-<ol start="5">
-	<li><strong><a href="https://colab.research.google.com/drive/1kOzkBbyIaX_vKQBBvPlq0KumGr_EHjsC?usp=sharing">Parola/Labora.ipynb</a></strong></li>
-</ol>
-<!-- /wp:list --><!-- wp:paragraph -->
+        <ol start="5">
+            <li><strong><a
+                        href="https://colab.research.google.com/drive/1kOzkBbyIaX_vKQBBvPlq0KumGr_EHjsC?usp=sharing">Parola/Labora.ipynb</a></strong>
+            </li>
+        </ol>
+        <!-- /wp:list -->
+        <!-- wp:paragraph -->
 
-<p>Here I started to get the right idea.&nbsp;</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>Here I started to get the right idea.&nbsp;</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>I took the radial connector graph concept and applied it to two specific word families from above, eliminating all the other nonsense. These were the well defined and classic stems <em>parola</em>, to speak, and <em>labora</em>, to work. I was looking for a clockwise or counterclockwise trend as I had seen before. Unfortunately, there was no correlation observed among individual word groups as I had done with <em>paroli </em>&nbsp;and <em>parolis</em>.
-</p>
-<p>
-I don&rsquo;t have a saved version of the Parola/Labora radial comparisons, but I do have one for Bona/Mala (good/bad-- of all things, you&rsquo;d expect a correlation here, but nothing obvious appeared to me. Maybe you can find something).</p>
-<!-- /wp:paragraph --><!-- wp:image -->
+        <p>I took the radial connector graph concept and applied it to two specific word families from above,
+            eliminating all the other nonsense. These were the well defined and classic stems <em>parola</em>, to speak,
+            and <em>labora</em>, to work. I was looking for a clockwise or counterclockwise trend as I had seen before.
+            Unfortunately, there was no correlation observed among individual word groups as I had done with <em>paroli
+            </em>&nbsp;and <em>parolis</em>.
+        </p>
+        <p>
+            I don&rsquo;t have a saved version of the Parola/Labora radial comparisons, but I do have one for Bona/Mala
+            (good/bad-- of all things, you&rsquo;d expect a correlation here, but nothing obvious appeared to me. Maybe
+            you can find something).</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:image -->
 
-<a href="eo-images/bona_mala.png"><img src="eo-images/bona_mala.png" /></a>
+        <a href="eo-images/bona_mala.png"><img src="eo-images/bona_mala.png" /></a>
 
-<h2 id="final">The idea that worked</h2>
+        <h2 id="final">The idea that worked</h2>
 
-<ol start="6">
-	<li><a href="https://colab.research.google.com/drive/13eaiSwijnYuYOxK7cMa0nfFIseeF71We"><strong>EOWord2VecDirectional.ipy</strong></a><strong>nb</strong></li>
-</ol>
+        <ol start="6">
+            <li><a
+                    href="https://colab.research.google.com/drive/13eaiSwijnYuYOxK7cMa0nfFIseeF71We"><strong>EOWord2VecDirectional.ipy</strong></a><strong>nb</strong>
+            </li>
+        </ol>
 
-<p>Instead of comparing the arrows across word groups, why didn&rsquo;t we just compare the changes caused by morphemes across words by representing them as arrows?</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>Instead of comparing the arrows across word groups, why didn&rsquo;t we just compare the changes caused by
+            morphemes across words by representing them as arrows?</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>We didn&rsquo;t want to know if &ldquo;laboro&rdquo; had all of these different permutations &ldquo;laborino eklaboro laborujo&rdquo;-- we wanted to see if specific morphemes like &ldquo;aro&rdquo;, denoting some internal meaning, created an analogous change in external position.&nbsp;</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>We didn&rsquo;t want to know if &ldquo;laboro&rdquo; had all of these different permutations &ldquo;laborino
+            eklaboro laborujo&rdquo;-- we wanted to see if specific morphemes like &ldquo;aro&rdquo;, denoting some
+            internal meaning, created an analogous change in external position.&nbsp;</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>If going from <em>tree </em>to <em>forest </em>&nbsp;as &ldquo;arbo&rdquo; to &ldquo;arbaro&rdquo; could be quantified as (+2, -7) on word embeddings, and if going from<em> person </em>to <em>crowd</em> as &ldquo;homo&rdquo; to &ldquo;homaro&rdquo; was also somehow (+2, -7), then we could prove Word2Vec&rsquo;s capacity for analogous arithmetic-- by showing that to go from &ldquo;one to many&rdquo; in semantic meaning, as &ldquo;aro&rdquo; implies, was a single shared vector operation across different Word2Vec word pairs.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>If going from <em>tree </em>to <em>forest </em>&nbsp;as &ldquo;arbo&rdquo; to &ldquo;arbaro&rdquo; could be
+            quantified as (+2, -7) on word embeddings, and if going from<em> person </em>to <em>crowd</em> as
+            &ldquo;homo&rdquo; to &ldquo;homaro&rdquo; was also somehow (+2, -7), then we could prove Word2Vec&rsquo;s
+            capacity for analogous arithmetic-- by showing that to go from &ldquo;one to many&rdquo; in semantic
+            meaning, as &ldquo;aro&rdquo; implies, was a single shared vector operation across different Word2Vec word
+            pairs.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>I think I&rsquo;ve succeeded in showing this.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>I think I&rsquo;ve succeeded in showing this.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>Appropriately named Directional, this program starts simple. No assembling complicated roots and tacking on morphemes. It focused exclusively on nouns (-o endings), and on a single suffix.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>Appropriately named Directional, this program starts simple. No assembling complicated roots and tacking on
+            morphemes. It focused exclusively on nouns (-o endings), and on a single suffix.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p>Pseudocode is as follows:</p>
-<!-- /wp:paragraph --><!-- wp:code -->
+        <p>Pseudocode is as follows:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:code -->
 
-<pre class="wp-block-code">
+        <pre class="wp-block-code">
 <code>Suffix = &ldquo;aro&rdquo;
 For word in vocabulary:
 If word ends with &ldquo;o&rdquo;:
@@ -378,64 +541,80 @@ For possible_word in vocabulary:
 For word in dictionary:
     Remove words that didn&rsquo;t get matched
     Draw an arrow from word to its suffix counterpart found above.</code></pre>
-<!-- /wp:code --><!-- wp:paragraph -->
+        <!-- /wp:code -->
+        <!-- wp:paragraph -->
 
-<p>And we see really nice correlations immediately:</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p>And we see really nice correlations immediately:</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p><em>The following all show a majority conforming to 1 to 2 major vector patterns:</em></p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
+        <p><em>The following all show a majority conforming to 1 to 2 major vector patterns:</em></p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
 
-<p id="ujo"><strong>-ujo (denotes box or container):</strong></p>
+        <p id="ujo"><strong>-ujo (denotes box or container):</strong></p>
 
-<a href="eo-images/ujo2.png"><img src="eo-images/ujo2.png" /></a>
-
-
-<p><strong>-ino (denotes female equivalent):</strong></p>
-<!-- /wp:paragraph --><!-- wp:image {"id":208,"sizeSlug":"large"} -->
-
-<a href="eo-images/ino.png"><img src="eo-images/ino.png" /></a>
-
-<p><strong>-aro (denotes group):</strong></p>
+        <a href="eo-images/ujo2.png"><img src="eo-images/ujo2.png" /></a>
 
 
-<a href="eo-images/aro.png"><img src="eo-images/aro.png" /></a>
+        <p><strong>-ino (denotes female equivalent):</strong></p>
+        <!-- /wp:paragraph -->
+        <!-- wp:image {"id":208,"sizeSlug":"large"} -->
 
-<p><strong>-ano (denotes member, supporter):</strong></p>
+        <a href="eo-images/ino.png"><img src="eo-images/ino.png" /></a>
 
-<a href="eo-images/ano.png"><img src="eo-images/ano.png" /></a>
-
-<p><em>The following show weak correlations but are smaller, with more possibilities for semantic variability among use cases:</em></p>
-
-<p><strong>-ego (denotes largeness, excess)</strong></p>
-
-<a href="eo-images/ego.png"><img src="eo-images/ego.png" /></a>
-
-<p><strong>-ido (denotes offspring) </strong></p>
-<!-- /wp:paragraph --><!-- wp:image {"id":210,"sizeSlug":"large"} -->
-
-<a href="eo-images/ido.png"><img src="eo-images/ido.png" /></a>
-
-<p>And the following have complex and varied vector groups but still in strong patterns. Neither are restricted to nouns so results also vary more because of that.</p>
-<!-- /wp:paragraph --><!-- wp:paragraph -->
-
-<p><strong>-ek (denotes abrupt, quick) </strong></p>
+        <p><strong>-aro (denotes group):</strong></p>
 
 
-<a href="eo-images/ek.png"><img src="eo-images/ek.png" /></a>
+        <a href="eo-images/aro.png"><img src="eo-images/aro.png" /></a>
 
-<p><strong>-mal (denotes bad, negative) </strong></p>
+        <p><strong>-ano (denotes member, supporter):</strong></p>
 
-<a href="eo-images/mal.png"><img src="eo-images/mal.png" /></a>
+        <a href="eo-images/ano.png"><img src="eo-images/ano.png" /></a>
 
-<h2>Note on morphemes</h2>
+        <p><em>The following show weak correlations but are smaller, with more possibilities for semantic variability
+                among use cases:</em></p>
 
-<p>As you can see, more than singular vectors for every morpheme, there are several different reoccuring vector operations for each morpheme-- these vectors denote the variety of different analogies actually encapsulated by a certain morpheme.</p>
-<p>For example, ek might denote abrupt in many different ways-- one of these might be "quick", which has different connotations than abrupt. In general, for verbs there is a stronger equivalency in terms of semantic change (running is to sprinting as jumping is to leaping) but for other categories not so much.</p>
+        <p><strong>-ego (denotes largeness, excess)</strong></p>
 
-<p>When the analogous case is less flexible, as in <a href="#ujo"><em>ujo</em></a> in particular, we see one really strong adherence to a single vector that goes at an acute angle downwards. Going from a thing to a container of the thing is much less interpretable (one dominating use case is nationality: (Hispano &gt;&gt; Hispanujo)) and as a result it has really strong correlations.</p>
-<!-- /wp:paragraph -->
+        <a href="eo-images/ego.png"><img src="eo-images/ego.png" /></a>
 
-<p><a href="http://eric-xia.com/"><img class="icon" src="images/whiteicon.PNG" />&nbsp;</a></p>
+        <p><strong>-ido (denotes offspring) </strong></p>
+        <!-- /wp:paragraph -->
+        <!-- wp:image {"id":210,"sizeSlug":"large"} -->
+
+        <a href="eo-images/ido.png"><img src="eo-images/ido.png" /></a>
+
+        <p>And the following have complex and varied vector groups but still in strong patterns. Neither are restricted
+            to nouns so results also vary more because of that.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+
+        <p><strong>-ek (denotes abrupt, quick) </strong></p>
+
+
+        <a href="eo-images/ek.png"><img src="eo-images/ek.png" /></a>
+
+        <p><strong>-mal (denotes bad, negative) </strong></p>
+
+        <a href="eo-images/mal.png"><img src="eo-images/mal.png" /></a>
+
+        <h2>Note on morphemes</h2>
+
+        <p>As you can see, more than singular vectors for every morpheme, there are several different reoccuring vector
+            operations for each morpheme-- these vectors denote the variety of different analogies actually encapsulated
+            by a certain morpheme.</p>
+        <p>For example, ek might denote abrupt in many different ways-- one of these might be "quick", which has
+            different connotations than abrupt. In general, for verbs there is a stronger equivalency in terms of
+            semantic change (running is to sprinting as jumping is to leaping) but for other categories not so much.</p>
+
+        <p>When the analogous case is less flexible, as in <a href="#ujo"><em>ujo</em></a> in particular, we see one
+            really strong adherence to a single vector that goes at an acute angle downwards. Going from a thing to a
+            container of the thing is much less interpretable (one dominating use case is nationality: (Hispano &gt;&gt;
+            Hispanujo)) and as a result it has really strong correlations.</p>
+            <p><a href="index.html">go back</a></p>
+    </div>
+
 </body>
+
 </html>

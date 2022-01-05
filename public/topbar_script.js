@@ -10,9 +10,11 @@ array = [
     "biological improvisation kills determinism",
     "make the future past prediction",
     "people before tribes",
+    "my friends are going to save the world",
     "read a bit and then stop reading",
     "my heart is in the work",
     "there are only a few hard things",
+    "spontaneity is all that matters",
     "everything is walking distance if I want it to be"
 ]
 
@@ -52,3 +54,5 @@ if(idxidx < idxArray.length)
 changeQuote()
 setInterval(function(){changeQuote()}, 5000)
 setInterval(function(){spreadText()},20)
+
+

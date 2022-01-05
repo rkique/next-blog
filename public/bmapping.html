@@ -3,16 +3,22 @@
 	<head>
 		<meta charset="utf-8">
         <title>Eric's Website</title>
-        <link rel="stylesheet" href="blogstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+    <div class="main">
 <h1>Brightness Mapped Collages with PIL</h1>
+
+<i>Edit: (These images perished tragically in the Great Migration Off of Wordpress in 2019. RIP flatColorTiling-1.png, 2019-2019). Fortunately, my best results can still be seen below because I used it as the thumbnail in the Three.js Era. </i>
 
 <p>My first post! It took a while to get used to the formatting but I think I have down now. Hopefully I'll be able to transition this material as I customize it more. This is a tutorial/walkthrough on how to make a collage generator with Python, with a neat extension. This generator was a small helper utility from my independent study, which I'll post about later.</p>
 
 <p>While testing out the Google Street View image dataset that I gathered for my DCGAN project, it became clear that the qualities of the image set that made it conducive to nice ML generation also made it suitable for a range of other image applications. Taken from the same single point perspective and lined up accordingly, I toyed around with a simple collage generator that would combine small windows from different images to make a new one.</p>
 
-<img src="images/bmapping1.PNG" class="image">
+<img src="../pages/images/bmapping1.PNG" class="image">
 <p>
     Here are some of the results of this process: the first three are widescreen collages from the original training screenshots and the bottom ones are from a cropped 1024×1024 dataset.</p>
 <!-- wp:paragraph -->
@@ -70,13 +76,7 @@ globMatcher = "./GSVImages/*.png"
 <!-- wp:paragraph -->
 <p>The dataset I was working with here was a set of about 300 fullscreen Google Street View images, which were 1920x1080. They are all in the "GSVImages" folder as you can see above.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:gallery {"ids":[74,75,76,77,78,79]} -->
-<figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-193.png?fit=580%2C326" alt="" data-id="74" data-full-url="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-193.png?fit=1920%2C1080" data-link="http://eric-xia.com/index.php/2020/05/11/brightness-mapped-collages/screenshot-193/" class="wp-image-74"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://i0.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-219.png?fit=580%2C326" alt="" data-id="75" data-full-url="https://i0.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-219.png?fit=1920%2C1080" data-link="http://eric-xia.com/index.php/2020/05/11/brightness-mapped-collages/screenshot-219/" class="wp-image-75"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-234.png?fit=580%2C326" alt="" data-id="76" data-full-url="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-234.png?fit=1920%2C1080" data-link="http://eric-xia.com/index.php/2020/05/11/brightness-mapped-collages/screenshot-234/" class="wp-image-76"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-301.png?fit=580%2C326" alt="" data-id="77" data-full-url="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-301.png?fit=1920%2C1080" data-link="http://eric-xia.com/index.php/2020/05/11/brightness-mapped-collages/screenshot-301/" class="wp-image-77"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://i1.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-358.png?fit=580%2C326" alt="" data-id="78" data-full-url="https://i1.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-358.png?fit=1920%2C1080" data-link="http://eric-xia.com/index.php/2020/05/11/brightness-mapped-collages/screenshot-358/" class="wp-image-78"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-365.png?fit=580%2C326" alt="" data-id="79" data-full-url="https://i2.wp.com/eric-xia.com/wp-content/uploads/2020/05/Screenshot-365.png?fit=1920%2C1080" data-link="http://eric-xia.com/index.php/2020/05/11/brightness-mapped-collages/screenshot-365/" class="wp-image-79"/></figure></li></ul></figure>
-<!-- /wp:gallery -->
-
-<!-- wp:paragraph -->
-<p>(If you just want to use the collage generator, everything you need to know has been explained-- you can skip to the end to download the Python file).<br>I will now try to explain each of the steps of the program process. It's a pretty straightforward process: just setups and then pasting rectangles into our canvas.<br>The first step is to gather the Images into a single array. Using our specified globMatcher, we can find the right files and append them as Image objects.</p>
+<p>I will now try to explain each of the steps of the program process. It's a pretty straightforward process: just setups and then pasting rectangles into our canvas.<br>The first step is to gather the Images into a single array. Using our specified globMatcher, we can find the right files and append them as Image objects.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -145,12 +145,10 @@ canvas.save(savename+'.png');</code></pre>
 <p>That was simple! You should see an image collage of the same size appear. Feel free to tweak hDivs and wDivs as necessary to make more or less divisors in the image. </p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":53,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://i1.wp.com/eric-xia.com/wp-content/uploads/2020/05/flatColorTiling-1.png?fit=580%2C327" alt="" class="wp-image-53"/><figcaption>Off by one error here, whoops. This is from the earliest version.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>Yet the images that this collage generator creates don't look real enough. Each individually sourced square doesn't have the benefit of understanding what a good final result might look like-- one with consistent tone. </p>
+<p>At this point, I realized that images that this collage generator creates don't look good enough. Each individually sourced square doesn't have the benefit of understanding what a good final result might look like-- one with consistent tone. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -236,6 +234,6 @@ bP = brightnessProfile(imagesArray[random.randint(0,len(imagesArray)-1)], boxArr
 <a href="http://eric-xia.com/">
 <img src="images/whiteicon.PNG" class="icon">
 </a>
-
+</div>
     </body>
 </html>

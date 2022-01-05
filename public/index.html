@@ -10,10 +10,11 @@
     </script>
 
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=1538px">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
@@ -161,17 +162,34 @@
         margin: 1em 0em;
     }
     #quotes {
+        overflow-y: hidden;
+        overflow: hidden;
+        white-space: nowrap;
         background-color: yellow;
-        color: black;
+        font-size: 18px;
+        color: rgb(15, 0, 153);
         text-transform: uppercase;
         z-index: 999;   
         text-align: left;
+        letter-spacing: -0.06em;
     }
 
-    #outlineContainer{
-            display: none;
-        }
-
+    #quotes2 {
+        overflow-y: hidden;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: rgb(254, 254, 255);
+        font-size: 18px;
+        color: rgb(145, 0, 19);
+        text-transform: uppercase;
+        z-index: 999;  
+        text-align: right;
+        letter-spacing: -0.06em;
+    }
+    #media {
+        max-width: 200%;
+        width: 100%;
+    }
     @media screen and (max-width: 992px) {
         .rightbar {
             display: none;
@@ -250,7 +268,7 @@
         text-decoration: none;
     }
     #social_media{
-        background: rgb(255, 255, 255);
+        background: rgb(15, 21, 22);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -260,7 +278,7 @@
     }
 
     .yello{
-        color: rgb(255, 223, 136);
+        color: rgb(255, 255, 233);
     }
     .bg-blu{
         background: rgb(23, 49, 73);
@@ -268,6 +286,8 @@
     }
     .goodreads
     {
+        margin-top: 7px;
+       height: 55px;
        font-weight: 200;
        font-size: 40px;
        background: #F4F1EA;
@@ -281,7 +301,11 @@
         height: 100%;
         transition: right 0.4s ease-in-out;
     }
+    
 
+    .webring{
+        height: 100% !important;
+    }
 
     .rightbar *::selection {
         background-color: #3eafdb
@@ -305,9 +329,24 @@
         background: rgb(97, 97, 66);
     }
 
+
+    #email-decoration{
+        letter-spacing: 0px;
+         font-size: 11px;
+        vertical-align: top;
+        background: white;
+        color:rgb(155, 49, 0);
+
+    }
+    #book-list-block{
+        height: 2em;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
     #daily-blog-container {
         height: 66vh;
-        border-color: rgb(255, 81, 0);
+        border-color: rgb(255, 255, 255);
         border-right-width: 10px;
         border-left-width: 10px;
         border-bottom-width: 0px;
@@ -323,12 +362,28 @@
     #daily-blog *{
         padding: 3px 5px;
     }
-
+    #daily-blog *+*{
+        padding: 6px 5px;
+    }
+    #lowtech{
+            margin-top: 7px;
+            height: 56px;
+        }
     #biography {
         text-align: justify;
-        border: 3px solid rgb(255, 136, 0);
+        border: 0px solid rgb(255, 94, 0);
         border-left-width: 20px;
         border-right-width: 20px;
+    }
+
+    #essays-blog {
+        border-color: yellow;
+        border-top-width: 4px;
+    }
+
+    .flicker a{
+        color: rgb(6, 202, 49);
+        font-size: 40px;
     }
 </style>
 
@@ -337,19 +392,21 @@
         <a class="fl w-15 pa2 bg-yellow" href="https://eric-xia.com/viz.html" >HIGH SCHOOL PROJECTS </a>
         <a class="fl bg-dark-red washed-red pa2 w-10" href="portfolio.html">(Visual) (Art) Portfolio</a>
         <a class="fl bg-dark-pink washed-red pa2 w-10" href="https://www.word.golf" >⤺ go word golfing</a>
+        <a class="fl w-25 bg-dark-red washed-red tr" href="culture.html">My Cultural Influences</a>
     <div id="social_media" class="absolute flex right-0 f5 w-40 h-100 ">
-        <a href="https://www.linkedin.com/in/exia" class="fl bg-dark-blue white pa1 pv2" style="text-decoration: none;" >
+
+        <a href="https://www.linkedin.com/in/exia" class="fl bg-dark-blue white pa1 pv1" >
             <span style="font-size: 30px;">𓅯</span> <span style="font-style: normal">connect with me on LinkedIn</span></a>
-        <a href="https://www.quora.com/profile/Eric-Xia-18" style="background-color: white; text-decoration: none;" class="fl dark-red pa2 b f2"><span>Quora</span></a>
-        <a href="https://www.instagram.com/eriq.xia/" style="text-decoration: none;" class="fl white bg-lightest-blue pa2 b f4 instagram"><span>Instagram</span></a>
-        <a href="" style="text-decoration: none;" class="fl bg-dark-gray white ph2 pt2 f2"><span>github</span></a>
-        <a href="" style="text-decoration: none;" class="fl goodreads white pa2 f4"><span>goodreads</span></a>
+        <a href="https://www.quora.com/profile/Eric-Xia-18" style="background-color: white; text-decoration: none;" class="fl dark-red pa1 b f2"><span>Quora</span></a>
+        <a href="https://www.instagram.com/eriq.xia/" style="text-decoration: none;" class="fl white bg-lightest-blue pa1 b f4 instagram"><span>Instagram</span></a>
+        <a href="https://github.com/rkique" style="text-decoration: none;" class="fl bg-dark-gray white ph2 f2"><span>github</span></a>
+
+        <a href="" class="fl goodreads white pa1">goodreads</a>
         <script src="https://yesterwebring.neocities.org/script-min.js"></script>
         <webring-css site="https://eric-xia.com"></webring-css>
-        <div id='webring'>
-            <script type="text/javascript" src="http://emreed.net/onionring-variables.js"></script>
-            <script type="text/javascript" src="http://emreed.net/onionring-widget.js"></script>
-            </div>
+        <div class="fl w-5 flicker white" ><a href="https://purplehello98.neocities.org/">‹</a></div>
+        <img src="images/lowtech2.PNG" id="lowtech" class="fl w-30">
+        <div class="fl w-5 flicker white"><a href="https://umabreakdown.neocities.org/">›</a></div>
         <style>
         :root {
             --textColor:black;
@@ -357,16 +414,20 @@
             --linkColor:blue;
             }
         </style>
-        <a href="mailto:eriq.xia@gmail.com" class="fl bg-yellow navy pa1 b f2 w-90 cond"><span>email me (something nice)</span></a>
+        <p class="f5 w-100 horizontal dragscroll" id="quotes"></p>
+        <p class="f5 w-100 horizontal dragscroll" id="quotes2"></p>
+        <a href="mailto:eriq.xia@gmail.com" class="fl bg-yellow navy pa1 b f2 w-90 cond draggable ">email me <span id="email-decoration"> a quote, book rec, pictures of cool rocks </span></a>
         <a class="fl bg-navy yellow pa2" href="https://www.nintil.com" id="random_blog"  >⤺ visit a blog I like</a>
         <a class="fl bg-navy yellow pa2 pv0" href="https://www.eric-xia.com/blogroll.js" id="random_blog" style="text-decoration: none"> or view all</a>
+
         <p class="fl w-70"></p>
-
-        <div id="book-list-block" class="dib ba">
-            My current book recs are <a href="https://www.sbnation.com/a/17776-football">17776</a> and Sinopticon.  <div class=""></div>
-            
+        <div id="book-list-block" class="dib ba white b--white horizontal dragscroll w-100">
+            My current book recs are the multimedia novel <a href="https://www.sbnation.com/a/17776-football">17776</a> and Sinopticon, an anthology of chinese science fiction.  <div class=""></div>
         </div>
-
+        <img href="https://yesterweb.org/no-to-web3/" src="images/noweb32.gif">
+        <img href="https://devurandom.xyz/tokipona/" src="https://devurandom.xyz/banners/tokipona_banner.gif">
+        <img src="images/htmldream.gif">
+        <img src="images/catscape2.gif">
         </div>
         </div>
 
@@ -374,15 +435,15 @@
         <div class="fl w-30">
             <h1 class="" id="raspberry">ERIC'S BLOG </h1>
         </div>
-        <div class="fl w-30">
-            <p class="f5" id="quotes"></p>
+        <div class="fl w-30 tr">
         </div>
         <script src="topbar_script.js"></script>
+        <script src="topbar_script2.js"></script>
         <script src="blogroll.js"></script>
     </div>
 
     <div id="third_row" class="cf f5">
-        <a class="fl w-20 modern bg-dark-red black" href="https://www.eric-xia.com/esperanto1.html">word vectors and agglutinative esperanto</a>
+        <a class="fl w-20 modern bg-dark-red black" href="https://www.eric-xia.com/esperanto1.html">word vectors + agglutinative esperanto</a>
         <a class="fl w-20 modern bg-orange black" href="https://www.eric-xia.com/synplifier.html">synthetic biology protocol simplifier</a>
         <a class="fl w-20 modern bg-red black" href="https://www.eric-xia.com/crisis.html">redesigning the model UN crisis format</a>
         <a class="fl w-40 modern bg-orange black" href="https://www.eric-xia.com/crisis.html">redesigning the model UN crisis format</a>
@@ -393,13 +454,17 @@
     </div>
     
     <div id="fourth_row" class="cf f5">
-        <div class="fl w-30" id="media-box">
-            <img class="media w-100" src="images/pairsm.jpg">
+        <div class="fl w-30 dragscroll">
+            <img class="" id="media" src="images/pairsm.jpg">
         </div>
         
-        <div class="fl w-30 ba b--gold bg-black moon-gray" id="daily-blog-container" style="overflow-y: scroll">
-            <div class="top-0 left-0 f6 white b ph1 daily-feed"><p>daily feed</p></div>
+        <div class="fl w-30 ba b--gold bg-black gray vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll">
+            <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>daily feed</p></div>
             <div id="daily-blog" class="f6">
+            <p> 
+                (1.4.2022) Finished my online course. Still working through the design of this website. I'll probably be experimenting with some big changes before settling down on anything. I like the general look right now but some of the links are missing. 
+
+            </p>
             <p>
                 (1.3.2022) This is starting to look good but it needs more time. But also, I can't stand the look of my old site anymore! I'm going to have to finish this later. I'm (really) almost done with the Coursera ML course! Just have to do collaborative filtering and then I'm done. Matlab was impossible to begin with but I've learned to check dimensions.
             </p>
@@ -412,6 +477,19 @@
                   Custom prompts are here, implemented with an additional run_uuid column in mySQL. Enter
 
                  word.golf/p/[start]>[target]  to try it out. This will give me additional flexibility when implementing curated timed sets, and eventually allow users to create their own timed sets.
+            </p>
+            <p> (12.5.2021) Been working through the Coursera machine learning course. There are a ton of programming assignments I didn't do in sequence with the videos. Still, over halfway done with them!
+                
+                Lots of word golf work its going well.
+    
+                I realy want to rewrite my blog to a more immediately interesting form. It can have a microupdate section, and then a projects section to highlight cool things.
+    
+                Read Sinopticon, an anthology of chinese science fiction from this year. It's really, touching and inspiring. There's a perceptiveness unique to chinese writing that american english can't come close to. The closest thing is borges and that's also translated.  
+    
+                Also read Breakfast of Champions by Kurt Vonnegut and Envisioning Information by Edward Tufte (really good). Also started reading Cryptonomicon (I'm getting sick of Neal Stephenson's social theories of hobbit and dwarve culture), Infinite Jest , "the first great internet novel" (it's really good), Red Mars (first of the trilogy), and reviewing Div Grad Curl. 
+    
+                Made a bunch of drawings since Inktober.
+
             </p>
             </div>
         </div>
@@ -427,25 +505,25 @@
         </div>
         
         <div class="absolute left-0 bottom-0 w-30 ba h-25" id="essays-blog">
-            <a class="fl w-25 h-50 tc cond f4 pa4 bg-orange black" href="https://www.eric-xia.com/crisis.html">My House</a>
+            <a class="fl w-25 h-50 tc cond f4 pa4 bg-orange black" href="https://www.eric-xia.com/myhouse.html">My House</a>
             <a class="fl w-25 h-50 tc cond f4 pa4 bg-light-green black" href="https://www.eric-xia.com/lynnwood.html">Lynnwood</a>
             <a class="fl w-50 h-50 tc cond f4 pa4 bg-blu black" href="culture.html">My Cultural Influences</a>
-            <a class="fl w-50 h-50 tc cond f4 pa4 bg-orange black" href="https://www.eric-xia.com/lynnwood.html">Aesthetic Altruism</a>
-            <a class="fl w-50 h-50 tc cond f4 pa4 bg-washed-green black" href="https://www.eric-xia.com/lynnwood.html">Ghosts and Shells</a>
+            <a class="fl w-75 h-50 tc cond f4 pa4 bg-orange black" href="https://www.eric-xia.com/lynnwood.html">Aesthetic Altruism</a>
+            <a class="fl w-25 h-50 tc cond f4 pa4 bg-washed-green black" href="https://www.eric-xia.com/lynnwood.html">Ghosts and Shells</a>
     
         </div>
 
         <div class="absolute right-0 bottom-0 w-40 h-50 bg-white" id="biography-container">
-            <div class="ma3 pa3 ba b--orange h-100 bg-black yello f6" id="biography">
-                <p class="b">ABOUT ME</p>
+            <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6" id="biography">
+                <p class="b">ABOUT ME</p>   
                 <hr>
-                <p>I'm an eighteen year old student living in Lynnwood, Washington. I'm on a year of medical leave before enrolling at Brown University next fall. I'm interested in a lot of things, including biology, philosophy, art, and computer science. I like running long distances and learning new things. I read a lot of blogs and am active on Quora. </p>
+                <p>I'm an eighteen year old student living in Lynnwood, Washington. I'm on a year of medical leave before enrolling at Brown University next fall. I'm interested in a lot of things, including biology, philosophy, art, and computer science. I like running long distances and learning new things. I read a lot of blogs and write my thoughts here. </p>
                 <br>
-                <p class="f6"> As of October 2021, I am proud to be an Emergent Ventures grantee! I am developing a sport known as word golf (word.golf) which uses word vectors to model language. I believe in intrinsic motivation and want to create meaning for others. I want to build things that money can't buy.</p> 
+                <p> As of October 2021, I am proud to be an Emergent Ventures grantee! I am developing a sport known as word golf (word.golf) which uses word vectors to model language. I believe in intrinsic motivation and want to create meaning for others. I want to build things that money can't buy.</p> 
                 <br>
                 <p>You can read some essays on the left side of this page, browse my independent projects from high school, browse through my art (drawn with graphite and colored digitally), or read the daily feed in the center of the page. I am in the process of moving content from my old site to this one. </p> 
                 <br>
-                <p>This site is built with a CSS framework called Tachyons and served through Netlify, Github Pages, and Next.js. My main project, word.golf, is built with python, flask, tachyons, nltk, gensim, SQLalchemy, mySQL, and deployed on AWS Lightsail.</p>
+                <p>This site is built with a CSS framework called Tachyons and served through Netlify, Github Pages, and Next.js. My main project, word.golf, is built with python, flask, tachyons, nltk, gensim, sqlalchemy, mySQL, and deployed on AWS Lightsail.</p>
             </div>
         </div>
     
@@ -524,7 +602,10 @@
         </div>
 
 
-        <script>
+
+
+        <!--
+                   <script>
             document.addEventListener("DOMContentLoaded", function() {
             var lazyloadImages = document.querySelectorAll("img.image");    
             var lazyloadThrottleTimeout;
@@ -644,7 +725,6 @@
                 }
             }
         </script>
-
         <div style="overflow: hidden">
             <div id="outlineContainer">
                 <div id="outlineContainerInternals">
@@ -660,7 +740,6 @@
             </div>
         </div>
 
-        <!--
         <h3>December 10th <span class="tt">2021 CE</span></h3>
         <p>I had a really inspiring conversation yesterday that made me think hard about my future. I still have so much to learn, about life, my place in it, what I can do. </p>
 
