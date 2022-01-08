@@ -4,19 +4,25 @@ array = [
     "I am a wild horse",
     "your fourth grade self against the world",
     "we lack courage, not genius",
+    "Universal Basic Paraglider",
+    "Save yourself! Go outside! Do something!",
+    "There is no speed limit",
     "daylight to lamplight",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
     "make the future past prediction",
     "people before tribes",
+    "vector love and paper chasers wring out leaner biotech dreamers",
+    "in search of rare transmutations of money and time",
     "my friends are going to save the world",
     "my heart is in the work",
     "there are only a few hard things",
     "spontaneity is all that matters",
     "everything is walking distance if I want it to be",
     "All creation is defiance",
-    "here at the end and the beginning of all things"
+    "here at the end and the beginning of all things",
+    "Shut up and calculate"
 ]
 
 function shuffleArray(array) {
