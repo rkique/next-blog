@@ -11,11 +11,12 @@ array = [
     "make the future past prediction",
     "people before tribes",
     "my friends are going to save the world",
-    "read a bit and then stop reading",
     "my heart is in the work",
     "there are only a few hard things",
     "spontaneity is all that matters",
-    "everything is walking distance if I want it to be"
+    "everything is walking distance if I want it to be",
+    "All creation is defiance",
+    "here at the end and the beginning of all things"
 ]
 
 function shuffleArray(array) {
