@@ -12,6 +12,7 @@ array = [
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
     "make the future past prediction",
+    "Who's afraid of Virginia Woolf?",
     "people before tribes",
     "vector love and paper chasers wring out leaner biotech dreamers",
     "in search of rare transmutations of money and time",
