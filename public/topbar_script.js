@@ -8,6 +8,7 @@ array = [
     "Save yourself! Go outside! Do something!",
     "There is no speed limit",
     "daylight to lamplight",
+    "possibilities, not probabilities",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
