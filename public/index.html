@@ -488,7 +488,7 @@
             I draw with a mechanical Pentel Click 0.7 on paper and upload pictures with my phone to Krita. I like experimenting with mix blend modes, cutout layers, and adjustment curves.
         </div>
         <div id="book-list-block" class="dib ba white b--white horizontal dragscroll w-100">
-           My favorite trick that I've figured out is to pair a VERY easy task with a hard task. When I draw I usually just start scribbling in the center aimlessly and then figure it out from there.
+           The most effective advice I've heard is to pair very easy tasks with hard ones. When I draw I usually just start scribbling in the center aimlessly and then figure it out from there.
         </div>
         
         <div id="gravelhacks" class="dib white ba b--hot-pink horizontal dragscroll w-30">
@@ -541,6 +541,9 @@
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
             <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>daily feed</p></div>
             <div id="daily-blog" class="f6">
+            <p> (2.5.2022) Lots more work today on golf. Redesigned google authentication to use GSI and also styled cytoscape to work with color scheming. Also worked on the mobile layout. Posters are seeming more like a viable option. Super proud of how far I've come. Will spend the rest of the night drawing.
+                <img src="images/updatedgolfview.png">
+            </p>
             <p>(2.4.2022) 10 mile run this morning down to Madison Beach. 
                 
                 Figured out how to output JSON from the database model and formatted it. Implemented a graph viewer with cytoscape.js fed with JSON. The spacing algorithm is "cose-bilkent". It's basic, so in the future we want to have closest path and start and end words highlighted, better spacing, animated interactive etc. but this version works great for diagnostics. Went through 255 base prompts and identified the ones with the highest entity counts, basically words and links. Around 85 or a third of them have 100 entities or more; these are the top completed and probably most interesting prompts, and we can restrict play to them in the future. Out of those 85 (graphed) I identified 12 outliers with 198 entities or more. Analysis of these outlier prompts show that they are heuristically much more interesting than the average prompt: pilot>pineapple, discovery>quilt, mammal>argument, taxi>alphabet, quartz>limit, neon>mechanic. I'm thinking I can do some statistical analysis (what difficulty? what distance? what diversity? what range?) now that we have a good empirical basis (~3000 completed runs) on which to grade prompts, and a convincing metric for a good prompt (Do people complete it?). One interesting note is that for almost all potato>flag runs the player will go to "country" which is not directly connected to flag, but eventually find their way over. I really like the shape of taxi>alphabet and monitor>pupil. catcher>bowl and pipe>license exhibit a lot of loopy behavior. Finally I was surprised by that none of these prompts exhibit bottleneck behavior where the player always goes to a middle word before the finish.
