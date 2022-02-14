@@ -8,13 +8,12 @@ array = [
     "Save yourself! Go outside! Do something!",
     "There is no speed limit",
     "daylight to lamplight",
-    "possibilities, not probabilities",
+    "the above proposition is occasionally useful",
+    "it is always the listener's burden to understand the other message",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
-    "make the future past prediction",
     "Who's afraid of Virginia Woolf?",
-    "people before tribes",
     "vector love and paper chasers wring out leaner biotech dreamers",
     "in search of rare transmutations of money and time",
     "my friends are going to save the world",
@@ -23,8 +22,6 @@ array = [
     "spontaneity is all that matters",
     "everything is walking distance if I want it to be",
     "All creation is defiance",
-    "here at the end and the beginning of all things",
-    "Shut up and calculate"
 ]
 
 function shuffleArray(array) {
