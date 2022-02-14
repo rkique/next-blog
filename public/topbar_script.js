@@ -9,7 +9,7 @@ array = [
     "There is no speed limit",
     "daylight to lamplight",
     "the above proposition is occasionally useful",
-    "it is always the listener's burden to understand the other message",
+    "it is always the listener's burden to understand the outer message",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
     "biological improvisation kills determinism",
@@ -20,8 +20,7 @@ array = [
     "my heart is in the work",
     "there are only a few hard things",
     "spontaneity is all that matters",
-    "everything is walking distance if I want it to be",
-    "All creation is defiance",
+    "everything is walking distance if I want it to be"
 ]
 
 function shuffleArray(array) {
