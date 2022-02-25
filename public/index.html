@@ -552,6 +552,9 @@
             <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>daily feed</p></div>
             <div id="daily-blog" class="f6">
             <p>
+                (2.25.2022) Okay. I'm sculpting the Google News word2vec model. Initial vocab size is three million. First thing is to index against wordfrequency for a zipf score of 1.5 or more (average occurrence of one in 31 million), which immediately reduces size down to 245k. Removing forbidden characters (like # which encodes for any number) reduces to 157k. These are both relatively low-risk operations; forbidden characters does not exclude the single hyphen '-' or the apostrophe, and zipf only excludes words like "srebotnik" or "baronetage". The next trickier step is eliminating first and last name words, which can lead to namehell. Using a standard list of english names will lead to excluding words which have a common usage, e.g. "baker". So instead, we will perform a double-negative operation on the list of names, which uses a free dictionary API to eliminate words with a standard definition. That's where I am right now -- the API limits continuous requests but I can chunk input/output in batches of a thousand or so. Update later.
+            </p>
+            <p>
                 (2.24.2022) Wow. Nothing is as frustrating and liberating as the feeling that if there were two copies of yourself you could get everything you wanted done. Studying physics, chinese, reading <i>hyperion</i>, <i>zen and the art of motorcycle maintenance</i>, <i>introduction to genetics</i>, <i>godel escher bach</i>, creating a TSNE model of GloVe, restricting Word2Vec to a similar set, designing a screenprintable golf poster, working out regularly, drawing ... 
                 <br><br>
                 Springtime is here.
