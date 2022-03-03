@@ -189,6 +189,7 @@
     #media {
         max-width: 200%;
         width: 115%;
+        margin-left: -15%;
     }
     @media screen and (max-width: 992px) {
 
@@ -450,7 +451,9 @@
         line-height: 0.95;
         letter-spacing: -0.04rem;
     }
-
+    .utopia-hide:hover {
+        z-index: -999;
+    }
     .bg-red {background-color: rgb(255, 0, 0);}
     .bg-dark-red {background-color: rgb(206, 65, 0);}
     .bg-orange {background-color: rgb(235, 94, 0);}
@@ -545,7 +548,7 @@
     
     <div id="fourth_row" class="cf f5">
         <div class="fl w-30 dragscroll">
-            <img class="" id="media" src="images/utopiasmm_1.webp">
+            <a href="images/utopia.jpg" class="utopia-hide"><img class="" id="media" src="images/utopiasmm_1.webp"></a>
         </div>
         
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
@@ -682,9 +685,9 @@ I read this in a thrift store, skipping sections near the end about sports, race
              <div class="w-100 bg-yello h-25">
                  <div class="fl w-30">k</div>
                  <div class="fl w-30 horizontal dragscroll gallery-block" >
-                 <img class="fl w-33" src="images/risksm.webp">
-                 <img class="fl w-33 di" src="images/printersmm.webp">
-                 <img class="fl w-33 di" src="images/algosm.webp" href="images/algo.jpg">
+                 <a href="images/risk.jpg"><img class="fl w-33" src="images/risksm.webp"></a>
+                 <a href="images/printersm.jpg"><img class="fl w-33 di" src="images/printersmm.webp"></a>
+                 <a href="images/algo.jpg"><img class="fl w-33 di" src="images/algosm.webp" href="images/algo.jpg"></a>
                  </div>
              </div>
         </div>
@@ -699,7 +702,7 @@ I read this in a thrift store, skipping sections near the end about sports, race
     
         </div>
         <div class="absolute right-0 bottom-0 w-40 second-media bg-white">
-            <img class="" id="media2" src="images/orcasmm.webp">
+            <a href="images/orcasm.jpg"><img class="" id="media2" src="images/orcasmm.webp"></a>
         </div>
         <div class="absolute right-0 bottom-0 w-30 h-50 bg-white" id="biography-container">
             <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6" id="biography">
