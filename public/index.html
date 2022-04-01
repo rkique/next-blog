@@ -442,6 +442,18 @@
         border-color:rgb(68, 68, 63)
     }
 
+    #buttons-block *{
+        pointer-events: none;
+    }
+
+    .noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
+}
     #essays-blog {
         border-color: yellow;
         border-top-width: 4px;
@@ -517,7 +529,7 @@
         </div>
         <div id="brick-uses" class="dib white ba b--yellow horizontal dragscroll w-70">
         </div>
-        <div>
+        <div id="buttons-block" class="noselect">
             <img src="images/doesnt_have_to.gif" style="width: 49%;">
             <img href="https://yesterweb.org/no-to-web3/" src="images/noweb32.gif">
             <img href="https://devurandom.xyz/tokipona/" src="https://devurandom.xyz/banners/tokipona_banner.gif">
@@ -772,11 +784,11 @@ I read this in a thrift store, skipping sections near the end about sports, race
             <a class="fl w-25 h-50 tc f6 lh-solid pa4 bg-washed-green black shrine" href="lynnwood.html">Lynnwood Shrine</a>
     
         </div>
-        <div class="absolute right-0 bottom-0 w-40 second-media bg-white">
-        <img class="" id="media2" src="images/orcasmm.webp">
+        <div class="absolute right-0 bottom-0 w-40 second-media bg-white noselect">
+        <img class="noselect" id="media2" src="images/orcasmm.webp">
         </div>
         <div class="absolute right-0 bottom-0 w-30 h-50 bg-white" id="biography-container">
-            <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6" id="biography">
+            <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6 noselect" id="biography">
                 <p class="b">ABOUT ME</p>   
                 <hr>
                 <p>I'm a student living in Seattle, Washington. I'm on a year of medical leave before enrolling at Brown University next fall (I don't go to UW; <a href="https://www.linkedin.com/in/eric-xia-seattle/">this Eric Xia</a> does though!). I'm interested in a lot of things, including biology, philosophy, art, and computer science. I like running long distances and learning new things. I read a lot of blogs and write my thoughts here. </p>
