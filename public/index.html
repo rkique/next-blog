@@ -350,7 +350,7 @@
         padding-top: 2px;
     }
     .daily-feed{
-        background: rgb(90, 129, 40);
+        background: rgb(40, 61, 8);
 
     }
 
@@ -483,17 +483,26 @@
         z-index: -999;
     }
     .bg-red {background-color: rgb(255, 0, 0);}
-    .bg-dark-red {background-color: rgb(206, 65, 0);}
+    .bg-gradient1 {background: linear-gradient(to right, rgb(148, 7, 0), rgb(193, 249, 73), yellow)}
+    .bg-dark-red {background-color: rgb(15, 103, 68);}
+    .bg-dark-pink {background-color: rgb(36, 41, 38);}
     .bg-orange {background-color: rgb(235, 94, 0);}
     .github{background-color: #24292f}
+    .fleshed {
+        background:none;
+        z-index: -1000;
+        font-size: 15px;
+        color: rgb(163, 190, 9);
+        transform: translate(40px, 0px) scale(1.2);
+    }
 </style>
 
 <body>
     <div id="first_row" class="cf f5">
-        <a class="fl w-15 pa2 bg-yellow" href="viz.html" >HIGH SCHOOL PROJECTS </a>
+        <a class="fl w-15 pa2 bg-yello" href="viz.html" >HIGH SCHOOL PROJECTS </a>
         <a class="fl bg-dark-red washed-red pa2 w-10" href="portfolio.html">(Visual) (Art) Portfolio</a>
         <a class="fl bg-dark-pink washed-red pa2 w-10" href="https://www.word.golf" >⤺ go word golfing</a>
-        <a class="fl w-25 bg-orange washed-red tr" href="culture.html">My Cultural Influences</a>
+        <a class="fl b w-25 bg-white orange tracked fleshed tc" href="culture.html">My Cultural Influences</a>
     <div id="social_media" class="absolute flex right-0 f5 w-40 h-100 ">
 
         <a href="https://www.linkedin.com/in/exia" class="fl bg-dark-blue white pa1 pv1" >
@@ -517,11 +526,11 @@
         </style>
         
         <p class="f5 w-100 horizontal dragscroll" id="quotes2"></p>
-        <a href="mailto:eriq.xia@gmail.com" class="fl bg-yello navy pa1 b f2 w-60 cond draggable ">email me <span id="email-decoration"> a quote, book rec, pictures of cool rocks </span></a>
+        <a href="mailto:eriq.xia@gmail.com" class="fl bg-gradient1 navy pa1 b f2 w-60 cond draggable ">email me <span id="email-decoration"> a quote, book rec, pictures of cool rocks </span></a>
         <a href="https://gossipsweb.net" class="fl pa1 b f2 w-40 cond draggable "><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands."/></a>
         <a class="fl bg-black yellow pa2 pv0" href="https://www.nintil.com" id="random_blog"  >⤺ visit a blog I like</a>
         <a class="fl bg-black yellow pa2 pv0" href="blogroll.js" id="random_blog" style="text-decoration: none"> or view all</a>
-        <a class="fl bg-orange white cond pa2 pv0" href="https://hotlinewebring.club/eric-xia/next">< HOTLiNE </a> 
+        <a class="fl bg-orange white cond pa2 pv0" href="https://hotlinewebring.club/eric-xia/next">&#60;HOTLiNE </a> 
         <a class="fl bg-orange white cond pa2 pv0" href="https://hotlinewebring.club/eric-xia/previous">WEBRiNG></a>
         <a class="fl bg-washed-blue dark-red cond pa2 pv0 w-40 f5" href="https://www.sbnation.com/a/17776-football">What football will look like in the future</a>
         <p class="fl w-70"></p>
@@ -565,12 +574,12 @@
 
     <div id="third_row" class="cf f5">
         <a class="fl w-20 modern bg-dark-red light-gray" href="esperanto1.html">word vectors + agglutinative esperanto</a>
-        <a class="fl w-20 modern bg-orange light-gray" href="synplifier.html">A PoC for simpler synthetic biology</a>
-        <a class="fl w-20 modern bg-red light-gray" href="crisis.html">redesigning the model UN crisis format</a>
+        <a class="fl w-20 modern bg-dark-pink light-gray" href="synplifier.html">A PoC for simpler synthetic biology</a>
+        <a class="fl w-20 modern bg-dark-red light-gray" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl w-40 modern bg-orange light-gray" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl f6 w-15 pa2 bg-white black" href="gans.html">GANs on Google Street View</a>
         <a class="fl f6 w-15 pa2 bg-washed-blue black" href="bmapping.html">brightness mapped collages</a>
-        <a class="fl f6 w-10 pa2 bg-washed-red black b tracked-tight" href="/HSKreading.html">LEARN CHINESE</a>
+        <a class="fl fleshed w-10 pa0 bg-yello black b tracked-tight" href="/HSKreading.html">LEARN CHINESE</a>
         <a class="fl f6 w-10 pa2 bg-washed-blue black" href="arrow/index.html">proving arrow's theorem</a>
         <a class="fl f6 w-30 pa2 bg-washed-blue black" href="gravel.html"> GravelHacks 2021 GRAND PRIZE WINNER</a>
     </div>
@@ -581,7 +590,7 @@
         </div>
         
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
-            <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>daily feed</p></div>
+            <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>DAILY FEED</p></div>
             <div id="daily-blog" class="f6">
                 <p>
                     (4.10.2022) I discovered the Central Seattle Public Library! It's an amazing place. Read <i>Norwegian Wood</i> by Murakami, <i>Black Dogs</i> by Ian McEwan, a book on wildfowl decoys, a Hegel primer, <i>100 Years of Solitude</i> (don't bother), a book about tarot cards, and <i>Aquinas on Virtue</i>, started reading <i>Magic Mountain</i> and <i>Analects</i>, almost done with <i>Kafka on the Shore</i> by Murakami. Oh also, <i>Ecotopia</i> which is a WILD sci-fi novel about a Pacific Northwest breakaway country set in 1999 (which, while published in 1970, covers a lot of the same ideas that are hot right now around urban design and walkable cities...). I'll write a nice long review when I finish: what has changed since the 1970s about American cities? And what has changed about our desires to improve them? Our ambitions?
@@ -771,7 +780,7 @@ I read this in a thrift store, skipping sections near the end about sports, race
          </div>
 
          <div id="fifth_row" class="cf f5">
-             <div class="w-100 bg-yello h-25">
+             <div class="w-100 bg-white h-25">
                  <div class="fl w-30">k</div>
                  <div class="fl w-30 horizontal dragscroll gallery-block" >
                  <a href="images/risk.jpg"><img class="fl w-33" src="images/risksm.webp"></a>
