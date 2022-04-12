@@ -492,7 +492,6 @@
     .bg-red {background-color: rgb(255, 0, 0);}
     .bg-gradient1 {
         background: linear-gradient(to right, rgb(248, 248, 248), rgb(224, 224, 224), rgb(255, 255, 159));
-        filter: invert()
     }
     .bg-dark-red {background-color: rgb(15, 103, 68);}
     .bg-dark-pink {background-color: rgb(36, 41, 38);}
@@ -536,7 +535,7 @@
         </style>
         
         <p class="f5 w-100 horizontal dragscroll" id="quotes2"></p>
-        <a href="mailto:eriq.xia@gmail.com" class="fl bg-gradient1 navy pa1 b f2 w-60 cond draggable ">email me <span id="email-decoration"> a quote, book rec, pictures of cool rocks </span></a>
+        <a href="mailto:eriq.xia@gmail.com" class="fl bg-gradient1 navy pa1 b f2 w-60 cond draggable invert">email me <span id="email-decoration"> a quote, book rec, pictures of cool rocks </span></a>
         <a href="https://gossipsweb.net" class="fl pa1 b f2 w-40 cond draggable "><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands."/></a>
         <a class="fl bg-black yellow pa2 pv0" href="https://www.nintil.com" id="random_blog"  >⤺ visit a blog I like</a>
         <a class="fl bg-black yellow pa2 pv0" href="blogroll.js" id="random_blog" style="text-decoration: none"> or view all</a>
@@ -914,7 +913,7 @@ I read this in a thrift store, skipping sections near the end about sports, race
                 margin-top: 0.1em;
             }
             .invert{
-                filter: invert()
+                filter: invert();
             }
             .invert:hover{
                 filter: invert(0);
