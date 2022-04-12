@@ -125,7 +125,7 @@
     .shrine {
         font-size: 20px;
         background: rgb(0, 0, 0);
-        border: 4px double yellow;
+        border: 4px solid rgb(255, 255, 255);
         letter-spacing: -0.03px;
         color: rgb(255, 255, 255);
     }
@@ -394,7 +394,8 @@
         color:rgb(136, 136, 127);
         border-color: rgb(255, 255, 255);
         border-right-width: 10px;
-        border-left-width: 10px;
+        border-left-color: rgb(255, 140, 16);
+        border-left-width: 3px;
         border-bottom-width: 0px;
         border-top-width: 0px;
     }
@@ -467,7 +468,6 @@
         font-size: 40px;
     }
     .clothes {
-        padding-top: 2px;
         line-height: 1.10;
         letter-spacing: 0.03rem;
         font-size: 10px;
@@ -477,7 +477,9 @@
         font-size: 13px;
     }
     .myhouse {
-        font-size: 10px;
+        padding: 0.3em 0.3em;
+        background: rgb(235, 170, 50);
+        font-size: 13px;
         line-height: 0.95;
         letter-spacing: -0.04rem;
     }
@@ -486,7 +488,7 @@
     }
     .bg-red {background-color: rgb(255, 0, 0);}
     .bg-gradient1 {
-        background: linear-gradient(to right, rgb(248, 248, 248), rgb(224, 224, 224), yellow);
+        background: linear-gradient(to right, rgb(248, 248, 248), rgb(224, 224, 224), rgb(255, 255, 159));
         filter: invert()
     }
     .bg-dark-red {background-color: rgb(15, 103, 68);}
@@ -580,7 +582,7 @@
     <div id="third_row" class="cf f5">
         <a class="fl w-20 modern bg-dark-red light-gray" href="esperanto1.html">word vectors + agglutinative esperanto</a>
         <a class="fl w-20 modern bg-dark-pink light-gray" href="synplifier.html">A PoC for simpler synthetic biology</a>
-        <a class="fl w-20 modern bg-dark-red light-gray" href="crisis.html">redesigning the model UN crisis format</a>
+        <a class="fl w-20 modern bg-dark-red light-gray invert" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl w-40 modern bg-orange light-gray" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl f6 w-15 pa2 bg-white black" href="gans.html">GANs on Google Street View</a>
         <a class="fl f6 w-15 pa2 bg-washed-blue black" href="bmapping.html">brightness mapped collages</a>
@@ -796,11 +798,11 @@ I read this in a thrift store, skipping sections near the end about sports, race
         </div>
         
         <div class="absolute left-0 bottom-0 w-30 ba h-25" id="essays-blog">
-            <a class="fl w-50 h-50 tl pv1 f6 bg-orange black myhouse" href="myhouse.html">
-                If you ask a kid to draw a house, they will draw a slatted box with a cross on a window and a simple door; every house here and everywhere is an amalgation of similar details. It is a few large boxes, upwards chevrons, windows. My house is that <b>American house</b>. There is an American house just as there is an American strip mall or an American highway, even beyond their stereotypes. So was my last house in Oregon.
+            <a class="fl w-50 h-50 tl pa2 f6 black myhouse" href="myhouse.html">
+                If you ask a kid to draw a house, they will draw a slatted box with a cross on a window and a simple door... it is a few large boxes, upwards chevrons, windows. My house is that <b>American house</b>. There is an American house just as there is an American strip mall or an American highway, even beyond their stereotypes. So was my last house in Oregon.
             </a>
-            <a class="fl w-50 h-50 tc cond f4 pv1 bg-blu black" id="culture" href="culture.html"><p>My Cultural Influences</p></a>
-            <a class="fl w-75 h-50 justify f6 pa0 bg-yello black clothes" href="clothes.html"><b>"The problem with these aesthetics, which influence almost everyone I know, is that they are fashion movements masquerading as intellectual ones.</b> They are only superficial signifiers of the profound. It draws you very close because it is exactly your dream. Then it tells you can get closer to your visions by moving positionally, within society, without ever really doing the work. This is how you begin to chase dreams by changing clothes..."</a>
+            <a class="fl w-50 h-50 tc cond f4 pv1 bg-blu black invert" id="culture" href="culture.html"><p>My Cultural Influences</p></a>
+            <a class="fl w-75 h-50 justify f6 pa3 bg-yello black clothes" href="clothes.html"><b>"The problem with these aesthetics, which influence almost everyone I know, is that they are fashion movements masquerading as intellectual ones.</b> It draws you very close because it is exactly your dream. Then it tells you can get closer to your visions by moving positionally, within society, without ever really doing the work. This is how you begin to chase dreams by changing clothes..."</a>
             <a class="fl w-25 h-50 tc f6 lh-solid pa4 bg-washed-green black shrine" href="lynnwood.html">Lynnwood Shrine</a>
     
         </div>
@@ -853,7 +855,6 @@ I read this in a thrift store, skipping sections near the end about sports, race
             #culture { 
                 background-image: url('images/civsm.webp');
                 color: black;
-                filter: invert();
                 background-repeat: repeat;
                 background-size: 100%;
                 background-position: 0px;
@@ -908,6 +909,12 @@ I read this in a thrift store, skipping sections near the end about sports, race
             .small {
                 font-size: 8px;
                 margin-top: 0.1em;
+            }
+            .invert{
+                filter: invert()
+            }
+            .invert:hover{
+                filter: invert(0);
             }
         </style>
 
