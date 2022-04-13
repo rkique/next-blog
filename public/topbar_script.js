@@ -57,7 +57,7 @@ if(idxidx < idxArray.length)
 }
 }
 changeQuote()
-setInterval(function(){changeQuote()}, 5000)
-setInterval(function(){spreadText()},20)
+//setInterval(function(){changeQuote()}, 5000)
+//setInterval(function(){spreadText()},20)
 
 

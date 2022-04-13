@@ -9,7 +9,6 @@ for (var i = array.length - 1; i > 0; i--) {
 k = Math.floor(Math.random() * array.length)
 function changeQuote2(){
 randomElement2 = array[k];
-console.log(randomElement2);
 k = k + 1;
 k = k % array.length
 randomElement2 = randomElement2.split("")
