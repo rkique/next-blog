@@ -33,4 +33,4 @@ if(idxidx2 < idxArray2.length)
 }
 changeQuote2()
 setInterval(function(){changeQuote2()}, 5000)
-setInterval(function(){spreadText2()},20)
+setInterval(function(){spreadText2()},40)
