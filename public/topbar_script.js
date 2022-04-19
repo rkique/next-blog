@@ -20,6 +20,7 @@ array = [
     "my heart is in the work",
     "there are only a few hard things",
     "spontaneity is all that matters",
+    "Nobody was thinking about you, anyways",
     "everything is walking distance if I want it to be"
 ]
 
