@@ -21,7 +21,8 @@ array = [
     "there are only a few hard things",
     "spontaneity is all that matters",
     "Nobody was thinking about you, anyways",
-    "everything is walking distance if I want it to be"
+    "everything is walking distance if I want it to be",
+    "good technology is good design; good design is good. "
 ]
 
 function shuffleArray(array) {
