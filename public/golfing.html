@@ -24,10 +24,10 @@
         <p id="go_back"><a href="index.html">go back</a></p>
         <h1 style="font-size: 30px;">Analogues of semantic and geographic space𓂁	</h1>
         <p>I've been working on word golf for more than a year, so I definitely won't be able to go into detail about everything I've done. There are dozens of experiments with interesting results that have appeared! But at this point my current work seems like a good fit for blog posts, so I'll just start writing it up here, and gradually add older content if it feels interesting enough in comparison.</p>
-        <img src="images/taxi-alphabet.png" class="side-display w-20">
+        <img src="images/taxi-alphabet.png" class="side-display w-30">
         
         <p>There's something about working with word models that appeals to me more than anything else. I term the process of filtering as sculpting: it's a negative process in the same way carving marble or whittling wood is. There's striving towards art involved, a perfect representation of the english language.I want to make beautiful models with coherent associations. I've made maybe three models to date. The current one being used in my model is GloVe after a long polishing process. The next one I'm working on is Word2Vec, which is a bit more recent. </p>
-        <p>There's a special excitement for me about word golf that I can't seem to be able to convey very well to others. When you click links you're literally jumping between points in wordspace. There's this whole analogy of semantic space to physical geography that isn't yet captured by anything that exists. In this post, I will set out to prove that this metaphor holds firm for models after applying dimensional reduction. </p>
+        <p>There's a special excitement for me about word golf that I can't seem to be able to convey very well to others. When you click links you're literally jumping between points in wordspace. There's this whole analogy of semantic space to physical geography that isn't yet captured by anything that exists. I will set out to prove that this metaphor holds firm for models after applying dimensional reduction. </p>
         <p>I'm using a commoncrawl word2vec model with a vocab size around 52k. Imports are gensim's <b>KeyedVectors</b>, the <b>TSNE</b> implementation from sklearn, and <b>matplotlib</b>.</p>
         <pre>   
         <code class="language-python">
@@ -87,7 +87,7 @@ for i, w in enumerate(r[:-1]):
 #Vector((-14.143103,-27.133062),(-27.333059,-16.398949))
             </code>
         </pre>
-        <img src="../static/2022-04-20-13-06-43.png">
+        <img src="images/2022-04-20-13-06-43.png">
         <p>Okay, hey, this is actually a lot like normal golf, especially that first stroke towards the target! It seems like interesting enough to warrant writing a viz script for. Writing this kind of thing takes longer than I would like but <b>quiver</b> yields a result:</p>
         <pre>
             <code>
@@ -113,15 +113,15 @@ plt.show()
 
             </code>
         </pre>
-        <img src="../static/2022-04-20-14-11-04.png">
+        <img src="images/2022-04-20-14-11-04.png">
         <p> Now we're home free. Let's try visualizing more! </p>
-        <img src="../static/2022-04-20-15-24-38.png">
+        <img src="images/2022-04-20-15-24-38.png">
         <p>Unfortunately there doesn't seem to be intuition here, with first arrows heading in opposite directions from the target word. Random samples from the completed runs:</p>
-        <img src="../static/2022-04-20-15-44-37.png">
-        <img src="../static/2022-04-20-15-48-15.png">
-        <img src="../static/2022-04-20-15-48-59.png">
+        <img src="images/2022-04-20-15-44-37.png">
+        <img src="images/2022-04-20-15-48-15.png">
+        <img src="images/2022-04-20-15-48-59.png">
         <p>Let's try verifying that BFS solutions look good instead. </p>
-        <img src="../static/2022-04-20-15-57-23.png">
+        <img src="images/2022-04-20-15-57-23.png">
         <h2>Taking a break</h2>
         <p>They don't really work either, so here are a few things that could have happened. My visualization code is not working is a possibility. My BFS search not working is another possibility. I could be wrong in general, and dimensionality reduction can't capture semantic direction very well. This would mean a physical analogue wouldn't work with TSNE at least. However, there is definitely an idea of wordspace that can be captured intuitively, just not right now with the current tools I'm trying. This has to be an inherent quality to the word model.</p>
     </div>
