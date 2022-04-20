@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Eric&#39;s Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+    <div class="main">
+        <p id="go_back"><a href="index.html">go back</a></p>
+        <h1 style="font-size: 30px;">Analogues of semantic and geographic space𓂁	</h1>
+        <p>I've been working on word golf for more than a year, so I definitely won't be able to go into detail about everything I've done. There are dozens of experiments with interesting results that have appeared! But at this point my current work seems like a good fit for blog posts, so I'll just start writing it up here, and gradually add older content if it feels interesting enough in comparison.</p>
+        <img src="images/taxi-alphabet.png" class="side-display w-20">
+        
+        <p>There's something about working with word models that appeals to me more than anything else. I term the process of filtering as sculpting: it's a negative process in the same way carving marble or whittling wood is. There's striving towards art involved, a perfect representation of the english language.I want to make beautiful models with coherent associations. I've made maybe three models to date. The current one being used in my model is GloVe after a long polishing process. The next one I'm working on is Word2Vec, which is a bit more recent. </p>
+        <p>There's a special excitement for me about word golf that I can't seem to be able to convey very well to others. When you click links you're literally jumping between points in wordspace. There's this whole analogy of semantic space to physical geography that isn't yet captured by anything that exists. In this post, I will set out to prove that this metaphor holds firm for models after applying dimensional reduction. </p>
+        <p>I'm using a commoncrawl word2vec model with a vocab size around 52k. Imports are gensim's <b>KeyedVectors</b>, the <b>TSNE</b> implementation from sklearn, and <b>matplotlib</b>.</p>
+        <pre>   
+        <code class="language-python">
+            # coding=utf8>
+            from gensim.models import KeyedVectors
+            import numpy as np
+            from sklearn.manifold import TSNE
+            wv = KeyedVectors.load('w2v_base_2.kv')
+            print(len(wv.key_to_index))
+            X = wv[wv.key_to_index]
+            tsne = TSNE(n_components=2)
+            tsneX = tsne.fit_transform(X)
+            np.savetxt('tsne.txt', tsneX, fmt='%f')
+        </code>
+        </pre>
+        <p>This gives us a list of coordinates for our words. We can then establish a compass of sorts by taking a look at the outermost points:  </p>
+        <pre>   
+            <code class="language-python">
+            sX, sY = set(X), set(Y)
+            s_sX, s_sY = sorted(sX), sorted(sY)
+            west_mosts = [X.index(s) for s in s_sX[0:10]]
+            east_mosts = [X.index(s) for s in s_sX[-10:-1]]
+            south_mosts = [Y.index(s) for s in s_sY[0:10]]
+            north_mosts = [Y.index(s) for s in s_sY[-10:-1]]
+            </code>
+        </pre>
+        <p>So our compass looks like this: </p>
+        <pre>   
+            <code class="language-python">
+            WEST: bluest,tourniquet,tourniquets,sweetens,sweeten,
+            sweetened,sweetening,dormancy,dormant
+
+            EAST: isn,doesn,weren,shouldn,couldn,hadn,wouldn,didn,hasn
+            
+            SOUTH: gobbled,gobble,gobbling,devours,devouring,devoured,ranch,ranching
+
+            NORTH: smothered,suffocate,strangling,suffocated,strangled,
+            asphyxiated,fending,fended,egged
+            </code>
+            </pre>
+        <p> My intuition: the W/E axis for the english language goes [object, hot, free <--> object, cold, determinate] and the S/N axis goes [active, life, relaxed <--> active death, formal]. Is this just speculation? Yes, but I looked at like five different samples and they were able to convince me of my own hypothesis. Haha. If it does hold, it is a really interesting result though, it seems to hint at a universal scale upon which all words are based. I should do a blind trial at some point, and also look at other reduced models to see if these pairs of axes have some universality to them. </p>
+        <p>I'm much more confident in the hypothesis that the north direction tends to have more formal words and the south direction less. Anyways, let me explain what I'm working on right now.</p>
+        <h2>actually playing golf </h2>
+        <p>We can now visualize previous runs through the current word golf format (top 27 neighbors out of 100 presented in a grid, shifting through them until you get to the target), to see if this golf analogy holds up. First I'm just converting these points to Geogebra and pasting them in one by one. So here's one pretty standard run I completed converted and visualized:</p>
+        <pre>
+            <code>
+r = ['department', 'board', 'body', 'black', 'silk', 'cotton', 'wood', 'copper']           
+for i, w in enumerate(r[:-1]):
+    print(f"Vector(({tsneFlat[wv.key_to_index[w]][0]},{tsneFlat[wv.key_to_index[w]][1]}),({tsneFlat[wv.key_to_index[r[i+1]]][0]},{tsneFlat[wv.key_to_index[r[i+1]]][1]}))")
+
+#Vector((-2.164832,17.089323),(0.278164,15.964342)) 
+#Vector((0.278164,15.964342),(-12.965697,-6.741527)) 
+#Vector((-12.965697,-6.741527),(-8.160164,-34.544804))
+#Vector((-8.160164,-34.544804),(0.880635,-35.023899))
+#Vector((0.880635,-35.023899),(-17.483561,-34.581875))
+#Vector((-17.483561,-34.581875),(-14.143103,-27.133062))
+#Vector((-14.143103,-27.133062),(-27.333059,-16.398949))
+            </code>
+        </pre>
+        <img src="../static/2022-04-20-13-06-43.png">
+        <p>Okay, hey, this is actually a lot like normal golf, especially that first stroke towards the target! It seems like interesting enough to warrant writing a viz script for. Writing this kind of thing takes longer than I would like but <b>quiver</b> yields a result:</p>
+        <pre>
+            <code>
+startx, starty, endx, endy = [], [], [], []
+for i in range(0, len(xs)-2):
+    print(f'Vector(({xs[i]}, {ys[i]}),({xs[i+1]}, {ys[i+1]}))')
+    startx.append(xs[i])
+    starty.append(ys[i])
+    endx.append(xs[i+1])
+    endy.append(ys[i+1])
+
+for i in range(0, len(endx)):
+    endx[i] = endx[i]-startx[i]
+    endy[i] = endy[i]-starty[i]
+import matplotlib.pyplot as plt
+
+#startx and starty represent the points before
+#print(startx[0], starty[0], endx[0], endy[0])
+plt.quiver(startx, starty, endx, endy, angles='xy', scale_units='xy', scale=1)
+plt.xlim(min(startx)-3,max(startx)+3)
+plt.ylim(min(starty)-3, max(starty)+3)
+plt.show()
+
+            </code>
+        </pre>
+        <img src="../static/2022-04-20-14-11-04.png">
+        <p> Now we're home free. Let's try visualizing more! </p>
+        <img src="../static/2022-04-20-15-24-38.png">
+        <p>Unfortunately there doesn't seem to be intuition here, with first arrows heading in opposite directions from the target word. Random samples from the completed runs:</p>
+        <img src="../static/2022-04-20-15-44-37.png">
+        <img src="../static/2022-04-20-15-48-15.png">
+        <img src="../static/2022-04-20-15-48-59.png">
+        <p>Let's try verifying that BFS solutions look good instead. </p>
+        <img src="../static/2022-04-20-15-57-23.png">
+        <h2>Taking a break</h2>
+        <p>They don't really work either, so here are a few things that could have happened. My visualization code is not working is a possibility. My BFS search not working is another possibility. I could be wrong in general, and dimensionality reduction can't capture semantic direction very well. This would mean a physical analogue wouldn't work with TSNE at least. However, there is definitely an idea of wordspace that can be captured intuitively, just not right now with the current tools I'm trying. This has to be an inherent quality to the word model.</p>
+    </div>
+
+</body>
+
