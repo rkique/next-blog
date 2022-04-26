@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/github.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-    <link rel="stylesheet" href="style.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
     <div class="main">
         <p id="go_back"><a href="index.html">go back</a></p>
-        <h1 style="font-size: 30px;">Analogues of semantic and geographic space𓂁	</h1>
-        <p>I've been working on word golf for more than a year, so I definitely won't be able to go into detail about everything I've done. There are dozens of experiments with interesting results that have appeared! But at this point my current work seems like a good fit for blog posts, so I'll just start writing it up here, and gradually add older content if it feels interesting enough in comparison.</p>
+        <h1 style="font-size: 30px;">Analogues of semantic and geographic space𓂁 </h1>
+        <p>I've been working on word golf for more than a year, so I definitely won't be able to go into detail about
+            everything I've done. There are dozens of experiments with interesting results that have appeared! But at
+            this point my current work seems like a good fit for blog posts, so I'll just start writing it up here, and
+            gradually add older content if it feels interesting enough in comparison.</p>
         <img src="images/taxi-alphabet.png" class="side-display w-30">
-        
-        <p>There's something about working with word models that appeals to me more than anything else. I term the process of filtering as sculpting: it's a negative process in the same way carving marble or whittling wood is. There's striving towards art involved, a perfect representation of the english language.I want to make beautiful models with coherent associations. I've made maybe three models to date. The current one being used in my model is GloVe after a long polishing process. The next one I'm working on is Word2Vec, which is a bit more recent. </p>
-        <p>There's a special excitement for me about word golf that I can't seem to be able to convey very well to others. When you click links you're literally jumping between points in wordspace. There's this whole analogy of semantic space to physical geography that isn't yet captured by anything that exists. I will set out to prove that this metaphor holds firm for models after applying dimensional reduction. </p>
-        <p>I'm using a commoncrawl word2vec model with a vocab size around 52k. Imports are gensim's <b>KeyedVectors</b>, the <b>TSNE</b> implementation from sklearn, and <b>matplotlib</b>.</p>
-        <pre>   
+        <p>Disclaimer: there's a high level of intuition at play here. No number or scale can accurately represent the intricacies of a language, and a lot of this is highly speculative.  </p>
+        <p>That being said, there's something about working with word models that appeals to me more than anything else. I term the
+            process of filtering as sculpting: it's a negative process in the same way carving marble or whittling wood
+            is. There's striving towards art involved, a perfect representation of the english language.I want to make
+            beautiful models with coherent associations. I've made maybe three models to date. The current one being
+            used in my model is GloVe after a long polishing process. The next one I'm working on is Word2Vec, which is
+            a bit more recent. </p>
+        <p>There's a special excitement for me about word golf that I can't seem to be able to convey very well to
+            others. When you click links you're literally jumping between points in wordspace. There's this whole
+            analogy of semantic space to physical geography that isn't yet captured by anything that exists. I will set
+            out to prove that this metaphor holds firm for models after applying dimensional reduction. </p>
+        <p>I'm using a commoncrawl word2vec model with a vocab size around 52k. Imports are gensim's
+            <b>KeyedVectors</b>, the <b>TSNE</b> implementation from sklearn, and <b>matplotlib</b>.
+        </p>
+        <pre>
         <code class="language-python">
             # coding=utf8>
             from gensim.models import KeyedVectors
@@ -43,8 +58,9 @@
             np.savetxt('tsne.txt', tsneX, fmt='%f')
         </code>
         </pre>
-        <p>This gives us a list of coordinates for our words. We can then establish a compass of sorts by taking a look at the outermost points:  </p>
-        <pre>   
+        <p>This gives us a list of coordinates for our words. We can then establish a compass of sorts by taking a look
+            at the outermost points: </p>
+        <pre>
             <code class="language-python">
             sX, sY = set(X), set(Y)
             s_sX, s_sY = sorted(sX), sorted(sY)
@@ -55,7 +71,7 @@
             </code>
         </pre>
         <p>So our compass looks like this: </p>
-        <pre>   
+        <pre>
             <code class="language-python">
             WEST: bluest,tourniquet,tourniquets,sweetens,sweeten,
             sweetened,sweetening,dormancy,dormant
@@ -68,10 +84,19 @@
             asphyxiated,fending,fended,egged
             </code>
             </pre>
-        <p> My intuition: the W/E axis for the english language goes [object, hot, free <--> object, cold, determinate] and the S/N axis goes [active, life, relaxed <--> active death, formal]. Is this just speculation? Yes, but I looked at like five different samples and they were able to convince me of my own hypothesis. Haha. If it does hold, it is a really interesting result though, it seems to hint at a universal scale upon which all words are based. I should do a blind trial at some point, and also look at other reduced models to see if these pairs of axes have some universality to them. </p>
-        <p>I'm much more confident in the hypothesis that the north direction tends to have more formal words and the south direction less. Anyways, let me explain what I'm working on right now.</p>
+        <p> My intuition: the W/E axis for the english language goes [object, hot, free <--> object, cold, determinate]
+                and the S/N axis goes [active, life, relaxed <--> active death, formal]. Is this just speculation? Yes,
+                    but I looked at like five different samples and they were able to convince me of my own hypothesis.
+                    Haha. If it does hold, it is a really interesting result though, it seems to hint at a universal
+                    scale upon which all words are based. I should do a blind trial at some point, and also look at
+                    other reduced models to see if these pairs of axes have some universality to them. </p>
+        <p>I'm much more confident in the hypothesis that the north direction tends to have more formal words and the
+            south direction less. Anyways, let me explain what I'm working on right now.</p>
         <h2>actually playing golf </h2>
-        <p>We can now visualize previous runs through the current word golf format (top 27 neighbors out of 100 presented in a grid, shifting through them until you get to the target), to see if this golf analogy holds up. First I'm just converting these points to Geogebra and pasting them in one by one. So here's one pretty standard run I completed converted and visualized:</p>
+        <p>We can now visualize previous runs through the current word golf format (top 27 neighbors out of 100
+            presented in a grid, shifting through them until you get to the target), to see if this golf analogy holds
+            up. First I'm just converting these points to Geogebra and pasting them in one by one. So here's one pretty
+            standard run I completed converted and visualized:</p>
         <pre>
             <code>
 r = ['department', 'board', 'body', 'black', 'silk', 'cotton', 'wood', 'copper']           
@@ -88,7 +113,9 @@ for i, w in enumerate(r[:-1]):
             </code>
         </pre>
         <img src="images/2022-04-20-13-06-43.png">
-        <p>Okay, hey, this is actually a lot like normal golf, especially that first stroke towards the target! It seems like interesting enough to warrant writing a viz script for. Writing this kind of thing takes longer than I would like but <b>quiver</b> yields a result:</p>
+        <p>Okay, hey, this is actually a lot like normal golf, especially that first stroke towards the target! It seems
+            like interesting enough to warrant writing a viz script for. Writing this kind of thing takes longer than I
+            would like but <b>quiver</b> yields a result:</p>
         <pre>
             <code>
 startx, starty, endx, endy = [], [], [], []
@@ -114,20 +141,108 @@ plt.show()
             </code>
         </pre>
         <img src="images/2022-04-20-14-11-04.png">
-        <p> Now we're home free. Let's try visualizing more! </p>
+        <p> Now that we've established our script works let's try visualizing more. </p>
         <img src="images/2022-04-20-15-24-38.png">
-        <p>Unfortunately there doesn't seem to be intuition here, with first arrows heading in opposite directions from the target word. Random samples from the completed runs:</p>
-        <img src="images/2022-04-20-15-44-37.png">
-        <img src="images/2022-04-20-15-48-15.png">
-        <img src="images/2022-04-20-15-48-59.png">
+        <p>Unfortunately there doesn't seem to be intuition here, with first arrows heading in opposite directions from
+            the target word. Random samples from the completed runs:</p>
+        <div class="default-flex">
+            <div>
+                <img src="images/2022-04-20-15-44-37.png">
+            </div>
+            <div>
+                <img src="images/2022-04-20-15-48-15.png">
+            </div>
+            <div>
+                <img src="images/2022-04-20-15-48-59.png">
+            </div>
+        </div>
         <p>Let's try verifying that BFS solutions look good instead. </p>
         <img src="images/2022-04-20-15-57-23.png">
-        <p>These results are much better, but not inherently satisfying yet. Compared to a random selection of coordinates in wordspace, the path that these jumps are taking looks really good. However, it's not golf-like enough and it isn't clear how to make the lines straighter.</p>
+        <p>These results are better, but not inherently satisfying yet. Compared to a random selection of
+            coordinates in wordspace, the path that these jumps are taking looks really good. However, it's not
+            golf-like enough and it isn't clear how to make the lines straighter.</p>
         <h2>Taking a break</h2>
-        <p>Here are a few things that could have happened. My visualization code is not working is a possibility. My BFS search not working is another possibility. I could be wrong in general, and dimensionality reduction can't capture semantic direction very well. This would mean a physical analogue wouldn't work with TSNE at least. However, there is definitely an idea of wordspace that can be captured intuitively, just not right now with the current tools I'm trying. This has to be an inherent quality to the word model.</p>
+        <p style="text-decoration: line-through;">Here are a few things that could have happened. My visualization code is not working is a possibility. My BFS
+            search not working is another possibility. I could be wrong in general, and dimensionality reduction can't
+            capture semantic direction very well. This would mean a physical analogue wouldn't work with TSNE at least.
+            However, there is definitely an idea of wordspace that can be captured intuitively, just not right now with
+            the current tools I'm trying. This has to be an inherent quality to the word model.</p>
         <h2>I used the wrong model</h2>
-        <p>I don't know why this didn't occur to me earlier but this is not actually the correct model I should be using if I want to run historical data on it. Chances are the GloVe model has significantly different directions than Word2Vec, so what I just did was actually testing the more tenuous hypothesis that not only is there a geographic analogue to semantic space, there's also a universal geographic analogue between different models. That question can wait. I will do some BFS runs on the Word2Vec model in a bit and put those graphs up here. </p>
+        <p>I don't know why this didn't occur to me earlier but this is not actually the correct model I should be using
+            if I want to run historical data on it. Chances are the GloVe model has significantly different directions
+            than Word2Vec, so what I just did was actually testing the more tenuous hypothesis that not only is there a
+            geographic analogue to semantic space, there's also a universal geographic analogue between different
+            models. That question can wait. I will do some BFS runs on the Word2Vec model in a bit and put those graphs
+            up here. </p>
+        <h2>golf maps for correct model</h2>
+        <style>
+            .default-flex {
+                display: flex;
+                width: 120%;
+            }
+        </style>
+        <p>These are not BFS runs, but just taking the data from different prompts, out of a set of about 8000 total.</p>
+        <div class="default-flex">
+            <div>
+                <p>3+ from 2200:2220</p>
+                <img src="images/2022-04-26-09-42-13.png">
+            </div>
+            <div>
+                <p>3+ from 3200:3220</p>
+                <img src="images/2022-04-26-09-43-09.png">
+            </div>
+            <div>
+                <p>3+ from 4200:4220</p>
+                <img src="images/2022-04-26-09-44-38.png">
+            </div>
+        </div>
+        <div class="default-flex">
+            <div>
+                <p>3+ from 5200:2220</p>
+                <img src="images/2022-04-26-09-46-41.png">
+            </div>
+            <div>
+                <p>3+ from 6200:3220</p>
+                <img src="images/2022-04-26-09-47-40.png">
+            </div>
+            <div>
+                <p>3+ from 7200:4220</p>
+                <img src="images/2022-04-26-09-48-37.png">
+            </div>
+        </div>
+        <p>As expected, directions are well-defined here. Many arrows are clustered towards the north, which might
+            indicate a preference for active, formal language. There seems to be a current sweeping NE, or from warm
+            informal to cold informal words, with a few word vectors outside that enter the current before reaching a
+            destination. Actually, this current could simply be nouns from the language.</p>
+        <p>transparency for 3+ from 1100:1400</p>
+        <img src="images/2022-04-26-10-14-03.png">
+        <div class="default-flex">
+        <div>
+        <p>2100:2400</p>
+        <img src="images/2022-04-26-10-13-41.png">
+        </div><div>
+        <p>3100:3400</p>
+        <img src="images/2022-04-26-10-12-19.png">
+        </div><div>
+        <p>4100:4400</p>
+        <img src="images/2022-04-26-10-09-35.png">
+        </div>
+        </div>
+        <h2>Annotating glove by POS</h2>
+        <p>Let's do this the slow, sure way. We can annotate by part of speech to begin with. Here are the coordinates we have to work with to begin with:</p>
+        <img src="../static/2022-04-26-10-25-48.png">
+        <p><i>This visualization makes me feel sick</i></p>
+        <img src="../static/2022-04-26-10-42-08.png">
+        <p>Promisingly, the current does not correlate with the largest clusters. Now, as with the Esperanto cluster set but without the aggluginative shortcut, we can write an NLTK script to classify different words and then graph them in different colors. Actually wait. We can just graph the words and take a look first. For all words that appear more than one out of ten thousand (zipf > 5): </p>
+        <img src="../static/2022-04-26-10-56-24.png">
+        <p>Zooming in on the bottom right chunk reveals it to be mostly hyphenated words: </p>
+        <img src="../static/2022-04-26-10-57-55.png">
+        <p>Top are newspaper nouns, top-left are more general nouns</p>
+        <img src="../static/2022-04-26-11-03-19.png">
+        <p>Bottom section are all food and nature terms</p>
+        <img src="../static/2022-04-26-11-13-08.png">
+        <p>Bottom-left are names </p>
+        <img src="../static/2022-04-26-11-17-30.png">
     </div>
 
 </body>
-
