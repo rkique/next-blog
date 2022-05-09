@@ -21,6 +21,11 @@ array = [
     "there are only a few hard things",
     "spontaneity is all that matters",
     "Nobody was thinking about you, anyways",
+    "lying on top of a building the clouds looked no nearer than when I was lying on the street",
+    "avoid fatal simplifications",
+    "But why does that have to be your life?",
+    "If harmony is not modulated by ritual, things will still go amiss",
+    "existence alone is not enough",
     "everything is walking distance if I want it to be",
     "good technology is good design; good design is good. "
 ]
