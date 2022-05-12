@@ -131,7 +131,8 @@
     }
 
     a:hover {
-        outline: 3px solid black;
+        transition: 0.3s;
+        outline: 1px solid black;
         filter: invert();
     }
     
@@ -201,6 +202,8 @@
         max-width: 200%;
         width: 130%;
         margin-left: -30%;
+        z-index: 100;
+        filter: drop-shadow(8px 0px 12px rgb(0, 0, 0));
     }
     @media screen and (max-width: 992px) {
 
@@ -297,6 +300,7 @@
     #media2 {
         background-image: linear-gradient(red, yellow);
         width: 100%;
+        filter: drop-shadow(0 -10px 8px black);
     }
 
     .bg-blu{
@@ -340,6 +344,7 @@
         color:rgb(223, 223, 189);
         border-color: cyan;
         letter-spacing: -0.07em;
+        box-shadow: -5px 5px 5px rgb(4, 67, 0);
         font-weight: 600;
         text-decoration: none;
         font-size: 16px;
@@ -542,10 +547,22 @@
             --linkColor:blue;
             }
         .clippy{
+            filter: drop-shadow(5px 5px 10px black);
             mix-blend-mode: darken;
+            z-index: 100;
+        }
+        .selfie{
             right: 440px;
             top: -20px;
-            z-index: 100;
+        }         .selfie:hover{
+            mix-blend-mode: multiply;
+        }
+        .cars{
+            background: rgb(241, 255, 153);
+            mix-blend-mode: normal;
+            filter: brightness(1.2);
+            right: 100px;
+            top: 500px;
         }
         .bluehover:hover{
             color: blue !important;
@@ -878,7 +895,8 @@ I read this in a thrift store, skipping sections near the end about sports, race
         <img class="noselect" id="media2" src="images/orcasmm.webp">
         </div>
         <div class="absolute right-0 bottom-0 w-30 h-50 bg-white" id="biography-container">
-            <img class="absolute clippy" src="images/selfie.jpg" style="width: 37%; z-index: 10">
+            <img class="absolute clippy selfie" src="images/selfie.jpg" style="width: 37%; z-index: 10">
+            <img class="absolute clippy cars" src="images/cars.png" style="width: 100%; z-index: 10">
             <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6 noselect" id="biography">
                 <p class="b modern">ABOUT ME</p>   
                 <hr>
