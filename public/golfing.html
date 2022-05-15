@@ -275,9 +275,52 @@ NORTHEAST CLUSTER: year, roof, bag, moon, far, after, wine, south, judge, unit, 
 <p>This is our result:</p>
 <img src="../static/2022-04-26-12-54-47.png">
 <p>This quite obviously fails to produce the same boundaries, which is to be expected. Oh well. One immediate difficulty with viewing these words as a scale, however, is that we already know roughly what two of the largest clusters are -- names, and food -- and it's not immediately clear how such a scale would be useful in navigating these clusters.</p>
-<pre>
-    <code>
+<h2>Compass for the production model: word2vec filtered to 2.3 with 32,000 words</h2>
+<p>Following the same procedure as above we can obtain cardinal outliers for our production model:</p>
+<pre><code>
+WEST: droplet,droplets,ionic,transistors,transistor,ion,ionized
+EAST: brothers,grandparent,cousins,sons,sisters,aunts,siblings
+SOUTH: partition,partitioning,partitioned,holder,holders,bowled
+NORTH: sorority,sororities,greeks,greek,birdies,pars,bogey,bogeys
     </code>
 </pre>
+<p> Now we want to retrieve nearest neighbors in various directions. We can first write a nearest neighbor script:</p>
+<pre><code>
+    def distance(r1,r2):
+        return ((r1[0]-r2[0])**2 + (r1[1]-r2[1])**2)**(1/2)
+
+    def nearest_2Dneighbor(word):
+        min_distance = 10
+        neighbor = ""
+        for index in wv.key_to_index:
+            v1 = tsneFlat[wv.key_to_index[word]]
+            v2 = tsneFlat[wv.key_to_index[index]]
+            d = distance(v1, v2)
+            if d < min_distance and index != word:
+                min_distance = d
+                neighbor = index
+        print(f'closest to {word} is {neighbor} with distance {min_distance}')
+
+</code></pre>
+<p>Verifying, we can see it works:</p>
+<pre><code>closest to zebra is hippo with distance 0.07393014825495706</code></pre>
+<p> We can get multiple neighbors by reading and writing to a dict:</p>
+<pre><code>
+    def nearest_2Dneighbors(word, ct):
+    min_distances = {100:"dog"}
+    for index in wv.key_to_index:
+        v1 = tsneFlat[wv.key_to_index[word]]
+        v2 = tsneFlat[wv.key_to_index[index]]
+        d = distance(v1, v2)
+        if d < max(min_distances) and index != word:
+            min_distances[d] = index
+            if len(min_distances) > ct:
+                max_key = max(min_distances.keys())
+                min_distances.pop(max_key, None)
+    print(f'closest to {word} are {min_distances}')
+    nearest_2Dneighbors("zebra",10)
+
+    closest to zebra are {0.3994482615370888: 'elephant', 0.4810890428610893: 'silverback', 0.5629074693562021: 'gorillas', 0.11746016150593233: 'hippos', 0.1818965679307882: 'giraffe', 0.4521648164696161: 'elephants', 0.4599412267344633: 'rhinos', 0.07393014825495706: 'hippo', 0.41851106296130747: 'rhino', 0.37239726128557654: 'rhinoceros'}
+</code></pre>
 </div>
 </body>

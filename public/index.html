@@ -130,12 +130,12 @@
         color: rgb(255, 255, 255);
     }
 
-    a:hover {
+    a:hover:not(.nohover){
         transition: 0.3s;
         outline: 1px solid black;
         filter: invert();
     }
-    
+
     .invhov:hover {
         filter: invert();
     }
@@ -900,8 +900,8 @@ I read this in a thrift store, skipping sections near the end about sports, race
         <a href="resolution.html" class="fl w-40 modern bg-orange light-gray">resolution</a>
         </div>
         <div class="absolute right-0 bottom-0 w-30 h-50 bg-white" id="biography-container">
-            <img class="absolute clippy selfie" src="images/selfie.jpg" style="width: 37%; z-index: 10">
-            <img class="absolute clippy cars" src="images/cars.png" style="width: 100%; z-index: 10">
+            <img class="absolute clippy selfie" src="" style="width: 37%; z-index: 10">
+            <a href="resolution.html" class="nohover"><img class="absolute clippy cars" src="images/cars.png" style="width: 100%; z-index: 10"></a>
             <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6 noselect" id="biography">
                 <p class="b modern">ABOUT ME</p>   
                 <hr>
