@@ -661,6 +661,47 @@
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
             <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>DAILY FEED</p></div>
             <div id="daily-blog" class="f6">
+                <p>
+                    (5.17.2022)
+                    Finally winding down for my second day, after around 10 hours. In the early morning, I chose to read my d3.js book, learning about loading with d3.csv() and d3.json(), and saw how you could create bins and scale data. I was alarmed that there wasn't any kind of note about the ease of misrepresentation: something like this is presented as one of the examples:
+<br>
+                    <pre>
+d3.scaleLinear().domain([2000, 10000]).range([0, 500])
+</pre>
+
+<br>
+
+When you create visualizations without including zero as a frame of reference, it's very easy to misrepresent the truth! This is data literacy 101! Of course, there are definitely some applications where you need to do otherwise, but I'm still really surprised. 
+I did this instead of going to the check-in call; I prefer writing these checkins (checkouts?) out more than a conversational format. Plus, text is easy to share on my blog as well! 
+<br><br>
+After that, I paired on Game of Life! Using p5.js, we got kind of far; not only did we make a grid, we were even able to add six squares for an oscillator! Then we suffered what I assume is called technical debt and did not get to implementing any of the rules. I left to do l33tcode problems, but got distracted by the *amazing* text animations on https://musicforprogramming.net/ and only got the easy problem done. As kitschy or cute as text animations might sound (the shapes of these letters on my screen are so arbitrary! Why restrict yourself to them!), I find they portray the absurdity of language well,  what is almost a sense of fear that the shapes will stay as meaningless squiggles until the relief of discerning meaning. 
+<br><br>
+Then I had a call with the creator of the aforementioned word game, learned a lot, and got very motivated to work through the afternoon. I threw myself into an actually challenging problem related to making a standardized grid: given four neighboring points in space, how do you assign them directions? It's easy for a human but difficult (for me) to code in. There's trigonometry involved, and choosing between rotating clockwise or ccw.  I wonder if I'm missing a really simple approach actually. 
+<br><br>
+Here's a sample of that very messy code:
+<pre>
+#clockwise swing
+def swing(indice):
+    return abs(np.arctan(Xdiffs[indice]/Ydiffs[indice])) 
+while len(quadrants) != len(set(quadrants)):
+    for i in range(0, 4):
+        if quadrants.count(quadrants[i]) > 1:
+            #while more than one in same quadrants, move the closer one (indice wrt quadrants & diffs)
+            indices = [index for index, element in enumerate(quadrants) if element == quadrants[i]]
+            swings = [swing(indice) for indice in indices]
+            minSwingIndex = indices[swings.index(min(swings))]
+            quadrants[minSwingIndex]+=1
+            #print(f"point with indice {minSwingIndex} moved from {quadrants[minSwingIndex]} to {quadrants[minSwingIndex]+1}")
+            if(quadrants[minSwingIndex]) > 4:
+                quadrants[minSwingIndex] = 1
+            </pre>
+<br><br>
+I ended up successfully sorting four closest neighbors for each word into directions, but not isomorphic to a grid. While this was somewhat disappointing, visualizing a random walk of neighborhoods made me happy. I was able to build a utility tool to view undirected graphs very quickly, gutting my graph view and simplifying a lot of it (you can use it too! go to https://www.eric-xia.com/graphviz.html).  It's built on force-graph.js.
+
+Finally, I uploaded my progress on research to my blog. 
+All in all, I'm super happy with my work again. Tomorrow, I hope to be as productive as I was today and continue tackling hard problems!
+
+                </p>
                 <p>(5.16.2022) 
                     PS: Breakcore and golfing go so well together. Youtube playlists <a href="https://www.youtube.com/watch?v=NoJ_VTA4PhY">ex</a> are amazing... feeling like there's a real positive impact to the sport. When word choice becomes unconscious activity, people no longer have to reach for words. Expressing yourself becomes natural. 
                     <br><br>

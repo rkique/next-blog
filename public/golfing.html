@@ -322,5 +322,74 @@ NORTH: sorority,sororities,greeks,greek,birdies,pars,bogey,bogeys
 
     closest to zebra are {0.3994482615370888: 'elephant', 0.4810890428610893: 'silverback', 0.5629074693562021: 'gorillas', 0.11746016150593233: 'hippos', 0.1818965679307882: 'giraffe', 0.4521648164696161: 'elephants', 0.4599412267344633: 'rhinos', 0.07393014825495706: 'hippo', 0.41851106296130747: 'rhino', 0.37239726128557654: 'rhinoceros'}
 </code></pre>
+<h2>Trying for a gridification of the graph</h2>
+<pre><code>
+
+    WORD = "candle"
+    coords = tsneFlat[wv.key_to_index[WORD]]
+    neighbors = nearest_2Dneighbors(WORD,4)
+    #X,Y, name
+    coordlist = list(neighbors.values())
+    Xcoords = [s.split(",")[0] for s in coordlist]
+    Ycoords = [s.split(",")[1] for s in coordlist]
+    names = [s.split(",")[2] for s in coordlist]
+    
+    for i in range(0, 100):
+        WORD = names[random.choice(range(0,8))]
+        coords = tsneFlat[wv.key_to_index[WORD]]
+        neighbors = nearest_2Dneighbors(WORD,9)
+        coordlist = list(neighbors.values())
+        names = [s.split(",")[2] for s in coordlist]
+        print(f"{WORD},", end="")
+        for name in names:
+            print(name, end=",")
+        print("")
+    
+    combine = []
+    combineX = []
+    for i in range(0,len(Xcoords)):
+        combine.append(float(Xcoords[i])*float(Ycoords[i]))
+        combineX.append(float(Xcoords[i])*float(Ycoords[i])*float(Xcoords[i]))
+    #represent words in a grid
+    Xdiffs = [float(coords[0]) - float(Xcoord) for Xcoord in Xcoords]
+    Ydiffs = [float(coords[1]) - float(Ycoord) for Ycoord in Ycoords]
+    cw, ccw = [], []
+    #check which rotation is closer
+    quadrants = [0,0,0,0]
+    for i in range(0, 4):
+        if (Xdiffs[i] > 0 and Ydiffs[i] > 0): quadrants[i] = 1 #north
+        if (Xdiffs[i] > 0 and Ydiffs[i] < 0): quadrants[i] = 2 #east
+        if (Xdiffs[i] < 0 and Ydiffs[i] < 0): quadrants[i] = 3 #south
+        if (Xdiffs[i] < 0 and Ydiffs[i] > 0): quadrants[i] = 4 #west
+    
+    #clockwise swing
+    def swing(indice):
+        return abs(np.arctan(Xdiffs[indice]/Ydiffs[indice])) 
+    
+    #print(quadrants)
+    while len(quadrants) != len(set(quadrants)):
+        for i in range(0, 4):
+            #if a quadrant has multiple
+            if quadrants.count(quadrants[i]) > 1:
+                #print(f"too much in quadrant {quadrants[i]}")
+                #while more than one in same quadrants, move the closer one (indice wrt quadrants & diffs)
+                indices = [index for index, element in enumerate(quadrants) if element == quadrants[i]]
+                #given indices for a quadrant, we want to find the index with the minimum swing, and move that quadrant
+                #print(f"indices are {indices}")
+                swings = [swing(indice) for indice in indices]
+                minSwingIndex = indices[swings.index(min(swings))]
+                quadrants[minSwingIndex]+=1
+                #print(f"point with indice {minSwingIndex} moved from {quadrants[minSwingIndex]} to {quadrants[minSwingIndex]+1}")
+                if(quadrants[minSwingIndex]) > 4:
+                    quadrants[minSwingIndex] = 1
+    #print("_    "+names[quadrants.index(1)])
+    #print(names[quadrants.index(4)] + f"<--{WORD}-->" + names[quadrants.index(2)])
+    #print("_    "+names[quadrants.index(3)])
+</code></pre>
+<p>From four quadrants it should derive four directions, but these directions don't yet form a grid.</p>
+<h2>salvaging graphview for the quick visualization of close neighborhoods</h2>
+<p>Access this utility tool at /graphviz.html. Built with force-graph.js from the previous view used in golf</p>
+<img src="../static/2022-05-17-17-06-48.png">
+<p>For 100 random walks with view depth 9 at "candle":</p>
+<img src="../static/2022-05-17-17-05-50.png">
 </div>
-</body>
