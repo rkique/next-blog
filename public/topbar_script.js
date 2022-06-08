@@ -27,7 +27,9 @@ array = [
     "If harmony is not modulated by ritual, things will still go amiss",
     "existence alone is not enough",
     "everything is walking distance if I want it to be",
-    "good technology is good design; good design is good. "
+    "good technology is good design; good design is good. ",
+    "language is not our first language",
+    "no two people ever walk into the same room"
 ]
 
 function shuffleArray(array) {
