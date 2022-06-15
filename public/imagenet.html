@@ -89,7 +89,7 @@ grid = rows.map(row => row.split(","))
 <script>
     grid.forEach(row => row.forEach(n => {
     console.log(n)
-    d3.select("#grid").append("div").attr("class", "relative").html(`<img src="imagenet/${n}.jpeg"><p class='dn'>${n}</p>`)
+    d3.select("#grid").append("div").attr("class", "relative").html(`<img src="https://ericimagenet.s3.us-west-2.amazonaws.com/images/${n}.jpeg"><p class='dn'>${n}</p>`)
     }))
 
 </script>
