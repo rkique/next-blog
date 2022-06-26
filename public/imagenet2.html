@@ -70,24 +70,27 @@ grid = rows.map(row => row.split(","))
             font: 3px sans-serif;   
             margin: 0 0;
         }
-        #grid {
+        /* #grid {
             display: grid;
             grid-template-columns:  repeat(51, 1fr)
         }
         #grid img{
             width: 4vw;
-        }
+        } */
     </style>
 </head>
 <body>
 <p class="absolute left-0 top-0 bg-light-gray pa1 mw4">This is a 50x51 imagenet map of a word2vec embedding with tSNE applied, with 2,580 words total. </p>
 <div id="grid">
+<img src="images/avginet_1.PNG">
+<img src="images/avginet_2.PNG">
+<img src="images/avginet_3.PNG">
 </div>
 <script>
-    grid.forEach(row => row.forEach(n => {
-    console.log(n)
-    d3.select("#grid").append("div").attr("class", "relative").html(`<img src="https://ericimagenet.s3.us-west-2.amazonaws.com/avg_images/${n}.jpg"><p class='dn'>${n}</p>`)
-    }))
+    // grid.forEach(row => row.forEach(n => {
+    // console.log(n)
+    // d3.select("#grid").append("div").attr("class", "relative").html(`<img src="https://ericimagenet.s3.us-west-2.amazonaws.com/avg_images/${n}.jpg"><p class='dn'>${n}</p>`)
+    // }))
 
 </script>
 
