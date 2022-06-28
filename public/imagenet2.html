@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <script>
-        chars = `
-        silencer,autobahn,panhandle,cell,tweeter,cache,rumble,baggage,bustle,facsimile,headrest,hearse,casket,armrest,coffin,bier,folder,binder,sheet,boiler,compass,toaster,thermometer,microwave,dryer,thermostat,oven,heater,stove,cooker,cooler,fireplace,hearth,rotisserie,triangle,bookshelf,bookcase,mantel,hutch,energizer,checker,parquet,cleaners,torch,lamp,lantern,candle,wick,atomizer,steamroller
+        chars = `silencer,autobahn,panhandle,cell,tweeter,cache,rumble,baggage,bustle,facsimile,headrest,hearse,casket,armrest,coffin,bier,folder,binder,sheet,boiler,compass,toaster,thermometer,microwave,dryer,thermostat,oven,heater,stove,cooker,cooler,fireplace,hearth,rotisserie,triangle,bookshelf,bookcase,mantel,hutch,energizer,checker,parquet,cleaners,torch,lamp,lantern,candle,wick,atomizer,steamroller
 handlebar,sprocket,rudder,propeller,wiper,servo,shaft,lobe,purifier,filter,plenum,assembly,hanger,adobe,keyhole,mailbox,box,envelope,bannister,windowsill,porch,patio,cabana,washer,faucet,dishwasher,bathroom,toilet,refrigerator,bidet,kitchen,pantry,larder,tub,bathtub,cupboard,shoebox,drawer,drawers,dresser,headboard,recliner,settee,sofa,sideboard,ottoman,footstool,stool,flashlight,maul
 shaper,accelerator,pedal,limiter,axle,pinion,camshaft,crankshaft,rotor,airfoil,vane,stator,spindle,bushing,collet,caliper,extractor,riser,mezzanine,window,door,doorbell,balcony,floor,stairwell,elevator,dungeon,outhouse,washroom,shower,bathe,bath,bunk,bed,hammock,cot,couch,pillow,futon,armchair,ashtray,bin,bag,backpack,satchel,briefcase,wallet,purse,packet,chain
 brake,flywheel,alternator,engine,cylinder,crankcase,piston,gasket,valve,impeller,condenser,coil,diaphragm,tube,catheter,suture,winder,bobbin,ceiling,skylight,roof,canopy,awning,eaves,planking,booth,vault,attic,garage,basement,cellar,workroom,room,locker,den,minibar,playpen,crib,bedspread,comforter,blanket,rug,towel,cage,crate,tray,pouch,duffel,holster,chronograph
@@ -60,14 +59,13 @@ sectional,pennant,semaphore,stirrup,bridle,saddle,mule,terrier,collie,poodle,bea
 bantam,rasp,paddock,dressage,pony,mustang,sloth,retriever,cub,fawn,macaque,mongoose,monkey,gibbon,porcupine,hare,predator,groundhog,marmot,muskrat,beaver,fox,squirrel,vole,buzzard,magpie,raven,woodpecker,hummingbird,dragonfly,firefly,puffin,hammerhead,zooplankton,shad,coho,sturgeon,trout,salmon,fish,flounder,herring,cod,grouper,tuna,shrimp,crab,anchovy,lobster,scallop
 gramophone,organ,marrow,brass,chestnut,sulky,roan,horse,racehorse,thoroughbred,equine,greyhound,aardvark,lion,meerkat,baboon,chimpanzee,gorilla,ape,orangutan,lemur,triceratops,penguin,tortoise,seahorse,turtle,otter,duckling,gosling,swan,falcon,pigeon,owl,bird,starling,blackbird,sparrow,robin,wren,mockingbird,finch,porpoise,beluga,crustacean,squid,dogfish,pollack,mackerel,bonito,sardine
 metronome,instrument,atoll,reef,pacer,gelding,filly,colt,mare,sire,foal,yearling,stallion,stud,adder,roadrunner,jackal,hyena,warthog,silverback,cheetah,zebra,giraffe,rhinoceros,elephant,tiger,carnivore,pika,mammal,flamingo,condor,peregrine,osprey,kestrel,mallard,bluebird,goldfinch,kingfisher,heron,egret,sandpiper,gull,pelican,seabird,manatee,dolphin,whale,shark,stingray,barracuda
-joystick,keyboard,sitar,lute,sax,koto,piano,harp,violin,harpsichord,flute,cello,viola,baritone,clarinet,oboe,trombone,cornet,woodwind,ensemble,choir,kazoo,drum,coral,seagrass,chameleon,wildcat,vulture,gazelle,pangolin,lioness,tigress,leopard,panther,jaguar,cougar,coyote,bobcat,doe,peacock,pheasant,waterfowl,quail,goose,woodcock,drake,ibis,warbler,songbird,tern
-        `
+joystick,keyboard,sitar,lute,sax,koto,piano,harp,violin,harpsichord,flute,cello,viola,baritone,clarinet,oboe,trombone,cornet,woodwind,ensemble,choir,kazoo,drum,coral,seagrass,chameleon,wildcat,vulture,gazelle,pangolin,lioness,tigress,leopard,panther,jaguar,cougar,coyote,bobcat,doe,peacock,pheasant,waterfowl,quail,goose,woodcock,drake,ibis,warbler,songbird,tern`
 rows = chars.split(/\r?\n/)
 grid = rows.map(row => row.split(","))
     </script>
     <style>
         body{
-            font: 3px sans-serif;   
+            font: 0px sans-serif;   
             margin: 0 0;
         }
         /* #grid {
@@ -75,16 +73,16 @@ grid = rows.map(row => row.split(","))
             grid-template-columns:  repeat(51, 1fr)
         }
         #grid img{
+            margin: 0 0;
+            padding: 0 0;
             width: 4vw;
         } */
     </style>
 </head>
 <body>
-<p class="absolute left-0 top-0 bg-light-gray pa1 mw4">This is a 50x51 imagenet map of a word2vec embedding with tSNE applied, with 2,580 words total. </p>
 <div id="grid">
-<img src="images/avginet_1.PNG">
-<img src="images/avginet_2.PNG">
-<img src="images/avginet_3.PNG">
+<img src="images/avginet_11.PNG">
+<img src="images/avginet_12.PNG">
 </div>
 <script>
     // grid.forEach(row => row.forEach(n => {
