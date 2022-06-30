@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <title>Document</title>
+    <style>
+        body{margin: 0 0; padding: 0 0; overflow: hidden; font-size: 92px}
+        p{margin: 0 0; display: inline;}
+        .w-100{width: 100vw;}
+        .h-100{height: 100vh;}
+        #myDiv *{display:inline}
+        .s{visibility: hidden}
+        .sss{visibility: hidden}
+        /*#myDiv2 *{display:inline}*/
+    </style>
+    <!--I swear it's not jQuery it's d3 mhm mhm-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+    function advance2(){
+        d3.select(".sss").style("visibility", "visible")
+        d3.select('.ss').style("visibility", "visible")
+        _this = d3.select(".sss")
+        _this.classed("sss", false)
+        _this.classed("ssss", true)
+        
+        _this = d3.select(".ss")
+        _this.classed("ss", false)
+        _this.classed("k", true)
+
+        if(d3.selectAll('.sss').empty()){
+            location.href = location.href
+        }
+    }
+    function advance(){
+        if(d3.selectAll('.s').empty()){
+            d3.selectAll(".ss").style("visibility", "hidden")
+            size = d3.selectAll(".ss").size()
+            elements = d3.selectAll(".ss")
+            lastElement = elements.filter(function (d, i) { return i === size-1})
+            lastElement.style("visibility", "visible")
+            advance2()
+        }
+        else {
+        console.log((d3.selectAll(".s")))
+        d3.select(".s").style("visibility", "visible")
+        _this = d3.select(".s")
+        _this.classed("s", false)
+        _this.classed("ss", true)
+        }
+        }
+    </script>
+</head>
+<body class="w-100 h-100" onclick="advance()">
+
+    <div id="myDiv" class="">
+    <div class="year s"></div>
+    <div class="month s"></div>
+    <div class="date s"></div>
+    <div class="hours s"></div>
+    <div class="minutes s"></div>
+    <div class="seconds s"></div>
+    </div>
+    <div id="myDiv2" class="">
+        <div class="s"> <div class="di year"></div> years      <div class="sss di">since when?</div>     </div>
+        <div class="s"> <div class="di month"></div> months   <div class="sss di">since last year</div>     </div> 
+        <div class="s"> <div class="di date"></div> days     <div class="sss di">since last month</div>    </div>
+        <div class="s"> <div class="di hours"></div> hours    <div class="sss di">since last day</div>  </div>
+        <div class="s"> <div class="di minutes"></div> minutes <div class="sss di">since last hour</div>  </div>
+        <div class="s"> <div class="di seconds"></div> seconds <div class="sss di">since last minute</div> </div>
+        <div class="s"> <div class="">since when?</div></div>
+    </div>
+    <script>
+        function updateTime(){
+            var current = new Date();
+            d3.selectAll(".year").html(`<p>${current.getFullYear()}</p>`)
+            d3.selectAll(".month").html(`<p>${current.getMonth() + 1}</p>`)
+            d3.selectAll(".date").html(`<p>${current.getDate()}</p>`)
+            d3.selectAll(".hours").html(`<p>${current.getHours()}</p>`)
+            d3.selectAll(".minutes").html(`<p>${current.getMinutes()}</p>`)
+            d3.selectAll(".seconds").html(`<p>${current.getSeconds()}</p>`)
+        }
+        updateTime()
+        setInterval(()=>{
+            updateTime()
+        }, 1000)
+</script>
+</body>
+
+</html>
