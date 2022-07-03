@@ -1,10 +1,10 @@
-array = [    
+array = [   
+    "Universal Basic Paraglider", 
     "reject externally imposed dreams",
     "don't be a tourist",
     "I am a wild horse",
     "your fourth grade self against the world",
     "we lack courage, not genius",
-    "Universal Basic Paraglider",
     "Save yourself! Go outside! Do something!",
     "There is no speed limit",
     "daylight to lamplight",
@@ -12,7 +12,6 @@ array = [
     "it is always the listener's burden to understand the outer message",
     "you don't have to pay someone to live intentionally",
     "refuse to pass over that which cannot be said",
-    "biological improvisation kills determinism",
     "Who's afraid of Virginia Woolf?",
     "vector love and paper chasers wring out leaner biotech dreamers",
     "in search of rare transmutations of money and time",
@@ -20,7 +19,7 @@ array = [
     "my heart is in the work",
     "there are only a few hard things",
     "spontaneity is all that matters",
-    "Nobody was thinking about you, anyways",
+    "Nobody was thinking about you anyways",
     "lying on top of a building the clouds looked no nearer than when I was lying on the street",
     "avoid fatal simplifications",
     "But why does that have to be your life?",
@@ -29,7 +28,12 @@ array = [
     "everything is walking distance if I want it to be",
     "good technology is good design; good design is good. ",
     "language is not our first language",
-    "no two people ever walk into the same room"
+    "no two people ever walk into the same room",
+    "I've seen the future and I'm not going",
+    "Imagine the clouds dripping",
+    "Watch the sun until it becomes square",
+    "International Klein Blue",
+    "War and Peace is about Russia"
 ]
 
 function shuffleArray(array) {
