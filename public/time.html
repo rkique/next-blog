@@ -62,9 +62,9 @@
     </script>
 </head>
 <body class="w-100 h-100" onclick="advance()">
-
+.\
     <div id="parentDiv" class="">
-    <div id="myDiv" class="">
+    <div id="myDiv" class="dn">
     <div class="year q"></div>
     <div class="month q"></div>
     <div class="date q"></div>
@@ -223,19 +223,7 @@
   }
 }
         
-        function setup() {
-            myCanvas = createCanvas(window.innerWidth,window.innerHeight);
-            myCanvas.parent("parentDiv")
-            myCanvas.style("position", "absolute")
-            myCanvas.style("top", "0")
-            myCanvas.style("right", "0")
-            myCanvas.style("z-index", "-20")
-            rect(300,300, 300, 300)
-            boids[0] = []
-            boids[1] = []
-            boids[2] = []
-            boids[3] = []
-            boids[4] = []
+        function updateBoids(){
             for(let i = 0; i < bmonth; i++){
             boids[0][i] = new Boid(random(width), random(height), 80);
             }
@@ -249,8 +237,23 @@
             boids[3][i] = new Boid(random(width), random(height), 10);
             }
             for(let i = 0; i < bseconds; i++){
-            //boids[4][i] = new Boid(random(width), random(height), 5);
+            boids[4][i] = new Boid(random(width), random(height), 5);
             }
+        }
+        function setup() {
+            myCanvas = createCanvas(window.innerWidth,window.innerHeight);
+            myCanvas.parent("parentDiv")
+            myCanvas.style("position", "absolute")
+            myCanvas.style("top", "0")
+            myCanvas.style("right", "0")
+            myCanvas.style("z-index", "-20")
+            rect(300,300, 300, 300)
+            boids[0] = []
+            boids[1] = []
+            boids[2] = []
+            boids[3] = []
+            boids[4] = []
+            updateBoids()
             }
             function draw() {
             background(255)
@@ -267,7 +270,7 @@
                 boids[3][i].run(boids[3]);
             }
             for(let i = 0; i < bseconds; i++){
-               // boids[4][i].run(boids[4]);
+               boids[4][i].run(boids[4]);
             }
             }
 
@@ -289,6 +292,7 @@
         updateTime()
         setInterval(()=>{
             updateTime()
+            updateBoids()
         }, 1000)
         
 </script>
