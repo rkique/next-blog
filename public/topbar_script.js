@@ -32,8 +32,7 @@ array = [
     "I've seen the future and I'm not going",
     "Imagine the clouds dripping",
     "Watch the sun until it becomes square",
-    "International Klein Blue",
-    "War and Peace is about Russia"
+    "I wish to remain who I am",
 ]
 
 function shuffleArray(array) {

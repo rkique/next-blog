@@ -62,7 +62,6 @@
     </script>
 </head>
 <body class="w-100 h-100" onclick="advance()">
-.\
     <div id="parentDiv" class="">
     <div id="myDiv" class="dn">
     <div class="year q"></div>
@@ -222,24 +221,22 @@
     return steer;
   }
 }
-        
-        function updateBoids(){
-            for(let i = 0; i < bmonth; i++){
-            boids[0][i] = new Boid(random(width), random(height), 80);
-            }
-            for(let i = 0; i < bdate; i++){
-            boids[1][i] = new Boid(random(width), random(height), 40);
-            }
-            for(let i = 0; i < bhours; i++){
-            boids[2][i] = new Boid(random(width), random(height), 20);
-            }
-            for(let i = 0; i < bminutes; i++){
-            boids[3][i] = new Boid(random(width), random(height), 10);
-            }
-            for(let i = 0; i < bseconds; i++){
-            boids[4][i] = new Boid(random(width), random(height), 5);
+        function updateKind(arr,length, size){
+            for(let i = 0; i < length; i++){
+            arr.push(new Boid(random(width), random(height), size))
             }
         }
+        function updateBoids(){
+            boids[0] = []
+            boids[1] = []
+            boids[2] = []
+            boids[3] = []
+            boids[4] = []
+            updateKind(boids[0],bmonth, 80)
+            updateKind(boids[1],bdate, 40)
+            updateKind(boids[2],bhours, 20)
+            updateKind(boids[3],bminutes, 10)
+            updateKind(boids[4],bseconds, 5)}
         function setup() {
             myCanvas = createCanvas(window.innerWidth,window.innerHeight);
             myCanvas.parent("parentDiv")
@@ -248,11 +245,6 @@
             myCanvas.style("right", "0")
             myCanvas.style("z-index", "-20")
             rect(300,300, 300, 300)
-            boids[0] = []
-            boids[1] = []
-            boids[2] = []
-            boids[3] = []
-            boids[4] = []
             updateBoids()
             }
             function draw() {
