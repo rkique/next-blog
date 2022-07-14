@@ -113,7 +113,6 @@
 
 
 
-
     #main h3 {
         padding: 0.1em 0.3em;
         margin: 0.5em 0em;
@@ -125,7 +124,6 @@
     .shrine {
         font-size: 20px;
         background: rgb(0, 0, 0);
-        border: 4px solid rgb(255, 255, 255);
         letter-spacing: -0.03px;
         color: rgb(255, 255, 255);
     }
@@ -357,12 +355,24 @@
         padding-bottom: 2px;
         padding-top: 2px;
     }
+    .semimodern{
+        letter-spacing: -0.07em;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 0px 5px;
+        margin-top: 4px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
     .daily-feed{
-        background: rgb(40, 61, 8);
+        border: 1px solid white;
+        color: white;
 
     }
-
-
+    .invisible {
+        visibility: hidden; 
+    }
     #email-decoration{
         letter-spacing: 0px;
          font-size: 11px;
@@ -648,22 +658,19 @@
 
     <div id="third_row" class="cf f5">
         <a class="fl w-20 modern bg-dark-red light-gray" href="esperanto1.html">word vectors + agglutinative esperanto</a>
-        <a class="fl w-20 modern bg-dark-pink light-gray" href="synplifier.html">A PoC for simpler synthetic biology</a>
+        <a class="fl w-20 semimodern f6 pa2 bg-washed-blue black invert" href="synplifier.html">A PoC for simpler synthetic biology</a>
         <a class="fl w-20 modern bluehover" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl w-40 modern bg-orange light-gray" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl f6 w-15 pa2 bg-white black invert" href="gans.html">GANs on Google Street View</a>
         <a class="fl f6 w-15 pa2 bg-washed-blue black invert" href="bmapping.html">brightness mapped collages</a>
-        <a class="fl fleshed w-10 pa0 bg-yello black b tracked-tight" href="/HSKreading.html">LEARN CHINESE</a>
+        <a class="fl fleshed w-10 pa0 bg-yello black b tracked-tight" href="/HSKreading.html">learn chinese</a>
         <a class="fl f6 w-10 pa2 bg-washed-blue black invert" href="arrow/index.html">proving arrow's theorem</a>
         <a class="fl f6 w-30 pa2 bg-washed-blue black invert" href="gravel.html"> GravelHacks 2021 GRAND PRIZE WINNER</a>
     </div>
     <div id="fourth_row" class="cf f5">
-        <div class="fl w-30 dragscroll">
-        <img class="" id="media" src="images/utopiasmm_1.webp">
-        </div>
-        
+        <div class="fl w-30 dragscroll">  <a href="images/ftsne.png"><img src="images/nicetsne.png" class="alwaysinvert"></a></div>
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
-            <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>DAILY FEED</p></div>
+            <div class="top-0 left-0 f6 ph1 daily-feed"><p>DAILY FEED</p></div>
             <div id="daily-blog" class="f6">
                 <p>(7.14.2022) Finished <i>Red Mars</i> and short stories, made some progress on the rest. Today reentering the pairing pool, otherwise revising website.</p>
                 <p>(7.11.2022) At home, working intermittently on various things. Reading a book on the topography of seattle, a collection of japanese short stories, man is the measure, the Dawn of Everything, red mars, and a little bit of graph theory.</p>
@@ -1020,44 +1027,41 @@ I read this in a thrift store, skipping sections near the end about sports, race
 
         <div id="sixth_row" class="cf f5">
             <div class="w-100 bg-white">
-                <div class="fl w-30 bg-white f6 lh-solid pa1 black shrine tracked-tight n_fleshed">
+                <div class="fl w-20 dragscroll h-25 tc lh-solid pa4 shrine">
+                    <a href="golfing.html"><h1 class="white invert">
+                        <p class="bg-yello alwaysinvert bluehover">language as a physical space</p>
+                        <img src="images/taxi-alphabet.PNG">
+                    </a>
+                </div>
+                <div class="fl w-20 bg-white f6 lh-solid pa1 black shrine tracked-tight n_fleshed">
                     <a href="imagenet.html">
-                    <h2 class="uppercase tracked-tight white" >everything or nothing or anything at all</h2>
                     <img src="images/inet1.PNG">
                     <img src="images/inet2.PNG">
                 </a>
                 </div>
-                <div class="fl w-30 dragscroll h-25 tc lh-solid pa4 shrine">
-                    <a href="golfing.html"><h1 class="white invert">
-                        <p class="bg-yello alwaysinvert bluehover">language as physical space</p>
-                        <img src="images/taxi-alphabet.PNG">
+                <div class="fl w-20 dragscroll h-25 lh-solid pa4 alwaysinvert nohover">
+                    <a href="static_grid.html" class="nohover"><h1 class="white">
+                        <p class="bg-white alwaysinvert bluehover f3 tc"></p>
+                        <p class="bluehover invert f5 tl">
+                            <br><br><br>
+                        </p>
+                        <img src="../static/2022-05-24-10-22-41.png" class="nohover">
                     </a>
                 </div>
-                <div class="fl w-30">secret block you can't see</div>
                 </div>
             </div>
        </div>
        <div id="seventh_row" class="cf f5">
         <div class="w-100 bg-white">
             <div class="fl w-30 dragscroll h-25 lh-solid pa4 alwaysinvert nohover">
-                <a href="static_grid2.html" class="nohover"><h1 class="white">
-                    <p class="bg-white alwaysinvert bluehover f3 tc"></p>
-                    <p class="bluehover invert f5 tl">
-                        <br><br><br>
-                    </p>
-                    <img src="../static/2022-05-24-10-22-41.png" class="nohover">
-                </a>
-            </div>
-            <div class="fl w-30 dragscroll h-25 lh-solid pa4 alwaysinvert nohover">
-                <a href="static_grid.html" class="nohover"><h1 class="white">
-                    <p class="red f3 tc"></p>
-                    <p class="dark-red f5 tl">
-                        <br><br>
-                    </p>
-                    <img src="../static/2022-05-24-10-22-41.png" class="nohover">
-                </a>
+                <p class="invisible">secret block you can't see</p>
             </div>
             <div class="fl w-30">  <a href="images/xkcd_2.PNG"><img src="images/xkcd_1.PNG" class="alwaysinvert"></a></div>
+            </div>
+        </div>
+        <div class="w-100 bg-white">
+            <div class="fl w-60 dragscroll h-25 lh-solid pa4 alwaysinvert nohover">
+                <p class="invisible">secret block you can't see</p>
             </div>
         </div>
    </div>
@@ -1080,7 +1084,7 @@ I read this in a thrift store, skipping sections near the end about sports, race
                 <br>
                 <p>I&#39;m a student living in Seattle before enrolling at Brown this fall. I'm currently working as a field interviewer for NORC and attending the <a href="https://www.recurse.com/">Recurse Center's</a> Summer 2022 batch. <a href="https://www.linkedin.com/in/eric-xia-seattle/">(Looking for another Eric Xia who goes to UW?)</a>. </p>
                 <p><br>
-                I believe everything matters: among other things, I&#39;m interested in philosophy, literature, computer science, biology, and art. Recently I've been fascinated by spatial visualizations (Did you know our intuitions for commutativity and associativity are visual (w*l*h)?) I read a lot and write my thoughts here.</p>
+                I believe everything matters: among other things, I&#39;m interested in philosophy, literature, computer science, biology, and art. Recently I've been fascinated by word vectors; a lot of that work is living here.</p>
                 <br>
                 <p>I&#39;m proud to have received grants from Emergent Ventures and the 1517 Fund. I am designing a competitive sport called word golf which employs vectors for modeling languages. I believe strongly in intrinsic motivation and want to create new sources of meaning.</p>
                 <br>
