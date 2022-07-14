@@ -571,6 +571,10 @@
         .bluehover:hover{
             color: blue !important;
         }
+        .nohover:hover, .nohover *:hover{
+            border: none;
+            outline: none;
+        }
         </style>
         
         <p class="f5 w-100 horizontal dragscroll" id="quotes2"></p>
@@ -661,6 +665,7 @@
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
             <div class="top-0 left-0 f6 b ph1 daily-feed white"><p>DAILY FEED</p></div>
             <div id="daily-blog" class="f6">
+                <p>(7.14.2022) Finished <i>Red Mars</i> and short stories, made some progress on the rest. Today reentering the pairing pool, otherwise revising website.</p>
                 <p>(7.11.2022) At home, working intermittently on various things. Reading a book on the topography of seattle, a collection of japanese short stories, man is the measure, the Dawn of Everything, red mars, and a little bit of graph theory.</p>
                 <p>(7.6.2022) Spent the day walking around portland. I wanted to cross the border but it is not accessible to pedestrians. Did cross St. John's and Fremont bridges. Yesterday went to Powell's and read a bunch of picture books, and attended long NORC call from pioneer square. 
                 <p>(7.3.2022) Minecraft is so fun </p>
@@ -1024,7 +1029,7 @@ I read this in a thrift store, skipping sections near the end about sports, race
                 </div>
                 <div class="fl w-30 dragscroll h-25 tc lh-solid pa4 shrine">
                     <a href="golfing.html"><h1 class="white invert">
-                        <p class="bg-yello invert bluehover">language as physical space</p>
+                        <p class="bg-yello alwaysinvert bluehover">language as physical space</p>
                         <img src="images/taxi-alphabet.PNG">
                     </a>
                 </div>
@@ -1034,25 +1039,25 @@ I read this in a thrift store, skipping sections near the end about sports, race
        </div>
        <div id="seventh_row" class="cf f5">
         <div class="w-100 bg-white">
-            <div class="fl w-30 dragscroll h-25 lh-solid pa4 invert">
-                <a href="static_grid2.html"><h1 class="white">
-                    <p class="bg-white invert bluehover f3 tc">STATIC LANGUAGE GRID 2</p>
+            <div class="fl w-30 dragscroll h-25 lh-solid pa4 alwaysinvert nohover">
+                <a href="static_grid2.html" class="nohover"><h1 class="white">
+                    <p class="bg-white alwaysinvert bluehover f3 tc"></p>
                     <p class="bluehover invert f5 tl">
                         <br><br><br>
                     </p>
-                    <img src="../static/2022-05-24-10-22-41.png">
+                    <img src="../static/2022-05-24-10-22-41.png" class="nohover">
                 </a>
             </div>
-            <div class="fl w-30 dragscroll h-25 lh-solid pa4">
-                <a href="static_grid.html"><h1 class="white">
-                    <p class="red f3 tc">STATIC LANGUAGE GRID 1</p>
+            <div class="fl w-30 dragscroll h-25 lh-solid pa4 alwaysinvert nohover">
+                <a href="static_grid.html" class="nohover"><h1 class="white">
+                    <p class="red f3 tc"></p>
                     <p class="dark-red f5 tl">
                         <br><br>
                     </p>
-                    <img src="../static/2022-05-24-10-22-41.png">
+                    <img src="../static/2022-05-24-10-22-41.png" class="nohover">
                 </a>
             </div>
-            <div class="fl w-30">  <a href="images/xkcd_2.PNG"><img src="images/xkcd_1.PNG"></a></div>
+            <div class="fl w-30">  <a href="images/xkcd_2.PNG"><img src="images/xkcd_1.PNG" class="alwaysinvert"></a></div>
             </div>
         </div>
    </div>
@@ -1067,12 +1072,9 @@ I read this in a thrift store, skipping sections near the end about sports, race
         </div>
         <div class="absolute right-0 bottom-0 w-40 second-media bg-white noselect">
         <img class="noselect" id="media2" src="images/orcasmm.webp">
-        <a href="resolution.html" class="fl w-40 modern bluehover">resolution</a>
         </div>
         <div class="absolute right-0 bottom-0 w-30 h-50 bg-white" id="biography-container">
-            <img class="absolute clippy selfie dn" src="" style="width: 37%; z-index: 10">
-            <a href="resolution.html" class="nohover"><img class="absolute clippy cars" src="images/cars.png" style="width: 100%; z-index: 10"></a>
-            <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6 noselect" id="biography">
+             <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6 noselect" id="biography">
                 <p class="b modern">ABOUT ME</p>   
                 <hr>
                 <br>
@@ -1175,6 +1177,9 @@ I read this in a thrift store, skipping sections near the end about sports, race
                 margin-top: 0.1em;
             }
             .invert{
+                filter: invert();
+            }
+            .alwaysinvert{
                 filter: invert();
             }
             .invert:hover{
