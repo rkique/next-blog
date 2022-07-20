@@ -672,10 +672,21 @@
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
             <div class="top-0 left-0 f6 ph1 daily-feed"><p>DAILY FEED</p></div>
             <div id="daily-blog" class="f6">
+                <p>(7.19.2022) I have this idea that solves the multiple meanings problem with language. Given four equidistant points from a center point, they form a tetrahedron in 3D wordspace where each of the points is at the intersection of three planes of meaning. This also generalizes to higher dimensions, but with my current script producing four point/word/vectors I have
+                    <blockquote>
+                    <code>
+                        moneyball luncheon proponent alumna
+                        belated position circumvented existential
+                        neutropenia crimping invisible marsupial
+                        ...
+                    </code>
+                </blockquote>
+                , where there are four meaning-planes, formed by taking three of the four words. Running this overnight and checking results then. 
+                    </p>
                 <p>(7.15.2022) Presented on tSNE language maps and then got some interviews done. <br><br>
                     Two delicious coincidences I've noticed recently. 
                     <br><br>The first one is the phrase "sign down". There are so many associated meanings (sign up, write down, sign in, write up) that you'd expect this phrase to suggest <i>something</i>, and yet it is a barren wasteland. Maybe "sign down (here, below)", but why not just "sign (here, below)"? 
-                    <br><br> The second is that there are two major philosophies based on spoons that nicely complement one another. The first is "spoon theory", or only having a certain number of spoons in a drawer (representing mental energy), and the second is The Matrix's "there is no spoon", which is a post-scarcity declaration of anything being possible. Both make sense; taken together, it is actually an expression of the content/form distinction.
+                    <br><br> The second is that there are two major philosophies based on spoons that nicely complement one another. The first is "spoon theory", or only having a certain number of spoons in a drawer (representing mental energy), and the second is The Matrix's "there is no spoon", which is a post-scarcity declaration of anything being possible. Both make sense; taken together, it is actually a○n expression of the content/form distinction.
 
                  </p>
                  <p>(7.14.2022) Paired on clusters for tSNE maps of word2vec... got some clusters with k-means, then changed to DBSCAN which works surprisingly well, and the sklearn implementation makes it easy to assign words to clusters. The way DBSCAN works is that it looks for cluster cores, which at the current settings are two points (words) that are with a distance of 0.3 and with at least 1 neighbor (this is good for isolating extremely close vector pairs, like &quot;map&quot; and &quot;maps&quot;). Here&#39;s a <a href="https://www.eric-xia.com/images/dbscan.png">bigger version that probably won&#39;t load</a></p>
