@@ -296,9 +296,8 @@
         height: 58%;
     }
     #media2 {
-        background-image: linear-gradient(red, yellow);
         width: 100%;
-        filter: drop-shadow(0 -10px 8px black);
+        filter: drop-shadow(0 10px 10px black);
     }
 
     .bg-blu{
@@ -425,8 +424,8 @@
         text-align: justify;
     }
     #biography-container {
-        height: 80vh;
-        top: 50vh;
+        height: 30vh;
+        bottom: 0vh;
     }
     #daily-blog p a, #biography * a {
         padding: 0;
@@ -453,13 +452,11 @@
 
 
     #biography {
-        font: 13px sans-serif;
+        font: 14px sans-serif;
         line-height: 1.3;
         text-align: justify;
-        border: 2px ridge rgb(255, 103, 2);
-        border-right-color: yellow;
-        border-left-width: 25px;
-        border-right-width: 20px;
+        background-color: rgba(0,0,0,0.2);
+        border-color: transparent;
     }
 
     #biography hr{
@@ -502,10 +499,9 @@
     }
     .myhouse {
         padding: 0.3em 0.3em;
-        background: rgb(235, 170, 50);
+        background: rgb(255, 248, 234);
         font-size: 13px;
         line-height: 0.95;
-        letter-spacing: -0.04rem;
     }
     .utopia-hide:hover {
         z-index: -999;
@@ -535,7 +531,6 @@
     <div id="first_row" class="cf f5">
         <a class="fl w-15 pa2 bg-yello invert" href="viz.html" >HIGH SCHOOL PROJECTS </a>
         <a class="fl bg-dark-red washed-red pa2 w-10 invert" href="portfolio.html">(Visual) (Art) Portfolio</a>
-        <a class="fl bg-dark-pink washed-red pa2 w-10 invert" href="https://www.word.golf" >⤺ go word golfing</a>
         <a class="fl b w-25 bg-white orange tracked fleshed tc" href="culture.html">My Cultural Influences</a>
     <div id="social_media" class="absolute flex right-0 f5 w-40 h-100 ">
 
@@ -657,21 +652,22 @@
     </div>
 
     <div id="third_row" class="cf f5">
-        <a class="fl w-20 modern bg-dark-red light-gray" href="esperanto1.html">word vectors + agglutinative esperanto</a>
+        <a class="fl w-20 modern" href="esperanto1.html">word vectors + agglutinative esperanto</a>
         <a class="fl w-20 semimodern f6 pa2 bg-washed-blue black invert" href="synplifier.html">A PoC for simpler synthetic biology</a>
         <a class="fl w-20 modern bluehover" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl w-40 modern bg-orange light-gray" href="crisis.html">redesigning the model UN crisis format</a>
         <a class="fl f6 w-15 pa2 bg-white black invert" href="gans.html">GANs on Google Street View</a>
         <a class="fl f6 w-15 pa2 bg-washed-blue black invert" href="bmapping.html">brightness mapped collages</a>
         <a class="fl fleshed w-10 pa0 bg-yello black b tracked-tight" href="/HSKreading.html">learn chinese</a>
-        <a class="fl f6 w-10 pa2 bg-washed-blue black invert" href="arrow/index.html">proving arrow's theorem</a>
+        <a class="fl f6 w-10 pa2 bg-washed-blue black invert" href="arrow/index.html">arrow's theorem</a>
         <a class="fl f6 w-30 pa2 bg-washed-blue black invert" href="gravel.html"> GravelHacks 2021 GRAND PRIZE WINNER</a>
     </div>
     <div id="fourth_row" class="cf f5">
-        <div class="fl w-30 dragscroll">  <a href="images/dbscan.png"><img src="images/dbscanview.png" class="alwaysinvert"></a></div>
+        <div class="fl w-30 dragscroll"><img src="images/Ystick2.jpg"></div>
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
             <div class="top-0 left-0 f6 ph1 daily-feed"><p>DAILY FEED</p></div>
             <div id="daily-blog" class="f6">
+                <p> (1.20.2023) I changed my mind, this format works fine. Just have to restabilize it. </p>
                 <p> (12.23.2022) College is hard :) </p>
                 <p> (10.3.2022) College is fun! </p>
                 <p>(7.27.2022) I got COVID lol. I want to rewrite this website again because I'm not happy with a lot of the content. I realized that most of the separate .html files are older works and that I actually enjoyed the previous format a good amount, but I still want to have some visual non-gridified aesthetic. </p>
@@ -1088,30 +1084,25 @@ I read this in a thrift store, skipping sections near the end about sports, race
         </div>
    </div>
         
-        <div class="absolute left-0 bottom-0 w-30 ba h-25" id="essays-blog">
+        <div class="absolute left-0 bottom-2 w-30 h-25" id="essays-blog">
             <a class="fl w-50 h-50 tl pa2 f6 black myhouse" href="myhouse.html">
                 If you ask a kid to draw a house, they will draw a slatted box with a cross on a window and a simple door... it is a few large boxes, upwards chevrons, windows. My house is that <b>American house</b>. There is an American house just as there is an American strip mall or an American highway, even beyond their stereotypes. So was my last house in Oregon.
             </a>
             <a class="fl w-50 h-50 tc cond f4 pv1 bg-blu black invert" id="culture" href="culture.html"><p>My Cultural Influences</p></a>
-            <a class="fl w-75 h-50 justify f6 pa3 bg-yello black clothes" href="clothes.html"><b>"The problem with these aesthetics, which influence almost everyone I know, is that they are fashion movements masquerading as intellectual ones.</b> It draws you very close because it is exactly your dream. Then it tells you can get closer to your visions by moving positionally, within society, without ever really doing the work. This is how you begin to chase dreams by changing clothes..."</a>
+            <a class="fl w-75 h-50 justify f6 pa3 bg-yello black clothes" href="clothes.html"><b style="text-transform: uppercase;">The problem with these aesthetics which influence almost everyone I know is that they are fashion movements masquerading as intellectual ones.</b> It draws you very close because it is exactly your dream. Then it tells you can get closer to your visions by moving positionally, within society, without ever really doing the work. This is how you begin to chase dreams by changing clothes..."</a>
     
         </div>
         <div class="absolute right-0 bottom-0 w-40 second-media bg-white noselect">
-        <img class="noselect" id="media2" src="images/orcasmm.webp">
+        <img class="noselect" id="media2" src="images/whitehorse.jpg">
         </div>
-        <div class="absolute right-0 bottom-0 w-30 h-50 bg-white" id="biography-container">
-             <div class="ma2 pa3 ba b--orange h-100 bg-black yello f6 noselect" id="biography">
-                <p class="b modern">ABOUT ME</p>   
-                <hr>
+        <div class="absolute right-0 bottom-0 w-30 h-20" id="biography-container">
+             <div class="ma0 pa0 ba b--orange h-100 yello f6 noselect" id="biography">
+                <p class="b">ABOUT</p>   
+                <p>I'm a first-year undergraduate at Brown University. </p>
+                <p>I believe everything matters: among other things, I'm interested in philosophy, literature, computer science, art.</p>
                 <br>
-                <p>I&#39;m a student living in Seattle before enrolling at Brown this fall. I'm currently working as a field interviewer for NORC and attending the <a href="https://www.recurse.com/">Recurse Center's</a> Summer 2022 batch. <a href="https://www.linkedin.com/in/eric-xia-seattle/">(Looking for another Eric Xia who goes to UW?)</a>. </p>
-                <p><br>
-                I believe everything matters: among other things, I&#39;m interested in philosophy, literature, computer science, biology, and art. Recently I've been fascinated by word vectors; a lot of that work is living here.</p>
-                <br>
-                <p>I&#39;m proud to have received grants from Emergent Ventures and the 1517 Fund. I am designing a competitive sport called word golf which employs vectors for modeling languages. I believe strongly in intrinsic motivation and want to create new sources of meaning.</p>
-                <br>
-                <p>This site is made with a CSS framework called tachyons, which is great for building sprawling websites like these, and served with Next.js on Netlify. Word golf is built with flask, gensim and other NLTK libraries, and MySQL. If you&#39;re curious about anything just email me! I respond quickly.</p>                
-                <br>
+                <p>I'm proud to have received grants from Emergent Ventures and the 1517 Fund. I am designing a competitive sport called word golf which employs vectors for modeling languages. I believe strongly in intrinsic motivation and want to create new sources of meaning.</p>
+                <br>             
             </div>
         </div>
     
@@ -1135,8 +1126,7 @@ I read this in a thrift store, skipping sections near the end about sports, race
             .instagram {
                 background-image: url('images/insta.png');
                 font-family: sans-serif;
-                -webkit-text-fill-color: transparent;
-                color: transparent;
+                color: black;
                 letter-spacing: -0.06em;
                 font-weight: 600;
                 background-repeat: repeat;
