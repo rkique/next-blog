@@ -134,6 +134,11 @@
         filter: invert();
     }
 
+    .no-hover a:hover{
+        filter: none !important;
+        transition: none !important;
+    }
+
     .invhov:hover {
         filter: invert();
     }
@@ -396,6 +401,9 @@
         overflow: hidden;
         white-space: nowrap;
     }
+    #gallery-block * {
+
+    }
     
     #blowup {
         width: 200%;
@@ -424,8 +432,9 @@
         text-align: justify;
     }
     #biography-container {
-        height: 30vh;
-        bottom: 0vh;
+        height: 22vh;
+        bottom: 5vh;
+        right: 18vh;
     }
     #daily-blog p a, #biography * a {
         padding: 0;
@@ -455,7 +464,7 @@
         font: 14px sans-serif;
         line-height: 1.3;
         text-align: justify;
-        background-color: rgba(0,0,0,0.2);
+        background-color: rgba(0,0,0,0.4);
         border-color: transparent;
     }
 
@@ -663,7 +672,7 @@
         <a class="fl f6 w-30 pa2 bg-washed-blue black invert" href="gravel.html"> GravelHacks 2021 GRAND PRIZE WINNER</a>
     </div>
     <div id="fourth_row" class="cf f5">
-        <div class="fl w-30 dragscroll"><img src="images/Ystick2.jpg"></div>
+        <div class="fl w-30 dragscroll"><img src="images/Ystick2.jpg" class="darken"></div>
         <div class="fl w-30 ba b--gold bg-black vertical dragscroll" id="daily-blog-container" style="overflow-y: scroll; overflow-x: hidden;">
             <div class="top-0 left-0 f6 ph1 daily-feed"><p>DAILY FEED</p></div>
             <div id="daily-blog" class="f6">
@@ -1035,10 +1044,9 @@ I read this in a thrift store, skipping sections near the end about sports, race
                  <div class="fl w-30">
                      hello
                  </div>
-                 <div class="fl w-30 horizontal dragscroll gallery-block" >
-                 <a href="images/risk.jpg"><img class="fl w-33" src="images/risksm.webp"></a>
-                 <a href="images/printersm.jpg"><img class="fl w-33 di" src="images/printersmm.webp"></a>
-                 <a href="images/algo.jpg"><img class="fl w-33 di" src="images/algosm.jpg" href="images/algo.jpg"></a>
+                 <div class="fl w-30 horizontal gallery-block no-hover" >
+                <a href="other/Linear_Term_Paper-5.pdf"><img class="fl w-33 di alwaysinvert" src="images/PCAblog.PNG"></a>
+                 <a href="other/Linguistics_Final__3-5.pdf"><img class="fl w-33 di alwaysinvert" src="images/CTPling.PNG"></a>
                  </div>
              </div>
         </div>
@@ -1095,8 +1103,8 @@ I read this in a thrift store, skipping sections near the end about sports, race
         <div class="absolute right-0 bottom-0 w-40 second-media bg-white noselect">
         <img class="noselect" id="media2" src="images/whitehorse.jpg">
         </div>
-        <div class="absolute right-0 bottom-0 w-30 h-20" id="biography-container">
-             <div class="ma0 pa0 ba b--orange h-100 yello f6 noselect" id="biography">
+        <div class="absolute right-0 bottom-0 w-25 h-10" id="biography-container">
+             <div class="ma2 pa2 ba b--orange h-100 yello f6 noselect" id="biography">
                 <p class="b">ABOUT</p>   
                 <p>I'm a first-year undergraduate at Brown University. </p>
                 <p>I believe everything matters: among other things, I'm interested in philosophy, literature, computer science, art.</p>
@@ -1126,14 +1134,25 @@ I read this in a thrift store, skipping sections near the end about sports, race
             .instagram {
                 background-image: url('images/insta.png');
                 font-family: sans-serif;
-                color: black;
+                color: white;
                 letter-spacing: -0.06em;
                 font-weight: 600;
                 background-repeat: repeat;
                 background-size: 100%;
                 background-position: 0px;
             }
-        
+            .overlay-img {
+                color: black;
+                background-repeat: repeat;
+                background-size: 100%;
+                background-position: 0px;
+            }
+            .overlay-img p{
+                margin-top: 20px;
+                background: white;
+                letter-spacing: -0.06em;
+                font-weight: 600;
+            }
             #culture { 
                 background-image: url('images/civsm.webp');
                 color: black;
