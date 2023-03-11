@@ -5,6 +5,7 @@ array = [
     "I am a wild horse",
     "your fourth grade self against the world",
     "we lack courage, not genius",
+    "when my aura gets cut it bleeds",
     "Save yourself! Go outside! Do something!",
     "There is no speed limit",
     "daylight to lamplight",
@@ -15,7 +16,6 @@ array = [
     "Who's afraid of Virginia Woolf?",
     "vector love and paper chasers wring out leaner biotech dreamers",
     "in search of rare transmutations of money and time",
-    "my friends are going to save the world",
     "my heart is in the work",
     "there are only a few hard things",
     "spontaneity is all that matters",
@@ -26,8 +26,7 @@ array = [
     "If harmony is not modulated by ritual, things will still go amiss",
     "existence alone is not enough",
     "everything is walking distance if I want it to be",
-    "good technology is good design; good design is good. ",
-    "language is not our first language",
+    "good technology is good design and good design is good. ",
     "no two people ever walk into the same room",
     "I've seen the future and I'm not going",
     "Imagine the clouds dripping",
@@ -50,7 +49,7 @@ k = k + 1;
 k = k % array.length
 randomElement = randomElement.split("")
 ll = randomElement.length
-quoteArray = new Array(ll).fill("□")
+quoteArray = new Array(ll).fill(" ")
 idxidx = 0;
 idxArray = []
 for (let i = 0; i < ll; i++) {
@@ -69,7 +68,7 @@ if(idxidx < idxArray.length)
 }
 }
 changeQuote()
-//setInterval(function(){changeQuote()}, 5000)
-//setInterval(function(){spreadText()},20)
+setInterval(function(){changeQuote()}, 5000)
+setInterval(function(){spreadText()},40)
 
 

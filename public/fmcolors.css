@@ -1,0 +1,15 @@
+:root {
+    --header-text: black;
+    --header-text-sub: rgb(0, 0, 0);
+    --interactable: rgb(0, 0, 0);
+}
+
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center;
+}
+.tr {
+    text-align: right;
+}

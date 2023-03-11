@@ -1,0 +1,110 @@
+.super {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div {
+    margin: 1em 0 2em 0;
+}
+
+p {
+    margin: 0 0 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--interactable)
+}
+
+img { 
+     max-width: 18em;
+}
+
+.fl {
+    float: left;
+}
+
+.blog{
+    max-width: 24em;
+}
+
+.daily-blog p{
+    display: block;
+}
+
+.left {
+}
+
+.main {
+    margin: 0 2em;
+    background: white;
+    max-width: 36em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#quotes {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projects {}
+.projects a, p{
+    display: block;
+}
+
+.projects a{
+    outline: 1px solid black;
+    margin: 0.5em 1em 0.5em 1em;
+    padding: 1em 1em 1em 1em;
+}
+
+.projects img {
+    display: block;
+}
+
+.gallery{
+    background: rgb(0, 0, 0);
+    display: flex;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.webring {
+    --bgColor: white;
+    width: 170px;
+    height: 55px;
+    background-color: white !important;
+}
+
+#lowtech {
+    width: 8em;
+}
+
+.header {
+    color: var(--header-text);
+    text-align: center;
+    letter-spacing: -0.07em;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.header-sub {
+    line-height: 0.70;
+    text-decoration: underline;
+    color: var(--header-text-sub);
+    text-align: left;
+    font-size: 20px;
+}
+.header-sub2 {
+    color: var(--header-text-sub);
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.toggle {
+    /* display: none; */
+    color: var(--interactable)
+}
+

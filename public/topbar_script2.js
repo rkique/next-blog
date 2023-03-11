@@ -28,7 +28,7 @@ if(idxidx2 < idxArray2.length)
     thisIdx2 = idxArray2[idxidx2] 
    quoteArray2[thisIdx2] = randomElement2[thisIdx2]
    idxidx2 +=1
-   document.getElementById("quotes2").innerText = quoteArray2.join("")
+   document.getElementById("quotes").innerText = quoteArray2.join("")
 }
 }
 changeQuote2()
