@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>stats</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="pandoc.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#expected-value-and-convergence"
+id="toc-expected-value-and-convergence">Expected Value and
+Convergence</a></li>
+<li><a href="#transformations-of-rvs"
+id="toc-transformations-of-rvs">Transformations of RVs</a>
+<ul>
+<li><a href="#expected-value-of-any-rv"
+id="toc-expected-value-of-any-rv">Expected value of any RV</a></li>
+<li><a href="#going-back-to-a-homework-problem"
+id="toc-going-back-to-a-homework-problem">going back to a homework
+problem</a></li>
+</ul></li>
+<li><a href="#variance" id="toc-variance">Variance</a>
+<ul>
+<li><a href="#simulation-study-discrete"
+id="toc-simulation-study-discrete">Simulation Study: Discrete</a></li>
+<li><a href="#simulation-study-continuous"
+id="toc-simulation-study-continuous">Simulation Study:
+Continuous</a></li>
+<li><a href="#general-conjecture" id="toc-general-conjecture">General
+conjecture</a></li>
+<li><a href="#definition-of-variance"
+id="toc-definition-of-variance">Definition of Variance</a></li>
+</ul></li>
+</ul>
+</nav>
+<h2 id="expected-value-and-convergence">Expected Value and
+Convergence</h2>
+<h4 id="convergence-of-discrete-cdfs">Convergence of Discrete CDFs</h4>
+<p>Let X be an discrete RV with CDF <span class="math display">\[F_X(x)
+= \sum_{k = 0}^K p_k \cdot \mathbb{1}_{[x_k, +\infty)}(x)\]</span></p>
+<ol type="1">
+<li>If <span class="math inline">\(\sum_{k = 0}^K p_k \cdot
+\mathbb{1}_{[x_k, +\infty)}(x) &lt; +\infty\)</span>, then the expected
+value <span class="math inline">\(\mathbb{E}X\)</span> is the mean of
+<span class="math inline">\(x_kp_k\)</span>.</li>
+<li>If <span class="math inline">\(\sum_{k = 0}^K p_k \cdot
+\mathbb{1}_{[x_k, +\infty)}(x) = +\infty\)</span>, then the expected
+value <span class="math inline">\(\mathbb{E}X\)</span> does not
+exist.</li>
+</ol>
+<p>The mean of <span class="math inline">\(x_kp_k\)</span> is <span
+class="math display">\[\sum_{k=0}^{+\infty}x_k p_k = x_0p_0 + x_1p_1 +
+x_2p_2 \ldots\]</span></p>
+<p>But <span class="math inline">\(x_0, x_1, x_2 \ldots\)</span> are
+created equal! We should have</p>
+<p><span class="math display">\[\sum_{k=0}^{+\infty}x_k p_k =
+\sum_{k=0}^{+\infty}x_{\sigma(k)} p_{\sigma(k)}\]</span> so that our sum
+is permutation invariant. In order to guarantee this equation above is
+true, we have two concepts:</p>
+<ul>
+<li><p>If <span class="math inline">\(\sum_{k=0}^{+\infty}|x_k| p_k &lt;
++\infty\)</span>, then the permutation invariant is true. This also
+means that the series <span
+class="math inline">\(\sum_{k=0}^{+\infty}x_k p_k\)</span> is absolutely
+convergent.</p></li>
+<li><p>If <span class="math inline">\(\sum_{k=0}^{+\infty}|x_k| p_k =
++\infty\)</span>, then it is not permutation-invariant.</p></li>
+</ul>
+<h4 id="convergence-of-continuous-cdfs">Convergence of Continuous
+CDFs</h4>
+<p>Let X be a continuous RV with PDF <span
+class="math inline">\(p_X(x)\)</span>.</p>
+<ol type="1">
+<li>If <span class="math inline">\(\int_{-\infty}^{+\infty}|x|p_X(x)
+&lt; +\infty\)</span>, then the expected value <span
+class="math inline">\(\mathbb{E}X =
+\int_{-\infty}^{+\infty}|x|p_X(x)\)</span>.</li>
+<li>If <span class="math inline">\(\int_{-\infty}^{+\infty}|x|p_X(x) =
++\infty\)</span>, then the expected value <span
+class="math inline">\(\mathbb{E}X\)</span> does not exist.</li>
+</ol>
+<p><strong>Remark</strong>: The condition ” <span
+class="math inline">\(\int_{-\infty}^{+\infty}|x|p_X(x) &lt;
++\infty\)</span>” invovles something more subtle… “Lebesque
+integrals”.</p>
+<p><strong>Example</strong>: Let X be continuous RV with the following
+PDF</p>
+<p><span class="math display">\[p_X(x) = \frac{1}{\pi(1+x^2)}, x \in
+\mathbb{R}\]</span></p>
+<p>The expected value does not exist. (to be proved in HW5)</p>
+<h2 id="transformations-of-rvs">Transformations of RVs</h2>
+<p><span class="math display">\[\Omega = \{ \text {students taking APMA
+1655}  \} (\omega \in \Omega: \text{is a student})\]</span></p>
+<p><span class="math inline">\(X(\omega) = \text{ the score } \omega
+\text{ gets in the final exam }\)</span></p>
+<p>The professor wants to curve the score like this: <span
+class="math display">\[Y(\omega) = \min\{X(\omega)^2, 100\}\]</span></p>
+<p>If <span class="math inline">\(g(x) = \min\{x^2, 100\}\)</span>, we
+have <span class="math inline">\(Y(\omega) = g(Y(\omega))\)</span>.
+Suppose we are given - RV <span class="math inline">\(X: \Omega
+\rightarrow \mathbb{R}\)</span> - a function <span
+class="math inline">\(g: \mathbb{R} \rightarrow \mathbb{R}\)</span></p>
+<p><span class="math display">\[\Omega \rightarrow \mathbb{R}
+\rightarrow \mathbb{R}\]</span> <span class="math display">\[\omega
+\rightarrow X(\omega) \rightarrow g(X(\omega))\]</span></p>
+<p>We know how to calculate <span
+class="math inline">\(\mathbb{E}X\)</span>. To compute <span
+class="math inline">\(\mathbb{E}[g(X)]\)</span> we need a new
+definition.</p>
+<h4 id="expected-value-of-an-transformed-rv">Expected value of an
+transformed RV</h4>
+<p>Definition: Suppose <span class="math inline">\(X\)</span> and <span
+class="math inline">\(g\)</span> are given. 1. Suppose X is discrete and
+has CDF <span class="math inline">\(\sum_{k=0}^K p_k \cdot
+\mathbb{1}_{[x_k, +\infty)}(x)\)</span>. If <span
+class="math inline">\(\sum_{k=0}^K|g(x_k)| p_k &lt; +\infty\)</span>
+then <span class="math display">\[\mathbb{E}[g(X)] = \sum_{k=0}^K
+g(x_k)\cdot p_k.\]</span> 2. Suppose X is continuous and has PDF <span
+class="math inline">\(p_X(x)\)</span>. If <span
+class="math inline">\(\int_{-\infty}^{\infty}|g(x)|p_X(x)dx &lt;
++\infty\)</span>, then <span class="math inline">\(\mathbb{E}[g(x)] =
+\int_{-\infty}^{\infty}g(x)p_X(x)dx\)</span>. Otherwise, <span
+class="math inline">\(\mathbb{E}[g(x)]\)</span> does not exist!</p>
+<p>This definition is actually a theorem in graduate-level probability
+theory course, called “Law of the unconscious statistician”.</p>
+<h3 id="expected-value-of-any-rv">Expected value of any RV</h3>
+<p>For a random variable who’s CDF can be decomposed in this way… (all
+of them) Definition: Let <span class="math inline">\(X\)</span> be a RV
+with the following CDF: <span class="math display">\[F_X(x) = p \cdot
+F_Z(x) + (1 - p)F_W(x)\]</span> where <span class="math inline">\(0 \leq
+p \leq 1\)</span>, <span class="math inline">\(Z\)</span> is a discrete
+RV with CDF <span class="math inline">\(F_Z\)</span> <span
+class="math inline">\(W\)</span> is a continuous RV with CDF <span
+class="math inline">\(F_W\)</span>.j</p>
+<p>We define <span class="math inline">\(\mathbb{E}X = p \cdot
+\mathbb{E}Z + (1 - p) \cdot \mathbb{E}W\)</span>, if <span
+class="math inline">\(\mathbb{E}Z\)</span> and <span
+class="math inline">\(\mathbb{E}W\)</span> exist.</p>
+<h3 id="going-back-to-a-homework-problem">going back to a homework
+problem</h3>
+<p><span class="math inline">\(X = YZ + (1 - Y) \cdot W\)</span> where
+<span class="math inline">\(Y\)</span> ~ Bernoulli(<span
+class="math inline">\(\frac{1}{3}\)</span>), <span
+class="math inline">\(Z\)</span> ~ Pois(<span
+class="math inline">\(\lambda\)</span>). As we all know from homework
+problem 4.5, we have <span class="math display">\[\mathbb{E}Z =
+\lambda\]</span> And also <span class="math display">\[\mathbb{E}W =
+1000\]</span></p>
+<p>Then <span class="math inline">\(\mathbb{E}X\)</span> is <span
+class="math inline">\(\frac{1}{3}\lambda + \frac{2}{3}1000\)</span>, by
+the expected value of any RV.</p>
+<h2 id="variance">Variance</h2>
+<p>Let <span class="math inline">\(X\)</span> be a random variable from
+some distribution.</p>
+<p>The distribution generates numbers <span class="math inline">\(X_1,
+X_2, ... X_n\)</span>.</p>
+<p>For example, if we use Bernoulli we will get 0 1 0 1 0 0 1 …</p>
+<p>Well, for this sequence, we can take the average <span
+class="math inline">\(\bar{X_n} = \frac{X_1 + X_2 + ... + X_n}{n} =
+\mathbb{E}X\)</span>. But this is not exactly equal to <span
+class="math inline">\(\mathbb{E}X\)</span> for <span
+class="math inline">\(n = 10\)</span> or <span
+class="math inline">\(100\)</span>… For <span
+class="math inline">\(n\)</span> numbers, we have error as: <span
+class="math display">\[e_n = |\bar{X_n} - \mathbb{E}X|\]</span></p>
+<p>What does the error <span class="math inline">\(e_n\)</span> depend
+on?</p>
+<ul>
+<li><p><span class="math inline">\(n\)</span>. For less <span
+class="math inline">\(n\)</span>, the average is usually worse. That is,
+the average is not the true expected value for a distribution.</p></li>
+<li><p>The distribution, of course!</p></li>
+</ul>
+<h3 id="simulation-study-discrete">Simulation Study: Discrete</h3>
+<p>We can relate the error <span class="math inline">\(e_n\)</span> to
+the discrete distribution as follows.</p>
+<p>Generate <span class="math inline">\(X_1, X_2, \ldots X_n\)</span>
+from Bernoulli(<span class="math inline">\(p\)</span>).</p>
+<p>Claim: <span class="math inline">\(e_n = |\bar{X_n} - p|\)</span> is
+likely to be smaller than <span class="math display">\[\sqrt{p \cdot
+(1-p) \cdot \frac{2\log(\log(n))}{n}}\]</span></p>
+<p><span class="math inline">\(V\)</span> here is <span
+class="math inline">\(p(1-p)\)</span>.</p>
+<h3 id="simulation-study-continuous">Simulation Study: Continuous</h3>
+<p>We have a similar error <span class="math inline">\(e_n\)</span> for
+continuous distributions.</p>
+<p>Generate <span class="math inline">\(X_1, X_2, \ldots X_n\)</span>
+from Poisson(<span class="math inline">\(\lambda\)</span>).</p>
+<p>Claim: <span class="math inline">\(e_n = |\bar{X_n} -
+\lambda|\)</span> is likely to be smaller than <span
+class="math display">\[\sqrt{\lambda \cdot
+\frac{2\log(\log(n))}{n}}\]</span></p>
+<p><span class="math inline">\(V\)</span> here is <span
+class="math inline">\(\lambda\)</span>.</p>
+<blockquote>
+<p>What does <em>likely</em> mean in this context? If we run a
+simulation <span class="math inline">\(\infty\)</span> times, then the
+number of simulations under the curve over the total number approaches
+1.</p>
+</blockquote>
+<h3 id="general-conjecture">General conjecture</h3>
+<p>Assume that the expected value exists. Generate <span
+class="math inline">\(X_1, X_2, \ldots X_n\)</span> from a
+distribution.</p>
+<p><span class="math inline">\(e_n = |\bar{X_n} - \mathbb{E}X|\)</span>
+is likely to be smaller than <span class="math display">\[\sqrt{V \cdot
+\frac{2\log(\log(n))}{n}}\]</span></p>
+<p><span class="math inline">\(V\)</span> is the variance of <span
+class="math inline">\(X\)</span>.</p>
+<p>This is the <a
+href="https://www.wikiwand.com/en/Law_of_the_iterated_logarithm">law of
+the iterated logarithm</a>.</p>
+<h3 id="definition-of-variance">Definition of Variance</h3>
+<p>Okay, now we go to a a result. The proof isn’t related to anything
+above, only it’s application.</p>
+<p>Let X be a RV, whose expected value <span
+class="math inline">\(\mathbb{E}X\)</span> exists.</p>
+<p>We define a function <span class="math inline">\(g(x) = (x -
+\mathbb{E}X)^2\)</span></p>
+<p>We call <span class="math inline">\(\mathbb{E}[g(X)]\)</span> as the
+variance of <span class="math inline">\(X\)</span> if <span
+class="math inline">\(\mathbb{E}[g(X)]\)</span> exists. That is,</p>
+<p><span class="math display">\[\text{V} (X) = \mathbb{E}[(X -
+\mathbb{E}X)^2]\]</span></p>
+<p>Variance is nothing but the expected expected squared deviation from
+the <span class="math inline">\(\mathbb{E}X\)</span>. That is, for every
+<span class="math inline">\(\mathbb{E}X\)</span> we will have an
+expected squared deviation. In turn, we have a squared deviation, <span
+class="math inline">\(g(x)\)</span> for each value of <span
+class="math inline">\(X\)</span>.</p>
+<div id="footer">
+    © 2023 <a href="http://eric-xia.com">Eric Xia</a>
+  </div>
+</body>
+</html>
