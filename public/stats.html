@@ -53,7 +53,54 @@ Continuous</a></li>
 conjecture</a></li>
 <li><a href="#definition-of-variance"
 id="toc-definition-of-variance">Definition of Variance</a></li>
+<li><a href="#concept-review" id="toc-concept-review">Concept
+Review</a></li>
+<li><a href="#law-of-large-numbers-lln"
+id="toc-law-of-large-numbers-lln">Law of Large Numbers (LLN)</a></li>
+<li><a href="#back-to-the-lln" id="toc-back-to-the-lln">back to the
+LLN</a></li>
+<li><a href="#infinite-coin-flips-and-all-tails"
+id="toc-infinite-coin-flips-and-all-tails">infinite coin flips and all
+tails</a></li>
+<li><a href="#monte-carlo-integration"
+id="toc-monte-carlo-integration">Monte Carlo Integration</a></li>
+<li><a href="#generalized-lln" id="toc-generalized-lln">Generalized
+LLN</a></li>
+<li><a href="#review-of-the-lln" id="toc-review-of-the-lln">Review of
+the LLN</a></li>
+<li><a href="#law-of-the-iterated-logarithm"
+id="toc-law-of-the-iterated-logarithm">Law of the Iterated
+Logarithm</a></li>
+<li><a href="#law-of-the-iterated-logarithm-rigorous"
+id="toc-law-of-the-iterated-logarithm-rigorous">Law of the Iterated
+Logarithm (rigorous)</a></li>
+<li><a
+href="#an-example-quantifying-the-error-of-an-monte-carlo-integration"
+id="toc-an-example-quantifying-the-error-of-an-monte-carlo-integration">An
+example: quantifying the error of an Monte Carlo integration</a></li>
+<li><a href="#random-walks" id="toc-random-walks">Random Walks</a></li>
+<li><a href="#central-limit-theorem-prelude"
+id="toc-central-limit-theorem-prelude">Central Limit Theorem:
+prelude</a></li>
+<li><a href="#central-limit-theorem"
+id="toc-central-limit-theorem">Central Limit Theorem</a></li>
+<li><a href="#review-of-clt" id="toc-review-of-clt">Review of
+CLT</a></li>
+<li><a href="#lln-approximation-error-from-the-clt-viewpoint"
+id="toc-lln-approximation-error-from-the-clt-viewpoint">LLN
+Approximation Error, from the CLT Viewpoint</a></li>
+<li><a href="#proof-of-central-limit-theorem"
+id="toc-proof-of-central-limit-theorem">Proof of Central Limit
+Theorem</a></li>
+<li><a href="#moment-generating-functions"
+id="toc-moment-generating-functions">Moment-generating
+Functions</a></li>
+<li><a href="#theorem" id="toc-theorem">Theorem</a></li>
+<li><a href="#theorem-1" id="toc-theorem-1">Theorem</a></li>
+<li><a href="#two-more-lemmas" id="toc-two-more-lemmas">Two more
+lemmas</a></li>
 </ul></li>
+<li><a href="#proof-of-clt" id="toc-proof-of-clt">Proof of CLT</a></li>
 </ul>
 </nav>
 <h2 id="expected-value-and-convergence">Expected Value and
@@ -61,21 +108,20 @@ Convergence</h2>
 <h4 id="convergence-of-discrete-cdfs">Convergence of Discrete CDFs</h4>
 <p>Let X be an discrete RV with CDF <span class="math display">\[F_X(x)
 = \sum_{k = 0}^K p_k \cdot \mathbb{1}_{[x_k, +\infty)}(x)\]</span></p>
-<ol type="1">
-<li>If <span class="math inline">\(\sum_{k = 0}^K p_k \cdot
+<p>If <span class="math inline">\(\sum_{k = 0}^K p_k \cdot
 \mathbb{1}_{[x_k, +\infty)}(x) &lt; +\infty\)</span>, then the expected
-value <span class="math inline">\(\mathbb{E}X\)</span> is the mean of
-<span class="math inline">\(x_kp_k\)</span>.</li>
-<li>If <span class="math inline">\(\sum_{k = 0}^K p_k \cdot
+value <span class="math inline">\(\mathbb{E}X\)</span> is <span
+class="math display">\[\mathbb{E}X = \sum_{k=0}^{K}x_kp_k\]</span></p>
+<p>If <span class="math inline">\(\sum_{k = 0}^K p_k \cdot
 \mathbb{1}_{[x_k, +\infty)}(x) = +\infty\)</span>, then the expected
 value <span class="math inline">\(\mathbb{E}X\)</span> does not
-exist.</li>
-</ol>
+exist.</p>
 <p>The mean of <span class="math inline">\(x_kp_k\)</span> is <span
 class="math display">\[\sum_{k=0}^{+\infty}x_k p_k = x_0p_0 + x_1p_1 +
 x_2p_2 \ldots\]</span></p>
-<p>But <span class="math inline">\(x_0, x_1, x_2 \ldots\)</span> are
-created equal! We should have</p>
+<p>But by our intuition, <span class="math inline">\(x_0, x_1, x_2
+\ldots\)</span> are created equal! The order in which we add them
+doesn’t matter. We should have</p>
 <p><span class="math display">\[\sum_{k=0}^{+\infty}x_k p_k =
 \sum_{k=0}^{+\infty}x_{\sigma(k)} p_{\sigma(k)}\]</span> so that our sum
 is permutation invariant. In order to guarantee this equation above is
@@ -95,9 +141,9 @@ CDFs</h4>
 class="math inline">\(p_X(x)\)</span>.</p>
 <ol type="1">
 <li>If <span class="math inline">\(\int_{-\infty}^{+\infty}|x|p_X(x)
-&lt; +\infty\)</span>, then the expected value <span
-class="math inline">\(\mathbb{E}X =
-\int_{-\infty}^{+\infty}|x|p_X(x)\)</span>.</li>
+&lt; +\infty\)</span>, then the expected value is <span
+class="math display">\[\mathbb{E}X =
+\int_{-\infty}^{+\infty}xp_X(x)\]</span>.</li>
 <li>If <span class="math inline">\(\int_{-\infty}^{+\infty}|x|p_X(x) =
 +\infty\)</span>, then the expected value <span
 class="math inline">\(\mathbb{E}X\)</span> does not exist.</li>
@@ -251,8 +297,509 @@ the <span class="math inline">\(\mathbb{E}X\)</span>. That is, for every
 expected squared deviation. In turn, we have a squared deviation, <span
 class="math inline">\(g(x)\)</span> for each value of <span
 class="math inline">\(X\)</span>.</p>
+<h3 id="concept-review">Concept Review</h3>
+<h4 id="is-not-impossible">0 is not impossible</h4>
+<p>E is an event: <span class="math inline">\(E \in \Omega\)</span>.</p>
+<p>“E is impossible”, <span class="math inline">\(E = \emptyset\)</span>
+means that <span class="math inline">\(\mathbb{P}(E) = 0\)</span>. But
+<span class="math inline">\(\mathbb{P}(E) = 0\)</span> does not mean
+that E is impossible!</p>
+<h4 id="is-not-inevitable">1 is not inevitable</h4>
+<p>Similarly,</p>
+<p>“E is inevitable”, <span class="math inline">\(E = \Omega\)</span>
+means that <span class="math inline">\(\mathbb{P}(E) = 1\)</span>. But
+<span class="math inline">\(\mathbb{P}(E) = 1\)</span> does not mean
+that E is inevitable!</p>
+<h4 id="constant-uniform-distributions">constant (uniform)
+distributions</h4>
+<p><span class="math inline">\(X(\omega) = c \text{ for all } \omega \in
+\Omega\)</span> <span class="math inline">\(\text{Var}(X) =
+0\)</span></p>
+<p>If <span class="math inline">\(\text{Var}(X) = 0\)</span>, then there
+must $ c$ <span class="math display">\[\mathbb{P}(\{\omega \in \Omega:
+X(\omega) = c\}) = 1\]</span></p>
+<h3 id="law-of-large-numbers-lln">Law of Large Numbers (LLN)</h3>
+<p>A theorem that describes the result of performing an experiment a
+large number of times.</p>
+<p>Let <span class="math inline">\(X \sim\)</span> a distribution. The
+distribution generates random numbers <span class="math inline">\(X_1,
+X_2, \ldots, X_n\)</span>.</p>
+<p><span class="math display">\[\bar{X}_n = \frac{X_1 + X_2 +\ldots +
+X_n}{n} \approx \mathbb{E}X\]</span></p>
+<p>For example:</p>
+<p>Bernoulli(<span class="math inline">\(p\)</span>) has <span
+class="math inline">\(\mathbb{E}X = p\)</span>. Pois(<span
+class="math inline">\(\lambda\)</span>) has <span
+class="math inline">\(\mathbb{E}X = \lambda\)</span>.</p>
+<p>Okay. So what does <span class="math inline">\(\approx\)</span>
+really mean?</p>
+<p>And what other conditions do we need for this to be true?</p>
+<h4 id="rvs-i.i.d.">RVs i.i.d.</h4>
+<p>Let <span class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> be an
+infinitely long sequence of RVs defined on <span
+class="math inline">\((\Omega, \mathbb{P})\)</span>. As we know, we say
+$X_1, X_2, $ are independent if <span
+class="math display">\[\mathbb{P}(\{\omega \in \Omega: X_i(\omega) \in
+A_i \text{ for all } i = 1,2,\ldots, n \})\]</span></p>
+<p>Is equal to <span class="math display">\[\Pi_{i=1}^n
+\mathbb{P}(\{\omega \in \Omega: X_i(\omega) \in A_i\})\]</span></p>
+<p>They are not just pairwise independent. They are independent!</p>
+<p>Definition: Let <span
+class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> be an infinitely
+long sequence of RVs defined on <span class="math inline">\((\Omega,
+\mathbb{P})\)</span>. We say <span class="math inline">\(X_1, X_2,
+\ldots\)</span> are <em>independently and identically distributed</em>
+if 1. <span class="math inline">\(X_1, X_2, \ldots\)</span> are
+independent. 2. <span class="math inline">\(X_1, X_2, \ldots\)</span>
+share the same CDF, i.e. $F_{X_1} = F_{X_2} = F_{X_3} $</p>
+<p>Example: Mike Meng flips a coin. Taylor Swift flips a coin. The
+outcomes of these coin tosses are two random variables, are independent
+and share the same CDF.</p>
+<h3 id="back-to-the-lln">back to the LLN</h3>
+<p>Heuristic: <span class="math display">\[\bar{X}_n = \frac{X_1 + X_2
++\ldots + X_n}{n} \approx \mathbb{E}X_1\]</span></p>
+<p>Theorem: Let <span
+class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> be an infinitely
+long sequence of RVs defined on <span class="math inline">\((\Omega,
+\mathbb{P})\)</span>.</p>
+<p>Suppose that $X_1, X_2, $ are independently and identically
+distributed.</p>
+<p>Suppose that <span class="math inline">\(\mathbb{E}X\)</span>
+exists.</p>
+<p>As we know, we can take the mean ${X}_n $. Then we know that we
+have</p>
+<p><span class="math display">\[A = \{\omega \in \Omega: \lim_{n
+\rightarrow \infty} \bar{X}_n(\omega) = \mathbb{E}X_1\}\]</span> This is
+the event that involves doing each of these RVs <span
+class="math inline">\(X_1, X_2, \ldots\)</span> in an infinite sequence
+once (getting some outcome for each) and then taking the average of
+them. Then <span class="math display">\[\mathbb{P}(A) = 1\]</span></p>
+<p>This does not mean that <span class="math inline">\(A =
+\Omega\)</span> (that A is inevitable).</p>
+<p><span class="math display">\[\frac{X_1(\omega) + X_2(\omega) +
+\ldots}{n} \rightarrow \mathbb{E}X_1\]</span> The sample average
+converges to the population average with probability one. This
+convergence is not inevitable. For example, we have an experiment where
+we flip a coin an infinitely many number of times, one outcome of which
+<span class="math inline">\(\omega&#39;\)</span> is all tails.</p>
+<h3 id="infinite-coin-flips-and-all-tails">infinite coin flips and all
+tails</h3>
+<p>We flip a coin <span class="math inline">\(\infty\)</span> times.</p>
+<p><span class="math inline">\(X_1 = 0\)</span> <span
+class="math inline">\(X_2 = 0\)</span> … <span class="math inline">\(X_n
+= 0\)</span> … An outcome is an infinitely long sequence of H and T
+<span class="math display">\[\omega = (H, H, T, H, T,
+\ldots)\]</span></p>
+<p><span class="math display">\[\Omega = \{\omega = (\omega^1, \omega^2,
+\ldots \omega^n)\}\]</span></p>
+<p>Each <span class="math inline">\(w^i\)</span> is either H or T.</p>
+<p><span class="math display">\[A = \{ \omega \in \Omega: \lim_{n
+\rightarrow \infty} \frac{X_1 + X_2 +\ldots + X_n}{n} = \frac{1}{2}
+\}\]</span></p>
+<p>We always get tails. This is possible!</p>
+<p><span class="math inline">\(\omega = (T, T, T, \ldots)\)</span> <span
+class="math display">\[\lim_{n \rightarrow
+\infty}  \frac{X_1(\omega&#39;) + X_2(\omega&#39;) +\ldots +
+X_n(\omega&#39;)}{n} = 0 \]</span></p>
+<p>Each <span class="math inline">\(w\)</span> is an infinite number of
+coin flips. The sample space has an infinite number of <span
+class="math inline">\(\omega\)</span>, and an infinite number of those
+<span class="math inline">\(\omega\)</span> have an average of <span
+class="math inline">\(\frac{1}{2}\)</span>. The law of large numbers
+says that <span class="math inline">\(\mathbb{P}(A) = 1\)</span>.</p>
+<p>If <span class="math inline">\(\mathbb{E}X_1\)</span> does not exist,
+the LLN is not necessarily true.</p>
+<p>If <span class="math inline">\(X_1, X_2, \ldots\)</span> are not
+independent, the LLN is not necessarily true. For example, if we set all
+of the random variables to a single random variable, the value will be 0
+or 1, not <span class="math inline">\(\frac{1}{2}\)</span>.</p>
+<p>For each <span class="math inline">\(i = 1,2, \ldots\)</span></p>
+<p><span class="math display">\[X_i(w) = X(w) \text{ for all } \omega
+\in \Omega\]</span> <span class="math display">\[X_1 = X_2 = X_3 =
+\ldots = X\]</span> <span class="math display">\[A = \{\omega \in
+\Omega: \lim_{n \rightarrow \infty}  \frac{X_1(\omega) + X_2(\omega)
++\ldots + X_n(\omega)}{n} = \frac{1}{2}\}\]</span></p>
+<p>The LLN anticipates <span class="math inline">\(\mathbb{P}(A) =
+1\)</span>. However, <span class="math inline">\(\mathbb{P}(A) =
+\mathbb{P}(X = \frac{1}{2}) = \mathbb{P}(\emptyset) = 0\)</span></p>
+<h3 id="monte-carlo-integration">Monte Carlo Integration</h3>
+<p>Let <span class="math inline">\(X\)</span> be a continuous RV with
+PDF <span class="math inline">\(p_X(x)\)</span> and <span
+class="math inline">\(g(x)\)</span> as a real valued function. Then we
+have</p>
+<p><span class="math display">\[\mathbb{E}[g(X)] = \int_{-\infty}^\infty
+g(x) p_X(x) dx \]</span></p>
+<p><span class="math display">\[\text{Var} [g(X)] =
+\int_{-\infty}^\infty (g(x) - \mathbb{E}[p_X(x)])^2 p_X(x) dx
+\]</span></p>
+<p>For example, let <span class="math inline">\(X\)</span> ~ Unif(0,1)
+and <span class="math display">\[g(x) =
+\arccos(\frac{\cos\frac{\pi}{2}x}{1 +
+2\cos(\frac{\pi}{2}x)})\]</span></p>
+<p>Then we have <span class="math inline">\(\mathbb{E}[g(X)] =
+\int_{-\infty}^\infty g(x) \mathbf{1}_{(0,1)}(x)dx = \int_{0}^{1} g(x)
+dx\)</span> = <span class="math inline">\(\frac{5\pi}{2 }\)</span>. This
+can be found by doing <span class="math inline">\(X\)</span> many times
+and doing <span class="math inline">\(g(x)\)</span> of it.</p>
+<h3 id="generalized-lln">Generalized LLN</h3>
+<p>Suppose <span class="math inline">\(X_1, X_2, \ldots\)</span> be an
+infinite sequence of random variables. They are independently and
+identically distributed, and <span class="math inline">\(g(x)\)</span>
+is a continuous function. Furthermore that <span
+class="math inline">\(\mathbb{E}[g(X_1)]\)</span> exists.</p>
+<p>Define</p>
+<p><span class="math display">\[A = \{\omega \in \Omega: \lim_{n
+\rightarrow \infty}  \frac{g(X_1(\omega)) + g(X_2(\omega)) +\ldots +
+g(X_n(\omega))}{n} = \mathbb{E}[g(X_1)]\}\]</span></p>
+<p>Then <span class="math inline">\(\mathbb{P}(A) = 1\)</span>. More
+intuitively: the number of infinite sequences in <span
+class="math inline">\(\Omega\)</span>, that have an expected value of
+<span class="math inline">\(\mathbb{E}[g(X_1)]\)</span>, approaches all
+of the infinite series.</p>
+<p>The error <span class="math inline">\(|e_n(w)|\)</span> (the
+difference between <span class="math inline">\(\bar X_n\)</span> and
+<span class="math inline">\(E[g(X)]\)</span>) is likely to be smaller
+than</p>
+<p><span class="math display">\[\sqrt{\text{Var}[g(X_1)]
+\frac{2\ln(\ln(n))}{n}}\]</span></p>
+<p>This is known as the law of the iterated logarithm.</p>
+<h3 id="review-of-the-lln">Review of the LLN</h3>
+<p>Let $X_1, X_2, $ be i.i.d. and their expected values exist. When
+<span class="math inline">\(n\)</span> is large,</p>
+<p><span class="math display">\[\bar X_n(\omega) = \frac{X_1(\omega) +
+\ldots + X_n(\omega)}{n} \approx \mathbb{E}X_1 = \mathbb{E}X_2 =
+\ldots\]</span></p>
+<p>Unless you are extremely unlucky.</p>
+<h3 id="law-of-the-iterated-logarithm">Law of the Iterated
+Logarithm</h3>
+<p>The law of the iterated logarithm is a result about a logarithm
+function involving <span class="math inline">\(Var(X_1)\)</span>,
+stating that it is a good bound for the error.</p>
+<p>Let <span class="math inline">\(X_1, X_2, X_3, \ldots\)</span> be RVs
+defined on <span class="math inline">\((\Omega, \mathbb{P})\)</span>.
+Suppose</p>
+<ul>
+<li><span class="math inline">\(X_1, X_2, X_3, \ldots\)</span> are
+independently and identically distributed.</li>
+<li><span class="math inline">\(\mathbb{E}X_1\)</span> and <span
+class="math inline">\(Var(X_1)\)</span> exist.</li>
+</ul>
+<p>Intuitively, when <span class="math inline">\(n\)</span> is large,
+<span class="math display">\[|e_n(\omega)| \leq \sqrt{Var(X_1)
+\frac{2\log(\log(n))}{n}}\]</span> is true for almost all <span
+class="math inline">\(\omega\)</span> in <span
+class="math inline">\(\Omega\)</span>, so that <span
+class="math inline">\(\mathbb{P}\)</span> of these <span
+class="math inline">\(\omega\)</span> approaches 1.</p>
+<p>Intuitively, when <span class="math inline">\(n\)</span> is large,
+<span class="math display">\[|e_n(\omega)| &gt; \sqrt{Var(X_1)
+\frac{2\log(\log(n))}{n}}\]</span> is true for almost no <span
+class="math inline">\(\omega\)</span> in <span
+class="math inline">\(\Omega\)</span>, so that <span
+class="math inline">\(\mathbb{P}\)</span> of these <span
+class="math inline">\(\omega\)</span> approach 0.</p>
+<h3 id="law-of-the-iterated-logarithm-rigorous">Law of the Iterated
+Logarithm (rigorous)</h3>
+<p><span class="math display">\[\lim_{m \rightarrow \infty}[\sup_{n \geq
+m}(\frac{|e_n(\omega)|}{\sqrt{Var(X_1) \frac{2\log(\log(n))}{n}}})] =
+1\]</span></p>
+<p>is true for almost all <span class="math inline">\(w\)</span> in
+<span class="math inline">\(\Omega\)</span>, so that <span
+class="math inline">\(\mathbb{P}\)</span> of these <span
+class="math inline">\(\omega\)</span> approaches 1.</p>
+<h3
+id="an-example-quantifying-the-error-of-an-monte-carlo-integration">An
+example: quantifying the error of an Monte Carlo integration</h3>
+<p>$U_1, U_2, U_3, $ Unif(0,1)</p>
+<p><span class="math display">\[g(x) =
+\arccos(\frac{\cos\frac{\pi}{2}x}{1 +
+2\cos(\frac{\pi}{2}x)})\]</span></p>
+<p><span class="math display">\[\frac{g(U_1(\omega)) + \ldots +
+g(U_n(\omega))}{n} \approx \mathbb{E}[g(U)] = \int_{0}^{1}
+\arccos(\frac{\cos\frac{\pi}{2}x}{1 + 2\cos(\frac{\pi}{2}x)}) dx
+\]</span></p>
+<p><span class="math inline">\(X_i(\omega) = g(U_i(\omega))\)</span> for
+all <span class="math inline">\(i\)</span> and <span
+class="math inline">\(\omega\)</span></p>
+<p>So that we have</p>
+<p><span class="math display">\[\bar{X_n}(\omega) = \frac{X_1(\omega) +
+\ldots + X_n(\omega)}{n} \approx \mathbb{E}X_1 =
+\mathbb{E}[g(U)]\]</span></p>
+<p><span class="math display">\[e_n(\omega) = \bar{X_n}(\omega) -
+\mathbb{E}X_1\]</span></p>
+<p>Let’s say that we want the error to be no higher than <span
+class="math inline">\(10^{-5}\)</span>. Then we would have</p>
+<p><span class="math display">\[|e_n(\omega)| \leq \sqrt{Var(X_1)
+\frac{2\log(\log(n))}{n}}\leq 10^{-5}\]</span></p>
+<p><span class="math display">\[\sqrt{0.007556
+\frac{2\log(\log(n))}{n}}\leq 10^{-5}\]</span></p>
+<p>For error of <span class="math inline">\(10^{-3}\)</span> this would
+be n = 1.5 million!
+<iframe src="https://www.desmos.com/calculator/nhj9hlxzek?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe></p>
+<h3 id="random-walks">Random Walks</h3>
+<p>We have <span class="math display">\[\bar{X_n}(\omega) =
+\frac{X_1(\omega) + \ldots + X_n(\omega)}{n}\]</span></p>
+<p>But we could also look at <span
+class="math display">\[\bar{S_n}(\omega) = X_1(\omega) + \ldots +
+X_n(\omega)\]</span></p>
+<p>This is a random walk!</p>
+<p>Let <span class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> be a
+sequence of RV defined on <span class="math inline">\((\Omega,
+\mathbb{P})\)</span> and with <span class="math inline">\(X_i\)</span>
+i.i.d. For each positive <span class="math inline">\(n\)</span>, we
+define <span class="math inline">\(S_n(\omega) = X_1(\omega) + \ldots +
+X_n(\omega)\)</span>. The sequence <span
+class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> is the random
+walk.</p>
+<p>Example 1: <span class="math display">\[\mathbb{P}(X_1 = -1) =
+\mathbb{P}(X_1 = 1) = \frac{1}{2}\]</span></p>
+<p>Then <span class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> is
+called the 1-dim simple RW.</p>
+<h3 id="central-limit-theorem-prelude">Central Limit Theorem:
+prelude</h3>
+<p>Review:</p>
+<p>Let <span class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> be a
+sequence of i.i.d. RV on <span class="math inline">\((\Omega,
+\mathbb{P})\)</span>. We have a sum <span class="math display">\[
+S_n(\omega) = X_1(\omega) + X_2(\omega)  + \ldots +
+X_n(\omega)\]</span></p>
+<p>So <span class="math inline">\(S_n(\omega)\)</span> is a random walk.
+If we go one step further, we can take <span
+class="math display">\[\bar{X_k}(\omega) = \frac{S_n(\omega)}{n} \approx
+\mathbb{E}X_1\]</span> The average is only equal to the expected value
+<span class="math inline">\(\mathbb{E}X\)</span> when <span
+class="math inline">\(n\)</span> is large.</p>
+<p>Additionally, we have the law of the iterated logarithm.</p>
+<p>Now we will say the central limit theorem.</p>
+<p><span class="math display">\[e_n = |\bar{X_n} -
+\mathbb{E}X|\]</span></p>
+<p><span class="math display">\[\sqrt{n} \cdot e_n(\omega) \sim N(0,
+\text{Var } X_1)\]</span></p>
+<p>when <span class="math inline">\(n\)</span> is large.</p>
+<p>Potential applications of CLT:</p>
+<ul>
+<li>It’s a different way of quantifying <span
+class="math inline">\(e_n(\omega)\)</span></li>
+<li>formulation of “hypothesis testing” and “confidence intervals” in
+statistics.</li>
+</ul>
+<p>Okay, now we will define it in full.</p>
+<h3 id="central-limit-theorem">Central Limit Theorem</h3>
+<p>Let <span class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> be a
+sequence of i.i.d. RVs on <span class="math inline">\((\Omega,
+\mathbb{P})\)</span>. Suppose <span
+class="math inline">\(\mathbb{E}X_1\)</span> and <span
+class="math inline">\(\text{Var }X\)</span> exist. We define a sequence
+of RVs <span
+class="math inline">\(\{G_n(\omega)\}_{n=1}^{\infty}\)</span> by</p>
+<p><span class="math display">\[G_n(\omega) = \sqrt{n} \cdot e_n(\omega)
+= \sqrt{n} (\bar{X_n} - \mathbb{E}X)\]</span></p>
+<p>Heuristic version: when <span class="math inline">\(n\)</span> is
+large, <span class="math inline">\(G_n\)</span> looks like a RV
+following <span class="math inline">\(N(0, \text{Var}X_1)\)</span>.</p>
+<p>Rigorous version: The CDF of <span class="math inline">\(G_n\)</span>
+converges to the CDF of <span class="math inline">\(N(0,
+\text{Var}X_1)\)</span> as <span class="math inline">\(n \rightarrow
+\infty\)</span>: <span class="math display">\[\lim_{n \rightarrow
+\infty} \mathbb{P}(\{\omega \in \Omega: G_n(\omega) \leq x\}) =
+\int_{-\infty}^{x} \frac{1}{\sqrt{2\pi \cdot \text{Var} X_1}} \cdot
+\exp(-\frac{t^2}{2VarX_1}) dt\]</span></p>
+<p>Under the conditions of the CLT, we have the following. Heuristic
+version:</p>
+<p><span class="math inline">\(\frac{G_n}{\sqrt{\text{Var
+}{X_1}}}\)</span> looks like a RV following <span
+class="math inline">\(N(0,1)\)</span> when <span
+class="math inline">\(n\)</span> is large.</p>
+<p>Rigorous version: the CDF of <span
+class="math inline">\(\frac{G_n(\omega)}{\text{Var }X_1}\)</span>
+converges to the CDF of <span class="math inline">\(N(0,
+1)\)</span>.</p>
+<p>This is as follows:</p>
+<p><span class="math display">\[ \lim_{n \rightarrow \infty}
+\mathbb{P}(\{\omega \in \Omega: \frac{G_n(\omega)}{\sqrt{\text{Var }
+X_1}} \leq x \}) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}} \cdot
+\exp(-\frac{t^2}{2})dt \]</span></p>
+<h3 id="review-of-clt">Review of CLT</h3>
+<p>Let <span class="math inline">\(\{X_i\}_{i=1}^{\infty}\)</span> be a
+sequence of independent and identically distributed RVs,a nd the
+expected values and variances exist. We have</p>
+<p><span class="math display">\[\sqrt{n}(\bar{X_n} - \mathbb{E}X_1) \sim
+N(0,\text{Var }X)\]</span> <span
+class="math display">\[\sqrt{n}\frac{(\bar{X_n} -
+\mathbb{E}X_1)}{\sqrt{\text{Var }X_1}} \sim N(0,1)\]</span></p>
+<p>When <span class="math inline">\(n\)</span> is large.</p>
+<h3 id="lln-approximation-error-from-the-clt-viewpoint">LLN
+Approximation Error, from the CLT Viewpoint</h3>
+<p>We have two quantities, the average <span
+class="math inline">\(\bar{X_n}(\omega)\)</span> and the expected value
+<span class="math inline">\(\mathbb{E}X_1\)</span>. We have</p>
+<p><span class="math display">\[e_n(\omega) = \bar{X_n}(\omega) -
+\mathbb{E}X_1\]</span></p>
+<p>We also have</p>
+<p><span class="math display">\[e_n(\omega) = \frac{\sqrt{\text{Var
+}X_1}}{\sqrt{n}} Z_n(\omega)\]</span></p>
+<p>For any <span class="math inline">\(\delta \geq 0\)</span>:</p>
+<p><span class="math display">\[\mathbb{P}(\{\omega \in \Omega: |
+e_n(\omega) | \leq \delta \frac{\sqrt{\text{Var
+}X_1}}{\sqrt{n}}\})\]</span> <span class="math display">\[ =
+\mathbb{P}(\{\omega \in \Omega: | Z_n(\omega) | \leq \delta \})\]</span>
+<span class="math display">\[ = F_{Z_n}(\delta) - F_{Z_n}(-\delta) +
+\mathbb{P}(Z_n = -\delta)\]</span> <span class="math display">\[ =
+\mathbb{P}( -\delta \leq Z_n \leq -\delta) + \mathbb{P}(Z_n =
+-\delta)\]</span></p>
+<p>We have <span class="math inline">\(\Phi(x)\)</span> to be the CDF of
+<span class="math inline">\(N(0,1)\)</span>: <span
+class="math display">\[\lim_{x \rightarrow \infty} F_{Z_n}(x) =
+\int_{-\infty}^{x}\frac{1}{\sqrt{2\pi}}\exp(-\frac{t^2}{2}) dt =
+\Phi(x)\]</span></p>
+<p>We have the following simplification: <span class="math display">\[=
+F_{Z_n}(\delta) - F_{Z_n}(-\delta) + \mathbb{P}(Z_n = -\delta)\]</span>
+<span class="math display">\[\approx \Phi(\delta) -
+\Phi(-\delta)\]</span> <span class="math display">\[\approx 2
+\Phi(\delta) - 1\]</span></p>
+<p>If we have <span class="math inline">\(\Phi(\delta^{*}) =
+0.975\)</span>, then we have <span class="math inline">\(e_n(\omega) =
+0.95\)</span>. <span class="math display">\[\delta^{*} = 1.96\]</span>
+This requires lots of computation.</p>
+<p><span class="math display">\[\mathbb{P}(\{\omega \in \Omega: |
+e_n(\omega) | \leq \delta^{*} \frac{\sqrt{\text{Var }X_1}}{\sqrt{n}}\})
+\approx 2\Phi(\delta) - 1 = 0.95\]</span></p>
+<p>With 95% confidence, the approximation error <span
+class="math inline">\(| e_n(\omega) |\)</span> is smaller than or equal
+to <span class="math display">\[| e_n(\omega) | \leq \delta^{*}
+\frac{\sqrt{\text{Var }X_1}}{\sqrt{n}}\]</span></p>
+<p>Law of the iterated logarithm: we had <span
+class="math display">\[\mathbb{P}(\{\omega \in \Omega: |e_n(\omega)|
+\leq \sqrt{2\log\log n} \cdot \frac{\sqrt{\text{ Var } X_1}}{\sqrt{n}}
+\}) \approx 1\]</span></p>
+<p>With 100% confidence we have <span
+class="math display">\[|e_n(\omega)| \leq \sqrt{2\log\log n} \cdot
+\frac{\sqrt{\text{ Var } X_1}}{\sqrt{n}}\]</span> When <span
+class="math inline">\(n\)</span> is large!</p>
+<p>When n &gt; 1000, <span class="math inline">\(\sqrt{2\log\log n} &gt;
+1.96 \approx \delta^{*}\)</span></p>
+<p>We can get a perfect upper bound. However, this upper bound is too
+large. However, with the central limit theorem, with the cost of 5%
+confidence, we can get a lower upper bound.</p>
+<h3 id="proof-of-central-limit-theorem">Proof of Central Limit
+Theorem</h3>
+<p>Let <span class="math inline">\(G_1, G_2, \ldots\)</span> be a
+sequence of RVs. We say <span class="math inline">\(G_n\)</span>
+converges weakly to a continuous RV <span
+class="math inline">\(G\)</span> if</p>
+<p><span class="math display">\[\lim_{n \rightarrow \infty} F_{G_n}(x) =
+F_{G}(x)\]</span></p>
+<p>for all real numbers <span class="math inline">\(x\)</span>.</p>
+<p>This is briefly denoted as <span class="math inline">\(G_n
+\rightarrow_{w} G\)</span>.</p>
+<p>Let <span class="math inline">\(X_1, X_2, \ldots\)</span> be i.i.d.
+RVs whose expected values and variances exist. We can define a
+error-like function called <span class="math inline">\(G_n\)</span> that
+is within a normal distribution:</p>
+<ul>
+<li><span class="math inline">\(G_n(\omega) = \sqrt{n}(\bar{X_n}(\omega)
+- \mathbb{E}X_1)\)</span></li>
+<li><span class="math inline">\(G \sim N(0, Var X_1)\)</span></li>
+</ul>
+<p><span class="math display">\[\lim_{n \rightarrow \infty} F_{G_n}(x) =
+\text{the CDF of N}(0, Var X_1) = F_{G}(x)\]</span></p>
+<h3 id="moment-generating-functions">Moment-generating Functions</h3>
+<p>Used to describe a probability function.</p>
+<p>Let <span class="math inline">\(X\)</span> be a RV.</p>
+<p>We define a moment-generating function as</p>
+<p><span class="math display">\[M_X(t) = \mathbb{E}[e^{t\cdot
+X}]\]</span></p>
+<p>provided that the expected value exists for all <span
+class="math inline">\(t \in \mathbb{R}\)</span>.</p>
+<p><span class="math display">\[e^{tX} = 1 + tX + \frac{t^2 X^2}{2!} +
+\frac{t^3 X^3}{3!} \ldots\]</span></p>
+<p>We have the expected value of a sum involving a random variable to be
+the sum of terms involving an expected value of a random variable:</p>
+<p><span class="math display">\[\mathbb{E}[\sum_{j=1}^{J}c_jg_j(X)] =
+\sum_{j=1}^{J}c_j \mathbb{E}[g_j(X)]\]</span></p>
+<p>Applying this to our M_X^{t} we have <span
+class="math display">\[M_X^{t} = \mathbb{E}[e^{t\cdot X}] = 1 + t
+\mathbb{E}X + \frac{t^2 \mathbb{E}[X^2]}{2!} + \frac{t^3
+\mathbb{E}[X^3]}{3!} \ldots \]</span></p>
+<p>So then our derivative is <span class="math display">\[ \frac{d}{dt}
+M_X(t) = \mathbb{E}X + t\mathbb{E}[X^2] + \frac{t^2}{2!}\mathbb{E}[X^3]
++ \ldots \]</span></p>
+<p>At t = 0, our first moment is <span class="math display">\[
+\frac{d}{dt} M_X(t) = \mathbb{E}X \]</span></p>
+<p>Our second moment is <span class="math display">\[ \frac{d^2}{dt^2}
+M_X(t) = \mathbb{E}[X^2] \]</span></p>
+<p>Our <span class="math inline">\(k^{th}\)</span> moment is <span
+class="math display">\[ \frac{d^k}{dt^k} M_X(t) = \mathbb{E}[X^k]
+\]</span></p>
+<h3 id="theorem">Theorem</h3>
+<p>Let $G, G_1, G_2, $ be a sequence of RVs.</p>
+<p>Recall that <span class="math display">\[M_{G_n}(t) = \mathbb{E}[e^{t
+G_n}]\]</span> <span class="math display">\[\mathbb{E}[e^{t G_n}] =
+\int_{-\infty}^{\infty} e^{tx}p_X(x) dx\]</span></p>
+<p>If <span class="math inline">\(\lim_{n \rightarrow \infty} M_{G_n}(t)
+= M_G(t)\)</span>:</p>
+<p>Then <span class="math display">\[G_n \rightarrow_{w} G\]</span> If
+we have a convergence of the moment functions, then we have a
+convergence of the random variables!</p>
+<h3 id="theorem-1">Theorem</h3>
+<p>Let <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> be
+RVs. <span class="math display">\[S_n(\omega) = X_1(\omega) +
+X_2(\omega) + \ldots + X_n(\omega) = \sum_{i=1}^{n}X_i(w)\]</span></p>
+<p>If <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> are
+independent:</p>
+<p><span class="math display">\[M_{S_n(t)} = \prod_{i=1}^{n}
+M_{X_i}(t)\]</span></p>
+<p>Furthermore, if <span class="math inline">\(X_1, X_2, \ldots,
+X_n\)</span> are independently distributed:</p>
+<p><span class="math display">\[M_{S_n}(t) = (M_{X_1}(t))^n\]</span></p>
+<h3 id="two-more-lemmas">Two more lemmas</h3>
+<p>Lemma 1: Let <span
+class="math inline">\(\{c_n\}_{n=1}^{\infty}\)</span> be a sequence of
+real numbers satisfying <span class="math inline">\(\lim_{n \rightarrow
+\infty} c_n\)</span> = 0. If <span class="math inline">\(\lim_{n
+\rightarrow \infty}c_n = \lambda\)</span>, then <span
+class="math display">\[ \lim_{n \rightarrow \infty} (1 + c_n) =
+?\]</span></p>
+<p>Lemma 2:</p>
+<p>If <span class="math inline">\(G \sim N(0, \sigma^2)\)</span>. Then
+<span class="math display">\[M_G(t) =
+e^{\frac{t^2\sigma^2}{2}}\]</span></p>
+<h2 id="proof-of-clt">Proof of CLT</h2>
+<p><span class="math display">\[G_n = \sqrt{n}[(\frac{1}{n} \sum_{i=1}^n
+X_1) - \mathbb{E}X_1]\]</span></p>
+<p>We move the average to the outside of the sum:</p>
+<p><span class="math display">\[G_n = \frac{1}{\sqrt{n}}[\sum_{i=1}^n
+(X_i - \mathbb{E}X_1)
+]\]</span></p>
+<p>Given this fact, we can replace <span
+class="math inline">\(G_n\)</span> in our moment:</p>
+<p><span class="math display">\[M_{G_n(t)} =
+\mathbb{E}[e^{tG_n}]\]</span> <span class="math display">\[M_{G_n(t)} =
+\mathbb{E}[e^{\frac{t}{\sqrt{n}} \sum_{i=1}^n (X_i -
+\mathbb{E}X_1)}]\]</span></p>
+<p>Because our random variables are i.i.d:</p>
+<p><span class="math display">\[M_{G_n(t)} = \mathbb{E}[e^{\sum_{i=1}^n
+\frac{t}{\sqrt{n}} (X_i - \mathbb{E}X_1)}]\]</span></p>
+<p><span class="math display">\[M_{G_n(t)} =
+(\mathbb{E}[e^{\frac{t}{\sqrt{n}} (X_i -
+\mathbb{E}X_1)}])^n\]</span></p>
+<p><span class="math display">\[M_{G_n(t)} = ((\mathbb{E}[1 +
+\frac{t}{\sqrt{n}}(X_1 - \mathbb{E}X) + \frac{t^2 (X_1 -
+\mathbb{E}X)^2}{2n} + \ldots + \sum)^n\]</span></p>
+<p><span class="math display">\[M_{G_n(t)} = (1 + \frac{t}{\sqrt{n}}(0)
++ \frac{t^2 (X_1 - \mathbb{E}X)^2}{2n} + \ldots + \sum)^n\]</span></p>
+<p><span class="math display">\[\approx (1 + \frac{t^2}{2n} \text{Var
+}X_1)^n\]</span> <span class="math display">\[\approx (1 +
+c_n)^n\]</span></p>
+<p><span class="math display">\[M_{G_n(t)} \approx (1 + c_n)^n
+\rightarrow e^{\frac{t^2}{2} \text{Var }X_1}\]</span></p>
+<p>This is the Moment generating function for <span
+class="math inline">\(N(0, \text{Var }(X_1))\)</span>.</p>
+<p>Thus, our function converges:</p>
+<p><span class="math display">\[\lim_{n \rightarrow \infty} F_{G_n}(x) =
+\text{the CDF of N}(0, Var X_1) = F_{G}(x)\]</span></p>
 <div id="footer">
-    <a href="http://eric-xia.com">Eric Xia</a>
+    © 2023 <a href="http://eric-xia.com">Eric Xia</a>
   </div>
 </body>
 </html>
