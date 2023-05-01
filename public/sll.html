@@ -6,6 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>final</title>
   <style>
+    body{margin: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    max-width: 38em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.444;
+    color: #333;}
+
+    h1 {
+        font-size: 200%;
+    }
+    h2 {
+        font-size: 160%;
+    }
+    h3 {
+        font-size: 140%;
+    }
+    h4 {
+        font-size: 120%;
+    }
+    h5 {
+        font-size: 100%;
+        font-style: italic;
+    }
+    img{
+      display: block;
+      margin: 0 auto;
+      max-width: 32em;
+    }
+    .single{
+      max-height: 16em;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -18,7 +51,6 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="pandoc.css" />
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
@@ -42,24 +74,23 @@ environments</a></li>
 </ul></li>
 </ul>
 </nav>
-<h1 id="space-logic-lemmas">Space Logic Lemmas</h1>
+<h1 id="space-logic-lemmas"><i>Space Logic Lemmas</i></h1>
 <p>For my proofwriting final, I will introduce some basic proof
-structures in an intuitive format that you’ve probably seen before: that
-of Venn Diagrams!</p>
+structures in an intuitive format that you’ve probably seen before: Venn Diagrams!</p>
 <p>While much of the content here might be seen as prerequisites for a
 theory, I think these results are interesting in their own right.
 Furthermore, they are self-contained, making them perfect for
 analysis.</p>
 <p>Form follows function.</p>
-<h4 id="a">A</h4>
+<h2 id="a">A</h2>
 <p>We draw the set A as a circle. I’ve tried other approaches but
 haven’t found anything that works as well; for both inclusions and
 intersections, circles are the most suggestive of a set. Squiggles look
 like you’re trying to call attention to them, triangles, squares, and
 hexagons fail miserably at suggesting intersection, etc.</p>
-<p><img src="entailment/base.png"></p>
-<h4 id="a-intersect-b">A intersect B</h4>
-<p>One classic example is set intersection. Given sets <span
+<p><img class="single" src="sll-images/base.png"></p>
+<h2 id="a-intersect-b">A intersect B</h2>
+<p>One classic example is set intersection. Given sets` <span
 class="math inline">\(A\)</span> and <span
 class="math inline">\(B\)</span>, their intersection <span
 class="math inline">\(A \cap B\)</span> is all of the elements in both
@@ -67,8 +98,8 @@ set <span class="math inline">\(A\)</span> and set <span
 class="math inline">\(B\)</span>. This is depicted as the overlapping
 area between <span class="math inline">\(A\)</span> and <span
 class="math inline">\(B\)</span>.</p>
-<p><img src="entailment/intersect.png"></p>
-<h4 id="direct-proof-a-implies-b">Direct Proof: A implies B</h4>
+<p><img class="single" src="sll-images/intersect.png"></p>
+<h2 id="direct-proof-a-implies-b">Direct Proof: A implies B</h2>
 <p>Here, we have the first way to express a statement, the direct proof
 <span class="math inline">\(A \rightarrow B\)</span>. In every world we
 have <span class="math inline">\(B\)</span>, we have <span
@@ -82,9 +113,9 @@ description <em>within</em> a world, while the second is a relation
 <em>about</em> a world. However, it is simpler to assume existence, so
 the later diagrams will present direct implication in a single image.
 Just as here, the left diagram implies the right.</p>
-<p><img src="entailment/direct.png"></p>
-<h4 id="contrapositive-not-b-implies-not-a">Contrapositive: Not B
-implies not A</h4>
+<p><img src="sll-images/direct.png"></p>
+<h2 id="contrapositive-not-b-implies-not-a">Contrapositive: Not B
+implies not A</h2>
 <p>Here is an intuitive explanation for the contrapositive proof, <span
 class="math inline">\({\sim} B \rightarrow {\sim}A\)</span>. If we have
 the implication <span class="math inline">\(A \rightarrow B\)</span>, or
@@ -94,7 +125,7 @@ class="math inline">\({\sim}A\)</span> encircles <span
 class="math inline">\({\sim}B\)</span>, because <span
 class="math inline">\(B\)</span> encircles <span
 class="math inline">\(A\)</span>.</p>
-<p><img src="entailment/contrapositive.png"></p>
+<p><img src="sll-images/contrapositive.png"></p>
 <h3 id="upward-entailing-environments">upward entailing
 environments</h3>
 <p>Credit to <a
@@ -119,14 +150,14 @@ who sang loudly, to those who sang) and still have it be true.</p>
 </blockquote>
 <p>Illustrated, this is much the same as <span class="math inline">\(B
 \rightarrow A\)</span>:</p>
-<p><img src="entailment/all_up.png"></p>
+<p><img src="sll-images/all_up.png"></p>
 <p>And <code>all</code> is <em>downward entailing</em> in the
 restriction, because we may restrict or tighten the subject (going from
 women, to young women) and still have it be true.</p>
 <blockquote>
 <p>All women sang loudly &gt; All young women sang loudly</p>
 </blockquote>
-<p><img src="entailment/all_down.png"></p>
+<p><img src="sll-images/all_down.png"></p>
 <h3 id="inverted-entailing-environments">inverted entailing
 environments</h3>
 <p>Other quantifiers have the opposite.</p>
@@ -138,11 +169,11 @@ body and restriction are disjoint.</p>
 <blockquote>
 <p>No women sang loudly &gt; No young women sang</p>
 </blockquote>
-<p><img src="entailment/no_down.png"></p>
+<p><img src="sll-images/no_down.png"></p>
 <p>And upward entailing in the restriction. &gt; No women sang &gt; No
 woman sang loudly.</p>
-<p><img src="entailment/no_up.png"></p>
-<h4 id="a-and-b">A and B</h4>
+<p><img src="sll-images/no_up.png"></p>
+<h2 id="a-and-b">A and B</h2>
 <p><span class="math inline">\(\land\)</span> is what we get when we
 apply <span class="math inline">\(\rightarrow\)</span>; like <span
 class="math inline">\(\cap\)</span>, it is a statement in a world. That
@@ -150,19 +181,19 @@ is, when we apply <span class="math inline">\(A \rightarrow B\)</span>,
 we obtain a world with a circle <span class="math inline">\(A\)</span>
 and a bigger circle <span class="math inline">\(B\)</span> around
 it.</p>
-<h4 id="a-and-not-b">A and not B</h4>
+<h2 id="a-and-not-b">A and not B</h2>
 <p>Armed with our new tool, we investigate a different approach from our
 direct proof. Assume that <span class="math inline">\(A \rightarrow
 B\)</span>. Then we can’t have <span class="math inline">\(A \land
 {\sim}B\)</span>, a small circle and a bigger hole. It’s impossible to
 be in both.</p>
-<h4 id="c-and-not-c">C and not C</h4>
+<h2 id="c-and-not-c">C and not C</h2>
 <p>What <span class="math inline">\(C \cap {\sim}C\)</span> says is, “be
 both inside and outside the circle”. As we can see, this is impossible.
 it’s quite like <span class="math inline">\(A \cap {\sim}B\)</span>, but
 with A relaxed exactly to the size of B.</p>
-<h4 id="proof-by-contradiction-a-and-not-b-implies-c-and-not-c">Proof by
-Contradiction: A and not B implies C and not C</h4>
+<h2 id="proof-by-contradiction-a-and-not-b-implies-c-and-not-c">Proof by
+Contradiction: A and not B implies C and not C</h2>
 <p>Like the contrapositive, proof by contradiction directly follows the
 direct proof. As we can see, if we have the direct implication <span
 class="math inline">\(A \rightarrow B\)</span>, we will also have <span
@@ -172,9 +203,9 @@ small circle <span class="math inline">\(A\)</span> and a bigger hole
 <span class="math inline">\({\sim}B\)</span>. However, <span
 class="math inline">\(C \land {\sim}C\)</span> is is impossible. Thus,
 we have <span class="math inline">\(A \rightarrow B\)</span>.</p>
-<p><img src="entailment/contra.png"> <img src="entailment/contra2.png">
-<img src="entailment/contra3.png"></p>
-<h4 id="a-if-and-only-if-b">A if and only if B</h4>
+<p><img src="sll-images/contra.png"> <img src="sll-images/contra2.png">
+<img src="sll-images/contra3.png"></p>
+<h2 id="a-if-and-only-if-b">A if and only if B</h2>
 <p>We can say A <span class="math inline">\(\leftrightarrow B\)</span>
 to mean <span class="math inline">\(A \rightarrow B\)</span> and <span
 class="math inline">\(B \rightarrow A\)</span> at the same time. If we
@@ -183,7 +214,7 @@ class="math inline">\(B \rightarrow A\)</span>, we must have B
 encircling A and A encircling B. This is impossible, unless A and B are
 the same circle! This is same rationale for proving equality by double
 set inclusion.</p>
-<h4 id="equivalence-a-b-c">Equivalence: A &lt;&gt; B &lt;&gt; C</h4>
+<h2 id="equivalence-a-b-c">Equivalence: A &lt;&gt; B &lt;&gt; C</h2>
 <p>If we have multiple statements we need to prove equivalence for, we
 need only to prove <span class="math inline">\(A \rightarrow B\)</span>,
 <span class="math inline">\(B \rightarrow C\)</span>, and <span
@@ -191,7 +222,7 @@ class="math inline">\(C \rightarrow A\)</span> to prove <span
 class="math inline">\(A \leftrightarrow B \leftrightarrow C\)</span>.
 Below, we can see that the circles are in a donut shape which makes this
 true.</p>
-<h4 id="induction">Induction</h4>
+<h2 id="induction">Induction</h2>
 <p>Hey, we got something fun to play with. It’s labeled “inductive
 step”. Looks like a world with a circle <span
 class="math inline">\(A_{n}\)</span> and a bigger circle <span
