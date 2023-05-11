@@ -51,6 +51,7 @@
       vertical-align: middle;
     }
   </style>
+  <link rel="stylesheet" href="pandoc.css" />
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
@@ -65,32 +66,55 @@
 <li><a href="#space-logic-lemmas" id="toc-space-logic-lemmas">Space
 Logic Lemmas</a>
 <ul>
+<li><a href="#everything" id="toc-everything">Everything</a></li>
+<li><a href="#a" id="toc-a">A</a></li>
+<li><a href="#not-a" id="toc-not-a">Not A</a></li>
+<li><a href="#a-intersect-b" id="toc-a-intersect-b">A intersect
+B</a></li>
+<li><a href="#direct-proof-a-implies-b"
+id="toc-direct-proof-a-implies-b">Direct Proof: A implies B</a></li>
+<li><a href="#contrapositive-not-b-implies-not-a"
+id="toc-contrapositive-not-b-implies-not-a">Contrapositive: Not B
+implies not A</a></li>
 <li><a href="#upward-entailing-environments"
 id="toc-upward-entailing-environments">upward entailing
 environments</a></li>
-<li><a href="#inverted-entailing-environments"
-id="toc-inverted-entailing-environments">inverted entailing
+<li><a href="#downward-entailing-environments"
+id="toc-downward-entailing-environments">downward entailing
 environments</a></li>
+<li><a href="#a-if-and-only-if-b-lovers-quarrel-very-cute"
+id="toc-a-if-and-only-if-b-lovers-quarrel-very-cute">A if and only if B
+(lover’s quarrel, very cute)</a></li>
 </ul></li>
 </ul>
 </nav>
-<h1 id="space-logic-lemmas"><i>Space Logic Lemmas</i></h1>
+<h1 id="space-logic-lemmas">Space Logic Lemmas</h1>
 <p>For my proofwriting final, I will introduce some basic proof
-structures in an intuitive format that you’ve probably seen before: Venn Diagrams!</p>
+structures in an intuitive format that you’ve probably seen before: that
+of Venn Diagrams!</p>
 <p>While much of the content here might be seen as prerequisites for a
 theory, I think these results are interesting in their own right.
 Furthermore, they are self-contained, making them perfect for
 analysis.</p>
 <p>Form follows function.</p>
-<h2 id="a">A</h2>
+<h3 id="everything">Everything</h3>
+<p>Everything is the set containing everything of interest. I promise
+this is going somewhere.</p>
+<p><img src="entailment/nothing.png"></p>
+<h3 id="a">A</h3>
 <p>We draw the set A as a circle. I’ve tried other approaches but
-haven’t found anything that works as well; for both inclusions and
+haven’t found anything that works as well; for inclusions and
 intersections, circles are the most suggestive of a set. Squiggles look
 like you’re trying to call attention to them, triangles, squares, and
 hexagons fail miserably at suggesting intersection, etc.</p>
-<p><img class="single" src="sll-images/base.png"></p>
-<h2 id="a-intersect-b">A intersect B</h2>
-<p>One classic example is set intersection. Given sets` <span
+<p><img src="entailment/base.png"></p>
+<h3 id="not-a">Not A</h3>
+<p>Let’s say we have A as above. We also can describe NOT A, <span
+class="math inline">\({\sim} A\)</span>, as everything without A,
+producing the hole shape below.</p>
+<p><img src="entailment/not.png"></p>
+<h3 id="a-intersect-b">A intersect B</h3>
+<p>One classic of Venn diagrams is set intersection. Given sets <span
 class="math inline">\(A\)</span> and <span
 class="math inline">\(B\)</span>, their intersection <span
 class="math inline">\(A \cap B\)</span> is all of the elements in both
@@ -98,141 +122,197 @@ set <span class="math inline">\(A\)</span> and set <span
 class="math inline">\(B\)</span>. This is depicted as the overlapping
 area between <span class="math inline">\(A\)</span> and <span
 class="math inline">\(B\)</span>.</p>
-<p><img class="single" src="sll-images/intersect.png"></p>
-<h2 id="direct-proof-a-implies-b">Direct Proof: A implies B</h2>
+<p><img src="entailment/intersect.png"></p>
+<h3 id="direct-proof-a-implies-b">Direct Proof: A implies B</h3>
 <p>Here, we have the first way to express a statement, the direct proof
 <span class="math inline">\(A \rightarrow B\)</span>. In every world we
-have <span class="math inline">\(B\)</span>, we have <span
-class="math inline">\(A\)</span>. <span class="math inline">\(B\)</span>
+have <span class="math inline">\(A\)</span>, we have <span
+class="math inline">\(B\)</span>. <span class="math inline">\(B\)</span>
 encircles <span class="math inline">\(A\)</span>.</p>
 <p>Note that there is a difference between <span
 class="math inline">\(\cap\)</span>, <span
 class="math inline">\(\cup\)</span> etc. and <span
 class="math inline">\(\rightarrow\)</span>. The first examples are
 description <em>within</em> a world, while the second is a relation
-<em>about</em> a world. However, it is simpler to assume existence, so
-the later diagrams will present direct implication in a single image.
-Just as here, the left diagram implies the right.</p>
-<p><img src="sll-images/direct.png"></p>
-<h2 id="contrapositive-not-b-implies-not-a">Contrapositive: Not B
-implies not A</h2>
-<p>Here is an intuitive explanation for the contrapositive proof, <span
-class="math inline">\({\sim} B \rightarrow {\sim}A\)</span>. If we have
-the implication <span class="math inline">\(A \rightarrow B\)</span>, or
-B encircling A, it is exactly the same as saying we will also have <span
-class="math inline">\({\sim} B \rightarrow {\sim} A\)</span>. <span
-class="math inline">\({\sim}A\)</span> encircles <span
-class="math inline">\({\sim}B\)</span>, because <span
+<em>about</em> a world.</p>
+<p><img src="entailment/direct.png"></p>
+<p>Here are examples of A implies B:</p>
+<p>In every world where <span class="math inline">\(5\)</span> divides
+<span class="math inline">\(2x\)</span>, <span
+class="math inline">\(5\)</span> divides <span
+class="math inline">\(x\)</span>.</p>
+<p>In every world where <span class="math inline">\(x^2 = 4\)</span>,
+<span class="math inline">\(x = 2\)</span>.</p>
+<p>In each, we go from a statement <span
+class="math inline">\(A\)</span> to a more general statement <span
+class="math inline">\(B\)</span>. It is not necessary that <span
+class="math inline">\(B \rightarrow A\)</span>, however; the two
+examples above show this.</p>
+<h3 id="contrapositive-not-b-implies-not-a">Contrapositive: Not B
+implies not A</h3>
+<p>Here is an explanation for the contrapositive proof. The
+contrapositive is another way to prove that <span
+class="math inline">\(A \rightarrow B\)</span>. It says that if we prove
+that <span class="math inline">\({\sim} B \rightarrow {\sim} A\)</span>,
+we are really proving the same thing. This does not feel intuitive.</p>
+<p>However, we can make it more clear with diagrams. If we have the
+direct proof <span class="math inline">\(A \rightarrow B\)</span>, it is
+the same as saying that <span class="math inline">\({\sim} B \rightarrow
+{\sim} A\)</span>. That is, claiming <span
 class="math inline">\(B\)</span> encircles <span
-class="math inline">\(A\)</span>.</p>
-<p><img src="sll-images/contrapositive.png"></p>
+class="math inline">\(A\)</span> is really the same as claiming <span
+class="math inline">\({\sim}A\)</span> encircles <span
+class="math inline">\({\sim}B\)</span>. A statement must be claiming
+<em>something</em>, which is why in each approach we start with the
+smaller shapes <span class="math inline">\(A\)</span> and <span
+class="math inline">\({\sim} B\)</span>. It is our task during the proof
+to show that this smaller shape is encircled by the larger one.</p>
+<p><img src="entailment/direct.png">
+<img src="entailment/contrapositive.png"></p>
+<p>Because defining what something <em>isn’t</em> is the same as
+defining what it <em>is</em>, our two approaches end up showing the same
+thing.</p>
+<p><img src="entailment/duality.png"></p>
 <h3 id="upward-entailing-environments">upward entailing
 environments</h3>
 <p>Credit to <a
 href="https://linguistics.stackexchange.com/questions/18908/the-difference-between-upward-and-downward-entailment">Natalie
-Clarius on Linguistics Stack Exchange</a> for the text of the examples
-given here.</p>
-<p>In linguistics, <code>all, some, no, most, many ...</code> are known
-as quantifiers. Sentences with quantifiers usually assign relations
-between two sets, the restriction A and the body B.</p>
+Clarius on Linguistics Stack Exchange</a> for the text of some of the
+examples here.</p>
+<p>Here is a case I realized could be described with the same diagrams
+as above. In linguistics, <code>all, some, no, most, many ...</code> are
+known as quantifiers. Sentences with quantifiers usually assign
+relations between two sets, the restriction A and the body B.</p>
 <p>When we say <code>All women sang loudly</code>, we are assigning a
 relation between those who are <code>women</code> (the restriction A)
 and those who <code>sang loudly</code> (the body B).</p>
-<p>The terms may be a little confusing. The body is
+<p>The terms may be a little confusing. The body of the sentence is
 <code>sang loudly</code> because the essential message of the sentence
-is that <em>someone</em> sang loudly; the restriction limits those
-involved to women.</p>
+is that <em>someone</em> sang loudly; hence, it is the body. The
+restriction limits those involved to women.</p>
 <p>Here, <code>all</code> is considered to be <em>upward entailing</em>
-in the body, because we may widen or loosen the body (going from those
+in the body, because we may widen <span
+class="math inline">\(\equiv\)</span> loosen the body (going from those
 who sang loudly, to those who sang) and still have it be true.</p>
 <blockquote>
 <p>All women sang loudly &gt; All women sang</p>
 </blockquote>
-<p>Illustrated, this is much the same as <span class="math inline">\(B
-\rightarrow A\)</span>:</p>
-<p><img src="sll-images/all_up.png"></p>
+<p>Illustrated, this is exactly the implication <span
+class="math inline">\(A \rightarrow B\)</span>:</p>
+<p><img src="entailment/all_up.png"></p>
 <p>And <code>all</code> is <em>downward entailing</em> in the
-restriction, because we may restrict or tighten the subject (going from
-women, to young women) and still have it be true.</p>
+restriction, because we may make smaller <span
+class="math inline">\(\equiv\)</span> tighten the subject (going from
+women, to young women) and still have it be true. Again, we see the
+implication <span class="math inline">\(A \rightarrow B\)</span>:</p>
 <blockquote>
 <p>All women sang loudly &gt; All young women sang loudly</p>
 </blockquote>
-<p><img src="sll-images/all_down.png"></p>
-<h3 id="inverted-entailing-environments">inverted entailing
+<p><img src="entailment/all_down.png"></p>
+<h3 id="downward-entailing-environments">downward entailing
 environments</h3>
-<p>Other quantifiers have the opposite.</p>
-<p><code>no</code> is downward entailing in the body, because we may
-widen or loosen the restriction (going from the set of women, to the set
-of young women) and still have it be true. We can see this clearly as
+<p>Other quantifiers are known as downward entailing environments. They
+are downward entailing in the restriction (A) and body (B).</p>
+<p>Unlike <code>all</code>, <code>no</code> is downward entailing in the
+body, because we may make smaller <span
+class="math inline">\(\equiv\)</span> <em>tighten</em> the body (going
+from those who sang, to those who sang loudly) and still have it be
+true. We can see this clearly when we think of this kind of statement as
 <span class="math inline">\(A \rightarrow {\sim} B\)</span> , where the
-body and restriction are disjoint.</p>
+restriction and body are disjoint.</p>
 <blockquote>
-<p>No women sang loudly &gt; No young women sang</p>
+<p>No women sang &gt; No women sang loudly</p>
 </blockquote>
-<p><img src="sll-images/no_down.png"></p>
-<p>And upward entailing in the restriction. &gt; No women sang &gt; No
-woman sang loudly.</p>
-<p><img src="sll-images/no_up.png"></p>
-<h2 id="a-and-b">A and B</h2>
-<p><span class="math inline">\(\land\)</span> is what we get when we
-apply <span class="math inline">\(\rightarrow\)</span>; like <span
-class="math inline">\(\cap\)</span>, it is a statement in a world. That
-is, when we apply <span class="math inline">\(A \rightarrow B\)</span>,
-we obtain a world with a circle <span class="math inline">\(A\)</span>
-and a bigger circle <span class="math inline">\(B\)</span> around
-it.</p>
-<h2 id="a-and-not-b">A and not B</h2>
-<p>Armed with our new tool, we investigate a different approach from our
-direct proof. Assume that <span class="math inline">\(A \rightarrow
-B\)</span>. Then we can’t have <span class="math inline">\(A \land
-{\sim}B\)</span>, a small circle and a bigger hole. It’s impossible to
-be in both.</p>
-<h2 id="c-and-not-c">C and not C</h2>
-<p>What <span class="math inline">\(C \cap {\sim}C\)</span> says is, “be
-both inside and outside the circle”. As we can see, this is impossible.
-it’s quite like <span class="math inline">\(A \cap {\sim}B\)</span>, but
-with A relaxed exactly to the size of B.</p>
-<h2 id="proof-by-contradiction-a-and-not-b-implies-c-and-not-c">Proof by
-Contradiction: A and not B implies C and not C</h2>
+<p><img src="entailment/no_down.png"></p>
+<p>Like <code>all</code>, <code>no</code> is also downward entailing in
+the restriction, because we may make smaller <span
+class="math inline">\(\equiv\)</span> <em>tighten</em> the restriction
+(going from women, to young women), and still have it be true. Again, we
+can think of this kind of statement as <span class="math inline">\(A
+\rightarrow {\sim} B\)</span>.</p>
+<blockquote>
+<p>No women sang &gt; No young woman sang.</p>
+</blockquote>
+<p><img src="entailment/no_up.png"></p>
+<p>This geometric interpretation should shed light on how exactly
+statements with <code>all</code> and <code>no</code> differ.</p>
+<p>In <code>all</code>, the body (B) is <em>inclusive</em> of A: <span
+class="math inline">\(A \rightarrow B\)</span>.</p>
+<p>In <code>no</code>, the body (B) is <em>exclusive</em> of A: <span
+class="math inline">\(A \rightarrow {\sim} B\)</span>.</p>
+<p>Simply by looking at the shapes, we can see that both kinds of
+statements are only downward entailing in the restriction. This is
+because in both the inclusive <code>all</code> and exclusive
+<code>no</code> cases, we may only tighten A. If we loosen A, the
+quantifier may no longer be true.</p>
+<p>In <code>all women sang loudly</code>, (B) is no longer
+<em>inclusive</em> of A:</p>
+<p><img src="entailment/not_inclusive.png"></p>
+<p>And in <code>no women sang loudly</code>, B is no longer
+<em>exclusive</em> of A:</p>
+<p><img src="entailment/not_exclusive.png"></p>
+<p>And we can also see geometrically that <code>all</code> is only
+upwards entailing in the body, while <code>no</code> is only downwards
+entailing in the body.</p>
+<p>When it is inclusive in <code>all women sang loudly</code>, we may
+only widen B.</p>
+<p>If we tighten B, B might no longer be inclusive of A:</p>
+<p><img src="entailment/not_inclusive2.png"></p>
+<p>When it is exclusive in <code>no women sang</code>, we may only
+tighten B.</p>
+<p>If we widen B, B might no longer be exclusive of A:</p>
+<p><img src="entailment/not_exclusive2.png"></p>
+<!-- #### A and B
+Before we show another major proof style, we want to introduce a minor notation. *and* $\land$ is what we get when we apply $\rightarrow$; like intersect $\cap$, it is a statement in a world. That is, when we apply $A \rightarrow B$, we obtain a world with a circle $A$ and a bigger circle $B$ around it. 
+
+<img src="entailment/and.png"> -->
+<h4 id="proof-by-contradiction-a-and-not-b-implies-c-and-not-c">Proof by
+Contradiction: A and not B implies C and not C</h4>
 <p>Like the contrapositive, proof by contradiction directly follows the
-direct proof. As we can see, if we have the direct implication <span
-class="math inline">\(A \rightarrow B\)</span>, we will also have <span
-class="math inline">\(A \cap {\sim}B \rightarrow C \cap {\sim}
-C\)</span>. That is, if B encircles A, then our original world will be a
-small circle <span class="math inline">\(A\)</span> and a bigger hole
-<span class="math inline">\({\sim}B\)</span>. However, <span
-class="math inline">\(C \land {\sim}C\)</span> is is impossible. Thus,
-we have <span class="math inline">\(A \rightarrow B\)</span>.</p>
-<p><img src="sll-images/contra.png"> <img src="sll-images/contra2.png">
-<img src="sll-images/contra3.png"></p>
-<h2 id="a-if-and-only-if-b">A if and only if B</h2>
+direct proof. In every world where we don’t have the direct implication
+<span class="math inline">\(A \rightarrow B\)</span>, we must have <span
+class="math inline">\(A \rightarrow {\sim}B\)</span>. Our task is to
+show that this ends up as <span class="math inline">\(C \land {\sim}
+C\)</span>, which is impossible. Thus, we must have <span
+class="math inline">\(A \rightarrow B\)</span>.</p>
+<p>We want to show that <span class="math inline">\(A \rightarrow
+B\)</span> must be the case. That is, in every world we have <span
+class="math inline">\(A\)</span>, we have <span
+class="math inline">\(B\)</span>.</p>
+<p><img src="entailment/contra3.png"></p>
+<p>So we assume <span class="math inline">\(A \rightarrow
+{\sim}B\)</span>.</p>
+<p><img src="entailment/a_to_not_b.png"></p>
+<p>Now, we show (somehow) that <span class="math inline">\(A \rightarrow
+{\sim}B\)</span> leads to <span class="math inline">\(C \rightarrow
+{\sim}C\)</span>:</p>
+<p><img src="entailment/contra4.png"></p>
+<p>This is a contradiction. It is true that we have previously seen
+examples of disjoint shapes. But here, to claim that <span
+class="math inline">\(C \rightarrow {\sim} C\)</span> is to say that C
+is contained in <span class="math inline">\({\sim} C\)</span>! This is
+definitely impossible. Because in every world in which we have <span
+class="math inline">\(A \rightarrow {\sim} B\)</span>, we reach <span
+class="math inline">\(C \rightarrow {\sim} C\)</span>, we must have
+<span class="math inline">\(A \rightarrow B\)</span> instead.</p>
+<p>This is less satisfying than showing the contrapositive, because it
+is not clear how we would go from <span class="math inline">\(A
+\rightarrow {\sim}B\)</span> to <span class="math inline">\(C
+\rightarrow {\sim}C\)</span>. However, it does provide intuition about
+<em>why</em> we cannot have <span class="math inline">\(C \rightarrow
+{\sim}C\)</span>: a set can never be contained by its complement.</p>
+<p><img src="entailment/contra5.png"></p>
+<h3 id="a-if-and-only-if-b-lovers-quarrel-very-cute">A if and only if B
+(lover’s quarrel, very cute)</h3>
 <p>We can say A <span class="math inline">\(\leftrightarrow B\)</span>
 to mean <span class="math inline">\(A \rightarrow B\)</span> and <span
-class="math inline">\(B \rightarrow A\)</span> at the same time. If we
-have both <span class="math inline">\(A \rightarrow B\)</span> and <span
-class="math inline">\(B \rightarrow A\)</span>, we must have B
-encircling A and A encircling B. This is impossible, unless A and B are
-the same circle! This is same rationale for proving equality by double
-set inclusion.</p>
-<h2 id="equivalence-a-b-c">Equivalence: A &lt;&gt; B &lt;&gt; C</h2>
-<p>If we have multiple statements we need to prove equivalence for, we
-need only to prove <span class="math inline">\(A \rightarrow B\)</span>,
-<span class="math inline">\(B \rightarrow C\)</span>, and <span
-class="math inline">\(C \rightarrow A\)</span> to prove <span
-class="math inline">\(A \leftrightarrow B \leftrightarrow C\)</span>.
-Below, we can see that the circles are in a donut shape which makes this
-true.</p>
-<h2 id="induction">Induction</h2>
-<p>Hey, we got something fun to play with. It’s labeled “inductive
-step”. Looks like a world with a circle <span
-class="math inline">\(A_{n}\)</span> and a bigger circle <span
-class="math inline">\(A_{n+1}\)</span> on it.</p>
-<p>Oops, I dropped it and it opened! It’s an implication now, with a
-small circle on one end and a big one on the other. Let’s see. If we
-have a world and just one circle <span
-class="math inline">\(A_1\)</span>, we get…</p>
-<p>Woah! A whole sequence of statements <span class="math inline">\(A_1,
-A_2, \ldots, A_n\)</span>.</p>
+class="math inline">\(B \rightarrow A\)</span> at the same time.</p>
+<p>If we have both <span class="math inline">\(A \rightarrow B\)</span>
+and <span class="math inline">\(B \rightarrow A\)</span>, we must have A
+contained by B and B contained by A. This is impossible … unless A and B
+are the same! This is same rationale for proving equality by double set
+inclusion.</p>
+<p><img src="entailment/if_only_if.png"></p>
 <div id="footer">
     © 2023 <a href="http://eric-xia.com">Eric Xia</a>
   </div>
