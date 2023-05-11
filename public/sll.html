@@ -5,8 +5,20 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  
   <style>
-    body{margin: auto;
+    html{
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+    body {
+    margin: auto;
     padding-right: 1em;
     padding-left: 1em;
     max-width: 38em;
@@ -14,15 +26,21 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.444;
     color: #333;}
-
+    ul *{
+      list-style-type: none;
+    }
     h1 {
-        font-size: 200%;
+      width: 50em;
+      margin-bottom: 0em;
+      font-size: 400%;
+      font-weight: 200;
+      font-family: 'Roboto Mono', monospace;
     }
     h2 {
         font-size: 160%;
     }
     h3 {
-        font-size: 140%;
+        font-size: 160%;
     }
     h4 {
         font-size: 120%;
@@ -33,25 +51,21 @@
     }
     img{
       display: block;
-      margin: 0 auto;
+      margin: 2em auto;
       max-width: 32em;
     }
     .single{
       max-height: 16em;
+    }
+    .a-intersect-b{
+      max-width: 25em;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
   </style>
-  <link rel="stylesheet" href="pandoc.css" />
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
@@ -61,10 +75,8 @@
   <![endif]-->
 </head>
 <body>
+<h1 id="space-logic-lemmas">Space Logic Lemmas</h1>
 <nav id="TOC" role="doc-toc">
-<ul>
-<li><a href="#space-logic-lemmas" id="toc-space-logic-lemmas">Space
-Logic Lemmas</a>
 <ul>
 <li><a href="#everything" id="toc-everything">Everything</a></li>
 <li><a href="#a" id="toc-a">A</a></li>
@@ -82,37 +94,41 @@ environments</a></li>
 <li><a href="#downward-entailing-environments"
 id="toc-downward-entailing-environments">downward entailing
 environments</a></li>
+<li><a href="#geometric-interpretation"
+id="toc-geometric-interpretation">Geometric Interpretation</a></li>
+<li><a href="#proof-by-contradiction-a-and-not-b-implies-c-and-not-c"
+id="toc-proof-by-contradiction-a-and-not-b-implies-c-and-not-c">Proof by
+Contradiction</a></li>
 <li><a href="#a-if-and-only-if-b-lovers-quarrel-very-cute"
 id="toc-a-if-and-only-if-b-lovers-quarrel-very-cute">A if and only if B
 (lover’s quarrel, very cute)</a></li>
 </ul></li>
 </ul>
 </nav>
-<h1 id="space-logic-lemmas">Space Logic Lemmas</h1>
-<p>For my proofwriting final, I will introduce some basic proof
-structures in an intuitive format that you’ve probably seen before: that
-of Venn Diagrams!</p>
+<p>For my MATH-1001 final project, I will introduce some basic proof
+structures in an intuitive format, that of overlapping geometric shapes. There are problems with this form of visualization (it can be cumbersome or misleading) but also some great strengths.</p>
 <p>While much of the content here might be seen as prerequisites for a
 theory, I think these results are interesting in their own right.
 Furthermore, they are self-contained, making them perfect for
 analysis.</p>
+<p>I originally drew up sketches for equivalence and induction as well, but found those to sacrifice too much detail for too little intuition. In lieu of these, I expand on some quantifier logic that benefits greatly from the geometric approach. </p>
 <p>Form follows function.</p>
 <h3 id="everything">Everything</h3>
 <p>Everything is the set containing everything of interest. I promise
 this is going somewhere.</p>
-<p><img src="sll-images/nothing.png"></p>
+<p><img class="single" src="sll-images/nothing.png"></p>
 <h3 id="a">A</h3>
 <p>We draw the set A as a circle. I’ve tried other approaches but
 haven’t found anything that works as well; for inclusions and
 intersections, circles are the most suggestive of a set. Squiggles look
 like you’re trying to call attention to them, triangles, squares, and
 hexagons fail miserably at suggesting intersection, etc.</p>
-<p><img src="sll-images/base.png"></p>
+<p><img class="single" src="sll-images/A.png"></p>
 <h3 id="not-a">Not A</h3>
-<p>Let’s say we have A as above. We also can describe NOT A, <span
+<p>Let’s say we have A as above. We also can describe not A, <span
 class="math inline">\({\sim} A\)</span>, as everything without A,
 producing the hole shape below.</p>
-<p><img src="sll-images/not.png"></p>
+<p><img class="single" src="sll-images/not.png"></p>
 <h3 id="a-intersect-b">A intersect B</h3>
 <p>One classic of Venn diagrams is set intersection. Given sets <span
 class="math inline">\(A\)</span> and <span
@@ -122,7 +138,7 @@ set <span class="math inline">\(A\)</span> and set <span
 class="math inline">\(B\)</span>. This is depicted as the overlapping
 area between <span class="math inline">\(A\)</span> and <span
 class="math inline">\(B\)</span>.</p>
-<p><img src="sll-images/intersect.png"></p>
+<p><img class="single" src="sll-images/intersect.png"></p>
 <h3 id="direct-proof-a-implies-b">Direct Proof: A implies B</h3>
 <p>Here, we have the first way to express a statement, the direct proof
 <span class="math inline">\(A \rightarrow B\)</span>. In every world we
@@ -155,7 +171,7 @@ contrapositive is another way to prove that <span
 class="math inline">\(A \rightarrow B\)</span>. It says that if we prove
 that <span class="math inline">\({\sim} B \rightarrow {\sim} A\)</span>,
 we are really proving the same thing. This does not feel intuitive.</p>
-<p>However, we can make it more clear with diagrams. If we have the
+<p>However, we can make it clear with diagrams. If we have the
 direct proof <span class="math inline">\(A \rightarrow B\)</span>, it is
 the same as saying that <span class="math inline">\({\sim} B \rightarrow
 {\sim} A\)</span>. That is, claiming <span
@@ -190,36 +206,50 @@ and those who <code>sang loudly</code> (the body B).</p>
 <code>sang loudly</code> because the essential message of the sentence
 is that <em>someone</em> sang loudly; hence, it is the body. The
 restriction limits those involved to women.</p>
-<p>Here, <code>all</code> is considered to be <em>upward entailing</em>
-in the body, because we may widen <span
-class="math inline">\(\equiv\)</span> loosen the body (going from those
-who sang loudly, to those who sang) and still have it be true.</p>
+<p>Some quantifiers are known as upward entailing. They are upward
+entailing in the restriction (A), and downward entailing in the body
+(B). One example is the quantifier <code>all</code>.</p>
+<p><code>all</code> is considered to be <em>upward entailing</em> in the
+body, because we may widen <span class="math inline">\(\equiv\)</span>
+loosen the body (going from those who sang loudly, to those who sang).
+We have the entailment</p>
 <blockquote>
 <p>All women sang loudly &gt; All women sang</p>
 </blockquote>
-<p>Illustrated, this is exactly the implication <span
-class="math inline">\(A \rightarrow B\)</span>:</p>
+<p>Illustrated, this says that one implication implies another (for
+convenience, each implication is now a single image, where the smaller
+shape implies the larger). The implication <span class="math inline">\(A
+\rightarrow B\)</span> implies <span class="math inline">\(A \rightarrow
+B&#39;\)</span>, where <span class="math inline">\(B&#39;\)</span> is
+larger:</p>
 <p><img src="sll-images/all_up.png"></p>
 <p>And <code>all</code> is <em>downward entailing</em> in the
 restriction, because we may make smaller <span
 class="math inline">\(\equiv\)</span> tighten the subject (going from
-women, to young women) and still have it be true. Again, we see the
-implication <span class="math inline">\(A \rightarrow B\)</span>:</p>
+women, to young women) and still have it be true.</p>
 <blockquote>
 <p>All women sang loudly &gt; All young women sang loudly</p>
 </blockquote>
+<p>We see a different implication <span class="math inline">\(A
+\rightarrow B\)</span> implying <span class="math inline">\(A&#39;
+\rightarrow B\)</span>, where <span
+class="math inline">\(A&#39;\)</span> is smaller:</p>
 <p><img src="sll-images/all_down.png"></p>
 <h3 id="downward-entailing-environments">downward entailing
 environments</h3>
-<p>Other quantifiers are known as downward entailing environments. They
-are downward entailing in the restriction (A) and body (B).</p>
-<p>Unlike <code>all</code>, <code>no</code> is downward entailing in the
-body, because we may make smaller <span
+<p>Other quantifiers are known as downward entailing. They are downward
+entailing in both the restriction (A) and body (B). One example is the
+quantifier <code>no</code>.</p>
+<p><em>Unlike</em> <code>all</code>, <code>no</code> is downward
+entailing in the body, because we may make smaller <span
 class="math inline">\(\equiv\)</span> <em>tighten</em> the body (going
 from those who sang, to those who sang loudly) and still have it be
-true. We can see this clearly when we think of this kind of statement as
-<span class="math inline">\(A \rightarrow {\sim} B\)</span> , where the
-restriction and body are disjoint.</p>
+true. We can see this clearly when we think of the statement
+<code>no women sang</code> as <span class="math inline">\(A \rightarrow
+{\sim} B\)</span>, where the restriction and body are disjoint. We see
+that <span class="math inline">\(A \rightarrow {\sim} B\)</span> implies
+<span class="math inline">\(A \rightarrow {\sim} B&#39;\)</span>, where
+<span class="math inline">\(B&#39;\)</span> is smaller:</p>
 <blockquote>
 <p>No women sang &gt; No women sang loudly</p>
 </blockquote>
@@ -227,47 +257,48 @@ restriction and body are disjoint.</p>
 <p>Like <code>all</code>, <code>no</code> is also downward entailing in
 the restriction, because we may make smaller <span
 class="math inline">\(\equiv\)</span> <em>tighten</em> the restriction
-(going from women, to young women), and still have it be true. Again, we
-can think of this kind of statement as <span class="math inline">\(A
-\rightarrow {\sim} B\)</span>.</p>
+(going from women, to young women), and still have it be true. We see
+that <span class="math inline">\(A \rightarrow {\sim} B\)</span> implies
+<span class="math inline">\(A&#39; \rightarrow {\sim} B\)</span>, where
+<span class="math inline">\(A&#39;\)</span> is smaller:</p>
 <blockquote>
 <p>No women sang &gt; No young woman sang.</p>
 </blockquote>
 <p><img src="sll-images/no_up.png"></p>
-<p>This geometric interpretation should shed light on how exactly
-statements with <code>all</code> and <code>no</code> differ.</p>
+<h3 id="geometric-interpretation">Geometric Interpretation</h3>
+<p>Our diagrams can help us determine exactly how statements with
+<code>all</code> and <code>no</code> differ.</p>
 <p>In <code>all</code>, the body (B) is <em>inclusive</em> of A: <span
 class="math inline">\(A \rightarrow B\)</span>.</p>
 <p>In <code>no</code>, the body (B) is <em>exclusive</em> of A: <span
 class="math inline">\(A \rightarrow {\sim} B\)</span>.</p>
-<p>Simply by looking at the shapes, we can see that both kinds of
-statements are only downward entailing in the restriction. This is
-because in both the inclusive <code>all</code> and exclusive
-<code>no</code> cases, we may only tighten A. If we loosen A, the
-quantifier may no longer be true.</p>
-<p>In <code>all women sang loudly</code>, (B) is no longer
-<em>inclusive</em> of A:</p>
-<p><img src="sll-images/not_inclusive.png"></p>
-<p>And in <code>no women sang loudly</code>, B is no longer
-<em>exclusive</em> of A:</p>
-<p><img src="sll-images/not_exclusive.png"></p>
-<p>And we can also see geometrically that <code>all</code> is only
-upwards entailing in the body, while <code>no</code> is only downwards
+<p>Simply by looking at the shapes, we can see that <code>all</code> is
+upwards entailing in the body, while <code>no</code> is downwards
 entailing in the body.</p>
-<p>When it is inclusive in <code>all women sang loudly</code>, we may
-only widen B.</p>
-<p>If we tighten B, B might no longer be inclusive of A:</p>
+<p>With <code>all</code>, we cannot tighten the body. In
+<code>all women sang loudly</code>, tightening <code>sang loudly</code>
+to <code>sang very loudly</code> means that B is no longer inclusive of
+A:</p>
 <p><img src="sll-images/not_inclusive2.png"></p>
-<p>When it is exclusive in <code>no women sang</code>, we may only
-tighten B.</p>
-<p>If we widen B, B might no longer be exclusive of A:</p>
+<p>With <code>no</code>, we cannot loosen the body. In
+<code>no women sang</code>, widening <code>sang</code> to
+<code>made noise</code> means that B is no longer exclusive of A:</p>
 <p><img src="sll-images/not_exclusive2.png"></p>
+<p>Likewise, we can also see geometrically that both kinds of statements
+are downward entailing in the restriction.</p>
+<p>In <code>all women sang loudly</code>, loosening <code>women</code>
+to <code>persons</code> means that (B) is no longer inclusive of A:</p>
+<p><img src="sll-images/not_inclusive.png"></p>
+<p>Likewise, in <code>no women sang loudly</code>, loosening
+<code>women</code> to <code>persons</code> means that B is no longer
+exclusive of A:</p>
+<p><img src="sll-images/not_exclusive.png"></p>
 <!-- #### A and B
 Before we show another major proof style, we want to introduce a minor notation. *and* $\land$ is what we get when we apply $\rightarrow$; like intersect $\cap$, it is a statement in a world. That is, when we apply $A \rightarrow B$, we obtain a world with a circle $A$ and a bigger circle $B$ around it. 
 
 <img src="sll-images/and.png"> -->
-<h4 id="proof-by-contradiction-a-and-not-b-implies-c-and-not-c">Proof by
-Contradiction: A and not B implies C and not C</h4>
+<h3 id="proof-by-contradiction-a-and-not-b-implies-c-and-not-c">Proof by
+Contradiction</h3>
 <p>Like the contrapositive, proof by contradiction directly follows the
 direct proof. In every world where we don’t have the direct implication
 <span class="math inline">\(A \rightarrow B\)</span>, we must have <span
@@ -283,7 +314,7 @@ class="math inline">\(B\)</span>.</p>
 <p>So we assume <span class="math inline">\(A \rightarrow
 {\sim}B\)</span>.</p>
 <p><img src="sll-images/a_to_not_b.png"></p>
-<p>Now, we show (somehow) that <span class="math inline">\(A \rightarrow
+<p>Now, we show that <span class="math inline">\(A \rightarrow
 {\sim}B\)</span> leads to <span class="math inline">\(C \rightarrow
 {\sim}C\)</span>:</p>
 <p><img src="sll-images/contra4.png"></p>
@@ -296,7 +327,7 @@ class="math inline">\(A \rightarrow {\sim} B\)</span>, we reach <span
 class="math inline">\(C \rightarrow {\sim} C\)</span>, we must have
 <span class="math inline">\(A \rightarrow B\)</span> instead.</p>
 <p>This is less satisfying than showing the contrapositive, because it
-is not clear how we would go from <span class="math inline">\(A
+is not as clear how we would go from <span class="math inline">\(A
 \rightarrow {\sim}B\)</span> to <span class="math inline">\(C
 \rightarrow {\sim}C\)</span>. However, it does provide intuition about
 <em>why</em> we cannot have <span class="math inline">\(C \rightarrow
