@@ -1,7 +1,7 @@
 .super {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: initial;
 }
 
 div {
@@ -18,7 +18,7 @@ a {
 }
 
 img { 
-     max-width: 18em;
+     max-width: 20em;
 }
 
 .fl {
@@ -31,6 +31,10 @@ img {
 
 .daily-blog p{
     display: block;
+}
+
+.projects img{
+    max-width: 500px;
 }
 
 .left {
