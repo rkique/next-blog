@@ -48,6 +48,10 @@ img {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.pfp {
+    left: 25%;
+    position: relative;
+}
 .projects {}
 .projects a, p{
     display: block;
