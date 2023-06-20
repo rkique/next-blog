@@ -2,6 +2,8 @@
     --header-text: black;
     --header-text-sub: rgb(0, 0, 0);
     --interactable: rgb(0, 0, 0);
+    --banner-text-bg: rgb(255, 255, 192);
+    --banner-text: rgb(188, 50, 0);
 }
 
 .tl {

@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: initial;
+    
 }
 
 div {
@@ -43,7 +44,7 @@ img {
 .main {
     margin: 0 2em;
     background: white;
-    max-width: 36em;
+    max-width: 30em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -53,10 +54,10 @@ img {
 }
 
 .pfp {
-    left: 25%;
+    left: 20%;
     position: relative;
 }
-.projects {}
+
 .projects a, p{
     display: block;
 }

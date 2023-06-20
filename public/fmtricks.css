@@ -3,9 +3,26 @@
 }
 
 .banner-golf{
-    background-color: rgb(255, 111, 0);
-    text-decoration: overline;
+    font-size: 180%;
+    font-style: italic;
+    text-decoration: none;
 }
+
+.banner-golf a{
+    color: var(--banner-text);
+}
+
+.banner-space a{
+    color: var(--banner-text);
+}
+
+.banner-space{
+    background-color: var(--banner-text-bg);
+    font-size: 150%;
+    font-style: italic;
+    text-decoration: none;
+}
+
 
 .cristofaro{
     margin: 0.1em 0 0.1em 0;
