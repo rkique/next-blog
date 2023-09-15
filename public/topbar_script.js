@@ -6,6 +6,7 @@ array = [
     "your fourth grade self against the world",
     "we lack courage, not genius",
     "when my aura gets cut it bleeds",
+    "I hope your words last longer than your plastic",
     "Save yourself! Go outside! Do something!",
     "There is no speed limit",
     "daylight to lamplight",
