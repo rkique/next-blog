@@ -34,6 +34,20 @@
     background: rgb(255, 255, 255);
     text-decoration: none;
 }
+.diVup{
+    width: 40vw;
+}
+.banner-diV{
+    line-height: 1.1;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.banner-subtext{
+    line-height: 0.9;
+    font-size: 14px;
+}
 
 .golf:hover{
     filter: invert();
