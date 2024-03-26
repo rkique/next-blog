@@ -43,7 +43,7 @@ img {
 }
 
 .projects img{
-    max-width: 400px;
+    max-width: 320px;
 }
 
 .left {
@@ -65,6 +65,14 @@ img {
     text-align: center;
     width: 360px;
 }
+.bio-diff {
+    transform: scale(0.34) translate(-70%, -240%);
+}
+
+.bio-unpr{
+    transform: scale(0.34) translate(-70%, -430%);
+}
+
 .bio-popout {
     z-index: 0;
     transform: translate(-19%, -44%);
@@ -75,7 +83,7 @@ img {
     position: relative;
     z-index: 3;
 }
-.bio, .bio-popout {
+.bio, .bio-popout, .bio-diff, .bio-unpr {
     position: absolute;
 }
 #quotes {
@@ -90,7 +98,8 @@ img {
 }
 
 .pfp {
-    left: 10%;
+    width: 200px;
+    left: 30%;
     position: relative;
     z-index: 2;
 }
