@@ -24,16 +24,12 @@
 }
 
 
-.cristofaro{
-    margin: 0.1em 0 0.1em 0;
-    background: yellow;
-}
-
 .banner-cristofaro{
     line-height: 1.1;
     background: rgb(255, 255, 255);
     text-decoration: none;
 }
+
 .diVup{
     width: 40vw;
 }

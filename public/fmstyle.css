@@ -26,47 +26,89 @@ img {
     float: left;
 }
 
+
 .blog{
     font-size: 14px;
-    max-width: 24em;
+    min-width: 24vw;
+    max-width: 24vw;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-
+.projects span{
+    font-size: 14px;
+}
 .daily-blog p{
     display: block;
 }
 
 .projects img{
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .left {
 }
 
 .main {
-    margin: 0 2em;
     background: white;
     max-width: 30em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    min-width: 30em;
 }
 
+.bio-container {
+    height: 40px;
+}
+
+.bio {
+    text-align: center;
+    width: 360px;
+}
+.bio-popout {
+    z-index: 0;
+    transform: translate(-19%, -44%);
+    width: 600px;
+    height: 250px;
+}
+.golf-div{
+    position: relative;
+    z-index: 3;
+}
+.bio, .bio-popout {
+    position: absolute;
+}
 #quotes {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.pfp {
-    left: 20%;
-    position: relative;
+.chin-small{
+    font-size: 20px;
+    position: absolute;
+    top: 27px;
+    left: 176px;
 }
 
-.projects a, p{
+.pfp {
+    left: 10%;
+    position: relative;
+    z-index: 2;
+}
+
+.projects-2 {
+    max-width: 400px;
+}
+.projects-2 a,p{
+    max-width: 400px;
     display: block;
 }
+.projects a, p{
+    display: block;
+    
+}
 
-.projects a{
-    outline: 1px solid black;
-    margin: 0.5em 1em 0.5em 1em;
-    padding: 1em 1em 1em 1em;
+.projects a:hover{
+    font-style: italic;
 }
 
 .projects img {
@@ -101,16 +143,10 @@ img {
 }
 
 .header-sub {
-    line-height: 0.70;
-    text-decoration: underline;
+    z-index: 3;
     color: var(--header-text-sub);
     text-align: left;
     font-size: 20px;
-}
-.header-sub2 {
-    color: var(--header-text-sub);
-    text-align: left;
-    font-size: 16px;
 }
 
 
