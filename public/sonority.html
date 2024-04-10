@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="public" max-age="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IconicIPA</title>
+    <style>
+        @font-face {
+        font-family: 'Sonority';
+        src: url('sonority-font/programmatic_sonority.ttf') format('truetype');
+        }
+        html {
+            background-color: black;
+        }
+        p,h1,h2,h3,h4,h5,h6{
+            color: white;
+        }
+        .large {
+            font-size: 96px;
+        }
+        h1{font-size: 24px;}
+        p{font-family: Arial; font-style: normal; font-size: 16px;
+        font-weight: 300}
+        table { font-family: Arial; color: white}
+        h1{font-family: Arial}
+        h2{font-family: 'Sonority'; line-height: 0.7; margin: 0}
+        .text, 
+        .flex-column {
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            max-width: 39em;
+            padding: 5em 5em;
+            margin: 0 auto;
+
+        }
+        img {
+            margin: 2em 2em;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .post {margin: 1em 0em}
+        .title {color: slategray}
+        a {color: slategray}
+        .content {color: darkslategray}
+        .title, .content { margin: 0 0}
+        table {
+            border-collapse: collapse;
+            border: 1px solid white;
+        }
+        td {
+            border: 1px solid white;
+            padding: 5px;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="flex-row">
+        <div class="flex-column">
+            
+            <h1> Iconic IPA</h1>
+            <p><i>how can we illustrate linguistic phenomenon by apealing to perceptual and visual cues?</i></p>
+
+            <p>This font aims to create a visually intuitive interpretation for several important phonetic qualities, while maintaining recognizability for most alphabetic characters. In particular, it focuses on the following. </p>
+
+            <h1>The Sonority Hierarchy </h1>
+            <p>Sonority is roughly defined as the loudness of a sound relative to other sounds of the same pitch. The sonority hierarchy is as follows: </p>
+            <table bordercolor="white" border="1">
+                <tr>
+                  <td>vowels <br> <br> a e i o u ɪ æ ʌ ʊ ɒ ə </td>
+                  <td>glides <br><br>  w j (pronounced y)</td>
+                  <td>liquids <br><br>  l r</td>
+                  <td>nasals <br><br>  m, n ŋ</td>
+                  <td>obstruents <br><br>  p t k b d g f v s z ʃ (2nd sound in "chip")  ʒ (2nd sound in "judge")</td>
+                </tr>
+              </table>
+              <p>
+              These classes are visualized by glyph width, with length 5, 4, 3, 2 and 2 respectively. 
+            </p>
+            <h1>Voicing Contrast</h1>
+            <p>Where possible, the voicing attribute is conveyed by a single visual difference. This is illustrated by the following pairs for voiceless and voiced stops:</p>
+            <h2 class="large">p b</h2>
+            <h2 class="large">t d</h2>
+            <h2 class="large">k g</h2>
+
+            <h1>Stops convey Abruptness</h1>
+            <p> Stops can be identified by a characteristic vertical line, indicating the nature of the sound as a sudden burst or release of pressure: </p>
+            <h2 class="large">p b t d k g</h2>
+
+            <h1>Fricatives convey Friction</h1>
+            <p>Fricatives indicate roughness, friction, and noise. Voicing in fricatives "s, z, ʃ,ʒ"  is visualized by hard edges:</p>
+            <h2 class="large">s z</h2>
+            <h2 class="large">ʃ ʒ</h2>
+            <p>I haven't had the chance to change the labiodental fricatives "f,v" to follow this pattern, suggestions are welcome </p>
+            <h2 class="large">f v</h2>
+
+            <h1>Vowels are Round</h1>
+            <p> When we pronounce words, we use different sounds than what is written. There are around eleven vowels in English pronunciation. Here is the IPA chart for vowels.            Back=Heavy=Dark, Front=Light=Bright. The vowels "u" and "oo" are back vowels. These are visualized as heavy, full shapes:</p>
+            <img src="images/vowels_ipa.png">
+            <img src="images/vowels.png">
+
+
+            <h3>The CVC pattern</h3>
+            <h2 class="large">hɒp</h2>
+            <h2 class="large">sɪt</h2>
+            <h2 class="large">kæt</h2>
+            <h2 class="large"> ræbɪt</h2>
+            <h2 class="large">træns</h2>
+            <p>That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he's foiled you again, creating chaos.</p>
+            <p> ðæt kwɪk beɪʒ fɑks dʒʌmpt ɪn ði eər oʊvər itʃ θɪn dɔɡ. lʊk aʊt, aɪ ʃaʊt, fɔr hi'z fɔɪld ju əɡɛn, krieɪtɪŋ keɪɑs.</p>
+            <h2 class="large">ðæt kwɪk beɪʒ fɑks dʒʌmpt ɪn ði eər oʊvər itʃ θɪn dɔɡ lʊk aʊt aɪ ʃaʊt fɔr hiz fɔɪld ju əɡɛn krieɪtɪŋ keɪɑs</h2>
+            
+            <p> Since then, I need as many edible objects around me as possible. Like my futon. It's from this place in Finland. Cost me $2,500, but the entire futon is edible. They market them to Japanese people who are worried about earthquakes and being traped alive under rubble.
+            </p>
+
+            <p>
+            sɪns ðɛn aɪ nid az mɛni ɛdɪbl ɑbjɛkts əraʊnd mi əz pɑsəbl laɪk maɪ fjutɑn ɪts frəm ðɪs pleɪs ɪn fɪnlənd kɑst mi tu tuzənd faɪv hʌndrəd bʌt ðə ɪntaɪr fjutɑn ɪz ɛdəbl deɪ mɑrkɪt ðɛm tu ʤəpæniz pipəl huɑr wɜrid əbaʊt ɜrθkwɛɪks ənd biɪŋ træpt əlaɪv ʌndər rʌbəl
+            </p>
+
+            <h2>sɪns ðɛn aɪ nid az mɛni ɛdɪbl ɑbjɛkts əraʊnd mi əz pɑsəbl. laɪk maɪ fjutɑn. ɪts frəm ðɪs pleɪs ɪn fɪnlənd. kɑst mi tu tuzənd faɪv hʌndrəd, bʌt ðə ɪntaɪr fjutɑn ɪz ɛdəbl. deɪ mɑrkɪt ðɛm tu ʤəpæniz pipəl huɑr wɜrid əbaʊt ɜrθkwɛɪks ənd biɪŋ træpt əlaɪv ʌndər rʌbəl.</h2>
+    
+        </div>
+    </div>
+</body>
+
+</html>
