@@ -27,6 +27,11 @@ img {
 }
 
 
+.projects-2 img{
+  margin: auto;
+  display: block;
+}
+
 .blog{
     font-size: 14px;
     min-width: 24vw;
@@ -46,15 +51,19 @@ img {
     max-width: 320px;
 }
 
+/* #duality{
+    max-width: 200px;
+} */
+
 .left {
 }
 
 .main {
     background: white;
-    max-width: 30em;
+    max-width: 28em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    min-width: 30em;
+    min-width: 28em;
 }
 
 .bio-container {
@@ -104,8 +113,11 @@ img {
     z-index: 2;
 }
 
+.projects {
+    max-width: 24em;
+}
 .projects-2 {
-    max-width: 400px;
+    max-width: 25em;
 }
 .projects-2 a,p{
     max-width: 400px;
@@ -116,8 +128,10 @@ img {
     
 }
 
-.projects a:hover{
-    font-style: italic;
+.projects a:hover, .projects-2 a:hover{
+    cursor: pointer;
+    outline-offset: 2px;
+    outline: 2px solid black;
 }
 
 .projects img {
@@ -155,7 +169,8 @@ img {
     z-index: 3;
     color: var(--header-text-sub);
     text-align: left;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 
