@@ -11,11 +11,8 @@
         font-family: 'Sonority';
         src: url('sonority-font/programmatic_sonority.ttf') format('truetype');
         }
-        html {
-            background-color: black;
-        }
         p,h1,h2,h3,h4,h5,h6{
-            color: white;
+            color: black;
         }
         .large {
             font-size: 96px;
@@ -23,7 +20,7 @@
         h1{font-size: 24px;}
         p{font-family: Arial; font-style: normal; font-size: 16px;
         font-weight: 300}
-        table { font-family: Arial; color: white}
+        table { font-family: Arial; color: black}
         h1{font-family: Arial}
         h2{font-family: 'Sonority'; line-height: 0.7; margin: 0}
         .text, 
@@ -31,13 +28,16 @@
             font-family: Arial;
             display: flex;
             flex-direction: column;
-            max-width: 39em;
+            width: 45vw;
+            max-width: 80vw;
             padding: 5em 5em;
             margin: 0 auto;
 
         }
         img {
-            margin: 2em 2em;
+            display:block;
+            max-width: 40vw;
+            margin: 0 auto;
         }
 
         .flex-row {
@@ -52,10 +52,10 @@
         .title, .content { margin: 0 0}
         table {
             border-collapse: collapse;
-            border: 1px solid white;
+            border: 1px solid black;
         }
         td {
-            border: 1px solid white;
+            border: 1px solid black;
             padding: 5px;
         }
     </style>
@@ -68,9 +68,12 @@
         <div class="flex-column">
             
             <h1> Iconic IPA</h1>
-            <p><i>how can we illustrate linguistic phenomenon by apealing to perceptual and visual cues?</i></p>
 
-            <p>This font aims to create a visually intuitive interpretation for several important phonetic qualities, while maintaining recognizability for most alphabetic characters. In particular, it focuses on the following. </p>
+            <p>This font aims to create a visually intuitive interpretation for important phonetic qualities, while maintaining recognizability. In particular, it focuses on representing the <a href="https://en.wikipedia.org/wiki/Sonority_sequencing_principle?oldformat=true">sonority sequencing principle</a>. I think this principle is cool because it describes the acoustic <i>shape</i> of words. <br><br>
+
+            From Wikipedia: "A good example for the SSP in English is the one-syllable word trust: The first consonant in the syllable onset is t, which is a stop, the lowest on the sonority scale; next is r, a liquid which is more sonorous, then we have the vowel u /ʌ/ – the sonority peak; next, in the syllable coda, is s, a sibilant, and last is another stop, t. The SSP explains why, for example, trend is a valid English word but *rtedn (flipping the order of consonants) is not." <br><br>
+                
+            This font is based on Roboto and was made with FontForge. It covers IPA characters that are common to English (see below). You can download the font <a href="other/sonority.ttf">here</a>.</p>
 
             <h1>The Sonority Hierarchy </h1>
             <p>Sonority is roughly defined as the loudness of a sound relative to other sounds of the same pitch. The sonority hierarchy is as follows: </p>
@@ -79,12 +82,13 @@
                   <td>vowels <br> <br> a e i o u ɪ æ ʌ ʊ ɒ ə </td>
                   <td>glides <br><br>  w j (pronounced y)</td>
                   <td>liquids <br><br>  l r</td>
-                  <td>nasals <br><br>  m, n ŋ</td>
-                  <td>obstruents <br><br>  p t k b d g f v s z ʃ (2nd sound in "chip")  ʒ (2nd sound in "judge")</td>
+                  <td>nasals <br><br>  m, n ŋ (the n in "sing")</td>
+                  <td>obstruents <br><br>  p t k b d g f v s z ʃ (hissing sound in "chip")  ʒ (hissing sound in "judge")</td>
                 </tr>
               </table>
               <p>
               These classes are visualized by glyph width, with length 5, 4, 3, 2 and 2 respectively. 
+              <img src="images/sonority_alph.png">
             </p>
             <h1>Voicing Contrast</h1>
             <p>Where possible, the voicing attribute is conveyed by a single visual difference. This is illustrated by the following pairs for voiceless and voiced stops:</p>
@@ -103,31 +107,41 @@
             <p>I haven't had the chance to change the labiodental fricatives "f,v" to follow this pattern, suggestions are welcome </p>
             <h2 class="large">f v</h2>
 
-            <h1>Vowels are Round</h1>
+            <h1>Vowels are Round and Heavy</h1>
             <p> When we pronounce words, we use different sounds than what is written. There are around eleven vowels in English pronunciation. Here is the IPA chart for vowels.            Back=Heavy=Dark, Front=Light=Bright. The vowels "u" and "oo" are back vowels. These are visualized as heavy, full shapes:</p>
             <img src="images/vowels_ipa.png">
             <img src="images/vowels.png">
 
 
             <h3>The CVC pattern</h3>
-            <h2 class="large">hɒp</h2>
-            <h2 class="large">sɪt</h2>
-            <h2 class="large">kæt</h2>
-            <h2 class="large"> ræbɪt</h2>
-            <h2 class="large">træns</h2>
+            <p>Many words in English follow a Consonant-Vowel-Consonant pattern, which is especially nice to see with this font:</p>
+
+            <h2 class="large">hɒp</h2><p>(hop)</p>
+            <h2 class="large">sɪt</h2><p>(sit)</p>
+            <h2 class="large">kæt</h2><p>(cat)</p>
+            <h2 class="large"> ræbɪt</h2><p>(rabbit)</p>
+            <h2 class="large">træns</h2><p>(trance)</p> 
+
+            <h1>A Phonetic Pangram </h1>
+            <p>Here we represent all forty sounds in English with what is known as a phonetic pangram.</p>
             <p>That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he's foiled you again, creating chaos.</p>
             <p> ðæt kwɪk beɪʒ fɑks dʒʌmpt ɪn ði eər oʊvər itʃ θɪn dɔɡ. lʊk aʊt, aɪ ʃaʊt, fɔr hi'z fɔɪld ju əɡɛn, krieɪtɪŋ keɪɑs.</p>
             <h2 class="large">ðæt kwɪk beɪʒ fɑks dʒʌmpt ɪn ði eər oʊvər itʃ θɪn dɔɡ lʊk aʊt aɪ ʃaʊt fɔr hiz fɔɪld ju əɡɛn krieɪtɪŋ keɪɑs</h2>
             
-            <p> Since then, I need as many edible objects around me as possible. Like my futon. It's from this place in Finland. Cost me $2,500, but the entire futon is edible. They market them to Japanese people who are worried about earthquakes and being traped alive under rubble.
+            <h1>Another Example</h1>
+            <p>This one is from <i>J-Pod</i> by Douglas Copeland. </p>
+            <p> Cost me $2,500, but the entire futon is edible. They market them to Japanese people who are worried about earthquakes and being trapped alive under rubble.
             </p>
 
             <p>
-            sɪns ðɛn aɪ nid az mɛni ɛdɪbl ɑbjɛkts əraʊnd mi əz pɑsəbl laɪk maɪ fjutɑn ɪts frəm ðɪs pleɪs ɪn fɪnlənd kɑst mi tu tuzənd faɪv hʌndrəd bʌt ðə ɪntaɪr fjutɑn ɪz ɛdəbl deɪ mɑrkɪt ðɛm tu ʤəpæniz pipəl huɑr wɜrid əbaʊt ɜrθkwɛɪks ənd biɪŋ træpt əlaɪv ʌndər rʌbəl
+            kɑst mi tu θaʊzənd faɪv hʌndrəd bʌt ðə ɪntaɪr fjutɑn ɪz ɛdəbl. deɪ mɑrkɪt ðɛm tu ʤəpæniz pipəl huɑr wɛrid əbaʊt ɛrθkwɛɪks ənd biɪŋ træpt əlaɪv ʌndər rʌbəl
             </p>
 
-            <h2>sɪns ðɛn aɪ nid az mɛni ɛdɪbl ɑbjɛkts əraʊnd mi əz pɑsəbl. laɪk maɪ fjutɑn. ɪts frəm ðɪs pleɪs ɪn fɪnlənd. kɑst mi tu tuzənd faɪv hʌndrəd, bʌt ðə ɪntaɪr fjutɑn ɪz ɛdəbl. deɪ mɑrkɪt ðɛm tu ʤəpæniz pipəl huɑr wɜrid əbaʊt ɜrθkwɛɪks ənd biɪŋ træpt əlaɪv ʌndər rʌbəl.</h2>
-    
+            <h2 class="large">kɑst mi tu θaʊzənd faɪv hʌndrəd, bʌt ðə ɪntaɪr fjutɑn ɪz ɛdəbl. deɪ mɑrkɪt ðɛm tu dʒəpæniz pipəl huɑr wɛrid əbaʊt ɛrθkwɛɪks ənd biɪŋ træpt əlaɪv ʌndər rʌbəl.</h2>
+
+            <br><br>
+
+            <p>This is a class project for RISD0420O: Screen Based Images, taught by <a href="https://www.leahbeeferman.com/">Leah Beeferman</a> and is based on CLPS1310: Phonology, taught by <a href="https://www.urielcohenpriva.com/">Uriel Cohen Priva</a>. </p>
         </div>
     </div>
 </body>
