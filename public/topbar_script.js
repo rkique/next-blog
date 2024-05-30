@@ -3,6 +3,8 @@ array = [
     "reject externally imposed dreams",
     "don't be a tourist",
     "I am a wild horse",
+    "Your extra reason can be a stupid one",
+    "Statements of disbelief can never be proud",
     "your fourth grade self against the world",
     "we lack courage, not genius",
     "when my aura gets cut it bleeds",
