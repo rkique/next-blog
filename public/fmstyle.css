@@ -71,11 +71,12 @@ img {
 }
 
 .bio {
-    text-align: center;
-    width: 360px;
+    text-align: right;
+    width: 340px;
+    font-size: 12px;
 }
 .bio-diff {
-    transform: scale(0.34) translate(-70%, -240%);
+    transform: scale(0.34) translate(-80%, -240%);
 }
 
 .bio-unpr{
