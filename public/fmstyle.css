@@ -139,6 +139,9 @@ img {
     display: block;
 }
 
+.blog a {
+    color: blue;
+}
 .gallery{
     background: rgb(0, 0, 0);
     display: flex;
