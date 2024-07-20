@@ -36,7 +36,7 @@ img {
     font-size: 14px;
     min-width: 24vw;
     max-width: 24vw;
-    max-height: 100vh;
+    max-height: 200vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
