@@ -30,8 +30,26 @@
     text-decoration: none;
 }
 
+.pill-text {
+    font-size: 8px;
+    line-height: 0.8;
+}
+.frog{
+    width: 100%;
+    position: relative;
+}
+p:has(span) {
+    line-height: 1.5;
+}
+a:has(span) {
+    line-height: 1.5;
+}
+
+
 .diVup{
-    width: 40vw;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 .banner-diV{
     line-height: 1.1;

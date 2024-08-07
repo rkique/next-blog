@@ -4,6 +4,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-637SKJYBQG"></script>
     <script src="https://yesterwebring.neocities.org/script-min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="fmcolors.css" />
     <link rel="stylesheet" href="fmstyle.css" />
     <link rel="stylesheet" href="fmtricks.css">
@@ -26,10 +27,10 @@
             <svg class="bio-popout" >
                 <ellipse cx="210" cy="150" rx="110" ry="70" fill="yellow" />
               </svg>
-            <p class="bio" >I'm a Brown undergraduate studying linguistics and computer science. I love art, science, analogy, and characterization. I'm in Colorado Springs for the summer working on linear approximation for transformer models. You can contact me by <a href="mailto:eriq.xia@gmail.com"><span
+            <p class="bio" >I'm a Brown undergraduate studying linguistics and computer science. I love art, science, analogy, and characterization. You can contact me by <a href="mailto:eriq.xia@gmail.com"><span
                         class="toggle">email;eriq.xia@</span></a> or reach out on <a
                     href="https://www.instagram.com/eriq.xia/"><span class="toggle">instagram;@eriq.xia</span></a>.
-                This is my website that sometimes pretends to be a portfolio, views expressed on this site are mine alone. </p>
+                This is a website with links to both my public projects and personal thoughts, views expressed on this site are mine alone. </p>
             </div>
             <br>
             <div class="golf-div"><span class="header-sub banner-golf"><a href="https://www.word.golf">word golf</a></span> a language
@@ -66,6 +67,10 @@
                 <p><a href="culture.html">My Cultural Influences</a></p>
                 <p><a href="myhouse.html">My House</a></p>
                 <p><a href="clothes.html">Chasing Dreams by Changing Clothes</a></p>
+                <p><a href="https://www.eric-xia.com/arrow/index.html"><b>Arrow's Theorem: Unanimity, Irrelevance, Transitivity</b></a> </p>
+                <p><a href="https://www.eric-xia.com/gravel.html"> <b>GravelHacks</b></a></p>
+                <p><a href="https://www.eric-xia.com/hskreading"> <b>HSKReading articles on one page</b></a></p>
+                <p><a href="synplifier.html"><b>(2020) Protocol Simplifier</b> </a></p>
             </div>
             
         </div>
@@ -82,7 +87,7 @@
                 <p>(8.4.2024) Halfway through <i>Random Family</i> by Adrian Nicole LeBlanc, also trying to get through <i>Children of Dune</i>. The exposition and continual political scheming is really getting on my nerves.</p>
                 <p>(8.4.2024) I often mistake kindness for true understanding and true understanding for kindness </p>
                 <p>(7.26.2024)
-                    <img src="images/cosgym.jpeg" style="width:90%">
+                    <img src="images/cosgym_small.png" style="width:90%">
                 </p>
                 <p>(7.20.2024) <br>
                     Richard Sennett, <i>Humanism</i><br>
@@ -1477,62 +1482,61 @@ while len(quadrants) != len(set(quadrants)):
             </div>
         </div>
         <div class="projects">
-            <a href="images/reproducibility_full.gif"><img src="images/reproducibility.gif"></a>
+            <a href="other/posembed.pdf">
+                <span class="pill-text br-pill ph1 pv1 mb0 ba black">slides</span>
+                 How do sinusoidal embeddings represent relative attention in transformers?</a>
+            <a href="images/reproducibility_full.gif"><img src="images/reproducibility.gif">
+                <span class="pill-text br-pill ph1 pv1 mb0 ba black">geoart</span> <span class="pill-text br-pill ph1 pv1 mb0 ba black">Overpass API</span>
+            </a>
             <a href="dl-final.html">
-                <img class="w-50" src="images/terraform.png">
+                <img class="w-100" src="images/terraform.png">
+                <span class="pill-text br-pill ph1 pv1 mb0 ba black">geoart</span> <span class="pill-text br-pill ph1 pv1 mb0 ba black">PyTorch</span>
             </a>
             <a href="sll.html">
                 <img id="duality" src="images/sll.png">
+                <span class="pill-text br-pill ph1 pv1 mb0 ba black">logic</span> 
+                <span class="pill-text br-pill ph1 pv1 mb0 ba black">semantics</span> 
             </a>
-            <a href="sonority.html"><img src="images/sonority.png"></a>
-            <a href="other/unalive.pdf"><b>[unalive] as reflexive intransitive [kill]</b><img src="images/unalive.png"></a>
-                <img class="w-50" src="images/whitehorse.jpg">
+            <a href="sonority.html"><img src="images/sonority.png">
+            <span class="pill-text br-pill ph1 pv1 mb0 ba black">phonology</span> 
+            </a>
+                <img class="w-100" src="images/whitehorse.jpg">
                 <img src="images/fdesert.png">
-                <a href="other/posembed.pdf" class="header-sub">How do sinusoidal embeddings represent relative attention?</a>
-                <a href="esperanto1.html"  class="header-sub"> (2019) Esperanto morphology <img
+                <a href="esperanto1.html"> <b>(2019) Esperanto morphology </b> <img
                         src="eo-images/ano.png"></a>
-                <a href="GANs.html"  class="header-sub"> (2019) GANs <img
+                <a href="GANs.html"> <b>(2019) GANs </b> <img
                         src="images/polaroids.png"></a>
-                <a href="https://www.eric-xia.com/arrow/index.html" class="header-sub">Arrow's Theorem Walkthrough</a>
-                <a href="https://www.eric-xia.com/gravel.html" class="header-sub"> GravelHacks:</a>
-                <a href="https://www.eric-xia.com/hskreading"  class="header-sub">HSKReading articles on one page</a>
-                <a href="synplifier.html"  class="header-sub"> (2020) Protocol Simplifier </a>
         </div>
         <div class="projects-2">
+            <div class="PCA"><p><a href="other/Linear_Term_Paper-5.pdf"><span class="pill-text br-pill ph1 pv1 mb0 ba black">Linear Algebra</span><b> How does Principal Component Analysis work? </b> <img src="images/PCAblog.PNG"></a></p>
+            </div>
+            <div class="cristofaro">
+                <a href="other/Linguistics_Final__3-5.pdf">
+                    <span class="pill-text br-pill ph1 pv1 mb0 ba black">typology</span><b> Reconciling Semantic Integration and the Complement Deranking Hierarchy </b>
+                    <img src="images/CTPling.PNG">
+            </div>
+            </a>
+            <a href="other/unalive.pdf"><span class="pill-text br-pill ph1 pv1 mb0 ba black">semantics</span><b> [unalive] as reflexive intransitive [kill]</b><br><br><img src="images/unalive.png"></a>
             <div class="frog">
                 <a href="other/FrogECSC.pdf">
-                <p class="header-sub">Manner and path verb usage in children's spontaneous narratives</p>
-                <img src="images/boydogfrog.png">
+                <p> <span class="pill-text br-pill ph1 pv1 mb0 ba black">corpus linguistics</span> <b>Manner and path verb usage in children's spontaneous narratives </b></p>
+                <img style="z-index:-1" src="images/boydogfrog.png">
                 <br>
-                <p>
-                We code motion verbs from spontaneous narratives from the Eugene Children’s Story Corpus as manner ("walked") or path ("went"). We find that usage of manner verbs is predictable by PPVT (a verbal intelligence test) while usage of path verbs is not, suggesting manner verbs comprise a unique lexical category in acquisition.
+                <p style="position: absolute; top: 60px; background: white">
+                We code motion verbs from spontaneous narratives from the Eugene Children’s Story Corpus as manner ("walked") or path ("went"). We find that manner verb usage is predictable by PPVT (a verbal intelligence test) while path verb usage is not, suggesting manner verbs are a unique category in acquisition.
                 </p>
                 </a> 
             </div>
             <div class="diVup">
                 <a href="other/up in ditransitive verbal complements.pdf">
-                    <p class="header-sub"><i>Up</i> in Ditransitive Verbal Complements </p>
-                    <img src="images/diV.png">
+                    <p> <span class="pill-text br-pill ph1 pv1 mb0 ba black">semantics</span>  <span class="pill-text br-pill ph1 pv1 mb0 ba black">slides</span> <b><i>Up</i> in Ditransitive Verbal Complements</b> </p>
+                    <img src="images/diV.png" style="position: absolute; top: -40px; z-index:-1">
                     <br>
-                    <p>
-                    <i>Brown Undergraduate Linguistics Expo 2023.</i> I analyze give(S,DO, IO) as a conceptual primitive. I propose that idiomatic ditransitive + up expressions such as <i>give up my seat</i> infer direct objects ("to them") or even indirect ones (e.g. <i>give up</i>), patterning after the Keenan-Comrie Accessibility Hierarchy. Exceptions and a bridging context are investigated. </p>
+                    <br><br><br><br><br><br>
+                    <p><i>Brown Undergraduate Linguistics Expo 2023.</i> I propose that idiomatic ditransitive + up expressions such as <i>give up my seat</i> infer direct objects ("to them") or even indirect ones (e.g. <i>give up</i>) after the Keenan-Comrie Accessibility Hierarchy. </p>
                 </a>
             </div>
-                <a href="other/Linguistics_Final__3-5.pdf">
-                    <p class="header-sub">Reconciling Semantic Integration and the Complement Deranking Hierarchy </p>
-                    <img src="images/CTPling.PNG">
-                <div class="cristofaro">
-                    <p>
-                    A complement taking predicate is a predicate with another predicate as the subject or object. I
-                    argue that predicates involving perception ("I saw (him walk the dog)") are less semantically
-                    integrated than those with manipulatives like "order" ("I order (him to walk the dog)") and
-                    desideratives ("I want (him to walk the dog)"), principally because perception does not invoke a
-                    future.
-                    </p>
-                </div>
-                </a>
-                <div class="PCA"><p class="header-sub"><a href="other/Linear_Term_Paper-5.pdf">How does Principal Component Analysis work? <img src="images/PCAblog.PNG"></a></p>
-                </div>
+
         </div>
     </div>
 </body>
