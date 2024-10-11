@@ -2,12 +2,6 @@
 export default function Home() {
     return (
       <div>
-        <Head>
-          <title>My Next.js App</title>
-          <meta name="description" content="A simple Next.js app template" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-  
         {/* Main content */}
         <main>
           <h1>Welcome to My Next.js App</h1>
