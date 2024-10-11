@@ -7,9 +7,7 @@ export default function Home() {
           <h1>Welcome to My Next.js App</h1>
           <p>This is the homepage of a simple Next.js application.</p>
           <div>
-            <Link href="/about">
               <a>Go to About Page</a>
-            </Link>
           </div>
         </main>
   
