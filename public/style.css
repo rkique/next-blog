@@ -2,7 +2,7 @@
 .main {
     margin-right: auto;
     margin-left: auto;
-    width: 38em;
+    width: 34em;
     line-height: 1.444;
     font-family: 'Inter', sans-serif;
 }
@@ -28,7 +28,8 @@ h1 {
     font-weight: 300;
     text-align: center;
     color: rgb(82, 82, 82);
-    box-shadow: rgb(255, 249, 129) 6px 20px 0px inset;
+    /* box-shadow: rgb(255, 249, 129) 6px 20px 0px inset; */
+    margin: 0px !important;
 }
 h1, h2, h3 {
     font-family: serif;
@@ -36,6 +37,10 @@ h1, h2, h3 {
     font-weight: 300;
     letter-spacing: -1px;
     margin: 0 0;
+}
+h4{
+    font-weight: 200;
+    margin: 0px;
 }
 blockquote{
     width: 35em;
