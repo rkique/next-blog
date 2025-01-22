@@ -22,6 +22,38 @@ function initToggle(){
     toggles.forEach(toggle => toggle.style.display = "inline")
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('#daily-blog *');
+    
+    const loadMoreButton = document.getElementById('loadMore');
+    let itemsToShow = 20; // Number of items to show initially
+  
+    // Show the initial items
+    for (let i = 0; i < itemsToShow && i < items.length; i++) {
+      items[i].style.display = 'block';
+    }
+  
+    // Add click event to the button
+    loadMoreButton.addEventListener('click', () => {
+      const hiddenItems = Array.from(items).filter(item => item.style.display === 'none');
+  
+      if (hiddenItems.length === 0) {
+        loadMoreButton.style.display = 'none'; // Hide the button if no more items to load
+        return;
+      }
+  
+      const itemsToReveal = Math.min(hiddenItems.length, itemsToShow);
+  
+      for (let i = 0; i < itemsToReveal; i++) {
+        hiddenItems[i].style.display = 'block';
+      }
+  
+      // Hide the button if no more items to load
+      if (hiddenItems.length <= itemsToShow) {
+        loadMoreButton.style.display = 'none';
+      }
+    });
+  });
 
 
 window.onload = function(){
