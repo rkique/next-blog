@@ -9,7 +9,7 @@
     <style>
         @font-face {
         font-family: 'Sonority';
-        src: url('sonority-font/programmatic_sonority.ttf') format('truetype');
+        src: url('sonority-font/sonority.ttf') format('truetype');
         }
         p,h1,h2,h3,h4,h5,h6{
             color: black;
@@ -62,8 +62,99 @@
     <script>
     </script>
 </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonority</title>
+  <style>
+    @font-face {
+    font-family: 'sonority';
+    src: url("{{ url_for('static', filename='font/sonority.ttf') }}") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    h1 {
+        font-family: sans-serif;
+    }
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+
+    
+    .son {
+      word-spacing: 1rem;
+      margin-top: 1rem;
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 6px;
+      font-family: 'sonority', sans-serif
+    }
+    p {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 6px;
+      font-family: sans-serif;
+    }
+    .large {
+      font-size: 32px;
+    }
+    .red {
+        color: red;
+    }
+  </style>
+</head>
 
 <body>
+  <h1>What is Sonority?</h1>
+  <p class="red">Todo: update ɚ and r symbols</p>
+  <p>Sonority is a typeface for the IPA which aims to unify existing symbols with iconic pictoral representations, while maintaining readability for existing users. 
+  <img style="width: 100%" src="images/son.png">
+  The current version includes 32 unique glyphs representing 38 phonemes, including 10 vowels and 22 other sounds. The fontface aims to make phonemic representation more accessible while remaining useful for a wide audience. In particular, the following features are conveyed pictorially:
+  </p>
+  <ul>
+    <li>Width of glyphs correspond to sonority: vowels take up more space, stops take up less.</li>
+    <li>Vowel height and backness: back vowels round and large, front vowels arranged by height.</li>
+    <li>Voicing contrast: each pair of unvoiced and voiced stops p/b, t/d, k/g are identical except for the positioning of the break symbol. Unvoiced stops have high break points, while voiced stops have low break points. The labiodental fricatives f/v are designed similarly. </li>
+    <li>sibilants and affricates s, z, tf, d3 resemble a bumpy path, representing friction. </li>
+    <li>nasals depict airflow exiting the nasal cavity as opposed to the oral cavity. This is the only set of representations which are physically iconic. </li>
+  </ul>
+
+  <h3>The CVC pattern</h3>
+
+  <h2 class="son large">hɒp</h2><p>(hop)</p>
+  <h2 class="son large">sɪt</h2><p>(sit)</p>
+  <h2 class="son large">kæt</h2><p>(cat)</p>
+  <h2 class="son large"> ræbɪt</h2><p>(rabbit)</p>
+  <h2 class="son large">træns</h2><p>(trance)</p> 
+
+  <h3>More examples</h3>
+    <div class="output">
+      <p>That quick beige fox jumped in the air over each thin dog. "Look out", I shout, "for he's foiled you again, creating chaos!"</p>
+      <p class="son large">ðæt kwɪk beɪʒ fɑks dʒʌmpt ɪn ði eər oʊvər itʃ θɪn dɔɡ. lʊk aʊt, aɪ ʃaʊt, fɔr hi'z fɔɪld ju əɡɛn, krieɪtɪŋ keɪɑs.</p>
+
+      <p>With tenure, Suzie’d have all the more leisure for yachting, but her publications are no good</p>
+      <p class="son large">wɪθ ˈtɛnjɚ ˈsuzi d hæv ɔl ðə mɔɹ ˈlɛʒɚ fɔɹ ˈjɑtɪŋ, bət hɚ ˌpʌblɪˈkeɪʃənz ɑɹ noʊ ɡʊd</p>
+    </div>
+    <!-- <form method="post">
+      <label for="content">Enter text:</label>
+      <textarea name="content" id="content" placeholder="Type here..."></textarea>
+      <br>
+      <button type="submit">Transcribe</button>
+    </form> -->
+
+</body>
+
+<!-- <body>
     <div class="flex-row">
         <div class="flex-column">
             
@@ -144,6 +235,6 @@
             <p>This is a class project for RISD0420O: Screen Based Images, taught by <a href="https://www.leahbeeferman.com/">Leah Beeferman</a> and is based on CLPS1310: Phonology, taught by <a href="https://www.urielcohenpriva.com/">Uriel Cohen Priva</a>. </p>
         </div>
     </div>
-</body>
+</body> -->
 
 </html>
