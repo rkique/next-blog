@@ -89,7 +89,7 @@ img {
 .bio {
     text-align: right;
     width: 340px;
-    font-size: 12px;
+    font-size: 0.9rem;
 }
 .bio-diff {
     transform: scale(0.34) translate(-80%, -240%);
@@ -108,9 +108,10 @@ img {
 .golf-div{
     position: relative;
     z-index: 3;
+    margin-top: 9em;
 }
 .bio, .bio-popout, .bio-diff, .bio-unpr {
-    position: absolute;
+    /* position: absolute; */
 }
 #quotes {
     font-family: 'Courier New', Courier, monospace;
