@@ -11,6 +11,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <script src="onload.js"></script>
     <script src="topbar_script.js"></script>
+    <style>
+  :root {
+    --failure: rgb(140, 0, 0);
+    --success: rgb(0, 70, 0);
+    --banner-perfect: #22ffed;
+    --banner-impressive: #00d92f;
+    --banner-great: #2889ff;
+    --banner-good: rgb(192, 202, 52);
+    --banner-closecall: #d41b11;
+    --soft-check: #647035ff;
+    --soft-failure: #3c1d1dff;
+    --0: #181818;
+    --2: #222222;
+    --4: #3a3a3a;
+    --c: #e0dccc;
+    --hover-color: #f0ece0;
+    --emphasis-color: #f1cd50;
+    --border-color: #5c5c5c;
+    --logo-color: #c8c2b2;
+    --text-color: #c6bca4;
+    --background-color: #181818;
+    --grayed-out-background: #2a2a2a;
+    --grayed-out-color: #837e74;
+    --grayed-out-color-help-target: #9c9584;
+    --grayed-out-color-unfocused: #434343;
+  }
+</style>
 </head>
 
 <body>
@@ -26,18 +53,20 @@
             <!-- <svg class="bio-popout" >
                 <ellipse cx="210" cy="150" rx="110" ry="70" fill="yellow" />
               </svg> -->
-            <p class="bio" >I'm a student at Brown University. <br><br>
+            <p class="bio" >I'm a senior at Brown University studying math, computer science, and linguistics. If I had to distill my research interests in one sentence, it would be "revealing deep structure in language". If I had to write more than one sentence, I would probably describe a project of mine and I wouldn't be getting it right. This is my personal website, and a running catalogue of my thoughts since 2021. <br><br>
                 You can contact me by <a href="mailto:eriq.xia@gmail.com"><span
                         class="toggle">email;eriq.xia@</span></a> or reach out on <a
-                    href="https://www.instagram.com/eriq.xia/"><span class="toggle">instagram;@eriq.xia</span></a>. 
-                    <br><br>
-                     My art account
-                is called <a href="https://www.instagram.com/in0cenc/">
-                    <span>in0cenc</span>
-                    <br></a>
+                    href="https://www.instagram.com/eriq.xia/"><span class="toggle">instagram;@eriq.xia</span></a>. I will definitely read your message, and do my best to reply. I also have an art account called <a href="https://www.instagram.com/in0cenc/">
+                    <span>in0cenc</span></a>, which I would like to be only new things but sometimes its just charcoal drawings of buildings.
                 </p>
             </div>
-            <div class="golf-div"><span class="header-sub banner-golf"><a href="https://www.word.golf">word golf</a></span> a language sport</div>
+            <div class="bio-project projects flex center">
+            <a href="https://word.golf/">
+                <h1> word.golf</h1>
+                a sport played with the meanings of words
+                <img class="w-100" src="images/wg_2021.png">
+            </a>
+            </div>
 
             <div class="noselect mv2">
                 <!-- <img src="images/doesnt_have_to.gif" style="width: 100%;"> -->
@@ -653,11 +682,6 @@ auctioneering brings to mind the detached, clinical sounds of the airport interc
                 <a href="GANs.html"> <b>(2019) GANs </b> <img
                         src="images/polaroids.png"></a>
                         <span class="pill-text br-pill ph1 pv1 mb0 ba white">geoart</span> 
-                <a href="sll.html">
-                    <img id="duality" src="images/sll.png">
-                    <span class="pill-text br-pill ph1 pv1 mb0 ba white">logic</span> 
-                    <span class="pill-text br-pill ph1 pv1 mb0 ba white">semantics</span> 
-                </a>
         </div>
         <div class="projects-2">
             <a href="https://github.com/rkique/syntax-sae"> Syntax-based Contextual Visualizations for LLM interpretability
@@ -691,8 +715,13 @@ auctioneering brings to mind the detached, clinical sounds of the airport interc
                     <p><i>Brown Undergraduate Linguistics Expo 2023.</i> I propose that idiomatic ditransitive + up expressions such as <i>give up my seat</i> infer direct objects ("to them") or even indirect ones (e.g. <i>give up</i>) after the Keenan-Comrie Accessibility Hierarchy. </p>
                 </a>
             </div>
-            <div class="PCA"><p><a href="other/Linear_Term_Paper-5.pdf"><span class="pill-text br-pill ph1 pv1 mb0 ba white">Linear Algebra</span><b> Principal Component Analysis </b> <img src="images/PCAblog.PNG"></a></p>
-            </div>
+            <a href="sll.html">
+                    <img id="duality" src="images/sll.png">
+                    <span class="pill-text br-pill ph1 pv1 mb0 ba white">logic</span> 
+                    <span class="pill-text br-pill ph1 pv1 mb0 ba white">semantics</span> 
+            </a>
+            <!-- <div class="PCA"><p><a href="other/Linear_Term_Paper-5.pdf"><span class="pill-text br-pill ph1 pv1 mb0 ba white">Linear Algebra</span><b> Principal Component Analysis </b> <img src="images/PCAblog.PNG"></a></p>
+            </div> -->
 
         </div>
     </div>

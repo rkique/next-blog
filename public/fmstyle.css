@@ -1,8 +1,7 @@
 html {
-    background: black;
+    background-color: var(--0);
 }
 .super {
-    background-color: black;
     color: rgb(247, 251, 229);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -84,12 +83,14 @@ img {
 
 .bio-container {
     height: 40px;
+    margin-bottom: 10rem;
 }
 
 .bio {
-    text-align: right;
+    margin: 1rem;
+    text-align: left;
     width: 340px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 .bio-diff {
     transform: scale(0.34) translate(-80%, -240%);
@@ -130,7 +131,10 @@ img {
     position: relative;
     z-index: 2;
 }
-
+.bio-project {
+    max-width: none !important;
+    justify-content: space-around;
+}
 .projects {
     max-width: 22em;
 }
