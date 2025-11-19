@@ -4,6 +4,8 @@
 posts/.obsidian
 .obsidian
 
+.png
+
 # dependencies
 /node_modules
 /.pnp
