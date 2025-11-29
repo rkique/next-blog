@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-    color: rgb(182, 195, 29);
+    color: rgb(244, 255, 125);
 }
 
 img { 
@@ -73,7 +73,9 @@ img {
 
 .left {
 }
-
+.unica {
+    font-family: 'Unica One', cursive;
+}
 .main {
     max-width: 28em;
     font-family: Arial, Helvetica, sans-serif;
@@ -83,14 +85,15 @@ img {
 
 .bio-container {
     height: 40px;
-    margin-bottom: 10rem;
+    margin-bottom: 29rem;
 }
 
 .bio {
     margin: 1rem;
     text-align: left;
     width: 340px;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Averia Serif Libre', serif;
 }
 .bio-diff {
     transform: scale(0.34) translate(-80%, -240%);
@@ -122,7 +125,7 @@ img {
     font-size: 20px;
     position: absolute;
     top: 27px;
-    left: 176px;
+    left: 236px;
 }
 
 .pfp {
@@ -182,11 +185,12 @@ img {
 }
 
 .header {
+    font-family: 'Unica One';
     color: rgb(229, 244, 164);
     text-align: center;
     letter-spacing: -0.07em;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 64px;
     margin: 0 0;
 }
 
