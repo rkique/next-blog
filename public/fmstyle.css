@@ -2,36 +2,113 @@ html {
     --text-color: #080849;
     background-color: var(--0);
 }
+
 .super {
     color: rgb(247, 251, 229);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: initial;
-        outline: 2px dotted red;
+    outline: 2px dotted red;
 }
-.super > :nth-child(odd) {
+
+.super> :nth-child(odd) {
     outline: 2px dotted red;
 }
 
 div {
-    margin: 1em 0 2em 0;
+    margin: 1em 0 1em 0;
 }
 
 p {
     margin: 0 0 0.5em 0;
 }
 
+:root {
+    --failure: rgb(140, 0, 0);
+    --header-text: white;
+    --header-text-sub: rgb(0, 0, 0);
+    --interactable: rgb(0, 0, 0);
+    --banner-text-bg: rgb(255, 255, 192);
+    --banner-text: rgb(188, 50, 0);
+}
+
+#emailModal {
+    margin: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#emailFormText {
+    padding: 2rem 2rem;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+.email-modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 1.25rem;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close:hover {
+    color: #000;
+}
+
+#emailInput {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+#emailForm button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #145d5d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#emailForm button:hover {
+    background: #333;
+}
+
+
 .projects a {
     color: var(--text-color);
     padding: 0.5vw 0.5vh;
 }
+
 .projects-2 a {
     color: var(--text-color);
     padding: 0.5vw 0.5vh;
 }
 
 a {
-    color:  var(--text-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -39,8 +116,8 @@ a:hover {
     background: rgb(244, 255, 125);
 }
 
-img { 
-     max-width: 20em;
+img {
+    max-width: 20em;
 }
 
 .fl {
@@ -48,12 +125,12 @@ img {
 }
 
 
-.projects-2 img{
-  margin: auto;
-  display: block;
+.projects-2 img {
+    margin: auto;
+    display: block;
 }
 
-.blog{
+.blog {
     font-size: 14px;
     min-width: 24vw;
     max-width: 24vw;
@@ -62,22 +139,26 @@ img {
     overflow-x: hidden;
     color: var(--text-color);
 }
+
 .projects {
     font-family: 'Inter', sans-serif;
 }
+
 .bio-photo {
     z-index: -1;
     background: #439890;
 }
-.projects-2{
+
+.projects-2 {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
-.daily-blog p{
+
+.daily-blog p {
     display: block;
 }
 
-.projects img{
+.projects img {
     max-width: 320px;
 }
 
@@ -85,11 +166,12 @@ img {
     max-width: 200px;
 } */
 
-.left {
-}
+.left {}
+
 .unica {
     font-family: 'Unica One', cursive;
 }
+
 .main {
     max-width: 28em;
     font-family: Arial, Helvetica, sans-serif;
@@ -110,11 +192,12 @@ img {
     font-size: 0.8rem;
     font-family: 'Averia Serif Libre', serif;
 }
+
 .bio-diff {
     transform: scale(0.34) translate(-80%, -240%);
 }
 
-.bio-unpr{
+.bio-unpr {
     transform: scale(0.34) translate(-70%, -430%);
 }
 
@@ -124,14 +207,20 @@ img {
     width: 600px;
     height: 250px;
 }
-.golf-div{
+
+.golf-div {
     position: relative;
     z-index: 3;
     margin-top: 9em;
 }
-.bio, .bio-popout, .bio-diff, .bio-unpr {
+
+.bio,
+.bio-popout,
+.bio-diff,
+.bio-unpr {
     /* position: absolute; */
 }
+
 #quotes {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -143,26 +232,35 @@ img {
     position: relative;
     z-index: 2;
 }
+
 .bio-project {
+    margin: 0;
     max-width: none !important;
     justify-content: space-around;
 }
+
 .projects {
     max-width: 22em;
 }
+
 .projects-2 {
     max-width: 25em;
 }
-.projects-2 a,p{
+
+.projects-2 a,
+p {
     max-width: 400px;
     display: block;
 }
-.projects a, p{
+
+.projects a,
+p {
     display: block;
-    
+
 }
 
-.projects a:hover, .projects-2 a:hover{
+.projects a:hover,
+.projects-2 a:hover {
     cursor: pointer;
     outline-offset: 2px;
     outline: 2px solid white;
@@ -175,7 +273,8 @@ img {
 .blog a {
     color: rgb(16, 125, 129);
 }
-.gallery{
+
+.gallery {
     background: rgb(0, 0, 0);
     display: flex;
     max-width: 100%;
@@ -193,17 +292,19 @@ img {
     width: 8em;
 }
 
-.chin-small{
+.chin-small {
     color: #080849;
     font-size: 20px;
     position: absolute;
     left: 230px;
     top: 30px;
 }
-.bio-photo{
+
+.bio-photo {
     max-width: 55%;
 }
-.bio-photo-wrap{
+
+.bio-photo-wrap {
     display: flex;
     justify-content: space-around;
 }
@@ -233,4 +334,3 @@ img {
     /* display: none; */
     color: var(--interactable)
 }
-
