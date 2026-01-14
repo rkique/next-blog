@@ -67,11 +67,19 @@ if(idxidx < idxArray.length)
     thisIdx = idxArray[idxidx] 
    quoteArray[thisIdx] = randomElement[thisIdx]
    idxidx +=1
-   document.getElementById("quotes").innerText = quoteArray.join("")
+   //document.getElementById("quotes").innerText = quoteArray.join("")
 }
 }
 changeQuote()
 setInterval(function(){changeQuote()}, 5000)
 setInterval(function(){spreadText()},40)
+
+// Defer loading of topbar_script.js
+window.onload = function() {
+    const script = document.createElement('script');
+    script.src = 'topbar_script.js';
+    script.defer = true;
+    document.head.appendChild(script);
+};
 
 
