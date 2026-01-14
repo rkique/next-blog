@@ -27,7 +27,7 @@
         <div class="email-modal-content">
             <span class="close" onclick="closeEmailModal()">&times;</span>
             <form id="emailForm">
-                <p id="emailFormText">Most word games are fun for the wrong reasons. I want to build games with words - and shared representations more broadly - which are complex, intricate, and rich. Sign up here to try prototypes (no spam, promise). </p>
+                <p id="emailFormText">Word games are fun, but they don't go deep enough. I want to build games with words - and shared representations more broadly - which are more complex, intricate, and rich. Sign up here to try prototypes (no spam, promise). </p>
                 <input type="email" id="emailInput" placeholder="your email" required>
                 <button type="submit">Submit</button>
             </form>
@@ -1425,9 +1425,15 @@ and the continuity of the spirit
             body: JSON.stringify({ email: email })
         })
         .then(() => {
-            alert('Thanks! Email saved.');
-            this.reset();
-            closeEmailModal();
+            const button = this.querySelector('button');
+            button.textContent = 'Submitted ✓';
+            button.disabled = true;
+            setTimeout(() => {
+                closeEmailModal();
+                button.textContent = 'Submit';
+                button.disabled = false;
+                this.reset();
+            }, 1000);
         })
         .catch(err => {
             console.error(err);

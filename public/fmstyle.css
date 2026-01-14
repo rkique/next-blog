@@ -46,6 +46,7 @@ p {
 }
 
 #emailFormText {
+    font-size: 1.25rem;
     padding: 2rem 2rem;
     font-family: 'Averia Serif Libre', serif;
 }
