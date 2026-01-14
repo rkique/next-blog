@@ -22,57 +22,41 @@ function initToggle(){
     toggles.forEach(toggle => toggle.style.display = "inline")
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const items = document.querySelectorAll('#daily-blog *');
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('#daily-blog *');
     
-//     const loadMoreButton = document.getElementById('loadMore');
-//     let itemsToShow = 20; // Number of items to show initially
+    const loadMoreButton = document.getElementById('loadMore');
+    let itemsToShow = 20; // Number of items to show initially
   
-//     // Show the initial items
-//     for (let i = 0; i < itemsToShow && i < items.length; i++) {
-//       items[i].style.display = 'block';
-//     }
+    // Show the initial items
+    for (let i = 0; i < itemsToShow && i < items.length; i++) {
+      items[i].style.display = 'block';
+    }
   
-//     // Add click event to the button
-//     loadMoreButton.addEventListener('click', () => {
-//       const hiddenItems = Array.from(items).filter(item => item.style.display === 'none');
+    // Add click event to the button
+    loadMoreButton.addEventListener('click', () => {
+      const hiddenItems = Array.from(items).filter(item => item.style.display === 'none');
   
-//       if (hiddenItems.length === 0) {
-//         loadMoreButton.style.display = 'none'; // Hide the button if no more items to load
-//         return;
-//       }
+      if (hiddenItems.length === 0) {
+        loadMoreButton.style.display = 'none'; // Hide the button if no more items to load
+        return;
+      }
   
-//       const itemsToReveal = Math.min(hiddenItems.length, itemsToShow);
+      const itemsToReveal = Math.min(hiddenItems.length, itemsToShow);
   
-//       for (let i = 0; i < itemsToReveal; i++) {
-//         hiddenItems[i].style.display = 'block';
-//       }
+      for (let i = 0; i < itemsToReveal; i++) {
+        hiddenItems[i].style.display = 'block';
+      }
   
-//       // Hide the button if no more items to load
-//       if (hiddenItems.length <= itemsToShow) {
-//         loadMoreButton.style.display = 'none';
-//       }
-//     });
-//   });
+      // Hide the button if no more items to load
+      if (hiddenItems.length <= itemsToShow) {
+        loadMoreButton.style.display = 'none';
+      }
+    });
+  });
 
 
 window.onload = function(){
     initToggle()
-
-    // Defer loading of scripts
-    const script1 = document.createElement('script');
-    script1.src = 'https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js';
-    script1.defer = true;
-    document.head.appendChild(script1);
-
-    const script2 = document.createElement('script');
-    script2.src = 'onload.js';
-    script2.defer = true;
-    document.head.appendChild(script2);
-
-    const script3 = document.createElement('script');
-    script3.src = 'topbar_script.js';
-    script3.defer = true;
-    document.head.appendChild(script3);
-};
+}
 

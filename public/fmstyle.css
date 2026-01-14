@@ -1,4 +1,5 @@
 html {
+    --text-color: #080849;
     background-color: var(--0);
 }
 .super {
@@ -6,6 +7,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: initial;
+        outline: 2px dotted red;
+}
+.super > :nth-child(odd) {
+    outline: 2px dotted red;
 }
 
 div {
@@ -17,21 +22,21 @@ p {
 }
 
 .projects a {
-    color: rgb(247, 251, 229);
+    color: var(--text-color);
     padding: 0.5vw 0.5vh;
 }
 .projects-2 a {
-    color: rgb(247, 251, 229);
+    color: var(--text-color);
     padding: 0.5vw 0.5vh;
 }
 
 a {
-    color: rgb(18, 173, 178);
+    color:  var(--text-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(244, 255, 125);
+    background: rgb(244, 255, 125);
 }
 
 img { 
@@ -55,12 +60,14 @@ img {
     max-height: 200vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    color: var(--text-color);
 }
 .projects {
     font-family: 'Inter', sans-serif;
 }
 .bio-photo {
     z-index: -1;
+    background: #439890;
 }
 .projects-2{
     font-family: 'Inter', sans-serif;
@@ -96,7 +103,7 @@ img {
 }
 
 .bio {
-    color: rgb(189, 200, 183);
+    color: var(--text-color);
     margin: 1rem 2rem;
     text-align: left;
     width: 340px;
@@ -187,6 +194,7 @@ img {
 }
 
 .chin-small{
+    color: #080849;
     font-size: 20px;
     position: absolute;
     left: 230px;
