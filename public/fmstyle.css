@@ -49,6 +49,7 @@ p {
     font-size: 1.25rem;
     padding: 2rem 2rem;
     font-family: 'Averia Serif Libre', serif;
+    color: rgb(90, 90, 84);
 }
 
 .email-modal-content {
@@ -62,10 +63,11 @@ p {
 }
 
 .close {
+    font-family: 'Averia Serif Libre', serif;
     float: right;
     font-size: 2rem;
     cursor: pointer;
-    color: #aaa;
+    color: rgb(90, 90, 84);
 }
 
 .close:hover {
