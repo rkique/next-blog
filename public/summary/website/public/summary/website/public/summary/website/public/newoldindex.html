@@ -1,0 +1,669 @@
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1,h2,h3,h4,h5 { 
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: -1;
+        margin: 0.3em 0em 0.3em 0;
+        }
+        p{
+
+        }
+        :root {
+        --textColor:black;
+        --bgColor:#ffffff;
+        --linkColor:blue;
+        }
+    .clippy{
+        filter: drop-shadow(5px 5px 10px black);
+        mix-blend-mode: darken;
+        z-index: 100;
+    }
+    .selfie{
+        right: 440px;
+        top: -20px;
+    }         .selfie:hover{
+        mix-blend-mode: multiply;
+    }
+    .cars:hover {
+        transition-duration: 0.3s;
+        filter: drop-shadow(-5px -5px 10px rgb(255, 252, 187));
+    }
+    .cars{
+        background: rgb(241, 255, 153);
+        mix-blend-mode: normal;
+        filter: brightness(1.2);
+        right: 100px;
+        top: 500px;
+    }
+    .bluehover:hover{
+        color: blue !important;
+    }
+    .nohover:hover, .nohover *:hover{
+        border: none;
+        outline: none;
+    }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+    #outlineContainer {
+        direction:rtl; 
+        position: fixed;
+        cursor: grab;
+        overflow: auto;
+        width: 14%;
+        left: 0px;
+        top: 0;
+        bottom: 0;
+        color: var(--text-color);
+        font-size: 12px;
+    }
+
+
+    
+    #outlineContainer {
+        direction:rtl; 
+        position: fixed;
+        cursor: grab;
+        overflow: auto;
+        width: 14%;
+        left: 0px;
+        top: 0;
+        bottom: 0;
+        color: var(--text-color);
+        font-size: 12px;
+    }
+
+    #outlineContainerInternals{
+        direction: ltr;
+    }
+    
+    #linksContainer {
+        margin-left: 0.6em;
+    }
+
+
+    p {
+        margin: 0em 0em;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0.25em 0.25em 0em 0em;
+        font-size: 24px;
+        font-family: 'Padauk', sans-serif;
+        color: var(--text-color);
+    }
+
+    .small {
+        font-size: 12px;
+    }
+
+    ul {
+        margin: 0.75em 0em;
+    }
+
+
+
+    #main h3 {
+        padding: 0.1em 0.3em;
+        margin: 0.5em 0em;
+        border: 1px solid var(--text-color);
+        color: var(--text-color);
+
+    }
+
+    .shrine {
+        font-size: 20px;
+        background: rgb(0, 0, 0);
+        letter-spacing: -0.03px;
+        color: rgb(255, 255, 255);
+    }
+    .aa {
+        font-size: 1.2em;
+    }
+    .aa a {
+        color: rgb(143, 135, 111) !important;
+        text-decoration: none;
+    }
+
+    .invhov:hover {
+        filter: invert();
+    }
+    .hhover {
+        transition: all .2s ease-in-out;
+    }
+
+
+    .hhover:hover {
+        color: red;
+    }
+
+    html {
+        background-color: rgb(5, 5, 5);
+        background-attachment: fixed;
+        font-size: 14px;
+        line-height: 1.44;
+        font-family: sans-serif;
+        color: var(--hl-color);
+        padding-top: 0px;
+        min-height: 100%;
+        height: 900px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .image {
+        width: 100%;
+        margin: 1em 0em;
+    }
+    
+    .image2 {
+        width: 49%;
+        display: inline;
+        margin: 1em 0em;
+    }
+    #quotes {
+        overflow-y: hidden;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: yellow;
+        font-size: 17px;
+        color: rgb(15, 0, 153);
+        text-transform: uppercase;
+        z-index: 999;   
+        text-align: left;
+        letter-spacing: -0.06em;
+    }
+
+    #quotes2 {
+        font-weight: 300;
+        font-family: sans-serif;
+        overflow-y: hidden;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: rgb(0, 0, 0);
+        padding: 0px -20px 0px 0px;
+        font-size: 20px;
+        color: rgb(255, 255, 244);
+        z-index: 999;  
+        text-align: right;
+        letter-spacing: -0.02em;
+    }
+    #media {
+        max-width: 200%;
+        width: 130%;
+        margin-left: -30%;
+        z-index: 100;
+        filter: drop-shadow(8px 0px 12px rgb(0, 0, 0));
+    }
+    @media screen and (max-width: 992px) {
+
+
+        .rightbar {
+            display: none;
+        }
+
+        #quotes {
+            display: none;
+
+        }
+    }
+
+    blockquote {
+        background: none;
+        font-style: oblique;
+    }
+
+
+    blockquote {
+        margin: 0em 1em;
+        white-space: pre-wrap;
+        /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        word-wrap: break-word;
+        /* Internet Explorer 5.5+ */
+    }
+
+    pre {
+        white-space: pre-wrap;
+        /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        word-wrap: break-word;
+        /* Internet Explorer 5.5+ */
+    }
+
+    a::hover {
+        font-style: oblique;
+    }
+
+    #main p {
+        margin: 0.45em 0em;
+    }
+
+    #topbar {
+        left: 5px;
+        line-height: 0.98;
+        top: 2px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        text-align: center;
+
+    }
+
+    #topbar a:hover{
+        mix-blend-mode: difference;
+    }
+    .hl {
+        background-color: var(--hl)
+    }
+
+    #social_media{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: flex-start;
+    }
+
+    #social_media a {
+        text-decoration: none;
+
+    }
+    .second-media {
+        height: 58%;
+    }
+    #media2 {
+        background-image: linear-gradient(red, yellow);
+        width: 100%;
+        filter: drop-shadow(0 -10px 8px black);
+    }
+
+    .bg-blu{
+        background: rgb(23, 49, 73);
+        color: white;
+    }
+    .bg-yello {
+        background: rgb(255, 255, 0);
+    }
+    .goodreads
+    {
+        margin-top: 7px;
+       height: 55px;
+       font-weight: 200;
+       font-size: 40px;
+       background: #F4F1EA;
+       color: #392415;
+    }
+    .rightbar {
+        position: absolute;
+        top: 0px;
+        right: -60px;
+        width: 180px;
+        height: 100%;
+        transition: right 0.4s ease-in-out;
+    }
+    
+
+    .webring{
+        height: 100% !important;
+    }
+
+    .rightbar *::selection {
+        background-color: #3eafdb
+    }
+    .pa2{
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .modern{
+        color:rgb(223, 223, 189);
+        border-color: cyan;
+        letter-spacing: -0.07em;
+        box-shadow: -5px 5px 5px rgb(4, 67, 0);
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+        border: 3px solid rgb(250, 242, 0);
+        border-right-width: 0px;
+        border-left-width: 0px;
+        border-bottom-width: 0px;
+        padding: 0px 5px;
+        margin-top: 4px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+    .semimodern{
+        letter-spacing: -0.07em;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 0px 5px;
+        margin-top: 4px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+    .daily-feed{
+        border: 1px solid white;
+        color: white;
+
+    }
+    .invisible {
+        visibility: hidden; 
+    }
+    #email-decoration{
+        letter-spacing: 0px;
+         font-size: 11px;
+        vertical-align: top;
+        background: white;
+        color:rgb(119, 38, 0);
+
+    }
+    #book-list-block{
+        color:rgb(255, 255, 217);
+        overflow: hidden;
+        height: 4.5em;
+    }
+    #book-list-block--darker{
+        color:rgb(136, 136, 127);
+        overflow: hidden;
+        height: 4.5em;
+    }
+
+    #gallery-block {
+        background: red;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    #blowup {
+        width: 200%;
+    }
+
+    #brick-uses{
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    #daily-blog-container {
+        height: 66vh;
+        color:rgb(136, 136, 127);
+        border-color: rgb(255, 255, 255);
+        border-right-width: 10px;
+        border-left-color: rgb(255, 140, 16);
+        border-left-width: 3px;
+        border-bottom-width: 0px;
+        border-top-width: 0px;
+    }
+
+    .yello, #raspberry, #daily-blog div:first-child, #daily-blog p:first-child, #daily-blog p:first-child *{
+        color:rgb(255, 255, 217);
+    }
+    #daily-blog{
+        text-align: justify;
+    }
+    #biography-container {
+        height: 80vh;
+        top: 50vh;
+    }
+    #daily-blog p a, #biography * a {
+        padding: 0;
+        color: rgb(168, 174, 129) !important;
+    }
+
+    #daily-blog * a:hover, #biography * a:hover{
+        color: blue !important;
+        outline: none;
+        border: none;
+    }
+
+
+    #daily-blog *{
+        padding: 3px 5px;
+    }
+    #daily-blog *+*{
+        padding: 6px 5px;
+    }
+    #lowtech{
+            margin-top: 7px;
+            height: 56px;
+        }
+
+
+    #biography {
+        font: 13px sans-serif;
+        line-height: 1.3;
+        text-align: justify;
+        border: 2px ridge rgb(255, 103, 2);
+        border-right-color: yellow;
+        border-left-width: 25px;
+        border-right-width: 20px;
+    }
+
+    #biography hr{
+        border-style: solid;
+        border-color:rgb(68, 68, 63)
+    }
+
+    #buttons-block *{
+        /* pointer-events: none; */
+    }
+
+    .noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
+}
+    #essays-blog {
+        border-color: white;
+        border-top-width: 4px;
+    }
+
+    .flicker a{
+        color: rgb(230, 194, 33);
+        font-size: 40px;
+    }
+    .clothes {
+        line-height: 1.10;
+        letter-spacing: 0.03rem;
+        font-size: 10px;
+        background:white;
+        outline: 100px;
+        box-shadow: 0 -40px 0 0 yellow inset;
+    }
+    .myhouse b, .clothes b{
+        letter-spacing: -0.04rem;
+        font-size: 13px;
+    }
+    .myhouse {
+        padding: 0.3em 0.3em;
+        background: rgb(235, 170, 50);
+        font-size: 13px;
+        line-height: 0.95;
+        letter-spacing: -0.04rem;
+    }
+    .utopia-hide:hover {
+        z-index: -999;
+    }
+    .bg-red {background-color: rgb(255, 0, 0);}
+    .bg-gradient1 {
+        background: linear-gradient(to right, rgb(248, 248, 248), rgb(224, 224, 224), rgb(255, 255, 159));
+    }
+    .bg-dark-red {background-color: rgb(145, 15, 15);}
+    .bg-dark-pink {background-color: rgb(148, 0, 74);}
+    .bg-orange {background-color: rgb(235, 94, 0);}
+    .github{background-color: #24292f}
+    .fleshed {
+        background:none;
+        z-index: -1000;
+        font-size: 15px;
+        color: rgb(163, 190, 9);
+        transform: translate(40px, 0px) scale(1.2);
+    }
+    .n_fleshed{
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+    #daily-blog * a:hover, #biography * a:hover{
+        color: blue !important;
+        outline: none;
+        border: none;
+    }
+    .soc {
+        margin-right: 0;
+        margin-left: 0;
+        width: 42vw;
+    }
+</style>
+
+<div class="flex ma0 pa2">
+<div class="w-30">
+    <p class="black">text that you can't see</p>
+</div>
+<div class="soc center">
+    <div class="aa">
+        <p class="white">I'm a college student who makes new things and tries to avoid fatal simplifications.
+        </p>
+        <ul class="white">
+            <li> A language sport called <a href="https://www.word.golf">word golf</a></li>
+            <li> <a href="images/ftsne.png">maps of language models</a></li>
+        </ul>
+        <p class="white"> Some older work</p>
+        <ul class="white">
+            <li> a synthetic biology <a href="https://synplifier.com" > dictionary </a></li>
+            <li> looking at <a href="esperanto1.html">how semantic shifts can be visualized</a> </li>
+            <li> examining <a href="arrow.html">arrow's theorem</a> </li>
+            <li> an experimental <a href="crisis.html">crisis debate format</a></li> 
+            <li> a landscape <a href="GANs.html">GAN</a></li>
+        </ul>
+        </div>
+        <div id="social_media" class="flex f5 w-100 h-50 bg-black">
+
+            <a href="https://www.linkedin.com/in/exia" class="fl bg-blue white pa1 pv1" >
+                <span style="font-size: 50px; position: absolute">𓅯</span> <span style="font-style: normal">connect with me on LinkedIn</span></a>
+            <a href="https://www.quora.com/profile/Eric-Xia-18" style="background-color: white; text-decoration: none;" class="fl dark-red pa1 b f2"><span>Quora</span></a>
+            <a href="https://www.instagram.com/eriq.xia/" style="text-decoration: none;" class="fl white bg-lightest-blue pa1 b f4 instagram"><span>Instagram</span></a>
+            <a href="https://github.com/rkique" style="text-decoration: none;" class="fl f2 github white pb0 ph4 tracked-tight f2"><span>github <span style="font-size: 50px; position: absolute">𓃠 𓃮</span></span></a>
+            <a href="https://www.goodreads.com/user/show/107099617-eric-xia" class="fl goodreads tracked-tight white pa1 ph4">goodreads <span style="font-size: 50px; position: absolute">𓄚</span></a>
+            <script src="https://yesterwebring.neocities.org/script-min.js"></script>
+            <webring-css site="https://eric-xia.com"></webring-css>
+            <div class="fl w-5 flicker white" ><a href="https://purplehello98.neocities.org/">‹</a></div>
+            <img src="images/lowtech2.PNG" id="lowtech" class="fl w-30">
+            <div class="fl w-5 flicker white"><a href="https://umabreakdown.neocities.org/">›</a></div>    
+            <p class="f5 w-90 horizontal dragscroll" id="quotes2"></p>
+            <a href="mailto:eriq.xia@gmail.com" class="fl bg-gradient1 navy pa1 b f2 w-60 cond draggable invert">email me <span id="email-decoration"> a quote, book rec, pictures of cool rocks </span></a>
+            <a href="https://gossipsweb.net" class="fl pa1 b f2 w-30 cond draggable "><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands."/></a>
+            <a class="fl bg-black yellow pa2 pv0" href="https://www.nintil.com" id="random_blog"  >⤺ visit blog</a>
+            <a class="fl bg-black yellow pa1 pv0" href="blogroll.js" id="random_blog" style="text-decoration: none">(s)</a>
+            <a class="fl bg-orange white cond pr1 pv0" href="https://hotlinewebring.club/eric-xia/next">&#60;hötline </a> 
+            <a class="fl bg-orange white cond pl1 pv0" href="https://hotlinewebring.club/eric-xia/previous">webrinĝ></a>
+            <a class="fl bg-washed-blue dark-red cond pa2 pv0 w-35 f6" href="https://www.sbnation.com/a/17776-football">Sports</a>
+            <a class="fl dark-red cond pa2 pv0 w-35 f6 invert" href="https://www.youtube.com/watch?v=b_V-VJQT6pM">Interface</a>
+            <a class="fl cond pa2 pv0 w-35 f6 orange invert" href="https://www.goodreads.com/shelf/show/self-help">Tarot</a>
+            <a class="fl cond pa2 pv0 w-35 f6 orange invert" href="https://www.costarastrology.com/">Tarot</a>
+            <a class="fl cond pa2 pv0 w-35 f6 orange invert" href="https://www.oblique-strategies.com/">Tarot</a>
+            <a class="fl dark-red cond pa2 pv0 w-35 f6 invert" href="https://www.mcmaster.com/animal-guards/animal-predator-decoys/">Surprise!</a>
+            <a class="fl dark-red cond pa2 pv0 w-35 f6 blue invert" href="http://www.2arms1head.com/">2a1h</a>
+            <a class="fl dark-red cond pa2 pv0 w-35 f6 blue invert" href="https://www.ribbonfarm.com/2017/08/17/the-premium-mediocre-life-of-maya-millennial/">PM</a>
+            <a class="fl dark-red cond pa2 pv0 w-35 f6 blue invert" href="https://forum.effectivealtruism.org/posts/qar8rGhomyNsQC85z/love-seems-like-a-high-priority">EA</a>
+            <a class="fl dark-red cond pa2 pv0 w-35 f6 blue invert" href="https://sive.rs/kimo">limit</a>
+        
+            <p class="fl w-70"></p>
+            <div id="gravelhacks" class="dib white ba b--hot-pink horizontal dragscroll w-30">
+            </div>
+            
+            <div id="brick-uses" class="dib white ba b--yellow horizontal dragscroll w-70">
+            </div>
+            <script>
+                setInterval(function(){
+                    if (k == 0) {lastIndex = invertElements.length-1}
+                    else {lastIndex = k-1}
+                    invertElements[lastIndex].style.filter = "invert(0)"
+                    invertElements[k].style.filter = "invert()"
+                    k++
+                    if(k > invertElements.length-1){k = 0}
+                },1000)
+            </script>
+            <div id="buttons-block" class="noselect">
+                <img class="invhov" src="images/doesnt_have_to.gif" style="width: 49%;">
+                <img class="invhov" href="https://yesterweb.org/no-to-web3/" src="images/noweb32.gif">
+                <img class="invhov" href="https://devurandom.xyz/tokipona/" src="https://devurandom.xyz/banners/tokipona_banner.gif">
+                <img class="invhov" src="images/diva.gif">
+                <img class="invhov" src="images/catscape2.gif">
+                <img class="invhov" src="images/apple.gif">
+                <img class="invhov" src="images/upallnight.gif">
+                <img class="invhov" src="images/htmldream.gif">
+                <img class="invhov" src="images/anticomplacent.png">
+                <img class="invhov" src="images/copyscape.gif">
+                <img class="invhov" src="images/neko.gif">
+                <img class="invhov" src="images/cyberrot.gif">
+                <a href="https://vastrecs.neocities.org/"><img class="invhov" src="images/world_end.png"></a>
+                <img class="invhov" src="images/internetexplerror.gif">
+                <img class="invhov" src="images/zine-banner.gif" style="width: 49%;">
+                </div>
+                <div class="fl w-100">
+                </div>
+                <p class="aa">
+                    <a href="recentindex.html">old website</a><br>
+                    <a href="oldindex.html">old website 2</a><br>
+                    <a href="archive.html">old website 3</a><br>
+                    <a href="viz.html">old website 4</a>
+                </p>
+        </div>
+</div>
+<!---->
+
+<div class="w-30">
+
+</div>
+</div>
+
+<div id="second_row" class="cf f5">
+    <script src="topbar_script.js"></script>
+    <script src="topbar_script2.js"></script>
+    <script src="blogroll.js"></script>
+</div>
+
+
+

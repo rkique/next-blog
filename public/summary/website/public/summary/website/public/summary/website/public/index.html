@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unica+One&display=swap"
+        rel="stylesheet">
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-637SKJYBQG"></script>
+    <!-- <script src="https://yesterwebring.neocities.org/script-min.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <link rel="stylesheet" href="fmcolors.css" />
+    <link rel="stylesheet" href="fmstyle.css" />
+    <link rel="stylesheet" href="fmtricks.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
+    <script src="onload.js"></script>
+    <script src="topbar_script.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+     <!-- Email Modal -->
+    <div id="emailModal">
+        <div class="email-modal-content">
+            <span class="close" onclick="closeEmailModal()">&times;</span>
+            <form id="emailForm">
+                <p id="emailFormText"> Word games like crosswords are fun, but they don't go deep enough. I want to build games with words - and shared representations more broadly - which are more complex, intricate, and rich. Sign up here to try prototypes (no spam, promise). </p>
+                <input type="email" id="emailInput" placeholder="your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="super">
+        <div class="main">
+            <div class="bio-container">
+                <div class="bio-photo-wrap">
+                    <p class="header"> ERiC xia</p>
+                    <p class="chin-small">ɕja</p>
+                    <img src="images/nov25pfp.webp" alt="Nov 25 selfie" class="bio-photo" />
+                </div>
+                <p class="bio">I am a researcher and creative in my final year at Brown University studying math,
+                    computer science, and linguistics. My research focuses are in task adaptation and applied
+                    interpretability of LLMs. More broadly, I'm interested in novel applications of emerging technologies. You can contact me by
+                    <a href="mailto:eriq.xia@gmail.com"><span class="toggle">email;eriq.xia@</span></a> or reach out on
+                    <a href="https://www.instagram.com/eriq.xia/"><span class="toggle">instagram;@eriq.xia</span></a>. I
+                    post art on <a href="https://www.instagram.com/in0cenc/">
+                        <span>in0cenc</span></a>.
+                </p>
+            </div>
+            <div class="bio-project projects flex center">
+                <a href="#" onclick="openEmailModal(event)">
+                    <div>
+                        <img class="w-100" src="images/miro_tester_a.png">
+                    </div>
+                </a>
+            </div>
+            <div class="bio-project projects flex center">
+                                <a href="https://word.golf/">
+                    <div>
+                        <h1 class="unica"> word.golf</h1>
+                        a sport played with the meanings of words
+                        <img class="w-100" src="images/wg_2021.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="noselect mv2">
+            <!-- <img src="images/doesnt_have_to.gif" style="width: 100%;"> -->
+            <!-- <img src="images/diva.gif">
+                <span class="header-sub banner-space"><a href="https://www.youtube.com/watch?v=gOuzR_NI8Q8">how to
+                    build your own online space</a></span> -->
+            <!-- <img src="images/catscape2.gif">
+                <img src="images/upallnight.gif">
+                <img src="images/htmldream.gif">
+                <img src="images/anticomplacent.png">
+                <img src="images/copyscape.gif">
+                <img src="images/neko.gif">
+                <img src="images/cyberrot.gif">
+                <a href="https://vastrecs.neocities.org/"><img src="images/world_end.png"></a> -->
+            <!-- <img src="images/internetexplerror.gif"> -->
+            <!-- <img src="images/zine-banner.gif" style="width: 49%;"> -->
+        </div>
+        <!-- <p id="quotes">Quote</p>
+                <div class="fl flicker"><a href="https://purplehello98.neocities.org/">‹</a></div>
+                <img src="images/lowtech2.PNG" id="lowtech" class="fl">
+                <div class="fl flicker"><a href="https://umabreakdown.neocities.org/">›</a></div>
+                <br><br><br><br><br>
+                <div>
+                <p><a class="fl" href="https://volbot.neocities.org/">&#60;hotline </a> <a class="fl" href="https://vulonkaaz.flyingcube.tech/">webring></a></p> <br>
+
+                <p><a href="culture.html">My Cultural Influences</a></p>
+                <p><a href="myhouse.html">My House</a></p>
+                <p><a href="clothes.html">Chasing Dreams by Changing Clothes</a></p>
+                <p><a href="https://www.eric-xia.com/arrow/index.html"><b>Arrow's Theorem: Unanimity, Irrelevance, Transitivity</b></a> </p>
+                <p><a href="https://www.eric-xia.com/gravel.html"> <b>GravelHacks</b></a></p>
+                <p><a href="https://www.eric-xia.com/hskreading"> <b>HSKReading articles on one page</b></a></p>
+                <p><a href="synplifier.html"><b>(2020) Protocol Simplifier</b> </a></p> -->
+        <!-- </div> -->
+
+    </div>
+
+    <div class="projects">
+        <a href="https://openreview.net/pdf?id=wCm3TFLNwr">
+            Linear Encodings from Task Adaptation through Finetuning
+            <img class="w-100" src="images/linear_maps.png">
+        </a>
+        <a href="https://aclanthology.org/2025.naacl-srw.22/">
+            Linearities from In-Context Learning
+            <img class="w-100" src="images/resultative.png">
+        </a>
+        <a href="other/syntax-sae.pdf"> Identifying Language Model Features by Syntactic Similarities
+            <img class="w-100" src="images/syntax-sae.png">
+        </a>
+        <a href="sonority.html">
+            <div class="">
+                Can the IPA be represented more pictographically?
+                <img src="images/sonority.png">
+            </div>
+        </a>
+        <a href="dl-final.html">
+            <img class="w-100" src="images/terraform.png">
+        </a>
+        <!-- <a href="images/px.mp4">
+                <a href="images/px.mp4">
+                <video class="w-100" controls autoplay muted playsinline preload="metadata">
+                    <source src="images/px.mp4" type="video/mp4">
+                    Your browser does not support the video tag. 
+                </video>
+                </a>
+            </a> -->
+        <img src="images/fdesert.png">
+        <img class="w-100" src="images/whitehorse.webp">
+        <a href="images/reproducibility_full.gif"><img src="images/reproducibility.gif">
+        </a>
+        <a href="GANs.html"> <b>(2019) GANs </b> <img src="images/polaroids.webp"></a>
+    </div>
+    <div class="projects-2">
+        <a href="https://github.com/jb2700/Hack-Harvard-2025">Graphic Objects as Remixable Compositions
+            <img class="w-100" src="images/promosaic.webp">
+        </a>
+        </a>
+        <a href="other/unalive.pdf">
+            The word 'unalive' is really reflexive intransitive 'kill'<img src="images/unalive.png"></a>
+        <div class="frog">
+            <a href="other/FrogECSC.pdf">
+                <p>Manner and path verb usage in children's spontaneous narratives </p>
+                <img style="z-index:-1" src="images/boydogfrog.png">
+            </a>
+        </div>
+        <div class="diVup">
+            <a href="other/up in ditransitive verbal complements.pdf">
+                <p><i>Up</i> in Ditransitive Verbal Complements </p>
+                <img src="images/diV.png">
+            </a>
+        </div>
+        <!-- <div class="PCA"><p><a href="other/Linear_Term_Paper-5.pdf"><span class="pill-text br-pill ph1 pv1 mb0 ba white">Linear Algebra</span><b> Principal Component Analysis </b> <img src="images/PCAblog.PNG"></a></p>
+            </div> -->
+
+    </div>
+    <div class="blog">
+        <div class="daily-blog" class="f6">
+            <p>(1.16.2026) The joy of travel is the joy of being anywhere at all.  </p>
+            <p>(1.15.2026) <i>Orlando:</i> <br><br>Returning home, she saluted each star, each peak, and each watch-fire as if they signalled to her alone; and at last, when she flung herself upon her mat in the gipsies' tent, she could not help bursting out again, How good to eat! How good to eat! For it is a curious fact that though human beings have such imperfect means of communication, that they can only say 'good to eat' when they mean 'beautiful' and the other way about, they will yet endure ridicule and misunderstanding rather than keep any experience to themselves. <br></p>
+            <p>(1.14.2026) <i>I write progressively for single nonexistent prior persons.</i> Confusion is not a single
+                moment but an indefinite state of affairs. Clarity when it exists is a naturally ballooning force. </p>
+            <p>(1.14.2026) Pull!</p>
+            <p>(12.29.2025) Reading ~/~ books, writing ~/~ words. Watching, Viewing, Seeing ~/~ video. Perceiving,
+                Thinking, Feeling ~/~ . </p>
+            <p>(12.29.2025) <i>Cat's Cradle</i>: Americans are always searching for love in forms it never takes in
+                places it can never be. It must have something to do with the vanquished frontier</p>
+            <p>(12.28.2025) <i>On the Calculation of Volume:</i> I have exchanged my hope for a mood and a frying pan.
+            <p>(12.22.2025) a stream of water flash frozen breadthwise carrying the thinnest sheet of ice, tasting
+                simultaneously of blood and coffee </p>
+            <p>(12.22.2025) a gap made wider for the joy of filling</p>
+            <p>(12.20.2025) Enrichment </p>
+            <p>(12.9.2025)</p>
+            <p>(12.4.2025) Today I was intimately convinced the purpose of the universe is to enable a five year old in
+                the back room of the Michaels in Attleboro, MA to stick a row of plastic sequined hearts in an order
+                which is aesthetically pleasing to God </p>
+            <p>(11.30.2025) Flashback to when I hated learning vocabulary because it was either here with me or a
+                hundred different ways to name a lugubriousness</p>
+            <p>(11.29.2025) Something being hard for the wrong reasons is honestly the most frustrating thing in the
+                world... yes in this particular instance I may be referring to doing the dishes but one can see this
+                also applies to research, art, politics etc.</p>
+            <p>(11.28.2025) Sweeping time. I still can't write</p>
+            <p>(11.24.2025)
+            <pre style="font-size: 9px">
+Let me put this in ways you understand. I covet the Word
+Words like 
+cross bar
+swing set 
+machine 
+push out
+But felt like 
+breezy
+laidback
+wishful
+whimsy
+I want to talk about these things more, gift them credibility
+because to describe the shape of a cloud will take far too much.
+A single day turning to night. It would take
+hundreds of hours to fit its glassy frame. 
+No, I don't have time. 
+Reduce it to a thought.
+Reduce it to a surface, a signal, a symbol, a syllable, 
+a picture, an image, a photo, a catalogue, a taxonomy,
+an algebra, a method, a play, a conversation, 
+an observation, a measurement, a speech, a patch of carpet.
+Reduce it to orchestral arrangement, a woodprint, 
+a bouquet of flowers, a transaction, a sigh of relief, 
+a test for routine bloodwork, the leaves which fell 
+from the poplar at Brown St. & Keene, or all the other leaves 
+in the world, or every drop of sweat at the university gym,
+or every drop of water running backwards up into the sky. </pre>
+            </p>
+            <p>(11.22.2025)
+                <br> <br> <s>Writing well is hard. Reading is easy because you can lie to yourself about how much you
+                    understand.</s>
+                <br><br>
+                Writing well is a skill. Reading is comes more naturally because there are rewards at every level of
+                comprehension.
+            </p>
+            <p>(11.19.2025) <i>Shroud</i> by Adrian Tchaikovsky is really good! Reminds me of the hawk who hunts with
+                traffic lights. </p>
+            <p>(11.19.2025) <s>As I grow more confident with my writing and read more math my impulse to imprint on my
+                    surroundings, whether through annotation or illustrated methods, has reduced.</s>
+                I make less, read more. But there isn't anything wrong with this. What I am scared of is my bar for
+                creative output rising so high that I suffocate and die. It's better to keep trying to grow in different
+                ways. </p>
+            <p>
+                (11.19.2025) My english class wants me to use everything. I don't want to use everything. It verges on
+                practiced ignorance yet I need to believe in the irreducibility of gazing across chain-linked trees, the
+                yellow leaves flickering only here and now. <br><br>
+                Rebecca Solnit agrees: the emotion stirred by the landscape is piercing, a joy close to pain when the
+                blue is deepest on the horizon or the clouds are doing those spectacular fleeting things so much easier
+                to recall than to describe. If there is a tightness to her writing it is actively practiced, no one
+                could say the beauty is in the words themselves.
+            </p>
+            <p>
+                (11.13.2025)
+                It's not that deep. love that obligatory EPP. Sorry. What I really meant to say was <br><br>
+                Live Laugh Love <br><br>
+            </p>
+            <p>
+                (11.2.2025) <br><br>
+                <b>I Hold The Net for Popping Bubbles</b> <br><br>
+                Your honor, I would like to report my urgency is justified. The daylight bears an impenetrable
+                thickness, the shadows cast themselves upon edges. While verification must always slip from the back of
+                my mind, it is undeniable that on bright blueish days I am compelled to cast a net of rope all over the
+                encompassing soap bubble, wider and taller than I know to name. On exhalation, I witness it: the film,
+                undulating at my lips. The cars leave barely perceptible traces when they pass through it, their speed
+                disrupting the enveloping barrier. When I walk around my hands and feet are compromised. <br><br>
+
+                I dream of cinching the braided strands around the trees, above the buildings, around the globe. I will
+                burst the iridescent gleam. Yes, I will regret my ridiculous impropriety. I will regret them at future
+                time. When the wet glistening threads fall to the grass, when the auras cast by street signs and pebbles
+                truly go, will I agree that a terrible mistake, a grave mistake, has been committed. But as long as
+                these compulsions come, the less important anything else could be.<br><br>
+
+                I'll stay in hotels, wear my silly suit, grovel and pander in shabby service so that I hold dear to
+                myself that ticket I've always clutched. That ticket is my birth certificate, a proof of life, sometimes
+                a ruinous sad stub. Sometimes decorated with colored pencils and chalk. Sometimes painted and sometimes
+                said. Sometimes I folded it into geometric shapes, in high school more than a thousand origami lions. It
+                doesn't matter how many words you put down but how many you pick up. How many you leave and how many you
+                leave to be seen.
+
+            </p>
+            <code style="font-size: 9px">
+(11.2.2025)
+Conceptually, it's all quite clear to me.
+The white lights streak and the yellow ones die.
+On my birthday, no one inhabited my special type. 
+Everyone loved to speak of the places they saw
+the roads changing from asphalt to dirt. The places which
+bear the affect of contrived opposition, subtle cross-linkages
+when everything's gone all wrong. On the news they will argue 
+about paradise. You couldn't stay but wished me best of luck.
+<br><br>
+You want me to lie to you, in stranger ways than I know.
+But I can only tell you true things, unburdened as I am by the flow
+or crush of time and desire. I could list everything that I have learned
+or I could simply point at things, draw them lying atop one another.<br><br>
+                </code>
+            <p>
+                (10.30.2025)
+                Tech is good because it can do things <br>
+                for others it didn't do for you. In Gaza <br>
+            </p>
+            <p>(10.27.2025) <br><br>
+                I <br>
+                Will <br>
+                Learn <br>
+                Everything! <br>
+            </p>
+            <p>(10.25.2025)
+                I did 1.000001 things I was proud of today, but that's better than 0.3 things.
+            </p>
+            <p>(10.22.2025) <br>
+                (something dumb I didn't think about very hard)
+            </p>
+            <p>(10.21.2025)
+            <pre style="font-size: 9px;">
+rabbits emerged costume-like underground from 
+dorms clothed in silky fabrics articulate wishes
+in tastes of congregation: shady alcoves and restive trees
+
+the truly correct dare not unclasp their hoods
+impervious to MORNING RUSH: pleading caffeinated 
+exceptionalism.
+jigsaw puzzle pieces, all of us, waiting to be passed over
+
+paradise must be tinged with sorrow, 
+interiority and anthropological conversion lost
+to the scattered frissons of complete quietude
+
+gorgeous? georgic? gem-like identities. An oaken wood box
+for preservation of curiosities? A heart-rending cry
+and the continuity of the spirit
+            </pre>
+            </p>
+            <p>(10.20.2025) the sensation of recapping a crinkly plastic water bottle is an exquisite pleasure...</p>
+            <p>(10.17.2025) <i>As Eve Said to the Serpent: On Landscape, Gender, and Art, Scapeland, Rebecca Solnit </i>
+                <br><br>
+                Our aesthetic language has been degenererating over the past century or so.... the picturesque was the
+                territory of the rough, the irregular, and the idiosyncratic. The sublime was the territory of the
+                phenomena that inspired terror, awe, and a sense of overwhelming majesty. The beauitful was specifically
+                characterized as the pleasing, the harmonious, the smooth. "The passion caused by the great and the
+                sublime in nature", writes Edmund Burke, "is astonishment, and astonishment is the state of the soul, in
+                which all its motions are supsended, with some degree of horror".</p>
+            <p>(10.13.2025) I should put a pause on reexamining my convictions, because I could go in circles all day.
+            </p>
+            <p>(10.10.2025) <i>Adrienne Rich</i> Most, if not all human lives are full of fantasy -- passive
+                day-dreaming which need not be acted on. But ... even to think well, is not fantasize... there has to be
+                an imaginative transformation of reality which is in no way passive. to question to challenge, to
+                conceive of alternatives, perhaps to the very life you are living at that moment. nothing can be too
+                sacred for the imagination to turn into its opposite or to call experimentally by another name. For
+                writing is renaming.</p>
+            <p>(10.8.2025) Updated the projects, might have more to come.</p>
+            <p>(10.1.2025)
+                sci*nce
+            </p>
+            <p>
+                (10.1.2025) My vision is crystal clear, but the path towards changes all the time.
+            </p>
+            <p>
+                (9.27.2025)
+                <i>Feeling into Words</i> Seamus Heaney <br><br>
+                The question, as ever, is 'How with this rage shall beauty hold a plea?' And my answer is, by offering
+                'befitting emblems of adversity'.
+            </p>
+            <p>
+                (9.26.2025)<br><br>
+                From the top of the Churchill house you can see four florescent domes like mushroom caps, when you look
+                left. If you look right you are struck instead by a great incongruity. Here lies the grey brick and
+                stone crosses and windows of the BioMed building. The wings and foyers are subdued, tastefully lit,
+                while as they rise upwards the sophistication gives way to a hint of a brutal industrial scale. The
+                fifth, sixth, seventh floors: dark brick and pale rectangles, set against the windows full of piercing
+                light. They are just barely the scale at which you are both disappointed at your own vantage point, and
+                impressed by their remoteness.
+                <br><br>
+                Let's talk about something else. Let's talk about color. I saw a chart once which looked at the
+                declining rates of cars which were any shade but white and black. From the thirties up to the 90s
+                there's a steady increase in yellows, reds, greens, blues: then at the turn of the millenium its like
+                those graphs of anthropogenic extinction. Once, we lived in a time full of colors, birds, and insects. I
+                am nearly certain of this. From my tasteful metal chair (a musical skeleton absent vibrational
+                capabilities) sitting atop a tasteful concrete block, all the cars I see are blacks and greys.
+                <br><br>
+                Black exudes power, but it loses something too. It loses the definition of color through which it must
+                be perceived. What can be described only in shades, created and recreated until we are willing to let it
+                go? These are, for the most part formal questions. As Berger says, art is not about life, but creation.
+                Perhaps it is also our best attempts to transform the instantaneous into the permanent. If you live
+                indefinitely in the present moment, then the existence of artistic objects are astonishing. As far as I
+                have figured out, nobody has figured out another way to live.
+
+            </p>
+            <p>
+                (9.25.2025) If it was all collage, if it was all bits and pieces of paper assembled and hung to one
+                another, I wouldn't want to do it. It must be better to examine a thing from a single perspective, and
+                really try to understand it, to build up and forget it again until your own surroundings bring it back
+                to life. You can do mise en place but there is no recipe except the one your own heart desires.
+            <p>(9.20.2025)
+                I am fully in support of shan't reentering the lexicon. How't else one describe
+                a volitional abberation?
+            </p>
+            <p>(9.19.2025)
+                In my last year of college, we revisit old patterns. <br>
+                So that we can appreciate, the newly unincomprehensible! Fluency barred realization.<br><br>
+
+                <i>e.e. cummings</i> <br><br>
+                anyone lived in a pretty how town<br>
+                (with up so floating many bells down)<br>
+                spring summer autumn winter<br>
+                he sang his didn't he danced his did.<br><br>
+
+            </p>
+            <p>(9.14.2025)</p>
+            <p style="font-size: 10px;">
+                <br><br>
+                Once, I had a pinched snout and short dreams <br>
+                in a place where I pointed out the window at infinity <br>
+                There were velvet reclining seats, glass as cold as ice <br>
+                But I dropped my ticket and spent the rest <br>
+                of the night trying to copy it from memory <br>
+                A declaration became a confession; a confession a joke <br>
+                I could not bring myself to finish<br>
+                So I shook my head and climbed the cold steel rungs of the ladder <br>
+                thirty miles down from heaven
+                <br><br>
+            </p>
+            <p>
+                (9.10.2025)
+                Nabakov is a savvy writer. Still, I have to ask, <i>why not observation?</i>
+            </p>
+            <p>
+                (9.8.2025)
+                The word 'Carcinisation', at least the way I see it used, is an autonym: a name which biologists
+                <i>converged</i> upon to describe a phenomenon in their field, which is in fact an arbitrary example of
+                a broader trend. Here's another passage from <i>Language and the Mind</i> describing arrows, not crabs
+                as their subject matter: <br><br>
+                "Arrows, presumably invented independently by a great many human groups, have certain similarities—they
+                have a sharp point at the front end and something to stabilize the back end, they tend to be similar
+                lengths, and so on. But
+                these properties simply reflect the optimal solutions for the problem at hand." <br>
+            </p>
+            <p>
+                Haha
+                <img src="images/lang*1.png">
+
+                We use language like it's free: we're all idealists when we talk to one another.
+            </p>
+            <p>
+                (9.5.2025) Let's try some more freeform. <br><br>
+                Draft Re: <i>Some Notes on Song</i><br><br>
+                Today as I was out running a car honked as I ran on the sidewalk, along some cluster of townhome
+                driveways. It was at the end of Reservoir, a very long and wide road heading south from Providence. I
+                kept running, but out of instinct I glanced left, and saw a tall white man and woman driving into the
+                space I had been a few seconds prior. I thought to myself, I had probably been mistaken. The honk had
+                not been a welcome or greeting, but a form of recognition. The gesture had not been about me, but about
+                themselves: announcing their own presence on the road at a distance dangerously close to my own.
+                <br><br>
+                But the fact remains that over the years people have responded to movement through an artificial,
+                self-sustained shout of their own. When they occur spontaneously as a result of my own activity, the
+                supportive honks are some of the strongest and delightful noises I have had the pleasure of playing a
+                role in creating. It's peculiar how the road and the climate in which a honk registers, especially on
+                the prolonged periods of contact during incoming traffic may use such signals, create a series of points
+                in time in which the use of the horn is intensified. In the back of my mind for almost every car which
+                goes by some social registry of the passerby exists, and the prospect of being noticed delights and
+                scares me. I imagine myself as a thin piece of wire waiting to get struck by lightning. <br><br>
+                The kinds of communication are so varied. When I watch others, I can almost never do it right on my own.
+                On some days, its a short double tap honk, on another multiple triples which emulate the sirens of a
+                boxing ring or soccer game. The intensity of the honk matters too, whether it is a slow, drawn out, and
+                persistent, or a drum tap followed by a sonorous melodic sound. A final patter that redshifts before it
+                fades away.<br><br>
+                In some cases it's not a honk, they are words of praise, words which are never remembered the way they
+                were said but in attitudes they stay. By the King County Metropolitan Airport, in the loose gravel banks
+                of a six-lane freeway, I witnessed a motorcyclist in full regalia watch my own eyes as I ran in his
+                direction, and ensuring I was watching him watch me, throttle his engine and shift his fingers into
+                'hang loose' signs. The attempts at leveling with me. The attempts at gifting me respect. The attempts
+                at speaking up, or the smiles which creep over those who do not know why but revel in the thought that
+                someone is doing it.<br> What thoughts go through the heads of those who watch the runners up and down
+                the city roads? I tell myself I will never judge them by their speeds. I tell myself I will judge them
+                by their bravery, but I end up trying to understand them by their self-absorption. The number of
+                feathers they envision themselves to be shedding. How much they commit towards forcing themselves to
+                understand fully that this is the world, and that this is all there is.
+            </p>
+            <p>
+                (8.29.2025)<br><br>
+                Imma write like Proust
+                When I am so moved by a movie so that I have felt some fractional part of my own identity change due to
+                the transference seen through the screen, I try very hard to remember a single name from the list of
+                credits, a hair stylist or an animation support staff, so that they gain a brief flash of recognition in
+                the broader sphere of public life, to close the loop of giving and getting, to make real their
+                sacrifices and reifying their expectations for success. Yet this is not in the hopes of symmetrical
+                recognition, because I know that the only things which drive art are arbitrary purposeless gifts of
+                interpretation and understanding, in which a hand is held still under a running faucet and the mind
+                counts from one to ten.
+
+                (rather it must be my civic duty speaking, my pleasure to be one of the crowd)
+
+            </p>
+            <p> (8.23.2025) The days are long, but they are never long enough </p>
+            <p>(8.20.2025)
+                Happy to report that I am still allergic to vacation ads
+            </p>
+            <p>
+                (8.19.2025)
+                Once, I was paid seven dollars and forty five cents through an app on my phone to wait inside a
+                restaurant. It was probably around nine pm but it felt a lot later. There was a lot of gravel and the
+                door was open. The building was low slung with electric light spilling out into the dark, and a massive
+                glass tank bubbled gently under auspicious wishes and the hum of an electric fan. The light made the
+                glass look all kinds of shades, yellow ochre and olive and maroon. All along the wall stood kitchen
+                equipment, upside-down chairs, japanese screens and rolled up paintings. I don't remember if there were
+                any fish in the tank. I don't think it really mattered.
+            </p>
+            <p>(8.18.2025)<br>
+                Q: What's the difference between an IDEA and a PLAN?<br><br>
+                A: A PLAN is the OPPOSITE of an IDEA. A PLAN is FILLING IN THE BLANKS.<br><br>
+                A: Sometimes, the best PLAN is no PLAN at all. God did a good job with that because he was blessed with
+                INFINITE TIME.<br><br>
+                A: (For the rest of us, it's probably best to try to build a rollercoaster)<br><br>
+            <p>(8.4.2025) I will be patient and not make so many mistakes</p>
+            <p>(8.4.2025) What a tiny, magnificent thread of history. What a gorgeous, infinitesmal part of the world.
+                What a fragile and perfect hallucination. What a terribly derivative work of art. What a shocking
+                fragment of language. What a devastating piece of news. <br><br>
+                What a beautiful view.<br><br>
+            </p>
+            <p>(7.28.2025) Even if I could only invent another form of prayer </p>
+            <p>(7.24.2025) There are a lot of numbers, luckily we only care about some of them. <br><br> There's
+                something beautiful about an unfurnished word, like neologisms, with only its simple original meaning.
+            </p>
+            <p>(7.19.2025) Karnoffsky has an idea for the “most conservative utopia”: an idea for a society that’s as
+                close to ours as possible while being unambiguously better. He suggests “everything is the same except
+                cancer doesn’t exist”.</p>
+            <p>(7.19.2025) I want to build a lot, lot, lot, lot, lot, lot more. And I want to touch hearts and minds.
+            </p>
+            <p>(7.10.2025): Boaz Klartag: "I thought, I'm 47 years old, all my life I wanted to study lattices, if I
+                don't do it now it's never going to happen."</p>
+            <p>(7.10.2025) I will be more patient and not make as many mistakes.</p>
+            <p>(7.8.2025) Channeling my inner shepherd.</p>
+            <p>(7.6.2025) Bob Baldo
+                <br><br>
+                Q: What is it like to ride in a blimp?
+                <br><br>
+                A: ...The pilot sits in the front of the cabin and there are 4 isles 2 seats on each side of the walk
+                way. I was the only passenger. The take off was exciting. Almost straight up. Once we reached altitude.
+                I'm must say it was a bit anti climatic. Very slow. Noisy and almost boring. We were up for about 45
+                minutes. Landed and drove home. But I'm the only person in this world that has ridden on the Goodyear
+                blimp , has met a man who survived 9/11. He was in the first tower that got hit and made it out. And I
+                have shook hands with Freddie Blassie the wrestling star. And nobody in this world can say that but me
+            </p>
+            <p>(6.30.2025)
+            <pre>number, turnout, snowing</pre>
+            </p>
+            <p>(6.29.2025) <i>Jeremy Bernstein, The Merely Very Good</i>
+                <br><br>
+                "After the lecture one of the students asked Eliot what he thought the most beautiful line in the
+                English language was, an insane question, really, like asking for the largest number. Much to my
+                amazement Eliot asnwered without the slightest hesitation "But look, the morn in russet mantle clad,
+                Walks o'er the dew of yon high eastward hill".
+            </p>
+            <p>(6.29.2025) Sleep that knits up the raveled sleeve of care (sleep that travels up the raveled sleeve of
+                care) -- Macbeth qtd. J.M.Coetzee,<i>What is Realism </i> </p>
+            <p> Q: When is good not good enough? A: When you are faced with the task of bringing something to life.</p>
+            <p>It is only in the durational mode that we can grasp that noncontingent relation to experience, the
+                perception that used to be called "under the aspect of eternity" -- the seeing of life in a way that
+                acknowledges as its foundation the mystery of the <i> fact </i> of existence. </p>
+            <p>The artist is a threat because of the effect of art, no matter what its ostensible subject might be, is
+                to alter the relation to experience, to affect a change of state -- and the main point of the new
+                relation is not to clarify concrete matters in the <i>here and now</i> but to propose an understanding
+                that transcends the here and now. </p>
+            <p>The constant deferral of significance is the operative principle of most lives... we greet the world
+                outside our immediate sphere of concern as a chaos essentially beyond our grasp (I strongly disagree
+                with this but its a striking image), as an event the meaning of which will be disclosed to us later,
+                <i>if ever</i>. Everything in the novel points to meaning... it smelts contigency and returns it as
+                meaning. (The NOVEL is A FOUNTAIN of PASSIVE MEANING) The now time is not the same thing as flow.</p>
+            <p> (6.23.2025) Dispatches from c4 <br> <br>
+                Your lifespan can be what ever you want, I suggest a long one. I'm using a fairy so I have a very long
+                life span.Your sim will not have a job to start out with so you will need to make money in other ways
+                like fishing, searching for flowers or gems to sell.
+                <br><br>
+                What is a Termite Bond? What are They Good For & are Bonds Worth the Cost?
+                <br><br>
+                members can add as many Haves and Wants all year long and they get delivered to the industry by EMail.
+                <br><br>
+                The letters otel are part of the word hotel and part of the word motel. So search the subject line with
+                these letters can find hotels and motels. Try typing otel here in the subject line. You get both hotels
+                and motels because otel is part of each word.
+                <br><br>
+                Dana Milbank: Trump can do whatever he wants. God help us.
+            </p>
+            <p> (6.21.2025) <br><br>
+                The new black mirror episodes are really good. My personal rankings are Eulogy > Common People > Bete
+                Noire > Plaything. Plaything is an overcooked British version of certain SCPs. Bete Noire is mostly fun
+                because of the detail put into mimicking a corporate chocolate enterprise. Common People rehashes some
+                themes from prior episodes but its able to articulate the difference between malevolence and
+                indifference particularly well. Eulogy is able to portray a new mirror through a touching story.
+
+                From previous episodes, Nosedive is great. I didn't like Shut Up and Dance as much as I remembered, its
+                high strung for almost no reason.
+            <p>Might there's be a way to transmit ways of seeing? Not as in style transfer. It would require extremely
+                high resolution images and involve flashing isolated visual stimuli, so as to intersperse your own
+                thinking with someone else's. We privilege legible messages in text. We privilege media. But it's always
+                such a tiny fraction of the response.</p>
+            <p>(6.12.2025) I want to hold pieces of paper of varying quality dear to my heart.</p>
+            <p> (6.12.2025) Family Feud : hungry mouths all trying to reach the center of something. Hoping that in a
+                spark of intuition or a lemma of rational thought there is a meal to keep them alive. </p>
+            <p>I love the dirty ones more than the minced, in that I respect
+                extravagant expression more than reserved. I admire reserve, especially when
+                taken to an ascetic nth...<i>Horse</i>, then, unhorses what is not horse. -- C.D. Wright</p>
+            <p>(6.7.2025) I've detached this website from my professional identity, which means I will get less visits.
+                But hopefully people can come here to stop and think. </p>
+            <p> You equate many forms of abstraction with one another, causing you to hallucinate opportunities where
+                there are none ...When such shamanic impulses existed in settler days their incoherent napkin diagrams
+                at least proposed rockets which pointed towards the sky, whereas your own ambitions are pointed
+                variously at the nearest shopping mall, parking lot, or a more handsome-looking piece of shrubbery. In
+                this way, you confuse the social and aesthetic joys of modern travel with the pure aesthetic happiness
+                of wandering up and down well-worn roads. </p>
+            <p>(6.4.2025) Being so precise with language as to sculpt a teapot</p>
+            <p>(6.3.2025) After spending last saturday in RISD's Fleet library, I've developed another MVP that I'm
+                pretty excited about. Hope to release an early version once I can figure out what to call it.</p>
+            <p>(5.25.2025) Read <i> The Tempest</i>. </p>
+            <!-- The plot was enjoyable and the language was really fantastic. For a seventeenth century English peasant, or -->
+            <p>(5.19.2025) Reading <i>Loudermilk</i> by Lucy Ives, <i>The Power Broker</i>, and <i>Tristes Tropiques</i>
+                by Levi-Strauss, which is probably the most compulsively readable of the three. Also trying to start
+                <i>Entropy City</i> but probably won't get through it. </p>
+            <p>(5.19.2025) Do it again so much better it's something new entirely <br><br>It's so easy to say things you
+                don't believe. Not because your own convictions change, but because belief is an extraordinary
+                condition. </p>
+            <p>(5.13.2025) I want to be more than cynical. I want to be more than footnotes. I want to wear black
+                crosses on the surface of my skin. I want to be totally committed to the cause of living. </p>
+            <p>(5.13.2025) What I am passionate about, in a vacuum, does not matter. What I am passionate about now,
+                within the flow of time, does.</p>
+            <p>(5.12.2025) Mistiming is not a license to relax</p>
+            <p>(5.11.2025)
+                I finished reading *Collapse* by Jared Diamond. The descriptions of historical collapses of civilization
+                were engrossing. Shifting to present-day issues made the problems described far less fantastical and
+                more politically urgent. Separate from the technology, the brutal reality of wells running dry and the
+                water table getting lower and lower is how environmental management works in practice. It seems like
+                caring about the environment is *the* basic commitment of anyone who is concerned with wellbeing outside
+                of economic reality. But then again, the book suffers from anthropology: society must have underlying
+                structure! There must be a taxonomy of sorts! comparisons will make sense. etc.
+                <br> <br>
+                There's an intoxicating feeling of power you get when you realize that a certain kind of thing that has
+                seemed vague and difficult for a number of unrelated reasons reduces to a ton of work (a precisely
+                articulated network of concepts), it's almost a creatively enriching process but not quite. In the other
+                direction educational outflows establish negative ground, so that it's possible to make something out by
+                viewing work from a far distance but not from up close.
+                <br><br>
+                I really will have time to work on my projects. I did so the most my sophomore year, less freshman year
+                because I was knocked down by the immediate realities of artistic machinery, in a limited capability my
+                junior fall, and really not at all this spring semester. I will be more patient with myself but not make
+                as many mistakes.
+
+            </p>
+            <p>
+                A good place to play chess
+                <img src="images/plateau.jpg">
+            </p>
+            <p>(4.25.2025) I will be more patient with myself and not make as many mistakes. </p>
+            <p>(4.24.2025)
+                <img src="images/unique!!.png">
+            </p>
+            <p><a
+                    href="https://amateurnaturalist.substack.com/p/31-and-scared-shitless?utm_campaign=email-half-post&r=ed13i&utm_source=substack&utm_medium=email">"I
+                    am scared that I am not using any of my possessions enough. I am scared that every new thing I
+                    acquire will one day end up in a landfill. I am scared that anything I make with these possessions
+                    so too will end up in a landfill. "</a></p>
+            <p>
+                A swirling vacuum of space which exhibits an inexorable pull on bodies still learning to walk on their
+                own accord like the center of a party where no one knows anyone and the musics too loud to talk named
+                NYC.
+            </p>
+            <p>(4.15.2025)
+
+                <code>
+                //<>>><><>..<>..>>>>
+                //..<><<<>..<>..<>>>
+                //<>..<>>><>..<>..>>
+                //<<..>><<<<..>>..>>
+                //<<<<..>>>><<..>>>>
+                //<<..>>..<<<<>>..>>
+                \\//\\//\\//\\//\\//
+                //\\//\///\\//\///\/
+                </code>
+            </p>
+            <p>(4.10.2025) A lot of the excitement of college is in the idea that there are an infinite number of
+                possibilities ahead of you. On realizing that there is one real life that you will truly be able to live
+                out, it is up to you to decorate it the best way you can. A lot of my time this semester has been doing
+                proofs or various forms of rigorous writing, in part because I've usually been able to color in or
+                sketch in gaps alright. What this has led me to realize again is that writing tight and restrained is
+                not writing well, and omitting subjects when speaking near holds listeners in contempt.
+                在中文课里我们学到了形容/内容的差异，相比较英文 'the map on the wall' 跟据 '墙上的地图', 然我先到广大无边的考试文化，一简化的陈述到词句到生词。举起的手，一个问题的答案，对和错。
+
+                It surprises me still, the endless depth and variety of intelligible communication which could not have
+                come out of a fully conscious mind. </p>
+            <p>(4.10.2025) Finished <i>Frankenstein</i> by Mary Shelley and almost finished <i>The Silent Patient</i> by
+                Alex Michaelides, which was recommended out of the blue. Enjoying <i>Two House</i> by Food House.
+                <br><br>
+                I saw a sign for a restaurant that said "Pizza Works" with a picture of a pizza with the crust cut into
+                little gears. It was completely nonsensical but a joy to witness. </p>
+            <p>(4.3.2025) All bad poetry springs from genuine feeling -- seriously? Seriously? Seriously? This is the
+                most easily falsifiable statement in the world. </p>
+            <p>(4.3.2025) ???? this is getting ridiculous. And its not a vibe <br><br>
+                <img src="images/copilotreplace.png">
+            </p>
+            <p>(4.2.2025)
+                <img src="images/wii_sports.jpeg">
+            </p>
+            <p>(4.2.2025) My ambition is in getting read and not in writing. Many true and useless things said here.
+                Many false and useful things said in person. </p>
+
+            <p>(3.31.2025) On second thought, it's probably the pens. <br><br>
+                Read <i>White Noise</i> over break. It was a remarkably styled book, reminded me of George Saunders. A
+                lot of conversational cliffs and incredibly specific descriptions. This is the realism described by Ayn
+                Rand she strives to avoid. Started <i>The Power Broker</i>, about an urban planner called Robert Moses.
+            </p>
+            <p>(3.30.2025) In general, my drawings have been trending starker and bleaker and stranger since freshman
+                year, but it's good. Not presupposing ideal bodies. Not intentional deprivation in search of motivation.
+                I wondered what the purpose of a conversation was: what it could reveal about someone or something. The
+                closest thing I could come up with was the process of drawing from nothing. It's a good description
+                because when the topic itself is nonexistent: a comparison of processes, instead of circling around a
+                great big empty space. <br> <br> What do you see when you see "exit"? What do you think of when you say
+                someone is creative? </p>
+            <p>(3.18.2025)
+                <img src="images/sbuxfly.png">
+            </p>
+            <p>(3.16.2025) The hard part of being superstitious is not knowing what your superstitions are. </p>
+            <p>(3.10.2025) 人们很容易就可以网上发表自己的看法和意见。</p>
+            <p>(3.8.2025) Only on the internet is there an illusion of omnipresence or a complete sincerity of presence.
+                It's more than a little paradoxical.</p>
+            <p>(3.6.2025) I think for the first time since freshman fall I'm taking five intensive classes where I could
+                spend at least twice the amount of time on each and learn about that much more: entrepreneurship, real
+                analysis, DS & algorithms, algorithmic aspects of ML, and chinese. This has come at the expense of
+                creative time. The best way I've figured out to deal with this is to try to minimize the amount of
+                context switching and not look for similarities between my classes (other than really shallow things
+                like both algorithms classes talking about bloom filters) because unfortunately doing so is a kind of
+                creative work. </p>
+            <p>Andrew Pierre Hart:
+                <img src="images/andrewpierrehart.png">
+            </p>
+            <p>(3.5.2025）I'm pretty excited about the upcoming months. I haven't really spent time consistently working
+                on projects this semester and it's turned out alright. Something that really bothered me in the last
+                couple years would be someone describing what they do as a puzzle, just because I've never seen truly
+                challenging and rewarding problems described that way. It's a problem with how I view puzzles I guess.
+            </p>
+            <p>(2.23.2025) I have a lot to do!</p>
+            <p>(2.23.2025) <br>
+                your fluencies only reflect your shortcomings and speed won't turn out prism. You've tried to learn to
+                dance but what's taught misses purpose. When eyes reflect from your skin you will them through again.
+            </p>
+            <p>(2.21.2025)
+                <br> <br>
+                A rich mind, brimming mind uncaught. quantity has a quality all its own. By quantity I mean repetition.
+                By repetition I mean taking steps to stay alive. I could catch a salmon, I could bite a dog.A flat
+                terror of logic being forced into the ground. ADP prance logic four. Gotten without whimsy, gifted,
+                unfortunately. Cotton unbrushed lips which tellers understood informally. Unclaimed self-subscribed
+                flinching. This is shape cutting. Said then not around kept waiting, those gluttons. A coarse shadow of
+                mine tied to the outward ceiling. Then actual reinforced gunmetal bouncing clear, but tended towards
+                blueity. When incapable amusement barred against all others, not a word was left unsaid.
+            </p>
+            <p>(2.20.2025) One of my ideas from SBI in spring of 2024 was to develop a kind of virtual world by patching
+                together 3D spheres from different apartment listings online. You could have little coins and scavenger
+                hunts or make it a speedrun challenge to explore all of the rooms as fast as possible. I wnder if this
+                would be pitchable to BRGD.</p>
+            <p>(2.15.2025)
+                <br>
+                <b>there got to be a way</b> <br>
+                there got to be a way <br>
+                is a song by american singer and songwriter mariah carey from her <br>
+                there got to be a way <br>
+                was the only composition to make the final track listing it is <br>
+                there got to be a way <br>
+                was chosen for the final track listing co produced by <br>
+                there got to be a way <br>
+                is an r b pop music song with elements of gospel the theme of social activism can be heard in the lyrics
+                <br>
+                there got to be a way <br>
+                a mesmerizing track to mark twenty five years since the release of <br>
+                there got to be a way <br>
+                follows the same melodic tone as the album opener vision of love but highlighted their stark lyrical
+                differences as the former is about social activism and the latter is about love although he praised
+                carey vocals writing that she deploys one of her best whistle notes of her career he felt that the aim
+                for broad appeal comes at the expense of memorable lyrics music video the accompanying music video
+                begins with a shot of an empty street followed by clips of disadvantaged and poorer members of society
+                going about their daily activities two men play dominoes on a wooden crate outside a building a gang
+                make fun of an elderly man hanging newspapers outside his store and an obese woman walks down the street
+                clips of carey leaning against a wall and sitting on some steps looking on at what is happening are
+                shown as the first chorus begins everyone starts to dance joyfully in the street and help those in need
+                a gospel choir comes out of one of the buildings as the street becomes more crowded with people of all
+                ages and backgrounds rejoicing and getting along with each other one of the shops in the background has
+                a neon light outside the entrance which says jesus saves track listings <br>
+                there got to be a way <br>
+                original album version 4 52 <br>
+                there got to be a way <br>
+                7 remix <br>
+                there got to be a way <br>
+                12 remix <br>
+                there got to be a way
+            </p>
+            <p>(2.14.2025) It's meaningless to ridicule simplicity. </p>
+            <p>(2.11.2025)
+                A fun exercise in reinstantiating some links in my brain. These are all common Mac apps, try to guess
+                what they are.
+                <img src="images/icons.png">
+            </p>
+            <p>(2.9.2025)
+                Things that I have begun to like more:
+            <ul>
+                <li>small talk</li>
+                <li>patience</li>
+                <li>starting from the beginning</li>
+            </ul>
+            Things that I have begun to dislike more:
+            <ul>
+                <li>formalism for formalism's sake</li>
+                <li>returning to the beginning</li>
+            </ul>
+            </p>
+            <p>(2.5.2025) The way that the conntations of "locked-in" has changed from negative, externally imposed
+                constraints to positive, internal constraints is fascinating.</p>
+            <p>(2.5.2025) Your sense of a plot is directly related to the degree to which you can control, or predict,
+                or retrospectively understand, some thread or object or process within your life.</p>
+            <p>(2.1.2025) My drawings have been pretty bad lately. I learned to compose accurately, and then gradually
+                added abstraction. I would think of an process or object, and it would gradually arise out of drawing
+                unrelated things. Now my choices are abstraction, realism, or landscapes, none of which are what I want
+                to do. Charcoal helps a good deal. But it's still an issue with the medium. </p>
+            <p>(2.1.2025) Here is a very true statement, nevertheless in which room for interpretation is great:
+                <i>History is the production and reproduction of real life</i>. What you call <i>real life</i> is not
+                what I would, but what history promises, in one way or another, is the ability to see how others felt.
+                What <i>production</i> and <i>reproduction</i> reflect could be artificial and natural processes, life
+                and art etc. Perhaps it is the sense of situation which reproduction replicates, while production fails
+                to capture. Maybe <i>production</i> is doing too much work, but can't you imagine what it means? An
+                orchestra, a factory, a game of chess. What is articulated in the statement is the expressive potential
+                of history, an ambition which stretches your hands behind your head and tries to touch the ground. </p>
+            <p>(1.26.2025) The Atlantic: <a
+                    href="https://www.theatlantic.com/magazine/archive/2025/02/american-loneliness-personality-politics/681091/</a>">https://www.theatlantic.com/magazine/archive/2025/02/american-loneliness-personality-politics/681091/</a>.
+                I don't think loneliness is not the right way to characterize the issue, nor political moderation or
+                social neededness. The idea of cohesion is a little better: maybe it's the lack of a good feeling of
+                inertia. </p>
+            <p>(1.21.2025) Articulation is not the most important thing.</p>
+            <p>(1.21.2025) One odd thing about nineteenth century French wallpaper is how colorful it could be
+                <img src="images/wallpaper1.png">
+                <img src="images/wallpaper2.png">
+            </p>
+            <p> (1.21.2025) You will take the flag and throw it onto the ledge, and take the ledge and turn it inside
+                out. And then scoop the water out from underneath your feet, and curl your toes to make spaces for the
+                ripples to pass beneath, and move your fingers back, press them against your sides, open up your core
+                against the locked boxes on the shoreline. Don't wear the shirts ...
+                <br> <br> ... who is unable to create a box with your own thinking, a box which describes itself and a
+                paper which describes its own body. A delicious beautiful body, a body of coiled steel, a charged,
+                idealistic shape of planes and circuits, which wrap and tangle with the lives of the rich and the
+                beautiful, the beautiful faces which have more than beautiful smiles, which are able to go beyond the
+                current spaces in which people live and define a new kind of hierarchy within which I live alone.
+                VIsitors are allowed but only with the bell. Only with the chime, entrance and deference to the sky ...
+                <br> <br> ... the ferocious and not entirely sanitized burn could somehow go into the boxes of
+                arithmetical thinking, without attestation or tuning. The transformation of a large and wide object into
+                a thin and forceable shape. The sharpening of a mind on a stone which is turned inwards. The focus on a
+                subject which is truly hard.
+            </p>
+            <p>(12.17.2024) Rocks rock
+                <img src="images/rocks_rock.png">
+            </p>
+            <p>(12.17.2024) <i>The first handbook for Scoutmasters, published in 1912, promised that new boy members
+                    would be instinctively interested in their first outdoor troop meeting becaguse they “are yearning
+                    to know their world. To unlock the mysteries of nature and to know their relationship to them.” The
+                    author, though, cut short any suggestion that the purpose for Scouts’ discovery of nature’s
+                    mysteries might be spiritual growth, “They must learn to recognize the forces and the laws of
+                    operation which underlie the manifestations of nature. Their wonder and interest must not be
+                    satisfied with the mystery and romance of it all but their ability to use and master these forces
+                    must be impressed upon them. This mastery will give knowledge and power for later life-work.”</i>
+            </p>
+            <p>(12.14.2024) Description moves nothing. Once you accept that, you are free to work!</p>
+            <p>(12.11.2024) I have a lot of creative work from this semester, although as usual much of it is not what I
+                expected it to be. Overall my favorite classes were Information Theory in Language and Narrative
+                Nonfiction. Here is a list:
+            <ul>
+                <li>There is something strange going on with model surprisal and reading times, that is to say a <a
+                        href="https://www.sciencedirect.com/science/article/pii/S0749596X24000135"> missing link </a>.
+                    Basically everything I'm putting into my Information Theory in Language paper relates to this in
+                    some way:
+                    <blockquote style="font-size: 10px"><i>ˀ
+                            Consider the garden path sentence, "the new doctor offered the operation appeared
+                            increasingly likely to succeed in her career". The selectional constraints which "offered"
+                            poses on the new doctor, as opposed to the operation, is the primary driver of ambiguity in
+                            the sentence: the typicality of the verb with the doctor as subject, as opposed to the
+                            operation as object. The respective main and reduced clause frames could be formulated as
+                            standalone sentences, and then compared by both humans and language models: for instance,
+                            reading times could be measured and surprisal could be calculated for "the new doctor
+                            offered the experiment to patients" and "the new doctor offered the experiment succeeded in
+                            his career". Then, these ratios could be compared: if there exists high variability of the
+                            ratio across different examples sharing a syntactic structure, e.g. the Main Verb/Reduced
+                            Relative, it is evidence that reading times are affected by the selectional constraints of
+                            the verb, irrespective of the underlying syntactic structure.
+                        </i></blockquote>
+                </li>
+                <li>I did develop a context visualization app for language model feature descriptions, which has a lot
+                    of room for improvement</li><br>
+                <li>I wanted to develop a node editor for OverpassQL queries that I haven't gotten around to</li> <br>
+                <li>Made some posters, not much art though. Closest would be the inktober sketches below</li><br>
+                <li>Made a poster for the semester's <a href="images/Curry'd Function.png"> Curry'd Function</a></li>
+                <li>
+                    Around 5,000 words of somewhat fantastical narrative nonfiction pitches, some of those I will put
+                    here when I clean them up (?)
+                </li>
+                <li>Idea. do syntactic templates reveal linearly approximable contexts? This would basically be a
+                    followup from my summer research, between <a href="https://lre.baulab.info/">this paper </a> and <a
+                        href="https://arxiv.org/pdf/2407.00211"> this one</a> </li>
+            </ul>
+            This semester was probably the first one in which I have set hard word limits for myself, and found my
+            writing enriched by it.
+
+            <br> <br>
+
+            <p>(11.27.2024) One of my commonly reoccurring thoughts is how much effort you need to put into speaking in
+                order to be understood. My linguistics professor is extremely cautious about using effort as a
+                distinguishing factor between utterances. So, I'm not sure if this is a universal feeling.</p>
+            <p>(11.12.2024) My instincts for self-sufficiency are spreading me too thin. My "thoroughness". When I heard
+                myself described this way I immediately thought of the many times I've penciled in a shape completely
+                black, because that's the failsafe for iteration.</p>
+            <p>(11.5.2024) I love design. What I meant by this is unfortunately not related to user experience. But I
+                still love it.</p>
+            <p>(10.31.2024) Old, H,obo, Wisdom,---,Jun, ,0,7,,, ,2,0,1,2,,, ,0,1,:,5,1, AM,I, hunted, an, old, two,
+                track, road, at, one, time, and, was, surprised, by, the, number, of, coins, I, found, along, that,
+                road, that, really, appeared, to, go, nowhere,., I, mentioned, it, to, a, man, who, owned, property,
+                near, the, road, and, he, said, that, there, was, a, horse, boarding, stable, for, years, right, by,
+                that, road, and, people, rode, their, horses, up, and, down, it, for, years,., Apparently, bouncing, up,
+                and, down, that, road, on, horses, people, lost, a, lot, of, change, out, of, their, pockets,., I,
+                haven,',t, had, that, kind of, luck, on, every, road, but, that, one, certainly, did, produce, a, lot,
+                of, coins,.</p>
+            <p>(10.29.2024) Also before I forget: <i>The global outlook for consumers is improving. Consumers are
+                    determined in their resilience to stay ahead, vigilant against further disruption, and intentional
+                    about every aspect of their daily spending.</i></p>
+            <p>(10.29.2024) The <a href="https://www.socialexplorer.com/">socialexplorer</a> viewer is very
+                well-designed, it uses a visuals to communicate common actions like locating the user, and downloading
+                the map without language. Part of my job at the Brown Library is to revise tutorials for clarity and
+                ease of communication, and as part of that I ended up trying to download little svg icons from the
+                interface to reference in the tutorial. The issue was that they were dynamically rendered -- and it
+                turns out many of them are actually part of a TrueType font linked on the website! I worked with
+                Fontforge for the <a href="sonority.html">sonority</a> project, but getting it to work with python was
+                tricky. Anyways, here are some of the outputs<br>
+                <img style="max-width: 50px" src="images/marker-bicycle.svg">
+                <img style="max-width: 50px" src="images/marker-playground.svg">
+                <img style="max-width: 50px" src="images/export-image.svg"> <br>
+                I'm getting some ideas for painting but I don't know the best medium to express these exactly.
+                <img src="images/small_safety.png">
+                <img src="images/small_camp.png">
+                <img src="images/small_drive.png">
+            </p>
+            <p>(10.27.2024)
+                <img src="images/top10function.png">
+            </p>
+            <p>(10.22.2024) The thrill of a stopped escalator or an empty hallway is in transgression, not against the
+                clocks of other people but your own. If you can coolly dissect the mechanisms of progress you can
+                transcend them, or at least act them out in full self-consciousness. That is to say, it obviously a
+                terrible guide for living, but it is a truth all on its own.
+            </p>
+            <p>(10.19.2024) <i> The Changing Fictions of Masculinity: </i>In fact, this is all realism ever was and ever
+                will be: the arming or authorizing of literary elements -- regardless of their ultimate mimetic value --
+                by what each society calls its truth. And yet we might say that stories, like people, have a way of
+                binding in more than any body, single or corporate, intends.</p>
+
+            <p>(10.14.2024) Catena:
+                <img src="images/gapping.png">
+            </p>
+            <p>(9.30.2024) <a href="https://open.spotify.com/track/5MeUMSRreLHYLhw8ZTyqpk?si=5a11ae80fe224088">You got
+                    it!</a> </p>
+            <p>(9.24.2024) I changed my mind I got an idea</p>
+            <p>(9.23.2024) I am going to be so busy this week. I need an outlet to say things. I don't think Narrative
+                Nonfiction is filling that gap, particularly because I agree my pitches last week weren't great, and I
+                feel the pull of writing for an audience. I'm noticeably better at expressing "thoughts" in writing, but
+                there's a reason I didn't like to do that before. Something to circle back and touch base on</p>
+            <p> <a href="https://open.spotify.com/track/0zxPYht0JjDLfBddzZnSJ3?si=cbdf0b07f90d4d9f">But how did you get
+                    my number? And my first pet's name? Who can I blame > The captcha.. And how did you get my zipcode?
+                    for the house before I moved away > from my landlord</a></p>
+            <p>(9.19.2024) I feel safe swimming around in sealed circles, where my applications of meaning tend to be
+                very clear. This works for my blog, which is a place for me to talk to myself. But wow, sometimes it
+                feels so shallow. I've made the observation before in Screen-based Images, but when you always operate
+                from a place of self-reflection, it's hard to avoid "cashing out" on yourself. If I want to write longer
+                pieces, better put them somewhere else as well. </p>
+            <p>(9.19.2024) <i>Tender is the Flesh</i> feels like a thought experiment which has frozen over in every
+                direction except gratuitous violence, but there's a passage that describes someone's words as boxes full
+                of blank paper. </p>
+            <p>(9.19.2024) You can't take loans out on your future creative self, but if you're clever enough you can
+                steal</p>
+            <p> (9.15.2024) The Splintered Mind says on <a
+                    href="http://schwitzsplinters.blogspot.com/2024/09/the-disunity-of-consciousness-in.html ">unity of
+                    experience</a> that "our ordinary condition, before rare unifying introspective and reflective
+                actions, involves degrees of partial, imperfect unity, rather than complete unity or complete disunity".
+                But I don't think anyone actually believes in complete <i>unity of experience</i>. Rosenthal talks about
+                the unity of consciousness. I think that more complete unities correspond to greater aesthetic
+                satisfaction, and that there is a notion of periodicity, or wavelength, in the process of this
+                achievement which is as least as definite as emotions are. The methods of accomplishing unity are
+                independent of higher-order thoughts, but thought can guide practice, so that you can actively desire
+                unity and get better at achieving it.</p>
+            <p> (9.5.2024)
+                <br>
+                <img src="images/brown_cave.jpg">
+            </p>
+            <p> (9.2.2024) The real world is the world without you. Q: Who understands that? And to what degree? </p>
+            <p><br>
+                (9.2.2024) Beliefs I will carry through shopping period:
+            <ul>
+                <li>Ignorance is not something to be proud of</li>
+                <li>All advice is useful (for the person its meant for)</li>
+
+            </ul>
+
+
+            (9.2.2024) "A fool is someone who has lost everything but their reason" -- Nietzche
+            <br><br>
+            Watching <i>Fire of Love</i> made me realize my tendency to perceive agony in many landscapes. There's no
+            reason for this perception, its plausibly a product of natural selection (which is hardly better than no
+            explanation). From a cultural perspective, it could be a vestige of ascribing moral values to wilderness (as
+            opposed to what?) <br><br>
+            Whatever its causes are, it definitely goes beyond both the purely aesthetic and purely geographic. The
+            natural is not separable from the self. <br><br>
+            </p>
+            <p>(8.12.2024)
+                <a href="https://x.com/karpathy/status/1821277264996352246?s=46&t=fSypFxt84bBHId-do9r5Ag">Andrei
+                    Karpathy </a><br><br>
+                "RLHF is a kind of way to benefit from this gap of 'easiness' of human supervision...
+                <br> ... getting actual rewards (i.e. the equivalent of win the game) is really difficult in the
+                open-ended problem solving tasks... how do you give an objective reward for summarizing an article? Or
+                answering a slightly ambiguous question about some pip install issue? Or telling a joke? Or re-writing
+                some Java code to Python? ". <br><br>
+                well-formed sentences < RLHF supervised operations < unsupervised operations < language </p>
+                    <p>(8.12.2024) Cuando se necesita recordar palabras a aprender una lengua 😢😢😢</p>
+                    <p>(8.8.2024) And <a href="COS_Guide.html">here it is.</a> </p>
+                    <p>(8.7.2024) I "need" (P3) to make a list of things to do in COS for next year's REU students. This
+                        is my note so I don't forget</p>
+                    <p>(8.7.2024)</p>d
+                    [Spoilers] Hunger (2023) is centered around two characters: one is Auy, a young female cook who runs
+                    her family noodle shop. The other is the European-looking Chef Paul and his famous catering service
+                    known as "Hunger". It is set in contemporary Thailand. Many of the comments made reflect the
+                    aspirations and fears of young adults there and elsewhere: Auy's stability in running the family
+                    business against the inability to pursue into any other career, nepotism at large firms denying
+                    promotions, the insubstantial nature of wealth as it is created virtually, through online content
+                    creation or cryptocurrency empires. <br><br>
+                    This film goes beyond the flagrantly satirical elements of "The Menu" to provide a much more human
+                    look at the relationship between a chef and his clients. It might not be more realistic, but it
+                    resonated with me on more levels. It raised questions about what a dream is, how hard it is to hold
+                    fulfillment and desire at once, and how happiness viewed from this perspective is empty: how
+                    "wish-fulfillment" is necessarily an outside diagnosis and not a true description. This made me
+                    think more about what has been called my "obsession with technology". I've felt that my desire has
+                    been to find perspectives which are the most true to form, but this is very easily the most
+                    *intuitive* perspective instead of the most *true*. The difference between a sport and a game how
+                    strong something is at its core: the delineations of a sport provides a stable foundation for
+                    strategy whereas a game is built around and between those strategies. I'm not going to think too
+                    much about this anymore but something something incremental developments enable gamification true
+                    technology is a leveler. <br><br>
+                    Anyways. In the final catering scene, Chef Paul and Auy are brought together to compete on three
+                    intersecting areas of culinary skill, authenticity, and self-image: Auy crafts a narrative, not
+                    around her as a woman breaking barriers in a male-dominated industry but around familial love and
+                    understanding through food. Chef Paul then brutalizes this narrative by serving hundreds of
+                    identical bowls of hot water, and giving a one and a half sentence speech on "common humanity". The
+                    crowd flocks from one to the next, unable to distinguish heartfelt messages from cynically delivered
+                    platitudes. <br><br>
+                    The final words of Tone to Auy ("Isn't *this*$^1$ what *you*$^2$ hungered for?") could be
+                    interpreted as a very traditional kind of mockery$^1$, very cynical and self-defeating. But Tone has
+                    been a supporter of Auy throughout the film: he wants her to succeed and believes that she wants to.
+                    That tinges the scene with the sadness of misunderstanding$^2$. If Tos provides Auy the ability to
+                    become a viral sensation, Tone provides Auy with the ability to differentiate sensation from
+                    reality, a baseline which forces her to reevaluate her priorities. She realizes that Chef Paul
+                    cannot possibly be serving his clients out of love: they will always be the objects of affection,
+                    capable of endless absorption of love, time, and skill, and polite (monetary) reciprocation. Instead
+                    of continuing to work towards understanding, she chooses to return to her family business. <br><br>
+                    The pace of the ending music is unsettling, and it does not indicate a traditional happy ending as
+                    many believe. Nothing has been resolved: popularity and tradition are still at odds. She cannot cook
+                    for her community without drawing attention, attention which will change her and her clientele. Aun
+                    knows this, and believes even her efforts to restore her family kitchen will inevitably involve
+                    compromise and division.
+                    <p>(8.4.2024) </p>
+                    <p>(8.4.2024) Halfway through <i>Random Family</i> by Adrian Nicole LeBlanc, also trying to get
+                        through <i>Children of Dune</i>. The exposition and continual political scheming is really
+                        getting on my nerves.</p>
+                    <p>(8.4.2024) I often mistake kindness for true understanding and true understanding for kindness
+                    </p>
+                    <p>(7.26.2024)
+                        <img src="images/cosgym_smaller.png" style="width:90%">
+                    </p>
+                    <p>(7.20.2024) <br>
+                        Richard Sennett, <i>Humanism</i><br>
+                        <br>
+                        "In conformity with thy free judgement, in whose hands I have placed thee, thou art confined by
+                        no bounds, and thou wilt fix limits of <i>nature</i> for thyself" - Pico della Mirandola
+                        <br><br>
+                        "Voice" is both a personal and a social issue. To hold fragmentary experiences together in time
+                        requires the capacity to step back from the power of each event to hurt or disorien. Sheer
+                        surrender to the moment weakens one's voice. the capcity to stand in and out of a situation at
+                        the same time is a practical strategy for survival. <br><br>
+                        Where life narratives in which difference has been experienced on informal, open-ended, and
+                        cooperative terms become what the anthropologist Clifford Geertz once called "thick
+                        descriptions", the narrator is conveying a more complex, and engaging, social reality.
+                    </p>
+                    <p>(7.15.2024)
+                        Jonathan Frazen: Substantial swatches of my personal history were going dead from within, from
+                        my talking about them too often.
+                        <img src="images/austinlights.png">
+                    </p>
+                    <p>(7.12.2024)
+                        Read <i>The Sound and the Fury</i>, re-read <i>Dune</i> and <i>Dune Messiah</i>, the
+                        <i>Mistborn</i> series (starting with Wax and Wayne and then from the beginning), reading <i>The
+                            Canon</i> by Natalie Angier. Also reading <i>Death and Designation among the Asadi</i> by
+                        Michael Bishop and the encompassing novel <i>Transfigurations</i> (I was skeptical by the cover
+                        but it's really interesting... Avatar x Emerson). I got a copy of <i>Ubik</i> that I'm excited
+                        to start once I finish the rest of <i>Dune</i>.
+                        <br><br>
+                        So many ways of living... and we all end up in one of them. The privilege of choice must be
+                        understood to be enjoyed. <br><br>
+                        <!-- <img src="images/austinplants.png"> -->
+                    </p>
+                    <p>(6.29.2024) <a href="https://dirt.fyi/article/2024/06/splitting-the-rabbit">Erin Somers</a>
+                        <br><br>
+                        I was alone after that.<br><br>
+                        But it was okay because I had my gardening.<br><br>
+                        No, I didn’t, but I had my tennis. <br><br>
+                        No, I didn’t, but I had my television. <br><br>
+                        I had my phone.
+                    </p>
+                    <p>(6.27.2024) There is a never-ending conversation we have with advertisements in which you may
+                        reply once or twice a year. You are made to consider a peculiar relationship, the one which you
+                        have with your toothpaste or your swimsuit or your car brakes, in the captivity of reading or
+                        listening. Then you might go to the store (or not) and in a couple months the seasonal reports
+                        come in. And then they think, "I shouldn't have put a comma there". That is how a new thing is
+                        created, as new as any conversation can be. </p>
+                    <p>(6.23.2024)
+                        Hiking turns imposed necessities into real ones. <br><br>
+                        There is a relationship between difficulty of consumption and the level of understanding you
+                        achieve by simply having an open attitude. <br><br>
+
+                    </p>
+                    <p>(6.15.2024) <br>
+                        I had a dream where you had to shop for "real" words at the grocery store. I was panicking
+                        because I was running a script that modeled noun pluralization and realized I would go broke
+                        convincing myself a model could figure out the plural of "community". <br><br>
+                        Get more groceries, get eaten <br>
+                        get more groceries, get eaten <br>
+                        \ldots <br>
+                        wortlhess <br><br>
+                        \ldots
+                    </p>
+                    <p>(6.1.2024) Wow, there is definitely something promising about compositional vector semantics. My
+                        current research isn't going in this direction but there are really <a
+                            href="https://arxiv.org/pdf/2401.06808v1">nice models being built</a>. </p>
+                    <p>(5.22.2024) Updates always take longer than I expect but it's addictive. I could put whatever
+                        <br>
+                        <img src="images/pie_signos.jpg"> <br>
+                        I want here and someone will see it (eventually).
+                    </p>
+                    <p>
+                        (5.22.2024) ***I'm just going to throw some more stuff here and then come back to fix it later
+                        yep definitely***
+                    </p>
+                    <p>
+                        (5.14.2024) I don't want to be well-rounded. I want to be a fishhook.
+                    </p>
+                    <p> (5.1.2024)
+                        I want to take a serious writing class in college. My writing has regressed to frantic little
+                        notes to myself on my computer and regurgitated logic and ideas for two of my classes. I am
+                        proud of my reading lately, been finding some really great books and articles. And I am proud of
+                        several projects from this semester and last, some of which I will try to post here.
+                        <br><br>
+                        You can tell a lot about someone from the examples they give.
+                        <br><br>
+                        There are certainly words that I overuse but only in a broadly descriptive manner. Again, no
+                        intentional cameoflage.
+                        <br><br>
+                        You really see things differently when you draw them. And why does that matter? Because
+                        <b>you</b> are on top of the information food chain.
+                        <br><br>
+                        Keep trying to challenge yourself.
+                        <br><br>
+                        I lack patience but make up for it with <del>fantastical daydreams of empty formless
+                            worlds</del> analogical reasoning.
+                        <br><br>
+                        Locked in a never-ending catacomb of hallways and shuttered classrooms, able to catch the sky
+                        from the corners of your eye. Becoming acutely attuned to the presence of food. I could sit and
+                        watch the ceiling of BioMed for an entire day.
+                        <br><br>
+                        "You really like suspense". I really like it. I love forcing sensations on my readers. Haha.
+                        <br> <br>
+                        <del>The more something I make relates to my own self, the less I like it.</del> The more
+                        something is unintelligible within my own idiolect, the, less I like it. Which doesn't keep me
+                        from feeling a sense of identification, so maybe it's all about ownership (for brief periods of
+                        time). But we are all on a timeshare.
+                        <br><br>
+                        The stakes of language are as high as you want them to be.
+                        <br> <br>
+                        For the longest time I thought my artwork wouldn't survive without a caption, because the
+                        context mattered so much. I think that speaks to my fear of losing the complete attention of
+                        strangers.
+                        <br> <br>
+                        So much of college comes down to reading (better) and writing (better). Again, really hard to
+                        say what that means exactly.
+                        <br><br>
+                        The way words are distributed is really interesting. I've got this notion in my head that
+                        they've replaced people except in the settings where people really care about conversations,
+                        which may make talking a lot less interesting. Words are a proof something was done, and at the
+                        highest level we care a lot about sending those signals. But there's a difference between
+                        billboards and toothpaste labels because the billboards are actually meant for reading, whereas
+                        toothpaste are more forced compliance. <br> <br>
+                        This is no place for moralizing! <br><br>
+                        Yeah, I still think there's a right way to live. <br><br>
+
+                        So much is being done <del>to</del> for me every day.<br> <br>
+                    </p>
+                    <p> (4.15.2024) It is not the place but its invocation that we can learn to enjoy</p>
+                    <p> (4.14.2024) I accidentally uploaded a 12 mb png below, only heard about it when my bandwidth
+                        limit hit 75gb for the month. Sorry!!! It's jpeg now.</p>
+                    <p> (4.6.2024) Is outer space <i>objectively</i> cool?</p>
+                    <p> (3.31.2024) New names for my 4th semester classes. credit Steven Pinker for the last two.<br>
+                    <ul>
+                        <li>Inducting over One or Many of Infinite Airless Worlds</li>
+                        <li>Introduction to Heavy Machinery</li>
+                        <li>Human Signal Processing</li>
+                        <li>Inverse Optics in Practice</li>
+                        <li>Inverse Optics in Theory</li>
+                    </ul>
+            </p>
+            <p> (3.31.2024) A thousand words in a single image; How many images in a single word?</p>
+            <p> (3.22.2024) Wouldn't it be terrible if you understood it all immediately? No dialogue, only a receiver?
+            </p>
+            <p> (3.19.2024) phonology is cool <img src="images/phon1.png"> </p>
+            <p> (3.10.2024) <br>
+                Watched [sic] yesterday, by Melissa Gibson and performed by Something on the Green. The ambitions in sic
+                are very different from conventional ambition, but they still suffer from the same limitations. Frank is
+                training to become an auctioneer; Theo is composing songs for a theme park ride. Babette is writing a
+                history book about outbursts of anger. I really like Frank's character.
+                <br> <br>
+                auctioneering brings to mind the detached, clinical sounds of the airport intercom, the weatherman,
+                social roles that are all transitory or relational. They carry information which is of no particular
+                importance except to their audience. Through a singular focus on the subjects, they make no claims on
+                masculine or feminine identity, or the presence of a speaker. To train as an auctioneer, Frank repeats
+                tongue twisters over and over. He isolates language as a gender-neutral force, phonetic constraints
+                overriding purposeful language.
+                <br> <br>
+                (...)
+                <br> <br>
+            </p>
+            <p> (2.28.2024) <br>
+                <img src="images/DB_Billards.jpeg">
+                <img src="images/satellite.jpeg">
+                <img src="images/dead_collage.jpeg">
+            </p>
+            <p> (2.23.2024) Starter packs are modeling visual languages with formal grammar.
+                <img src="images/italian_restaurant.png">
+            </p>
+            <p> (2.22.2024) How much of it is studying nature? What is natural? </p>
+            <p> (2.17.2024) I was once given the remarkable opportunity to </p>
+            <p> (2.17.2024) it's like ,um, <br> a relationship that swings itself<br> like a baptism, a vision <br> or
+                like getting hit by a car </p>
+            <p> (2.17.2024) I speak English!</p>
+            <p> (2.13.2024) You are always on top of the information food chain.
+            <p> (2.13.2024) I understand myself to be incapable of repetition, drawing wider and wider circles around a
+                core that knows itself only from the outside looking in. What has been interesting has been filling
+                gaps, gaps which make glue seem an integral part of being, never mind it is actually something
+                completely different.
+            <p>(2.5.2024) (New Yorker) we rehearse a limited openness so that we can feel the solidity of our own
+                private selves.</p>
+            <p> (2.1.2024) On this blog I will not use language to confuse people, or to make it hard to understand my
+                thoughts. I will use language to 1. maintain a distinct identity, and to 2. enable myself to talk freely
+                about things that matter to me.</p>
+            <p>(2.1.2024) Something I miss from lynnwood, more than the satisfaction of discovering & reaching
+                landmarks, is finding parts of the world that are inequivocably mine. </p>
+            <p>(2.1.2024) Running is a signal!</p>
+            <p>(1.31.2024) we try hard to make things easy/boring but it's like cupping your hands around a faucet</p>
+            <p> (1.31.2024) <br>
+                P: Take for example, dark chocolate and milk chocolate. If you ask children -- <br> <i>pauses</i> <br>
+                P: Which would you say children like more? <br>
+                C: <i>(in unison)</i> ... Milk Chocolate <br>
+                P: Right, okay. And then adults, they've been influenced in some way by culture and mass media, to
+                change their tastes-- <br> <i>pauses</i> <br>
+                P: Which one would you say adults are expected to like? <br>
+                C: <i>(bashfully)</i> ... Dark Chocolate <br>
+            </p>
+            <p> (1.31.2024) This regional science fair NOAA 3rd Place Pulse of the Planet winner is still working on the
+                same things :) </p>
+            <p> (1.30.2024) There are theories that help you think and theories that hurt. </p>
+            <p> (1.25.2024) When will all of your problems ever be solved? You know what the answer is.</p>
+            <p>(1.25.2024) The best defense of why we study little things:
+
+                Both big and little things exist. We can make rules about big things, but those rules need to be
+                EXPLICIT as to how they affect the little things we can observe. Otherwise they don't mean much at all.
+                This is not a diminishment.
+            </p>
+            <p>(12.2.2023) Are you happy with the <br>
+                words which you've written? <br>
+                And those boxes you've drawn --<br>
+                they don't make a house <br>
+            </p>
+            <p>(11.21.2023) I love to see the word "famous" used offhandedly about things I know nothing about.</p>
+            <p>(11.21.2023) Pushing analogies to their limits. </p>
+            <p>(11.19.2023) <br>
+                The purpose of satire: to force someone to assert a version of their beliefs that even to them seems
+                absurd. </p>
+            <p>(11.16.2023) <br>
+                Q: When is the sum greater than its parts? <br><br>
+                A: When the seams are unforeseen. <br>
+                A: When something is stolen. <br>
+                A: When something is hidden. <br>
+            </p>
+            <p>(11.7.2023) The plan: Practice! Practice more! Practice even more! How brutally empty the mind might
+                be.</p>
+            <P>(10.30.2023) Nobody's going to give you the interesting problems you want to work on: nobody knows
+                <i>how</i> to make space for you because they've never seen your work. Asking the right questions is
+                half the fun: answering them can only be the closure.
+            </P>
+            <p>(10.23.2023) Time management isn't () management because everyone values time the same*. Its
+                antithesis is something unequivocably bad. When you're searching for something lost it's an
+                objectively weighted cost; you could be a disorganized person but not care much, or be organized and
+                care a lot. If you've 1. lost something and 2. decided to look for it, you've made the judgement
+                that your time is worth searching for it. Same idea as prison or proportional fines.
+            </p>
+            <p>(10.18.2023) I've been busy but feeling very on top of things recently. It's a combination of knowing
+                what problems not to waste time on, and sticking through hard things I know how to do. Speaking of
+                which, I am itching to work on some kind of technical dev project. I need to put my foot in my mouth
+                I mean pedal to the pedal I mean. </p>
+            <p>(9.28.2023) Roughly: many people have goals, but also expectations. The expectations may be very
+                different from their goal, but critically they do not differ in intent. For example, neuroscience is
+                about discovering the secrets of consciousness; it is also about sticking probes in mice brains. I
+                am happy when my expectations are forced to change; that is, when something I look at is not what I
+                think it is. I believe art is about changing expectations. I think that goals are more
+                environmentally dependent than expectation.</p>
+            <p>(9.28.2023) A good deal of learning is in the teacher conceptualizing themselves as a student
+                and probing for weak and impoverished forms. An effective teacher needs a lot of input,
+                and the ability to improvisationally prompt the student.
+            </p>
+            <p>(9.25.2023) Skipping stones is fun because you get to defy gravity. <br>
+                the order you do your homework in :: mise-in-place :: driving + commute preferred over commute +
+                drive <br>
+                the assurance that you did not waste time
+            </p>
+            <p>(9.15.2023)
+                <br>
+                Modernity is the condition a society reaches when life is no longer conceived as cyclical.
+                <br>
+                your thought is part of my thought -- even as mine defines itself in opposition to yours.
+                <br>
+                It's an unchristenable night ..
+                <br>
+                phonetics:semantics :: color:composition.
+                <br><br>
+            </p>
+            <p>(9.11.2023)
+                Silverman Abstract Algebra preliminary:
+                for every x, there exists y: "your opponent hands you a value of x and you need to find a winning
+                value of y" <br>
+                vs <br>
+                there exists y for every x: "you choose a y, and that y needs to win regardless of the x your
+                opponent chooses" <br><br>
+
+            <p>(9.10.2023) We can trace the positive connotations of "slay" from the semantics of the earlier
+                phrase, "killed it". There are other areas where recycling of slang fragments (might) be at play,
+                most recently "cooking" as an action verb from "cooking something up"; most commonly used as "s/he's
+                cooking". I think that the recycling phenomenon is in general motivated by the desire to seem "one
+                step ahead": that someone both understands what "killed it" or "cooking something up" means, and
+                that they reject it for a shorter, snappier version that makes sense only in that original context.
+            </p>
+            <p>(9.9.2023) <a
+                    href="https://nickfthilton.medium.com/the-end-of-the-subscription-era-is-coming-ed197f252c6a"><i>Nick
+                        Hilton</i></a> ... and in a depression era, the moonshot of celebrity is even more
+                gravitational than before. Look at the 1930s, when the Western economic climate was miserable, but
+                the screens were littered with stars. Clark Cable, Humphrey Bogart, Cary Grant, Bette Davis,
+                Katherine Hepburn, Judy Garland. Economic instability does not engender realism — it adds value to
+                dreams.</p>
+            <p>(9.8.2023) <i>The Metaphysical Club</i>: We think that we know in order to do; Dewey taught that
+                doing is why there is knowing.</p>
+            <p>(9.6.2023)
+                First day of shopping period made me realize I am much less set than I thought I was, which is a
+                good thing. Very tiring though.
+                <br><br>
+                Reading <i>The Metaphysical Club</i>. It is a close depiction of American intellectualism after the
+                Civil War and how liberal ideals came to America. It covers abolitionist and unionist struggle in
+                the North, polygenism, Darwinism, the formation of the AAAS, Charles Eliot and Harvard, the
+                foundation of the social sciences, the Howland Will forgery, Emerson, the Vermont
+                Transcendentalists, Romanticism etc. I really like the horizontal history perspective.
+                <br><br>
+                The part about Samuel Coleridge turning inward and examining his source of faith reminds me of
+                Schopenhauer, both are obsessed with the idea of unity.
+                <br><br>
+
+            </p>
+            <p>(9.2.2023)
+                <img src="images/orient.png">
+            </p>
+            <p>(8.24.2023) Back to school! Sorry for not being online recently. Recently read the <i>Dunwich
+                    Horror</i>, <i>Play it as it Lays</i>, the <i>Oryx and Crake</i> trilogy (which I told myself I
+                would review as being very reminiscent of Boston, and OMSIian).
+            <p>
+            <p>
+                I spent most of this summer working for Northshore Utility District as a seasonal utility worker.
+            </p>
+            <p>(7.27.2023) If you could wake up each day as someone else, how many lives would you live until you
+                were satisfied with the one you got?</p>
+            <p>(6.20.2023) Finished moving golf from AWS to DigitalOcean! </p>
+            <p>(6.7.2023)
+                <a href="https://computer.rip/2022-09-13-the-nevada-national-security-site-pt-2.html">
+                    <i>The Nevada National Security Site, J.B. Crawford</i>
+                </a>
+                </blockquote><i>
+                    There is a problem: nuclear detonations are a hostile environment for precision instruments.
+                    This is the central challenge of underground testing. In atmospheric testing, instruments can be
+                    located far enough away from ground zero to survive the detonation (we will see an example of
+                    this later). For underground tests, the radius of destruction is relatively small, but it
+                    contains far too much soil and rock for remote instruments to be useful. Instead, most of the
+                    measurements must be taken from the same shaft as the device.
+                </i>
+                </blockquote>
+            <blockquote>
+                <i>
+                    To resolve this conundrum, engineers had to dance very closely with the destruction. It is
+                    simply the nature of underground nuclear testing that the measurement instruments will be
+                    destroyed almost instantly. They must collect their data and report it before the blast reaches
+                    them. Every underground test was a remarkable race: as the blast propagated through the
+                    canister, each instrument produced a signal which traveled through cables to safety just ahead
+                    of the advancing shockwave. Cables were turned to vapor just behind the messages they carried.
+                </i>
+            </blockquote>
+            <a href="daily.html">previous</a>
+        </div>
+    </div>
+    </div>
+    
+    
+    <script>
+    function openEmailModal(e) {
+        e.preventDefault();
+        document.getElementById('emailModal').style.display = 'block';
+        document.getElementById('emailInput').focus();
+    }
+    
+    function closeEmailModal() {
+        document.getElementById('emailModal').style.display = 'none';
+    }
+    
+    document.getElementById('emailForm').onsubmit = function(e) {
+        e.preventDefault();
+        
+        const email = document.getElementById('emailInput').value;
+        
+        // Replace with your Google Apps Script deployment URL
+        fetch('https://script.google.com/macros/s/AKfycbzDqoriWuwxLNVSv2zoj9l-qnN9gDMma1p7efXDhbmIUULT3BLg0vizs7m6-7YF1j0Lug/exec', {
+            method: 'POST',
+            body: JSON.stringify({ email: email })
+        })
+        .then(() => {
+            const button = this.querySelector('button');
+            button.textContent = 'Submitted ✓';
+            button.disabled = true;
+            setTimeout(() => {
+                closeEmailModal();
+                button.textContent = 'Submit';
+                button.disabled = false;
+                this.reset();
+            }, 1000);
+        })
+        .catch(err => {
+            console.error(err);
+            alert('Error saving email.');
+        });
+    };
+    
+    // Close modal when clicking outside
+    window.onclick = function(e) {
+        const modal = document.getElementById('emailModal');
+        if (e.target === modal) closeEmailModal();
+    }
+    </script>
+</body>
