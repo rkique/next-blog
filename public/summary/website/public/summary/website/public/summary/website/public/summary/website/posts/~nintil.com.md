@@ -1,5 +1,0 @@
----
-link: https://nintil.com
----
-
-

@@ -1,3 +1,0 @@
----
-link: https://applieddivinitystudies.com
----
