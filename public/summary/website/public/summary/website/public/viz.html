@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    
+	    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+		<meta charset="utf-8">
+		<title>Eric's Website</title>
+	</head>
+	<body style="background-color: #000000">
+	    <div id="iframeContainer" style="position: absolute; left: 10px; font-size:11px; text-align: left; z-index:-1; height: 98%;">
+	        	    <iframe src="" title="browser" id="browser" style="width: 42rem; height: 100%; border: none;" ></iframe>
+	    </div>
+
+        <div id="firstDiv">
+        </div>
+	
+			<video id="GAN" loop crossOrigin="anonymous" muted hidden playsinline autoplay>
+			<source src="images/GAN.mp4" type='video/mp4'>
+		</video>
+	<div style="position: absolute; right: 10px; font-size:11px; text-align: right">
+	    	  
+	    <!-- id must be the first part of the link -->
+	    	    <h2> <a id="blog" href="blog.html"> daily blog </a> <span class="addn"> daily </span></h2>
+	    <p> <a id="bmapping" href="bmapping.html">brightness calibrated collages </a> <span class="addn">fall 2019 </span></p>
+	   <h2><a id="GANs" href="GANs.html">imaginary landscapes</a><p class="addn"> fall 2019</p></h2>
+	   <h2><a id="esperanto1" href="esperanto1.html">visualizing relationships between words </a><span class="addn"> spring 2020</span></h2>
+        <h2><a id="synplifier" href="synplifier.html">making synthetic biology more accessible</a><p class="addn">ongoing</p></h2> 
+        <p> <a id="arrow" href="arrow">illustrated proof of Arrow's Theorem</a> <span class="addn">fall 2020</span> </p>
+        <p> <a id="crisis" href="crisis.html">designing PACMUN's crisis committee format</a> <span class="addn">fall 2020</span> </p>
+        <p> <a id="brickuses" href="brickuses.html">97 uses of a brick</a> </p>
+        <p> <a id="paperclip" href="paperclip.html">3,001 uses of a paperclip</a> </p>
+        <p> <a id="q1pclip" href="q1pclip">520 uses of a paperclip (visualized) </a> </p>
+        <p> <a id="3d" href="3d.html">3D modeling </a> </p>
+                            <p> view this site's custom three.js <a id="viz" href="viz.js">environment</a> and <a id="pan-controls" href="pan-controls.js" >controls</a>
+                            
+	</div>
+	
+<style>
+  .mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+  
+.addn {
+    font-size: 10px;
+    margin-left: 12px;
+    display: inline;
+    text-decoration: none;
+}
+body { 
+    margin: 0; 
+    font-size: 24px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #88b826;
+}
+
+a{
+    color: #88b826;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.small{
+    font-size: 14px;
+    max-width: 400px;
+}
+
+canvas { 
+    display: inline-block;
+}
+
+</style>
+		<script src="three.min.js"></script>
+		<script src="three.interaction.js"></script>
+		<script src="pan-controls.js"></script>
+		<script src="viz.js"></script>
+	</body>
+</html>
