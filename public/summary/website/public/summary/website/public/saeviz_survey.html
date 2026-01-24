@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Redirect</title>
+  <script>
+    // List of links
+    const links = [
+      // "https://forms.gle/CyA4ztDwbJWaert18", // 1: merged
+      "https://forms.gle/P5tPcSVcRzh1Kf8U9"  // 2: joint
+    ];
+
+    // Randomly select a link and redirect
+    window.onload = () => {
+      const randomIndex = Math.floor(Math.random() * links.length); // Choose random index
+      window.location.href = links[randomIndex]; // Redirect to the selected link
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting you to a random page...</p>
+</body>
+</html>

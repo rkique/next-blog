@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Eric's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <style>
+        .h__relaxed {
+            border-color: cadetblue;
+            box-shadow: rgb(193, 220, 221) 6px 20px 0px inset;
+        }
+        h2 {
+            font-style: normal;
+        }
+        p{
+            font-size: 16px;
+        }
+    </style>
+	</head>
+	<body class="center measure mw7-ns main">
+        <h1 class="h__relaxed">A concise summary of Amerispeak's methodology</h1>
+        <a href="https://amerispeak.norc.org/content/dam/amerispeak/research/pdf/AmeriSpeak%20Technical%20Overview%202019%2002%2018.pdf">From Amerispeak methodology technical overview. </a>
+        <h2>National Frame</h2>
+        <p>The initial frame for AmeriSpeak is the 2010 NORC National Frame.
+        This National Frame is comprised of 1,917 National Frame Areas. 
+        Each is:</p>
+        <ul>
+        <li>an entire metropolitan area (made up of one or more counties),</li>
+        <li>a county </li>
+        <li>or a group of counties with a minimum population of 10,000.</li>
+        </ul>
+        <p>NFAs were the 2010 Census areas, but where a population less than 10,000 were combined with the closest neighboring non-superurban county or statistical area. From these 1,917 NFAs, we selected 126 of them, including the 38 superurban NFAs, 60 urban NFAs, and 28 rural NFAs. The superurban NFAs have a population of at least 1,543,728 (0.5 percent of the 2010 Census U.S. population).</p>
+        <p>(How were urban and rural NFAs selected?)</p>
+        <p>Superurban areas with a population of at least 1,543,728 (0.5 percent of the 2010 Census U.S. population) were selected with certainty; these areas have a high population density, and are dominated by tracts with street-style addresses. These 38 areas contain 8% of area, and 56% of population. The remaining areas were split into areas with street addresses, and ones less likely to have street -style addresses. The latter group comprises 81% of area, and 14% of the population.</p>
+        <h2>How we get Secondary Sampling Units</h2> 
+        <p>Within these areas, we have secondary sampling units, defined from <b>block groups</b>, which themselves are defined from Census <b>tracts</b>,  where each segment contains at least 300 houses.</p>
+        <p>Census <b>Tracts</b> average about 4,000 inhabitants. <b>Block Groups</b> are statistical divisions of these Census tracts, are generally defined to contain between 600 and 3,000 people. It is the smallest geographical unit for which the bureau publishes sample data, i.e. data which is only collected from a fraction of all households.</p>
+
+        <p>From the superurban NFAs, 896 SSUs was selected If an SSU had more houses, it would be more likely to be selected. If it had less, it would be less likely to be selected. (Why 896? These end up comprising 59% of the SSUs. Does that oversample cancel out because SSUs in superurban areas have less people on average per SSU?).</p>
+        <p>From each of the urban NFAs, 8 SSUs were selected (Why 8? It's not explained)</p>
+        <p>For the rural NFAs, a sample of 5 SSUs were selected (Why 5? It's not explained)</p>
+        <p>This makes 60<em>8 = 480 urban SSUs and 28</em>5 = 140 rural SSUs. However, two rural SSUs in Montana were removed due to cost.</p>
+        <h2>Our final SSU groupings</h2>
+        <p>superurban: 896
+        urban: 480
+        rural: 138</p>
+        <p>For each of the houses in these SSUs, we look them up in the Postal Service DSF. In the 123 groups where the address list isn&#39;t good enough, we enhance it with an in-person field listing. These houses comprise the National Frame.  The National Frame contains almost 3 million households, including over 80,000 rural households that are added through in-person listing. In addition to NORC’s National Frame, the DSF is used as a supplemental sample frame in four states.</p>
+        <h2>AMERISPEAK specific part (no longer random)</h2>
+        <p>Although nationally representative (what does &quot;representative&quot; mean? probability proportional to size? What about the oversampling of superurban areas from above? ), the National Frame does not include households from Alaska, Iowa, North Dakota, and Wyoming. Since 2016, it has been supplemented to cover all states and DC</p>
+        <p>For sampling from 2014-2018 and in 2020, we put SSUs into six categories based on the race/ethnicity and age composition of each segment. (Okay, these demographics must be from the census).</p>
+        <p>High Youth: where 18-24-year-old adults are at least 12% of the total adult population. </p>
+        <p>Hispanic segments:</p>
+        <ul>
+        <li>Hispanics make up at least 1/3 of population</li>
+        <li>... and there are more Hispanics than non-Hispanic Black.</li>
+        </ul>
+        <p>Non-Hispanic Black segments:</p>
+        <ul>
+        <li>non-Hispanic Black make up at least a third of the population </li>
+        <li>... and there are more non-Hispanic Blacks than Hispanics.</li>
+        </ul>
+        <p class="b">For Amerispeak, we oversample housing units in areas with a higher concentration of young adults, Hispanics, and non-Hispanic African Americans. The resulting household sample is the initial AmeriSpeak sample.  </p>
+        <p>Then, in the second stage, we use vendor data to find young, hispanic, and black populations. Overall, approximately 1/5 of these initially nonresponding housing units are marked for NRFU. </p>
+        <p>At the end of 2020, a major assessment of panel representativeness was conducted to inform the 2021
+        sampling strategy. This analysis again explored representativity by state, but as well explored a full range of
+        demographic variables. This analysis was conducted both with the full panelist dataset as well as by assessing
+        “effective panelists,” a measure of the likely demographic distributions that would occur among complete
+        cases in any typical AmeriSpeak survey. </p>
+        <p>This analysis found that AmeriSpeak could benefit from additional
+        panelists in seven groups: households earning over $200,000, household with children, Hispanics, Hispanics
+        that specifically speak Spanish, African Americans, persons ages 18 to 24, and persons with less than a High
+        School education</p>
+    </body>
+</html>
