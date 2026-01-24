@@ -1,0 +1,19 @@
+@import 'https://fonts.googleapis.com/css?family=Inter:300,400,700';
+
+
+body { 
+    margin: 0; 
+    font-size: 16px;
+    font-family: "Inter", "Helvetica", "Arial", sans-serif;
+}
+
+.small{
+    font-size: 11px;
+    max-width: 400px;
+}
+
+canvas { 
+    display: block;
+background: rgb(0,0,0);
+}
+
