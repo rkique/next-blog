@@ -1,3 +1,4 @@
 {
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "liveServer.settings.port": 5502
 }
