@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node scripts/build-posts-json.js && next dev",
+    "build": "node scripts/build-posts-json.js && next build",
     "start": "next start",
-    "export": "next build"
+    "export": "node scripts/build-posts-json.js && next build",
+    "extract-posts": "node scripts/extract-posts.js",
+    "build-posts": "node scripts/build-posts-json.js"
   },
   "dependencies": {
     "@react-three/fiber": "^7.0.1",

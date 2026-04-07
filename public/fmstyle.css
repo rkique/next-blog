@@ -188,7 +188,7 @@ img {
 }
 
 .bio {
-    color: var(--text-color);
+    color: rgba(30, 130, 120, 0.8);
     margin: 1rem 2rem;
     text-align: left;
     width: 340px;

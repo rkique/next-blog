@@ -24,15 +24,16 @@ function initToggle(){
 
 document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('#daily-blog *');
-    
+
     const loadMoreButton = document.getElementById('loadMore');
+    if (!loadMoreButton) return;
     let itemsToShow = 20; // Number of items to show initially
-  
+
     // Show the initial items
     for (let i = 0; i < itemsToShow && i < items.length; i++) {
       items[i].style.display = 'block';
     }
-  
+
     // Add click event to the button
     loadMoreButton.addEventListener('click', () => {
       const hiddenItems = Array.from(items).filter(item => item.style.display === 'none');
