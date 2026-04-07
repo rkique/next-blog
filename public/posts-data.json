@@ -1293,5 +1293,684 @@
     "displayDate": "6.7.2023",
     "contentHtml": "(6.7.2023)\n                <a href=\"https://computer.rip/2022-09-13-the-nevada-national-security-site-pt-2.html\">\n                    <i>The Nevada National Security Site, J.B. Crawford</i>\n                </a>\n                </blockquote><i>\n                    There is a problem: nuclear detonations are a hostile environment for precision instruments.\n                    This is the central challenge of underground testing. In atmospheric testing, instruments can be\n                    located far enough away from ground zero to survive the detonation (we will see an example of\n                    this later). For underground tests, the radius of destruction is relatively small, but it\n                    contains far too much soil and rock for remote instruments to be useful. Instead, most of the\n                    measurements must be taken from the same shaft as the device.\n                </i>\n                </blockquote>\n            <blockquote>\n                <i>\n                    To resolve this conundrum, engineers had to dance very closely with the destruction. It is\n                    simply the nature of underground nuclear testing that the measurement instruments will be\n                    destroyed almost instantly. They must collect their data and report it before the blast reaches\n                    them. Every underground test was a remarkable race: as the blast propagated through the\n                    canister, each instrument produced a signal which traveled through cables to safety just ahead\n                    of the advancing shockwave. Cables were turned to vapor just behind the messages they carried.\n                </i>\n            </blockquote>",
     "preview": "The Nevada National Security Site, J.B. Crawford There is a"
+  },
+  {
+    "id": "daily-2023-05-09-0",
+    "date": "2023-05-09",
+    "displayDate": "5.9.2023",
+    "contentHtml": "(5.9.2023) Not much going on except for studying. I need to stop mental fidgeting.",
+    "preview": "Not much going on except for studying. I need to"
+  },
+  {
+    "id": "daily-2023-04-30-1",
+    "date": "2023-04-30",
+    "displayDate": "4.30.2023",
+    "contentHtml": "(4.30.2023) Finished <i>Replay</i>. Having fun with my second squib.",
+    "preview": "Finished Replay . Having fun with my second squib."
+  },
+  {
+    "id": "daily-2023-04-24-2",
+    "date": "2023-04-24",
+    "displayDate": "4.24.2023",
+    "contentHtml": "(4.24.2023) Read <i>The Picture of Dorian Gray</i> and <i>Information doesn't want to be Free</i>,\n    both of which I enjoyed. My classes are all wrapping up their lectures, so I get to spend time\n    studying and working on my final projects which is very rewarding. I'm going to prioritize my Deep\n    Learning project, my Lexical Semantics squibs, and my metaethics final paper. I don't think my stats\n    notes are really worth covering further. Reading my morality notes really confuses me because of how\n    dense it is but I'd still like to publish something from it.<br><br>\n    What I really love and want to explore with linguistics is the mechanics of abstraction. Not a\n    foreign language, a fixed abstraction, but absolutely the math and absolutely the philosophy of it.\n    To look at something and see all of its truly different interpretations. When I was little my ideas\n    of mathematical kinds were were very naive. I would think of x and 2x just as fundamentally\n    different as x and x^2. I had no imagination (does anyone?), I adored linearity and simple geometry\n    because it was easy to check my work. <br><br>\n    On the balance, I think I am learning to check my naivete. Accepting that my intuition is\n    simultaneously my strongest and least productive tool (but almost exactly my source of aesthetic\n    joy). If you always explore you will never exploit.\n    <br><br>\n    I made the Attleboro train with less than a minute to spare today!",
+    "preview": "Read The Picture of Dorian Gray and Information doesn't want"
+  },
+  {
+    "id": "daily-2023-04-17-3",
+    "date": "2023-04-17",
+    "displayDate": "4.17.2023",
+    "contentHtml": "(4.17.2023) But where did the thinking/feeling distinction go?",
+    "preview": "But where did the thinking/feeling distinction go?"
+  },
+  {
+    "id": "daily-2023-04-13-4",
+    "date": "2023-04-13",
+    "displayDate": "4.13.2023",
+    "contentHtml": "(4.13.2023) The bound reading is the sloppy reading. The free reading is the strict one.",
+    "preview": "The bound reading is the sloppy reading. The free reading"
+  },
+  {
+    "id": "daily-2023-04-12-5",
+    "date": "2023-04-12",
+    "displayDate": "4.12.2023",
+    "contentHtml": "(4.12.2023) So excited for our DL project. <br><br>\n    I finally understand injectivity to mean NO OVERLAP and surjectivity to mean COVER. <br><br>\n    This is roughly like how a partition (bijection) puts all its elements (surjective) in disjoint\n    subsets (injective). <br><br>\n    <b>Every probability distribution is a generative model!</b>\n    <br><br>\n    <a href=\"https://www.goodreads.com/book/show/19506.The_World_as_Will_and_Representation_Vol_1\"\n        style=\"float: left; padding-right: 20px\"><img border=\"0\"\n            alt=\"The World as Will and Representation, Vol. 1\"\n            src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386924341l/19506._SX98_.jpg\" /></a><a\n        href=\"https://www.goodreads.com/book/show/19506.The_World_as_Will_and_Representation_Vol_1\">The\n        World as Will and Representation, Vol. 1</a> by <a\n        href=\"https://www.goodreads.com/author/show/29681294.E_F_J_Payne\">E. F. J. Payne</a><br />\n    <br /><br />\n    Schopenhauer claims that this book is all a single thought unfolding, which is not really true.\n    <br />The central theme of the book would probably be something as simple as \"the world is will as\n    representation\". <br /><br />Schopenhauer takes a strategy not unlike Descartes, where he deduces\n    from a single fact a wide variety of things about the world. He basically says that there is only\n    one thing with a truly intelligible internal representation, the human will, and that the body is\n    the only link between the will and the real world. Because the will is what drives him, he believes\n    that the world should all be thought of as a single, indivisible representation of the will. The\n    will is before space, time, and causality; it is the thing-in-itself.<br /><br />Here's an question\n    I had: Schopenhauer believes the will is before everything. This includes the concept of numbers. So\n    how is it true that the will can be said to be one, indivisible, unique? The really cool thing is\n    that uniqueness proofs are done without ever *counting*. An object x has properties P(x). To prove\n    it is unique, we show that for all x' such that P(x') is true, x' is actually equal to x. We need\n    not consider anything but the properties of single objects.<br /><br />Objections mainly to the\n    argument of suitability (this was written before Darwin and Schopenhauer makes some very dubious\n    claims about ecological niches), government, and the passages on pain and boredom. The central claim\n    is in the two hundred pages and the rest doesn't really follow.\n    <br /><br />\n    <a href=\"https://www.goodreads.com/review/list/107099617-eric-xia\">View all my reviews</a>\n    <br><br>\n    Diffusion models are like fossil fuels. They borrow from the future of digital content (the\n    degradation to pure corrupted noise) to enrich the present, incurring time debt.",
+    "preview": "So excited for our DL project. I finally understand injectivity"
+  },
+  {
+    "id": "daily-2023-03-22-6",
+    "date": "2023-03-22",
+    "displayDate": "3.22.2023",
+    "contentHtml": "(3.22.2023) Is there a way to generate psuedorandom numbers that you can do in your head? This is an\n    appealing and testable project.",
+    "preview": "Is there a way to generate psuedorandom numbers that you"
+  },
+  {
+    "id": "daily-2023-03-22-7",
+    "date": "2023-03-22",
+    "displayDate": "3.22.2023",
+    "contentHtml": "(3.22.2023) Happy with my work today on space logic lemmas. Want to start working on our pix2pix\n    project, and I've been putting off writing a squib for lexical semantics! I started off strong with\n    an analysis of \"unalive\" but don't really know where to go beyond saying \"this word is a verb not a\n    noun\". I should go look at other \"un\" prefixable words, and maybe at the scalar implicature of \"un\"\n    applied to those words. There's certainly \"half-alive\". Something REALLY cool I noticed today is\n    that the scales for \"very possible\", \"possible\", \"very probable\" and \"probable\" are different. If\n    it's possible to integrate this to the squib that would be fun! I also spent a bunch of time\n    thinking about how adjectives are either relative and individual origins, but eventually concluded\n    that okay fine they are still intersectional not subsectional. I just dislike the complexity.",
+    "preview": "Happy with my work today on space logic lemmas. Want"
+  },
+  {
+    "id": "daily-2023-03-19-8",
+    "date": "2023-03-19",
+    "displayDate": "3.19.2023",
+    "contentHtml": "(3.19.2023) Maybe 1/3rd of the way through the world as will and representation. My notes look nice\n    but are incomprehensible; same with most of my projects at the moment. Not sure how much of this is\n    an increase in my own expectations versus genuine apathy. I should be doing more...",
+    "preview": "Maybe 1/3rd of the way through the world as will"
+  },
+  {
+    "id": "daily-2023-03-14-9",
+    "date": "2023-03-14",
+    "displayDate": "3.14.2023",
+    "contentHtml": "(3.14.2023) Idea: app for <strike>runners</strike> me that doesn't just give you the closest bus\n    route back, but the closest one that doesn't involve doubling back. It also calculates the arrival\n    time closer to my running pace.",
+    "preview": "Idea: app for runners me that doesn't just give you"
+  },
+  {
+    "id": "daily-2023-03-11-10",
+    "date": "2023-03-11",
+    "displayDate": "3.11.2023",
+    "contentHtml": "(3.11.2023) Alright, here we go.",
+    "preview": "Alright, here we go."
+  },
+  {
+    "id": "daily-2023-03-10-11",
+    "date": "2023-03-10",
+    "displayDate": "3.10.2023",
+    "contentHtml": "(3.10.2023) The reason why I've fixated on word vectors was that they had a power of\n    unpredictability to them. Words are incredibly compressed, forceded meaning -- vectors have a power\n    to them that is like a summer storm. But deep learning is not about creating vectors, it's about\n    making predictions. And making predictions means being right. It requires a set of questions and a\n    set of answers. It requires predictability.\n\n    Vectors are the essence of all that is unpredictable and violent and messy about a language. And\n    their utilization is only as a stopgap for the predictable and the totally routine. It is harnessing\n    lightning in a bottle to power grain mills. I love the violence and the totally adrift. I love the\n    magic.\n\n    Can I make room in my heart for something else? It's hard when all you've done seems to tell you\n    that it can go on.",
+    "preview": "The reason why I've fixated on word vectors was that"
+  },
+  {
+    "id": "daily-2023-02-13-12",
+    "date": "2023-02-13",
+    "displayDate": "2.13.2023",
+    "contentHtml": "(2.13.2023) 00._. new laptop is awesome! finished <i>the power and the glory</i>. DL homeworks are\n    really interesting, I'll try to put some of my notes up here. ?\n    <a>https://open.spotify.com/track/5e8twrEguHMuCHLx9jYStJ?si=93ffd32b2c4c493c</a> )(\n    <a>https://open.spotify.com/track/4Tzw9IdZbVyzmpWrvsGaNX?si=4888e18f87bd4dac</a>",
+    "preview": "00._. new laptop is awesome! finished the power and the"
+  },
+  {
+    "id": "daily-2023-02-02-13",
+    "date": "2023-02-02",
+    "displayDate": "2.2.2023",
+    "contentHtml": "(2.2.2023) and even at an indefinite end there is an instinctive urge to pull oneself forwards\n    <a>https://open.spotify.com/track/5ez8Y6HHopl2qNYowoBsKm?si=f75206fb6b73456d</a>",
+    "preview": "and even at an indefinite end there is an instinctive"
+  },
+  {
+    "id": "daily-2023-02-01-14",
+    "date": "2023-02-01",
+    "displayDate": "2.1.2023",
+    "contentHtml": "(2.1.2023) Well, Hack@Brown didn't go well, but I'm glad I went at all! My classes are so exciting:\n    lexical semantics, proofwriting, deep learning, morality, and stats (with theory!). I will have to\n    focus more in the next few weeks. Reading <i>Man and his Symbols</i>, <i>The Power and the\n        Glory</i>, some theory books from RISD, and still <i>Butcher's Crossing.</i>\n    Providence is beautifully austere, we've had a string of cold and sunny days and I discovered a\n    bridge that spans a slice of the world yesterday.",
+    "preview": "Well, Hack@Brown didn't go well, but I'm glad I went"
+  },
+  {
+    "id": "daily-2023-01-26-15",
+    "date": "2023-01-26",
+    "displayDate": "1.26.2023",
+    "contentHtml": "(1.26.2023) Writing the BERT embeddings to file has been running for 7 consecutive days, but we're\n    almost done. Hopefully I can apply stable matching on the neighbors to get a real graph.\n\n    New year, new Gooreads goal; Read <i>Modern Man in Search of a Soul</i> by C.G. Jung, an internet\n    image book, <i>The Windup Girl, Shadow and Claw</i>, <i>No Country for Old Men</i>, and\n    <i>Stoner</i> by John Williams. Stoner is an amazing book.\n\n    Hack@Brown is coming up!",
+    "preview": "Writing the BERT embeddings to file has been running for"
+  },
+  {
+    "id": "daily-2023-01-20-16",
+    "date": "2023-01-20",
+    "displayDate": "1.20.2023",
+    "contentHtml": "(1.20.2023) I changed my mind, this format works fine. Just have to restabilize it.",
+    "preview": "I changed my mind, this format works fine. Just have"
+  },
+  {
+    "id": "daily-2022-12-23-17",
+    "date": "2022-12-23",
+    "displayDate": "12.23.2022",
+    "contentHtml": "(12.23.2022) College is hard :)",
+    "preview": "College is hard :)"
+  },
+  {
+    "id": "daily-2022-10-03-18",
+    "date": "2022-10-03",
+    "displayDate": "10.3.2022",
+    "contentHtml": "(10.3.2022) College is fun!",
+    "preview": "College is fun!"
+  },
+  {
+    "id": "daily-2022-07-27-19",
+    "date": "2022-07-27",
+    "displayDate": "7.27.2022",
+    "contentHtml": "(7.27.2022) I got COVID lol. I want to rewrite this website again because I'm not happy with a lot of\n    the content. I realized that most of the separate .html files are older works and that I actually\n    enjoyed the previous format a good amount, but I still want to have some visual non-gridified\n    aesthetic.",
+    "preview": "I got COVID lol. I want to rewrite this website"
+  },
+  {
+    "id": "daily-2022-07-19-20",
+    "date": "2022-07-19",
+    "displayDate": "7.19.2022",
+    "contentHtml": "(7.19.2022) I have this idea that solves the multiple meanings problem with language. Given four\n    equidistant points from a center point, they form a tetrahedron in 3D wordspace where each of the\n    points is at the intersection of three planes of meaning. This also generalizes to higher\n    dimensions, but with my current script producing four point/word/vectors I have\n<blockquote>\n    <code>\n        moneyball luncheon proponent alumna\n        belated position circumvented existential\n        neutropenia crimping invisible marsupial\n        ...\n    </code>\n</blockquote>\n, where there are four meaning-planes, formed by taking three of the four words. Running this overnight\nand checking results then.",
+    "preview": "I have this idea that solves the multiple meanings problem"
+  },
+  {
+    "id": "daily-2022-07-15-21",
+    "date": "2022-07-15",
+    "displayDate": "7.15.2022",
+    "contentHtml": "(7.15.2022) Presented on tSNE language maps and then got some interviews done. <br><br>\n    Two delicious coincidences I've noticed recently.\n    <br><br>The first one is the phrase \"sign down\". There are so many associated meanings (sign up,\n    write down, sign in, write up) that you'd expect this phrase to suggest <i>something</i>, and yet it\n    is a barren wasteland. Maybe \"sign down (here, below)\", but why not just \"sign (here, below)\"?\n    <br><br> The second is that there are two major philosophies based on spoons that nicely complement\n    one another. The first is \"spoon theory\", or only having a certain number of spoons in a drawer\n    (representing mental energy), and the second is The Matrix's \"there is no spoon\", which is a\n    post-scarcity declaration of anything being possible. Both make sense; taken together, it is\n    actually a○n expression of the content/form distinction.",
+    "preview": "Presented on tSNE language maps and then got some interviews"
+  },
+  {
+    "id": "daily-2022-07-14-22",
+    "date": "2022-07-14",
+    "displayDate": "7.14.2022",
+    "contentHtml": "(7.14.2022) Paired on clusters for tSNE maps of word2vec... got some clusters with k-means, then\n    changed to DBSCAN which works surprisingly well, and the sklearn implementation makes it easy to\n    assign words to clusters. The way DBSCAN works is that it looks for cluster cores, which at the\n    current settings are two points (words) that are with a distance of 0.3 and with at least 1 neighbor\n    (this is good for isolating extremely close vector pairs, like &quot;map&quot; and\n    &quot;maps&quot;). Here&#39;s a <a href=\"https://www.eric-xia.com/images/dbscan.png\">bigger version\n        that probably won&#39;t load</a>",
+    "preview": "Paired on clusters for tSNE maps of word2vec... got some"
+  },
+  {
+    "id": "daily-2022-07-14-23",
+    "date": "2022-07-14",
+    "displayDate": "7.14.2022",
+    "contentHtml": "(7.14.2022) Finished <i>Red Mars</i> and short stories, made some progress on the rest. Today\n    reentering the pairing pool, otherwise revising website.",
+    "preview": "Finished Red Mars and short stories, made some progress on"
+  },
+  {
+    "id": "daily-2022-07-11-24",
+    "date": "2022-07-11",
+    "displayDate": "7.11.2022",
+    "contentHtml": "(7.11.2022) At home, working intermittently on various things. Reading a book on the topography of\n    seattle, a collection of japanese short stories, man is the measure, the Dawn of Everything, red\n    mars, and a little bit of graph theory.",
+    "preview": "At home, working intermittently on various things. Reading a book"
+  },
+  {
+    "id": "daily-2022-07-06-25",
+    "date": "2022-07-06",
+    "displayDate": "7.6.2022",
+    "contentHtml": "(7.6.2022) Spent the day walking around portland. I wanted to cross the border but it is not\n    accessible to pedestrians. Did cross St. John's and Fremont bridges. Yesterday went to Powell's and\n    read a bunch of picture books, and attended long NORC call from pioneer square.\n<p>(7.3.2022) Minecraft is so fun",
+    "preview": "Spent the day walking around portland. I wanted to cross"
+  },
+  {
+    "id": "daily-2022-06-30-26",
+    "date": "2022-06-30",
+    "displayDate": "6.30.2022",
+    "contentHtml": "(6.30.2022) Went to some chats with new Recursers, and readying a fun presentation for tomorrow on\n    APL. Made this <a href=\"https://www.eric-xia.com/time\">kind of scaffold</a> (click to advance),\n    experimenting with d3 as a tool for making slideshows. NORC is moving me from Amerispeak to GSS,\n    which is awesome.",
+    "preview": "Went to some chats with new Recursers, and readying a"
+  },
+  {
+    "id": "daily-2022-06-29-27",
+    "date": "2022-06-29",
+    "displayDate": "6.29.2022",
+    "contentHtml": "(6.29.2022) Learned some APL, worked on socketio & eventlet, modernized JS on golf.",
+    "preview": "Learned some APL, worked on socketio & eventlet, modernized JS"
+  },
+  {
+    "id": "daily-2022-06-28-28",
+    "date": "2022-06-28",
+    "displayDate": "6.28.2022",
+    "contentHtml": "(6.28.2022)\n    (today, yesterday) updated word.golf to use XML http requests between prompts, creating a seamless\n    no-reload experience. The backend code at this point looks terrifying, and there is a display bug\n    where the first word isn't recorded, but it is a significant improvement for the UX :) I also shut\n    down the MySQL database and any queries to it, in preparation for moving to another platform. I will\n    have to do a lot more work to improve the code.\n    <br><br>(weekend, last week) Finished <a href=\"https://www.eric-xia.com/imagenet2\">Tapestry #2</a>,\n    a 50x51 grid of ImageNet averages sorted by semantic similarity. In general these images look pretty\n    muddled, but there's a painterly quality to it that I really like. Will continue to experiment with\n    this.\n    <br><br>Worked on a flask socket.io and eventlet server.\n    <br><br> Started learning Pixi.js, the library that tetr.io is built off of, and APL. <a\n        href=\"https://www.youtube.com/watch?v=a9xAKttWgP4\">Watch this video</a>. Symbols are so cool.",
+    "preview": "(today, yesterday) updated word.golf to use XML http requests between"
+  },
+  {
+    "id": "daily-2022-06-24-29",
+    "date": "2022-06-24",
+    "displayDate": "6.24.2022",
+    "contentHtml": "(6.24.2022) I can't shake the feeling that my site is actively hostile to thoughtful blog pieces now.\n    Anyways, I should probably go work on golf or something. I've been averaging images from Imagenet\n    with the squared root mean method and am about 1/3 of the way done, and basically procrastinating\n    otherwise. Dataclasses are cool, __name__ == __main__ for runnable scripts, multiprocessing, os,\n    numpy is really fast, and logging, timeit, dict and set comprehension. AHDNLNDLSVD",
+    "preview": "I can't shake the feeling that my site is actively"
+  },
+  {
+    "id": "daily-2022-06-15-30",
+    "date": "2022-06-15",
+    "displayDate": "6.15.2022",
+    "contentHtml": "(6.15.2022) Had a lot of fun this morning setting up an imagenet tapestry at <a\n        href=\"https://www.eric-xia.com/imagenet\">https://www.eric-xia.com/imagenet</a> .The process for\n    making these grids has become very streamlined. First you choose a lump of clay (a base set of word\n    embeddings, 40-50k words) and then you carve away the words you don't need (imagenet's categories\n    share around 2,500 words with word2vec, for the most part nouns: \"ball\", \"sailboat\", \"pliers\",\n    \"raccoon\") you smooth it out with tSNE by going from 200 dimensions to 2, and then you shape it into\n    a square grid (50x50)! Finally for this project I just took the first image from each category\n    folder and displayed it, forming a mosaic. Originally I was just hosting the 2500ish images from\n    github pages/netlify, but then I decided to use Amazon s3, which works better. I'm very satisfied\n    with the result, and particularly like the yellow and blue diagonals where agricultural and nautical\n    terms border one another. I might be able to do PIL preprocessing which can look for images only\n    with white backgrounds or without them.\n\n    Yesterday and today, I also worked on a cursor tracker in javascript similar to cursors.io or <a\n        href=\"http://donottouch.org/\">http://donottouch.org/</a>. Reading <i>Man is the Measure</i> by\n    Abel.",
+    "preview": "Had a lot of fun this morning setting up an"
+  },
+  {
+    "id": "daily-2022-06-08-31",
+    "date": "2022-06-08",
+    "displayDate": "6.8.2022",
+    "contentHtml": "(6.8.2022) Read <i>Against Interpretation</i>, some notebooks from Susan Sontag, stories from <i>The\n        Best American Sports Writing 2019</i>, Chuck Palahnuik's advice memoir, and took home <i>Uncanny\n        Valley</i> and a book about the medical device industry.",
+    "preview": "Read Against Interpretation , some notebooks from Susan Sontag, stories"
+  },
+  {
+    "id": "daily-2022-06-07-32",
+    "date": "2022-06-07",
+    "displayDate": "6.7.2022",
+    "contentHtml": "(6.7.2022) days 16 + 17. Started the morning not doing anything in particular except completing a\n    training from NORC and some paperwork. Then I started looking at three.js examples and getting\n    lectured by <a\n        href=\"https://threejs.org/manual/#en/prerequisites\">https://threejs.org/manual/#en/prerequisites</a>\n    which is written by someone with very strong opinions about javascript. Then I spent the afternoon\n    pairing on my old website, conceding a 1-&gt;2 approach instead of 0-&gt;1 (super helpful as a\n    driver even without knowing anything about three! I aspire to have swiss army knife debugging skills\n    as well someday!) and watching code Game of Life! In Rust + WASM! While fire alarms were going of!\n    Anyways, I can&#39;t find motivation to learn Rust, cause although it looks elegant it doesn&#39;t\n    seem like it does anything cool. Today is the 8th which is a wednesday, which means it&#39;s library\n    day (the upper levels only open on wednesday)! Will head to the library and code and read after\n    call.",
+    "preview": "days 16 + 17. Started the morning not doing anything"
+  },
+  {
+    "id": "daily-2022-06-06-33",
+    "date": "2022-06-06",
+    "displayDate": "6.6.2022",
+    "contentHtml": "(6.6.2022) Day 15. This morning I had a coffee chat with who showed off some really cool demos and\n    convinced me to go to the audio processing showcase. I&#39;m unzipping ImageNet still (15 hours\n    remaining as of right now), but I was actually productive in the meanwhile. I hosted a github pages\n    site with no snowballing problems with Vercel, hosted it on the site <a\n        href=\"https://www.synplifier.com/\">synplifier.com</a>, and stripped the react app from like two\n    years ago down. Then I got a prototype kind of working, and during a pairing session, I had a series\n    of major revelations about how react and npm work that will definitely at least double my javascript\n    productivity from now on. Thank you so much for your patience and help!",
+    "preview": "Day 15. This morning I had a coffee chat with"
+  },
+  {
+    "id": "daily-2022-06-03-34",
+    "date": "2022-06-03",
+    "displayDate": "6.3.2022",
+    "contentHtml": "(6.3.2022) Day 14! Today I woke up late and did some urban hiking. I a book of financial advice from\n    a little free library while walking around. It's still raining heavily, so I'm probably going to go\n    to a bookstore and just spend some time browsing. I did some light es6 exploration, but also looked\n    at svelte which is actually really cool. ImageNet did download so I will play around with it later\n    tonight, otherwise just attended presentations.",
+    "preview": "Day 14! Today I woke up late and did some"
+  },
+  {
+    "id": "daily-2022-06-02-35",
+    "date": "2022-06-02",
+    "displayDate": "6.2.2022",
+    "contentHtml": "(6.2.2022) Day 13. I always plan these posts as an exercise in efficiency, but inevitably go back and\n    edit. Oh well. In the early morning, I poked around on noisecraft some more and made this <a\n        href=\"https://noisecraft.app/620\">squarish tune</a>. I then started experimenting with different\n    AWS services, trying out the OCR service, chatbot service, and S3. I concluded that the best way to\n    use my credits were probably a server for images, or maybe learning how to make an API. I renewed\n    the synplifier.com domain name on Namecheap. I started downloading ImageNet (261 gb) for an\n    archetypal navigator interface built on word vectors (I just took a look at it and realized it\n    failed :(). Finally, I read a bunch of excerpts from NLP papers, some from the LUNAR lab at Brown,\n    and it served to reinforce my impression of the field as one where essentially no progress has been\n    made towards grounded understanding, except for where the gradual massive accumulation of internet\n    data in Common Crawl+ has allowed for the construction of a few beautiful artifacts (word embeddings\n    and models), like silt coalescing into a pearl.",
+    "preview": "Day 13. I always plan these posts as an exercise"
+  },
+  {
+    "id": "daily-2022-06-01-36",
+    "date": "2022-06-01",
+    "displayDate": "6.1.2022",
+    "contentHtml": "(6.1.2022) Day 12 of Recurse! Today was an incredibly fun day. I spent most of it learning how to use\n    the Noisecraft node editor, attempting making electronic &quot;music&quot;. I am completely new to\n    audio processing and found all of it very interesting, if a little overwhelming. I found myself\n    reflecting on the process of visual programming, especially with an established community, and\n    common strategies that can be employed. I found myself conceptualizing these strategies as\n    getting a minimum working example,\n    forking existing projects and tweaking one thing,\n    picking one piece to understand at a time,\n    extending examples,\n    combining examples,\n<p>Enjoy my pieces from today:",
+    "preview": "Day 12 of Recurse! Today was an incredibly fun day."
+  },
+  {
+    "id": "daily-2022-05-31-37",
+    "date": "2022-05-31",
+    "displayDate": "5.31.2022",
+    "contentHtml": "(5.31.2022) Day 11 of Recurse! I think. I didn&#39;t code on Monday but I did quickly modify a DIY\n    projection to play with here (<a\n        href=\"https://www.eric-xia.com/projections.html\">https://www.eric-xia.com/projections.html</a>)\n    at some point. Today I was very productive but not for very long, pairing with Cody to make my first\n    original interactive Observable, a <a\n        href=\"https://observablehq.com/@759c6b835359aafe/us-household-income-by-region\">visualization of\n        household income by region</a> from the Census 2020 data. I think I understand banding,\n    Observable, and Javascript better now, even with the hacky solution we came up with. I also played\n    around with maps, read a cookbook (Salt, Fat, Acid, Heat), edited Wikipedia, and attended the Wacky\n    Ideas Production Group, where I found this <a\n        href=\"https://www.youtube.com/watch?v=Tm8JRlJ1q50\">gem</a>. I have so many ideas for what to\n    work on next! A watershed map from USGS data, maybe. Or experimenting with Voronoi.",
+    "preview": "Day 11 of Recurse! I think. I didn&#39;t code on"
+  },
+  {
+    "id": "daily-2022-05-26-38",
+    "date": "2022-05-26",
+    "displayDate": "5.26.2022",
+    "contentHtml": "(5.26.2022) Day 9 of Recurse. I learned about Joins and Selections in d3 and spent way too long\n    working on a p5 sketch as usual. I found a few ways to introduce visual complexity that work well\n    together: perlin noise gradients, stepped lines, and overlaying groups of lines to produce a moire\n    effect. Then I paired on an adversarial 2048 project in Rust, which was fascinating. I thought it\n    was interesting how simple minimax is as an algorithm (well, in theory): if you can reduce a game to\n    a single score, it doesn't matter how complicated the rules are, it's just another version of\n    tug-of-war.",
+    "preview": "Day 9 of Recurse. I learned about Joins and Selections"
+  },
+  {
+    "id": "daily-2022-05-25-39",
+    "date": "2022-05-25",
+    "displayDate": "5.25.2022",
+    "contentHtml": "(5.25.2022) Day 8! I didn&#39;t feel especially productive today, but looking back I think I learned\n    a lot. Mainly some technical issues prevented me from connecting on Zoom, so could not pair. I read\n    the first two sections of <i>Python One-Liners</i>. Learned about using map and lambda as an\n    alternative to list comprehension, slicing, zip, combining np.nonzero and booleans to query arrays,\n    and multi-dimension numpy arrays. Then I generated a second static grid from the older glove\n    embedding, with more words but less curated. Here&#39;s a <a\n        href=\"https://www.eric-xia.com/static_grid.html\">link to the first one</a>. Then I started\n    reading <i>The Map that changed the World</i>, which is about the foundation of modern geology by\n    the self-educated surveyor <a href=\"(https://en.wikipedia.org/wiki/William_Smith_(geologist\">William\n        Smith</a>)); it&#39;s a <i>really</i> fascinating story.\n    <br><br>\n    Specifically, it made me think about what constitutes a frontier in the public imagination.\n    Frederick Jackson Turner wrote the &quot;The Significance of the Frontier in American History&quot;\n    in 1893. The west coast, Alaska, outer space, and the deep ocean have at various points in time been\n    considered as the final frontier. What&#39;s so interesting to me is that even for William Smith,\n    <i>in the 1700s</i>, geological history was not a pure frontier, in the sense of exploring new lands\n    in other places; it was instead a reexamination, of the rock stratification around coal pits, of\n    details dismissed by others to be uninteresting. By doing so, and realizing that the present is the\n    key to the past, he was able to discover a vast amount of richness in earth and earth history. In\n    the past, the church prevented these kinds of inquiry from taking place. The idea of fossils were\n    viewed as heretical; everything was either already discovered, or divine will. And while it might\n    feel like a lot has changed, I really think this idea of &quot;everything interesting has already\n    been discovered, or requires massive amounts of funding, or will be found by large international\n    consortiums of scientists&quot; is especially prevalent, at least among people in my generation. But\n    I disagree, and stories like these encourage me.",
+    "preview": "Day 8! I didn&#39;t feel especially productive today, but looking"
+  },
+  {
+    "id": "daily-2022-05-24-40",
+    "date": "2022-05-24",
+    "displayDate": "5.24.2022",
+    "contentHtml": "(5.24.2022) Day 7! Today was the first day I went into the field in addition to attending Recurse.\n    After the pairing session I went to attempt interviews. I did not coordinate very well, but I was\n    able to touch quite a few cases.",
+    "preview": "Day 7! Today was the first day I went into"
+  },
+  {
+    "id": "daily-2022-05-23-41",
+    "date": "2022-05-23",
+    "displayDate": "5.23.2022",
+    "contentHtml": "(5.23.2022) Day 6! Super productive and learning things. Made my first original graphs with d3 of\n    github commit histories, and then wrangled the grid textfiles into a walkable prototype. Did not\n    code after 2pm. No meetings. Will try to stick to the same routine tomorrow.\n    <img src=\"images/prompt.gif\">",
+    "preview": "Day 6! Super productive and learning things. Made my first"
+  },
+  {
+    "id": "daily-2022-05-22-42",
+    "date": "2022-05-22",
+    "displayDate": "5.22.2022",
+    "contentHtml": "(5.22.2022) 20 miles to auburn and stumbled into a horse racecourse at Emerald Downs. The Interurban\n    from Renton to Auburn are some of the most beautiful officepark aesthetics I've seen. Going to start\n    reading an anthology of japanese short stories! Trying to stay off my computer during the weekend.",
+    "preview": "20 miles to auburn and stumbled into a horse racecourse"
+  },
+  {
+    "id": "daily-2022-05-20-43",
+    "date": "2022-05-20",
+    "displayDate": "5.20.2022",
+    "contentHtml": "(5.20.2022)\n    Day 5! Today I worked mostly on word golf and ended up pairing on it. While I ended up getting a\n    working prototype for four neighbor golf, because of the lack of an actual grid pretty much every\n    word was circular. Just using the four closest neighbors definitely doesn't work. However, in the\n    afternoon we rebounded and got a real legitimate grid (we had tSNE coordinates all of this time so\n    I'm not sure why it didn't occur to me... lol). Excited to test this out soon. I also presented and\n    watched some cool presentations, and learned about kernels and Rust.",
+    "preview": "Day 5! Today I worked mostly on word golf and"
+  },
+  {
+    "id": "daily-2022-05-19-44",
+    "date": "2022-05-19",
+    "displayDate": "5.19.2022",
+    "contentHtml": "(5.19.2022)\n    PS: Sort of done with <i>The Shenzhen Experiment</i>. So much of it seems utterly unreal to me.\n    Being sent into the countryside as a teenager of the urban youth, building a floor of a skyscraper\n    every three days, temples to sea gods, nail houses and peasant apartments, village industries, the\n    collision of cooperative and competitive motives, idealism in utter poverty, boarding a ship to\n    America and going to Ecuador instead... it still resonates powerfully, more my ancestral story than\n    anything else.\n    <br><br>\n    Day 4! Today I mostly did d3 throughout the morning, attended the meet & greet call, and then ended\n    up going on a reading binge of killedbyapixel's blog, a game dev and generative artist who produces\n    extremely intricate artwork from 140 characters or less of javascript. I also attended the creative\n    coding call, where I stumbled upon an interesting concept while making a <a\n        href=\"https://editor.p5js.org/rkique/sketches/0qKYaRWHw\">simple symmetric draw tool</a> in p5.\n    Because you have X and Y symmetries, each quadrant of the page actually makes up a *separate form of\n    interaction* with the entire picture. In effect you can draw four different ways. For example, with\n    the original exponential scale of mouseX and mouseY to the HSL color system, drawing in the upper\n    quadrants is negative space (black) or ambient blue and green. Drawing in the left bottom quadrant\n    is white, grey, and yellow organic shapes; and the right bottom quadrant contains a rainbow of\n    different hues. It's really fun to play with and so I spent hours just clicking and dragging. Then I\n    remembered I had a pairing call and ended rescheduling it for tomorrow. Haha. Several calls\n    tomorrow; will probably return to working on golf then.\n    <br>\n    <img src=\"images/lilies_3.PNG\" class=\"w-40\">\n    <img src=\"images/lilies_6.PNG\" class=\"w-40\">\n    <img src=\"images/lilies_9.PNG\" class=\"w-40\">\n    <img src=\"images/lilies_11.PNG\" class=\"w-40\">",
+    "preview": "PS: Sort of done with The Shenzhen Experiment . So"
+  },
+  {
+    "id": "daily-2022-05-18-45",
+    "date": "2022-05-18",
+    "displayDate": "5.18.2022",
+    "contentHtml": "(5.18.2022)\n    Day 3. Purposefully making this short to loosen future constraints. Today was not a productive day\n    in terms of lines of code written; it was, on the other hand, supremely creatively inspiring.\n    Tackled d3.js, read about Union Find, got linked to a bunch of geography and software blogs (Joe\n    Morrison is an instant favorite):\n\n<blockquote>If you work at the intersection of maps and software, at some point in your life you’ve\n    probably heard yourself muttering some version of the following analogy to a stubbornly confused\n    family member: \"You know Google Maps? What I do is, like, build little pieces of Google Maps over\n    and over for people who need them but can’t just use Google Maps because they’re not allowed to for\n    some reason, or another.\"</blockquote>\n\nI spent a good deal of my afternoon reading about deck.gl, satellite startups, OSM, Google Maps, climate\nchange and change detection, Leaflet and Mapbox... all while half-listening to people talk about careers\nin the background (My theory is that this is what I've been missing! My most engaged times reading blogs\nlast year were all during online classes where the pleasant background noise of teachers made me yearn\nfor intellectual excitement!) As often happens with rabbit holes, I found myself inexorably drawn to the\nMIT Media Lab, this time through the Senseable city lab, finding ascii webcams, isochronic maps, space\nbubbles, and the theory of the pointiest path... yeah anyways so much to do. So little time. Must not\nwrite so much or so carefully from now on!",
+    "preview": "Day 3. Purposefully making this short to loosen future constraints."
+  },
+  {
+    "id": "daily-2022-05-17-46",
+    "date": "2022-05-17",
+    "displayDate": "5.17.2022",
+    "contentHtml": "(5.17.2022)\n    Finally winding down for my second day, after around 10 hours. In the early morning, I chose to read\n    my d3.js book, learning about loading with d3.csv() and d3.json(), and saw how you could create bins\n    and scale data. I was alarmed that there wasn't any kind of note about the ease of\n    misrepresentation: something like this is presented as one of the examples:\n    <br>\n<pre>\nd3.scaleLinear().domain([2000, 10000]).range([0, 500])\n</pre>\n\n<br>\n\nWhen you create visualizations without including zero as a frame of reference, it's very easy to\nmisrepresent the truth! This is data literacy 101! Of course, there are definitely some applications\nwhere you need to do otherwise, but I'm still really surprised.\nI did this instead of going to the check-in call; I prefer writing these checkins (checkouts?) out more\nthan a conversational format. Plus, text is easy to share on my blog as well!\n<br><br>\nAfter that, I paired on Game of Life! Using p5.js, we got kind of far; not only did we make a grid, we\nwere even able to add six squares for an oscillator! Then we suffered what I assume is called technical\ndebt and did not get to implementing any of the rules. I left to do l33tcode problems, but got\ndistracted by the *amazing* text animations on https://musicforprogramming.net/ and only got the easy\nproblem done. As kitschy or cute as text animations might sound (the shapes of these letters on my\nscreen are so arbitrary! Why restrict yourself to them!), I find they portray the absurdity of language\nwell, what is almost a sense of fear that the shapes will stay as meaningless squiggles until the relief\nof discerning meaning.\n<br><br>\nThen I had a call with the creator of the aforementioned word game, learned a lot, and got very\nmotivated to work through the afternoon. I threw myself into an actually challenging problem related to\nmaking a standardized grid: given four neighboring points in space, how do you assign them directions?\nIt's easy for a human but difficult (for me) to code in. There's trigonometry involved, and choosing\nbetween rotating clockwise or ccw. I wonder if I'm missing a really simple approach actually.\n<br><br>\nHere's a sample of that very messy code:\n<pre>\n#clockwise swing\ndef swing(indice):\nreturn abs(np.arctan(Xdiffs[indice]/Ydiffs[indice])) \nwhile len(quadrants) != len(set(quadrants)):\nfor i in range(0, 4):\nif quadrants.count(quadrants[i]) > 1:\n#while more than one in same quadrants, move the closer one (indice wrt quadrants & diffs)\nindices = [index for index, element in enumerate(quadrants) if element == quadrants[i]]\nswings = [swing(indice) for indice in indices]\nminSwingIndex = indices[swings.index(min(swings))]\nquadrants[minSwingIndex]+=1\n#print(f\"point with indice {minSwingIndex} moved from {quadrants[minSwingIndex]} to {quadrants[minSwingIndex]+1}\")\nif(quadrants[minSwingIndex]) > 4:\nquadrants[minSwingIndex] = 1\n</pre>\n<br><br>\nI ended up successfully sorting four closest neighbors for each word into directions, but not isomorphic\nto a grid. While this was somewhat disappointing, visualizing a random walk of neighborhoods made me\nhappy. I was able to build a utility tool to view undirected graphs very quickly, gutting my graph view\nand simplifying a lot of it (you can use it too! go to https://www.eric-xia.com/graphviz.html). It's\nbuilt on force-graph.js.\n\nFinally, I uploaded my progress on research to my blog.\nAll in all, I'm super happy with my work again. Tomorrow, I hope to be as productive as I was today and\ncontinue tackling hard problems!",
+    "preview": "Finally winding down for my second day, after around 10"
+  },
+  {
+    "id": "daily-2022-05-16-47",
+    "date": "2022-05-16",
+    "displayDate": "5.16.2022",
+    "contentHtml": "(5.16.2022)\n    PS: Breakcore and golfing go so well together. Youtube playlists <a\n        href=\"https://www.youtube.com/watch?v=NoJ_VTA4PhY\">ex</a> are amazing... feeling like there's a\n    real positive impact to the sport. When word choice becomes unconscious activity, people no longer\n    have to reach for words. Expressing yourself becomes natural.\n    <br><br>\n    RECURSE DAY #1 <br><br>\n    I had a great first day! I adopted a parrot, walked around the park and took some selfies, and tried\n    out the maze in the top right corner. I also met a bunch of super interesting people, and found out\n    a certain popular semantic game I had been referred to many times was made by a Recurser! Finally I\n    attended the Clojure Conclave, which was a meditative experience learning about things like\n    generative testing and garbage collection.\n    <br><br>\n    All of the good energy also translated into a very productive session iterating on golf, where I\n    started spring cleaning by removing large swathes of obselete functionality (including the user\n    authentication page, links to view pages, and profile) and replaced it with a simple plotlyjs graph\n    working with LocalStorage. I also generated and sifted through around two hundred additional prompts\n    for temporary use (but plan to trade out daily 9 or 18 prompt courses in the future). For the first\n    time in a while, I feel proud of golf again!\n    <br><br>\n    While this first day went really well, I was totally in my comfort zone. I need and want to engage\n    in more hard problems and exploration. Tomorrow, I'll try to join in on the daily leetcode problems\n    which I have no experience in, do my first pairing session, and actively learn from a hardcover copy\n    of \"D3.js in action\" I checked out from the library. Thinking of diving into the GIS section and\n    trying to build a simple geographical visualization for Amerispeak, the NORC project I'm a field\n    interviewer for.",
+    "preview": "PS: Breakcore and golfing go so well together. Youtube playlists"
+  },
+  {
+    "id": "daily-2022-05-15-48",
+    "date": "2022-05-15",
+    "displayDate": "5.15.2022",
+    "contentHtml": "(5.15.2022) Recurse begins tomorrow! Exciting! I was hoping to begin interviewing this weekend but I\n    haven't got my badge yet. I really hope it gets here soon...",
+    "preview": "Recurse begins tomorrow! Exciting! I was hoping to begin interviewing"
+  },
+  {
+    "id": "daily-2022-05-11-49",
+    "date": "2022-05-11",
+    "displayDate": "5.11.2022",
+    "contentHtml": "(5.11.2022) Today was the second training call for NORC and I caught up on Recurse emails. I finally\n    got some work done fixing word.golf and making it look presentable for now. I'm pretty tired so\n    going home now, but excited for the coming weeks.",
+    "preview": "Today was the second training call for NORC and I"
+  },
+  {
+    "id": "daily-2022-05-02-50",
+    "date": "2022-05-02",
+    "displayDate": "5.2.2022",
+    "contentHtml": "(5.2.2022) God two jump precalculated word golf is so amazing and the prompts are so good",
+    "preview": "God two jump precalculated word golf is so amazing and"
+  },
+  {
+    "id": "daily-2022-04-28-51",
+    "date": "2022-04-28",
+    "displayDate": "4.28.2022",
+    "contentHtml": "(4.28.2022) Did some of the work. Need to script a short animation for initial display...<br><br>Read\n    <i>The Complacent Class</i>, started a book about Shenzhen. I'm working on increasing engagement\n    through 1. adding a certain number of weekly prompts and 2. different difficulties by distance. Also\n    finally switched 100 glove out for a 200 neighbor word2vec model. I really like the direction this\n    is going but there's a ton of front-end work before I can finalize it.",
+    "preview": "Did some of the work. Need to script a short"
+  },
+  {
+    "id": "daily-2022-04-24-52",
+    "date": "2022-04-24",
+    "displayDate": "4.24.2022",
+    "contentHtml": "(4.24.2022) Ran 31 miles to Tacoma yesterday, passing by the Georgetown neighborhood, the King County\n    international and SeaTac airports, Kent, and Federal Way. I was thinking about the aesthetics of the\n    metropolitan area south of Seattle vs north. They are similar at first glance, but the south side\n    feels more rooted in history, with older and more interesting public art. For example, around the\n    Rainer Beach brewery there are a bunch of poles by the railroad striped green and black, and\n    tapering into a nasty looking spike. I was reminded of nuclear waste warnings, but they're\n    apparently supposed to be artwork, representing trees. It's the same with the malls, the logos and\n    advertisments are generally wackier and older looking than the Alderwood area.\n    <br><br>I added a self-portrait around the About Me section, and also started writing about word\n    golf under golfing.html. Started reading <i>Superstructures</i>, read <i>Shopping Mall</i>, and\n    <i>The Beggar</i> by Reinhard Sorge from an anthology of German Expressionist plays, which is very\n    interesting. I've been working on some drawings but none that I want to put up at the moment. The\n    current site structure is temporary, I will definitely be expanding downwards...",
+    "preview": "Ran 31 miles to Tacoma yesterday, passing by the Georgetown"
+  },
+  {
+    "id": "daily-2022-04-19-53",
+    "date": "2022-04-19",
+    "displayDate": "4.19.2022",
+    "contentHtml": "(4.19.2022) <a href=\"symbolistics.html\">Some word2vec associations of greek letters.</a> I want to\n    publish projects somewhere! This site is definitely suffering from growing pains.",
+    "preview": "Some word2vec associations of greek letters. I want to publish"
+  },
+  {
+    "id": "daily-2022-04-19-54",
+    "date": "2022-04-19",
+    "displayDate": "4.19.2022",
+    "contentHtml": "(4.19.2022) Realized I've become way too pessimistic about technology.",
+    "preview": "Realized I've become way too pessimistic about technology."
+  },
+  {
+    "id": "daily-2022-04-17-55",
+    "date": "2022-04-17",
+    "displayDate": "4.17.2022",
+    "contentHtml": "(4.17.2022) Spent today drawing movie of stills and relearning blender. Tomorrow I'll be working on\n    word golf; the infrastructure is in a good place, I just have to finally get around to designing six\n    prompts for an inital challenge. They just have to be good; they don't have to be perfect. I find it\n    much easier to start sketching with a ballpoint pen on notebook than on nice paper, but once I build\n    up enough confidence I'll end up switching.",
+    "preview": "Spent today drawing movie of stills and relearning blender. Tomorrow"
+  },
+  {
+    "id": "daily-2022-04-15-56",
+    "date": "2022-04-15",
+    "displayDate": "4.15.2022",
+    "contentHtml": "(4.15.2022) Hit 7 miles at 6:30 pace yesterday to Othello of which I am quite proud. Ended up\n    wandering around Renton and getting on three separate buses by accident.",
+    "preview": "Hit 7 miles at 6:30 pace yesterday to Othello of"
+  },
+  {
+    "id": "daily-2022-04-13-57",
+    "date": "2022-04-13",
+    "displayDate": "4.13.2022",
+    "contentHtml": "(4.13.2022) Read <i>1517</i> by Peter Marshall which argues the Reformation was invented, making my\n    way through the <i>Canterbury Tales</i> and <i>Ecotopia</i>. The Canterbury Tales, at least the\n    first story about Arcita and Palamon, are absolutely enthralling. I walked five miles from Lake City\n    to UDistrict while reading it. Something about the verse that leaves a mark in you... especially out\n    as the sun sets.",
+    "preview": "Read 1517 by Peter Marshall which argues the Reformation was"
+  },
+  {
+    "id": "daily-2022-04-10-58",
+    "date": "2022-04-10",
+    "displayDate": "4.10.2022",
+    "contentHtml": "(4.10.2022) I discovered the Central Seattle Public Library! It's an amazing place. Read\n    <i>Norwegian Wood</i> by Murakami, <i>Black Dogs</i> by Ian McEwan, a book on wildfowl decoys, a\n    Hegel primer, <i>100 Years of Solitude</i> (don't bother), a book about tarot cards, and <i>Aquinas\n        on Virtue</i>, started reading <i>Magic Mountain</i> and <i>Analects</i>, almost done with\n    <i>Kafka on the Shore</i> by Murakami. Oh also, <i>Ecotopia</i> which is a WILD sci-fi novel about a\n    Pacific Northwest breakaway country set in 1999 (which, while published in 1970, covers a lot of the\n    same ideas that are hot right now around urban design and walkable cities...). I'll write a nice\n    long review when I finish: what has changed since the 1970s about American cities? And what has\n    changed about our desires to improve them? Our ambitions?\n    <br><br>\n    Something I've re-noticed recently is just how important word choice is when making distinctions\n    about abstract concepts. Religion for example: what does believing in a \"higher power\" mean? What do\n    you associate with a word like \"divine\", \"providence\"? \"consequentialist\"? \"form\"? \"formal\"?\n    \"cause\"? Language is different from math; this reminds me of the article I read a while back about\n    how people experience things differently. For some, when they close their eyes they can literally\n    see all sorts of squiggly shapes moving about, and others just see nothing, and as a result they are\n    not talking about the same nothingness.",
+    "preview": "I discovered the Central Seattle Public Library! It's an amazing"
+  },
+  {
+    "id": "daily-2022-03-30-59",
+    "date": "2022-03-30",
+    "displayDate": "3.30.2022",
+    "contentHtml": "(3.30.2022) It's 1pm and there are still six hours of daylight left! This is amazing. Halfway\n    through <i>The Wind-up Bird Chronicle</i> and <i>Economics for the Public Good</i>. Reviewed math\n    this morning. I realized a couple days ago that I didn't have a .dockerignore, specifically\n    forgetting to ignore .git, which meant that my container sizes had been 2 or 3 gigabytes too large\n    all along! Now my deploy times are six times faster. And yesterday I removed 210 gb of old\n    containers from docker desktop.",
+    "preview": "It's 1pm and there are still six hours of daylight"
+  },
+  {
+    "id": "daily-2022-03-28-60",
+    "date": "2022-03-28",
+    "displayDate": "3.28.2022",
+    "contentHtml": "(3.28.2022) Feeling good. Read <i>The Glass Castle</i> and <i>Starting with No</i>, working my way\n    through <i>Economics for the Public Good</i>, <i>The Wind-up Bird Chronicle</i> and of course <i>Div\n        Grad Curl</i>. Slowly but steadily improving my understanding of matrices and linear\n    transformations.",
+    "preview": "Feeling good. Read The Glass Castle and Starting with No"
+  },
+  {
+    "id": "daily-2022-03-25-61",
+    "date": "2022-03-25",
+    "displayDate": "3.25.2022",
+    "contentHtml": "(3.25.2022) I finished reading <i>The Soul of the New Machine</i> and beginning <i>Economics for the\n        Public Good</i> in depth. I've recently been watching some fascinating videos, including Adult\n    Swim's Infomercials, the beautiful surreal <a\n        href=\"https://www.youtube.com/watch?v=b_V-VJQT6pM\">Interface</a>, <i>Cowboy Bebop</i>, and the\n    first seven episodes of <i>Servant of the People</i>, the TV series starring the current Ukrainian\n    president. This show is deeper than most would expect. Right off the bat, the\n    history-teacher-turned-president is confronted with accusations of populism and \"putting a show on\n    for the people\". The whole show is about changing those deeply rooted beliefs.\n    <br><br>\n    I'm behind my goal of 200 books this year, but way ahead of where I'd be otherwise. Things I've been\n    thinking about recently: young people, as a general rule, are much smarter than most intellectuals*\n    think, and they have way more time to worry about themselves than you do. They also don't waste our\n    lives doing things that don't matter to them. <br><br>\n\n    Along these lines, a good chunk of Twitter seems to be supportive of returning to the small web or\n    reinventing the creator economy, in theory, but both exist already and are thriving in Neocities,\n    the Yesterweb and Patreon; it's a cultural dissonance, and a reluctance to give up a talking point,\n    that prevent this recognition.\n    <br><br>\n    This reminds me of one of my favorite quotes, which encapsulates many things I both worry about and\n    love about technology. It's from an essay by Jill Lepore -- <i>The Last Time Democracy Almost\n        Died</i>: \"Don't ask whether you need an umbrella. Go outside and stop the rain\". What I worry\n    about now is the Effective Altruism poster I saw the other day. I worry about people, believing\n    themselves to be optimizing agents, spending all their time thinking about agency, grantmaking,\n    quantifying the possibilities inherent in people, how to extract that possibility. I worry about the\n    whole exercise becoming turned out like any other activity on a college resume. Is it not beneficial\n    in the long run though, people giving more to institutions that can do better? I don't believe the\n    differences matter. It feels removed from reality, the same way productivity and lifestyle coaches\n    are, and too ghost-like for me. But -- I will resolve not to worry about it, or think about it,\n    because that's the advice I'm giving. I want to make synthesizer music now. I want to draw\n    animations in a gritty, surreal style. I want to practice lockpicking, get really good at vector\n    calc, and become fluent in Chinese. I want to work with isolates and skeletons and more\n    contemporary, faster language models.\n    <br><br>\n    Another quote from 1979 SF<i>The Missing Man</i>: \"I mean, we don't know what happened in the past\n    exactly. It's gone anyhow. It's not real anymore. So we can say anything happened we want to have\n    happened. If one past is going to make trouble, we can change it, just by being dumb, and everything\n    will straighten out. Like, for example, we just met, right now. Nothing else happened\".\n    <br><br>\n    I don't have a real point for all this, but utlimately it comes down to saying: I feel like changing\n    the future needs you to have a certain state of suspended belief in your mind, a genuine state of\n    curiosity, that the environment and tech climate, feels unconducive towards. It doesn't feel\n    creative enough in the ways that matter. I sound like a broken record. It's the same thing I was\n    trying to get at in my other essays. Sigh. Love your work, people. At least I love my work!",
+    "preview": "I finished reading The Soul of the New Machine and"
+  },
+  {
+    "id": "daily-2022-03-21-62",
+    "date": "2022-03-21",
+    "displayDate": "3.21.2022",
+    "contentHtml": "(3.21.2022)\n    I think this website could use more pages. Test\n    <br><br>\n    ADVENTURES IN IPHONE SE REPAIR\n    <br> <br>\n    1. broke screen while doing stair flights on the 15th <br> <br>\n    2. had glitch effect until wednesday when unresponsive, could still use airpods and apple pay. <br>\n    <br>\n\n    3. Order screen online to fix.<br> <br>\n\n\n    4. First fix a disaster. Try unscrewing plates and disconnect/reconnecting four times, still dead\n    screen. Can still charge phone up until this point. Lose about half of screws, strip most of rest,\n    damage black coating on back cover, rip the front sensor flex cable entirely. rip the home button\n    cable halfway while trying to replace it. Up until 2 am before giving up. Convinced I broke the\n    camera cable.<br> <br>\n\n    5. Next day, surrounded by entrails of phone, review the original repair video many times. Learn\n    more about iphone SE schematic by watching teardown videos. Read online forums. Browse\n    /r/mobilerepair. Develop various techniques, such as pressing spudger against back of plate to\n    provide leverage while unscrewing. Figure out what kind of screws (1.3 and 2.8mm Phillips Y000) and\n    which screwdriver of the three provided actually works. Getting better understanding but still not\n    any kind of progress.<br> <br>\n\n    6. At home for weekend, discuss giving up and buying new phone. Although feeling like inputs and\n    outputs ruined, refuse to give up on processor and battery. Determine provided screen was defective.\n    Get replacement screen from amazon free of charge.<br> <br>\n\n    7. Second fix today. Try to attach new screen to iphone. Replace only two main flex cables with few\n    screws left. Phone dead, charging on old cable on wall socket. No response. Wish I had ammeter.\n    Wonder again if internal damage. With no other options I plug into computer again to see if anything\n    happens. To surprise, connect sound does. Nothing connected though. Look at phone.<br> <br>\n\n    8. A light by SIM card tray is on! The apple logo shows up but immediately dies on move. Retracing\n    steps, track down critical point. Determine there are four small coils on the top sensor assembly\n    bracket, which when touched immediately shutdown. Problem is I have no more suitable screws for the\n    top sensor. Remember seeing reddit post making fun of mall kiosk repairs with shipping tape. Repair\n    using strip of shipping tape. But cut out hole so it cannot melt.<br> <br>\n\n    9. Apple logo always loads and phone is reassembled! Screen loads to say \"phone unavailable\". Power\n    off and reset, managing to get an erase phone option, unfortunately asking to press home button to\n    start reset. Turn off and on again until message is replaced with language selection menu. Begin\n    normal setup. Realize that I didn't actually rip the camera cable and main camera still works fine!\n    Can purchase new home button and front camera.<br> <br>\n\n    Total cost: $30!",
+    "preview": "I think this website could use more pages. Test ADVENTURES"
+  },
+  {
+    "id": "daily-2022-03-18-63",
+    "date": "2022-03-18",
+    "displayDate": "3.18.2022",
+    "contentHtml": "(3.18.2022) <a href=\"food.html\">How to be a vegetarian</a>. Okay. Just spent the day working on word\n    golf. Plan for rest of day is to go to gym, consume perishable items at home, and then replace my\n    phone screen. I've been reading snippets of <i>Godel Escher Bach</i>, <i>30-second physics</i>,\n    <i>div grad curl</i>, and some math online. In general I'm happy with my understanding. I will keep\n    looking and thinking about applications in real life.",
+    "preview": "How to be a vegetarian . Okay. Just spent the"
+  },
+  {
+    "id": "daily-2022-03-14-64",
+    "date": "2022-03-14",
+    "displayDate": "3.14.2022",
+    "contentHtml": "(3.14.2022) It's been a rainy week. I'm reading <i>The Soul of the New Machine</i>, finished\n    rereading <i>The Lighthouse</i>. I've started writing more things.",
+    "preview": "It's been a rainy week. I'm reading The Soul of"
+  },
+  {
+    "id": "daily-2022-03-07-65",
+    "date": "2022-03-07",
+    "displayDate": "3.7.2022",
+    "contentHtml": "(3.7.2022) Just finished writing a long email and about to go to bed. 30 miles yesterday from\n    Bremerton to Kingston. Thinking about word.golf again. I think the promise of it is like this:\n    If there is a single sport that can claim being a sport of the mind, it would be something very\n    similar to word golf. The basic concept is, unambiguously, trains of thought. There are two\n    shortcomings that are very difficult to overcome. Why should the grid be oriented towards the\n    target? Is it possible to standardize orderings, and if not, how do we provide a foundation for\n    strategy? These two problems might provide solutions to one another. A cooccurence wordspace,\n    trained on contemporary texts, with curated words and no filtering. Each word will provide exactly\n    the same neighbors each time, in the same order. It's more natural. It could be harder at first. But\n    then it would get easier.",
+    "preview": "Just finished writing a long email and about to go"
+  },
+  {
+    "id": "daily-2022-03-02-66",
+    "date": "2022-03-02",
+    "displayDate": "3.2.2022",
+    "contentHtml": "(3.2.2022) Finished <i>Zero to One</i> this morning. Read <i>Sports and Contemporary Society</i>,\n    left reviews for both on <a\n        href=\"https://www.goodreads.com/user/show/107099617-eric-xia\">Goodreads</a>. Started <i>Zen and\n        the Art of Motorcycle Maintenance</i> but it's kind of boring.\n    <br><br>\n    <a href=\"https://www.goodreads.com/book/show/2524049.Sport_in_Contemporary_Society\"\n        style=\"float: left; padding-right: 20px\"><img border=\"0\"\n            alt=\"Sport in Contemporary Society: An Anthology\"\n            src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347841209l/2524049._SX98_.jpg\" /></a><a\n        href=\"https://www.goodreads.com/book/show/2524049.Sport_in_Contemporary_Society\">Sport in\n        Contemporary Society: An Anthology</a> by <a\n        href=\"https://www.goodreads.com/author/show/65161.D_Stanley_Eitzen\">D. Stanley Eitzen</a><br />\n    My rating: <a href=\"https://www.goodreads.com/review/show/4584800712\">4 of 5 stars</a><br /><br />\n    I read this in a thrift store, skipping sections near the end about sports, race, and gender as the\n    text I read from is 1979.<br /><br />There's an abundance of fascinating analysis in this collection\n    as well as some historiographical points of interest. At this time there were two major trends when\n    it came to sociology: the functionalist and conflict theory schools of thought. The book compares\n    the role of sports in society from these two perspectives. From a functionalist point of view,\n    sports serves as a microcosm of society and aids in its proper functioning. It is primarily an\n    inspirational force for good which leads to the continued functioning of society, providing benefits\n    social, moral, spiritual, and of course physical. From a conflict school of thought, sports is\n    viewed as an opiate. The existence of sports is a progressive, fordist installation meant to subdue\n    the spirit of the working class. The existence of sports transforms the pure joy of unstructured\n    play into \"prisons of measured time\" (I really, really like that quote). In general though I agree\n    with the functionalist point of view here.<br /><br />There are two essays in this collection which\n    stand out not for their subject matter but for their stunning lack of rigor. One is an\n    analysis-comparison of drive drain (the hobbesian notion that violent sports serves as an outlet for\n    a baseline of violent impulse) and cultural pattern theories (the more modern belief that violence\n    is transmitted purely culturally and that using sports as a hedge against war will always backfire).\n    The author endorses the cultural pattern theory -- on the basis of \"ten randomly selected violent\n    and nonviolent civilizations throughout history\" and a smattering of meaningless data. He then\n    proceeds to lecture the audience on p-value and correlation (lol). Garbage in garbage out. Another\n    is at the end of the book, by a feminist author who loves to write what is ostensibly academic\n    jargon in capital letters and also use the word \"gynergy\" a lot. And call sports\n    \"MenSport/OldSport/UrSport\".<br /><br />But on the whole this is a remarkable collection of essays,\n    much better quality than I expected and very interesting. One essay is about the capacity of\n    football to cause harm, and notes that NINETEEN players died in the 1905 professional football\n    season. With the well-intended proliferation of hardshell helmets this issue has only gotten more\n    controversial, as the durability of these helmets made them, ironically, an essential *weapon* for\n    players, allowing them to ram others headfirst. <br /><br />Other essays here focus on participation\n    in sports among youth. I can definitely see, in the form of a reaction to a reaction, where this\n    whole idea of \"America gives out too many participation trophies\" comes from. Because it's clear\n    that America in the 1970s was INTENSELY focused on winning within sports, and correspondingly about\n    success in business. All of those quotes \"when the going gets tough, the tough get going\" which seem\n    incredibly outdated today were very commonplace. There's one statistic about Watergate: 60% of of\n    interviewed junior managers said they would cover up for their superiors if in the same position. So\n    all of the participation trophies, the trend away from relentless winning to a stance that\n    prioritized intrinsic joy, were created by a collective realization of parents in the 1970s that the\n    culture had become too competitive. And so maybe we're trending another way again\n    today...<br /><br /><br /><br />\n    <br /><br />\n    <a href=\"https://www.goodreads.com/review/list/107099617-eric-xia\">View all my reviews</a>",
+    "preview": "Finished Zero to One this morning. Read Sports and Contemporary"
+  },
+  {
+    "id": "daily-2022-03-01-67",
+    "date": "2022-03-01",
+    "displayDate": "3.1.2022",
+    "contentHtml": "(3.1.2022) New graphview with force-graph looks amazing. Walked 26 miles through Renton and Kent\n    today. Finished <i>Hyperion</i> (far-future sci-fi, Dan Simmons), <i>Into the Wild</i> (the full\n    story of Chris McCandles), <i>The Three Stigmata of Palmer Eldritch</i> (PKD), <i>Anything You\n        Want</i> (sive.rs, business), and <i>Shoe Dog</i> (nike). Going to start reading <i>Zero to\n        One</i> and then hopefully <i>Economics for the Common Good</i>.",
+    "preview": "New graphview with force-graph looks amazing. Walked 26 miles through"
+  },
+  {
+    "id": "daily-2022-02-25-68",
+    "date": "2022-02-25",
+    "displayDate": "2.25.2022",
+    "contentHtml": "(2.25.2022) Okay. I'm sculpting the Google News word2vec model. Initial vocab size is three million.\n    First thing is to index against wordfrequency for a zipf score of 1.5 or more (average occurrence of\n    one in 31 million), which immediately reduces size down to 245k. Removing forbidden characters (like\n    # which encodes for any number) reduces to 157k. These are both relatively low-risk operations;\n    forbidden characters does not exclude the single hyphen '-' or the apostrophe, and zipf only\n    excludes words like \"srebotnik\" or \"baronetage\". The next trickier step is eliminating first and\n    last name words, which can lead to namehell. Using a standard list of english names will lead to\n    excluding words which have a common usage, e.g. \"baker\". So instead, we will perform a\n    double-negative operation on the list of names, which uses a free dictionary API to eliminate words\n    with a standard definition. That's where I am right now -- the API limits continuous requests but I\n    can chunk input/output in batches of a thousand or so. Update later.",
+    "preview": "Okay. I'm sculpting the Google News word2vec model. Initial vocab"
+  },
+  {
+    "id": "daily-2022-02-24-69",
+    "date": "2022-02-24",
+    "displayDate": "2.24.2022",
+    "contentHtml": "(2.24.2022) Wow. Nothing is as frustrating and liberating as the feeling that if there were two\n    copies of yourself you could get everything you wanted done. Studying physics, chinese, reading\n    <i>hyperion</i>, <i>zen and the art of motorcycle maintenance</i>, <i>introduction to genetics</i>,\n    <i>godel escher bach</i>, creating a TSNE model of GloVe, restricting Word2Vec to a similar set,\n    designing a screenprintable golf poster, working out regularly, drawing ...\n    <br><br>\n    Springtime is here.",
+    "preview": "Wow. Nothing is as frustrating and liberating as the feeling"
+  },
+  {
+    "id": "daily-2022-02-21-70",
+    "date": "2022-02-21",
+    "displayDate": "2.21.2022",
+    "contentHtml": "(2.21.2022) Updated this site with tweaks to the color palette and spacing. <a\n        href=\"/HSKreading.html\">Here's a mini project</a> with beautifulsoup that links all of the HSK\n    Reading articles in a single place, allowing you to see which links you've visited. Now you can\n    learn chinese with me!",
+    "preview": "Updated this site with tweaks to the color palette and"
+  },
+  {
+    "id": "daily-2022-02-20-71",
+    "date": "2022-02-20",
+    "displayDate": "2.20.2022",
+    "contentHtml": "(2.20.2022) I am attending math camp. Practicing ... single-variable integration! Hurray.\n    <br> <br>\n    Finished <i>American Psycho</i>, Halfway through <i>Project Hail Mary</i>, started but probably\n    won't finish <i>Amusing Ourselves to Death</i> by Neil Postman. <i>Project Hail Mary</i> has a lot\n    of wishful thinking on the part of the author: <i>\"The field of speculative extraterrestrial biology\n        is small—only five hundred or so people in the world. And everyone I talk to—from Oxford\n        professors to Tokyo University researchers—seems to agree that you (middle school science\n        teacher) could have led it if you hadn’t suddenly left!\"</i> but it's also pretty exciting, with\n    the same kind of DIY experiments as <i>The Martian</i>. <i>Amusing Ourselves to Death</i> is\n    interesting from a historiographical perspective -- what are the constant worries of the\n    intellectual class? What are the new ones? Spoiler: there aren't many new ones.",
+    "preview": "I am attending math camp. Practicing ... single-variable integration! Hurray."
+  },
+  {
+    "id": "daily-2022-02-16-72",
+    "date": "2022-02-16",
+    "displayDate": "2.16.2022",
+    "contentHtml": "(2.16.2022) Updates... Reviewing <i>div grad curl</i> and I'm happy with my understanding now, at\n    least for div. There really is an intuition about surface integrals you can build, approximating\n    solids as squares instead of area as slices, and of flux, as alignment at many points. I'm just over\n    halfway done with <i>American Psycho</i>; yesterday I read <i>Redshirts</i> by John Scalzi, which I\n    probably wouldn't recommend. I'm going to write a full review for <i>Pyscho</i> but my initial\n    impressions are really good. It combines the emotionless droll of a didactic perfectionist with\n    sequences of unhinged madness. It is in heavy criticism of what is not quite consumerism but still a\n    failure to engage, present at the highest levels of society. Music, skincare, designer clothing,\n    furniture -- it is all exquisitely described and yet the mentalities of the characters (who fade in\n    and out in a blur) remain primitive.\n    <br><br>\n    I also wrote something up on why <a href=\"salmon.html\">removing the Snake River dams won't save the\n        orcas</a>.",
+    "preview": "Updates... Reviewing div grad curl and I'm happy with my"
+  },
+  {
+    "id": "daily-2022-02-14-73",
+    "date": "2022-02-14",
+    "displayDate": "2.14.2022",
+    "contentHtml": "(2.14.2022) XMLHttpRequests are amazing and I can't believe no one told me about them. Today I am\n    doing math all day. I am feeling very inspired.",
+    "preview": "XMLHttpRequests are amazing and I can't believe no one told"
+  },
+  {
+    "id": "daily-2022-02-09-74",
+    "date": "2022-02-09",
+    "displayDate": "2.9.2022",
+    "contentHtml": "(2.9.2022) Inkjet transparency sheet came out looking stellar, now I'm waiting for emulsifier to dry.\n    I also got my laminator! Unfortunately the mesh resolution (110) is almost definitely not good\n    enough but the main graphic and larger text should be fine. Will go to Blick to get more supplies\n    before dinner though. Other than that, making a minor UI fix which will take two hours and doing\n    math. Why does it have to recompile the whole container? Sad.",
+    "preview": "Inkjet transparency sheet came out looking stellar, now I'm waiting"
+  },
+  {
+    "id": "daily-2022-02-07-75",
+    "date": "2022-02-07",
+    "displayDate": "2.7.2022",
+    "contentHtml": "(2.7.2022) Did a marathon across both 520 and I-90 bridges yesterday. Did not run at all today.\n    Instead did stat analysis on golfing prompts, got quotes from print shops, and bought screen\n    printing supplies. Found hardcover Shakespear -- <i>Richard the Third, Anthony and Cleopatra, The\n        Comedy of Errors, Tempest</i> -- in a little free library. Finished <i> Pictures of Fidelman</i>\n    which I found underneath a sculpture in Capitol Hill. Plan for tomorrow: run math morning, design\n    monochrome posters night. Also -- I'm getting better at cooking!",
+    "preview": "Did a marathon across both 520 and I-90 bridges yesterday."
+  },
+  {
+    "id": "daily-2022-02-05-76",
+    "date": "2022-02-05",
+    "displayDate": "2.5.2022",
+    "contentHtml": "(2.5.2022) Lots more work today on golf. Redesigned google authentication to use GSI and also styled\n    cytoscape to work with color scheming. Also worked on the mobile layout. Posters are seeming more\n    like a viable option. Super proud of how far I've come. Will spend the rest of the night drawing.\n    <img src=\"images/updatedgolfview.png\">",
+    "preview": "Lots more work today on golf. Redesigned google authentication to"
+  },
+  {
+    "id": "daily-2022-02-04-77",
+    "date": "2022-02-04",
+    "displayDate": "2.4.2022",
+    "contentHtml": "(2.4.2022) 10 mile run this morning down to Madison Beach.\n\n    Figured out how to output JSON from the database model and formatted it. Implemented a graph viewer\n    with cytoscape.js fed with JSON. The spacing algorithm is \"cose-bilkent\". It's basic, so in the\n    future we want to have closest path and start and end words highlighted, better spacing, animated\n    interactive etc. but this version works great for diagnostics. Went through 255 base prompts and\n    identified the ones with the highest entity counts, basically words and links. Around 85 or a third\n    of them have 100 entities or more; these are the top completed and probably most interesting\n    prompts, and we can restrict play to them in the future. Out of those 85 (graphed) I identified 12\n    outliers with 198 entities or more. Analysis of these outlier prompts show that they are\n    heuristically much more interesting than the average prompt: pilot>pineapple, discovery>quilt,\n    mammal>argument, taxi>alphabet, quartz>limit, neon>mechanic. I'm thinking I can do some statistical\n    analysis (what difficulty? what distance? what diversity? what range?) now that we have a good\n    empirical basis (~3000 completed runs) on which to grade prompts, and a convincing metric for a good\n    prompt (Do people complete it?). One interesting note is that for almost all potato>flag runs the\n    player will go to \"country\" which is not directly connected to flag, but eventually find their way\n    over. I really like the shape of taxi>alphabet and monitor>pupil. catcher>bowl and pipe>license\n    exhibit a lot of loopy behavior. Finally I was surprised by that none of these prompts exhibit\n    bottleneck behavior where the player always goes to a middle word before the finish.\n    <img src=\"images/unknown.png\">",
+    "preview": "10 mile run this morning down to Madison Beach. Figured"
+  },
+  {
+    "id": "daily-2022-02-03-78",
+    "date": "2022-02-03",
+    "displayDate": "2.3.2022",
+    "contentHtml": "(2.3.2022) The past few days have been eventful. I'm trying to do math and work on golf, which\n    doesn't leave a lot of time for other priorities like reading. I still want to have time to explore\n    and draw different things though. I might take also protracted break from thinking, because I\n    haven't really enjoyed thinking lately, due to the mess of discourse around tech that doesn't really\n    interest me. One thing I have noticed however is that writing becomes more difficult the longer you\n    put it off for. So maybe it's back to the same habits as before: just with updates here about my\n    daily activities.",
+    "preview": "The past few days have been eventful. I'm trying to"
+  },
+  {
+    "id": "daily-2022-01-29-79",
+    "date": "2022-01-29",
+    "displayDate": "1.29.2022",
+    "contentHtml": "(1.29.2022) Review of V. Which I Finally Finished After A Week of Reading",
+    "preview": "Review of V. Which I Finally Finished After A Week"
+  },
+  {
+    "id": "daily-2022-01-26-80",
+    "date": "2022-01-26",
+    "displayDate": "1.26.2022",
+    "contentHtml": "(1.26.2022) I'm still not done with <i>V.</i> but it's really good. I've been experimenting with\n    some different postprocessing techniques, also implemented a dark mode for word golf and working on\n    a daily challenge and explanation screen. 15 to Kirkland, didn't quite make it to Bellevue before it\n    got dark.",
+    "preview": "I'm still not done with V. but it's really good."
+  },
+  {
+    "id": "daily-2022-01-22-81",
+    "date": "2022-01-22",
+    "displayDate": "1.22.2022",
+    "contentHtml": "(1.22.2022) Ran 9 to Juanita. Started <i>V.</i> by Thomas Pynchon.\n    <br>\n    Finished <i>A Clockwork Orange</i> and <i>Never Let Me Go</i>. Did 13 miles to Silver Firs\n    yesterday, probably try long distance again today. I've been writing some code and drawing\n    otherwise.",
+    "preview": "Ran 9 to Juanita. Started V. by Thomas Pynchon. Finished"
+  },
+  {
+    "id": "daily-2022-01-20-82",
+    "date": "2022-01-20",
+    "displayDate": "1.20.2022",
+    "contentHtml": "(1.20.2022) Finished <i>The Glass Menangerie, A Streetcar Named Desire, Cat on A Hot Tin Roof, Who's\n        Afraid of Virginia Woolf?, I Hate You: Don't Leave Me, To Live </i>by Yu Hua <i>, The Paper\n        Menangerie, </i>a stupid machiavellian pyschology book,<i> Ovid's Metamorphoses, The Life\n        Changing Magic of Tidying Up,</i>and Vonnegut's <i>The Sirens of Titan. </i> Look at my\n    Goodreads if you want to read my reviews. Halfway through <i>A Clockwork Orange</i>.",
+    "preview": "Finished The Glass Menangerie, A Streetcar Named Desire, Cat on"
+  },
+  {
+    "id": "daily-2022-01-14-83",
+    "date": "2022-01-14",
+    "displayDate": "1.14.2022",
+    "contentHtml": "(1.14.2022) Finished <i>The Paper Menagerie</i>. Will probably try <i>Blood Meridian</i> next. This\n    morning I started working on a sundial maker.",
+    "preview": "Finished The Paper Menagerie . Will probably try Blood Meridian"
+  },
+  {
+    "id": "daily-2022-01-12-84",
+    "date": "2022-01-12",
+    "displayDate": "1.12.2022",
+    "contentHtml": "(1.12.2022) Finished Broken Stars. The very first story, Goodnight Melancholy, is about Alan Turing\n    and a fictional chatbot he builds, and whether a machine can really be like a human. Moonlight by\n    Cixin Liu is alright. Broken Stars is a horror story, disturbing in its own way. Salinger and the\n    Koreans is funny and worth reading. Under a Dangling Sky is also really good, a strong archetypal\n    fairy tale + Cloudy with a Chance of Meatballs. The Restaurant at the End of the Universe is\n    interesting as well. The Snow of Jinyang is predictable but very dense (about a stranded\n    time-traveler who attempts to change history). What Has Passed Shall In Kinder Light Appear is\n    really good, a kind of natural reverse chronology of China. My favorite two stories are definitely\n    <i>What Has Passed</i> and <i>Goodnight, Melancholy.</i>",
+    "preview": "Finished Broken Stars. The very first story, Goodnight Melancholy, is"
+  },
+  {
+    "id": "daily-2022-01-11-85",
+    "date": "2022-01-11",
+    "displayDate": "1.11.2022",
+    "contentHtml": "(1.11.2022) Reading translated chinese sci-fi anthology <i>Broken Stars</i> which again shocks me\n    with the the density and gravity of the ideas conveyed. I particularly liked the first story, did\n    not appreciate the namesake story as much. Wisdom is acceptance of irrationality.",
+    "preview": "Reading translated chinese sci-fi anthology Broken Stars which again shocks"
+  },
+  {
+    "id": "daily-2022-01-10-86",
+    "date": "2022-01-10",
+    "displayDate": "1.10.2022",
+    "contentHtml": "(1.10.2022) The problem with existential literature is that it is effectively a play on words and\n    our perception of reality, establishing a sense of profound understanding between you and the author\n    so that you may characterize it as important but certainly not making you any happier. Dostoyevsky\n    understands this but still wants to prove that he too is clever which is why I infinitely prefer\n    White Nights to Letters from the Underground.\n\n    Git is fixed but AWS is broken.",
+    "preview": "The problem with existential literature is that it is effectively"
+  },
+  {
+    "id": "daily-2022-01-09-87",
+    "date": "2022-01-09",
+    "displayDate": "1.9.2022",
+    "contentHtml": "(1.9.2022)\n    word.golf is now fixed! But I forgot about the w2v file so git is broken. Tomorrow I am going to get\n    up early to work on it again. Maybe 5 miles today on reverse I-5.\n    I can't leave golf in its current state... fixing it now.",
+    "preview": "word.golf is now fixed! But I forgot about the w2v"
+  },
+  {
+    "id": "daily-2022-01-08-88",
+    "date": "2022-01-08",
+    "displayDate": "1.8.2022",
+    "contentHtml": "(1.8.2022) Took advantage of good weather to make it to Everett today, about 14 miles. Tomorrow I'll\n    do a recovery run. Thinking about which Coursera course to do next. Also I want to read my genetics\n    book.",
+    "preview": "Took advantage of good weather to make it to Everett"
+  },
+  {
+    "id": "daily-2022-01-07-89",
+    "date": "2022-01-07",
+    "displayDate": "1.7.2022",
+    "contentHtml": "(1.7.2022) Ok. Word.golf day. I wasted time trying to implement timing by tacking on a runs\n    completed variable and rendering a display with p5.js. I need to design a prettier progress bar,\n    speed up the backend, ... actually there are actually words that I should remove too, like \"rise\"\n    and \"drop\". Did eleven miles to Silver Firs today, probably longest run since August. I should set a\n    time for two-day trip to Tacoma. Bad news: will rain next two weeks. Good news: it won't snow!",
+    "preview": "Ok. Word.golf day. I wasted time trying to implement timing"
+  },
+  {
+    "id": "daily-2022-01-06-90",
+    "date": "2022-01-06",
+    "displayDate": "1.6.2022",
+    "contentHtml": "(1.6.2022) Dostoyevsky is good. Taking a computer break today.",
+    "preview": "Dostoyevsky is good. Taking a computer break today."
+  },
+  {
+    "id": "daily-2022-01-05-91",
+    "date": "2022-01-05",
+    "displayDate": "1.5.2022",
+    "contentHtml": "(1.5.2022) Whew! Subconsciously I've kind of starved myself artistically by trying to make word golf\n    a very stripped down sport, and now I've gone a bit crazy on my personal site. Colors, buttons,\n    flickers etc -- I'll pare back on it as necessary but this is a good place to work from.",
+    "preview": "Whew! Subconsciously I've kind of starved myself artistically by trying"
+  },
+  {
+    "id": "daily-2022-01-04-92",
+    "date": "2022-01-04",
+    "displayDate": "1.4.2022",
+    "contentHtml": "(1.4.2022) Finished my online course. Still working through the design of this website. I'll\n    probably be experimenting with some big changes before settling down on anything. I like the general\n    look right now but some of the links are missing.",
+    "preview": "Finished my online course. Still working through the design of"
+  },
+  {
+    "id": "daily-2022-01-03-93",
+    "date": "2022-01-03",
+    "displayDate": "1.3.2022",
+    "contentHtml": "(1.3.2022) This is starting to look good but it needs more time. But also, I can't stand the look of\n    my old site anymore! I'm going to have to finish this later. I'm (really) almost done with the\n    Coursera ML course! Just have to do collaborative filtering and then I'm done. Matlab was impossible\n    to begin with but I've learned to check dimensions.",
+    "preview": "This is starting to look good but it needs more"
+  },
+  {
+    "id": "daily-2022-01-02-94",
+    "date": "2022-01-02",
+    "displayDate": "1.2.2022",
+    "contentHtml": "(1.2.2022) Designing my new site is hard. It's one of my New Year resolutions though. Also, I\n    started learning Rust today.",
+    "preview": "Designing my new site is hard. It's one of my"
+  },
+  {
+    "id": "daily-2021-12-10-95",
+    "date": "2021-12-10",
+    "displayDate": "12.10.2021",
+    "contentHtml": "(12.10.2021) I had a really inspiring conversation yesterday that made me think hard about my\n    future. I still have so much to learn, about life, my place in it, what I can do.\n\n    Custom prompts are here, implemented with an additional run_uuid column in mySQL. Enter\n\n    word.golf/p/[start]>[target] to try it out. This will give me additional flexibility when\n    implementing curated timed sets, and eventually allow users to create their own timed sets.",
+    "preview": "I had a really inspiring conversation yesterday that made me"
+  },
+  {
+    "id": "daily-2021-12-05-96",
+    "date": "2021-12-05",
+    "displayDate": "12.5.2021",
+    "contentHtml": "(12.5.2021) Been working through the Coursera machine learning course. There are a ton of\n    programming assignments I didn't do in sequence with the videos. Still, over halfway done with them!\n\n    Lots of word golf work its going well.\n\n    I realy want to rewrite my blog to a more immediately interesting form. It can have a microupdate\n    section, and then a projects section to highlight cool things.\n\n    Read Sinopticon, an anthology of chinese science fiction from this year. It's really, touching and\n    inspiring. There's a perceptiveness unique to chinese writing that american english can't come close\n    to. The closest thing is borges and that's also translated.\n\n    Also read Breakfast of Champions by Kurt Vonnegut and Envisioning Information by Edward Tufte\n    (really good). Also started reading Cryptonomicon (I'm getting sick of Neal Stephenson's social\n    theories of hobbit and dwarve culture), Infinite Jest , \"the first great internet novel\" (it's\n    really good), Red Mars (first of the trilogy), and reviewing Div Grad Curl.\n\n    Made a bunch of drawings since Inktober.",
+    "preview": "Been working through the Coursera machine learning course. There are"
   }
 ]

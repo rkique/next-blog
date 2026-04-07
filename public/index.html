@@ -27,6 +27,31 @@
     .blog-card:hover .blog-card-preview {
         background: rgb(244, 255, 125);
     }
+    .blog-pagination {
+        display: flex;
+        gap: 4px;
+        margin: 1.2em 0 0.5em;
+        flex-wrap: wrap;
+    }
+    .blog-page-btn {
+        border: 1px solid rgba(8, 8, 73, 0.2);
+        background: none;
+        padding: 3px 8px;
+        cursor: pointer;
+        font-size: 12px;
+        font-family: inherit;
+    }
+    .blog-page-btn:hover:not(:disabled) {
+        background: rgb(244, 255, 125);
+    }
+    .blog-page-btn.active {
+        background: rgba(8, 8, 73, 0.08);
+        font-weight: bold;
+    }
+    .blog-page-btn:disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
     .blog h1 {
         margin: 0;
         text-align: left;

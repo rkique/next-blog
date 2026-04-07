@@ -20,10 +20,10 @@
     currentPage = page;
     var start = page * PAGE_SIZE;
     var pagePosts = allPosts.slice(start, start + PAGE_SIZE);
-    var totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
 
     container.innerHTML = '';
 
+    var totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
     if (totalPages > 1) {
       container.appendChild(buildPagination(container));
     }
