@@ -1,5 +1,5 @@
 (function () {
-  var PAGE_SIZE = 50;
+  var PAGE_SIZE = 12;
   var currentPage = 0;
   var allPosts = [];
 
@@ -23,10 +23,6 @@
     var totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
 
     container.innerHTML = '';
-
-    if (totalPages > 1) {
-      container.appendChild(buildPagination(container));
-    }
 
     pagePosts.forEach(function (post) {
       var card = document.createElement('div');
