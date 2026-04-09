@@ -37,7 +37,7 @@
 
       function setContent(showFull) {
         preview.innerHTML = showFull
-          ? fullText
+          ? '<span class="blog-card-date">(' + post.displayDate + ')</span> ' + fullText
           : '<span class="blog-card-date">(' + post.displayDate + ')</span> ' + previewText;
       }
 

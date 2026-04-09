@@ -18,12 +18,15 @@ function stripHtml(html) {
 }
 
 function getPreview(htmlContent, wordCount = 10) {
-  // Remove any leading date prefix like (4.6.2026)
-  const withoutDate = htmlContent.replace(/^\s*\(\d{1,2}\.\d{1,2}\.\d{4}\)\s*/, '');
-  const text = stripHtml(withoutDate);
+  const text = stripHtml(htmlContent);
   if (!text) return '';
   const words = text.split(/\s+/).filter(Boolean);
   return words.slice(0, wordCount).join(' ');
+}
+
+function toDisplayDate(isoDate) {
+  const [year, month, day] = isoDate.split('-');
+  return `${parseInt(month)}.${parseInt(day)}.${year}`;
 }
 
 const files = fs.readdirSync(postsDir)
@@ -35,7 +38,7 @@ for (const filename of files) {
   const content = fs.readFileSync(path.join(postsDir, filename), 'utf8');
   const { data, content: body } = matter(content);
 
-  if (!data.date || !data.displayDate) continue;
+  if (!data.date) continue;
 
   const contentHtml = body.trim();
   const preview = getPreview(contentHtml);
@@ -43,7 +46,7 @@ for (const filename of files) {
   posts.push({
     id: filename.replace('.md', ''),
     date: data.date,
-    displayDate: data.displayDate,
+    displayDate: toDisplayDate(data.date),
     contentHtml,
     preview
   });
