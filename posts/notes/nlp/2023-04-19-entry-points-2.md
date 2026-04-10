@@ -1,0 +1,12 @@
+---
+date: '2023-04-19'
+title: 'entry_points'
+---
+[console_scripts]
+ipython = IPython:start_ipython
+ipython3 = IPython:start_ipython
+
+[pygments.lexers]
+ipython = IPython.lib.lexers:IPythonLexer
+ipython3 = IPython.lib.lexers:IPython3Lexer
+ipythonconsole = IPython.lib.lexers:IPythonConsoleLexer

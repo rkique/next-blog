@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unica+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <link rel="stylesheet" href="fmcolors.css" />
+    <link rel="stylesheet" href="fmstyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #080849;
+        max-width: 42em;
+        margin: 2em auto;
+        padding: 0 1em;
+    }
+    .notes-back {
+        font-size: 13px;
+        margin-bottom: 1em;
+        display: block;
+    }
+    .notes-header {
+        font-family: 'Unica One', sans-serif;
+        font-size: 2rem;
+        color: rgba(30, 130, 120, 0.45);
+        font-weight: normal;
+        margin: 0 0 0.5em;
+    }
+    .notes-subject-pills {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        margin-bottom: 1.5em;
+    }
+    .notes-pill {
+        border: 1px solid rgba(8, 8, 73, 0.2);
+        background: none;
+        padding: 3px 8px;
+        cursor: pointer;
+        font-size: 12px;
+        font-family: inherit;
+    }
+    .notes-pill:hover {
+        background: rgb(244, 255, 125);
+    }
+    .notes-pill.active {
+        background: rgba(8, 8, 73, 0.08);
+        font-weight: bold;
+    }
+    .note-card {
+        cursor: pointer;
+        padding: 0.25em 0;
+        border-bottom: 1px solid rgba(8, 8, 73, 0.08);
+        margin: 0;
+    }
+    .note-card:hover .note-card-preview {
+        background: rgb(244, 255, 125);
+    }
+    .note-card-preview {
+        font-size: 13px;
+        color: #080849;
+        line-height: 1.4;
+    }
+    .note-card-date {
+        font-style: italic;
+        opacity: 0.7;
+    }
+    .note-card-title {
+        font-weight: bold;
+    }
+    .note-card-full {
+        padding: 0.6em 0 0.4em 0;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .note-card-full p { max-width: none; }
+    .note-card-full img { max-width: 100%; }
+    .note-card-full pre {
+        background: rgba(8, 8, 73, 0.04);
+        padding: 0.5em;
+        overflow-x: auto;
+        font-size: 12px;
+    }
+    .note-card-full code {
+        font-size: 12px;
+    }
+    .note-card-full h1, .note-card-full h2, .note-card-full h3,
+    .note-card-full h4, .note-card-full h5, .note-card-full h6 {
+        margin: 0.6em 0 0.3em;
+    }
+    .note-count {
+        font-size: 12px;
+        opacity: 0.6;
+        margin-bottom: 0.5em;
+    }
+    .notes-pagination {
+        display: flex;
+        gap: 4px;
+        margin: 1.2em 0 0.5em;
+        flex-wrap: wrap;
+    }
+    .notes-page-btn {
+        border: 1px solid rgba(8, 8, 73, 0.2);
+        background: none;
+        padding: 3px 8px;
+        cursor: pointer;
+        font-size: 12px;
+        font-family: inherit;
+    }
+    .notes-page-btn:hover:not(:disabled) {
+        background: rgb(244, 255, 125);
+    }
+    .notes-page-btn.active {
+        background: rgba(8, 8, 73, 0.08);
+        font-weight: bold;
+    }
+    .notes-page-btn:disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+    </style>
+</head>
+<body>
+    <a class="notes-back" href="index.html">&larr; back</a>
+    <h1 class="notes-header" id="notes-title">Notes</h1>
+    <div class="notes-subject-pills" id="notes-pills"></div>
+    <div class="note-count" id="note-count"></div>
+    <div id="notes-container"></div>
+    <script src="notes-loader.js"></script>
+</body>

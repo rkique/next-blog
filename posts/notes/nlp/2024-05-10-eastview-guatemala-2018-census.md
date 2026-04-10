@@ -1,0 +1,6 @@
+---
+date: '2024-05-10'
+title: 'Eastview Guatemala 2018 census'
+---
+Official population and housing data for Guatemala from the 2018 census. This census is provided at the Municipio administrative level (ADM2) and includes 340 polygons with 294 attribute variables. Attribute descriptions retain source-language names and unique identifier codes. All variable names were translated from source language (Spanish). Field name prefixes, originally written with coded titles, were renamed to create unique names across the geodatabase (e.g. Original variable of “Total de personas” was updated to D001 and given the alias “Total Population [Total de personas]”, the letter D was given as it relates to the Demographic theme table. D = Demographic, E = Economic, H = Housing and S = Social). All variables from the original data were reviewed for completeness and organized into their relevant themes of Demographic, Economic, Housing and Social. The geodatabase was built to hold these specific tables with all geographic names and codes represented as text fields and census data represented as doubles or long integers. Automated tools were run to apply aliases in the format “English translation field description [Source language field description]”. Vector data was analyzed for accuracy and compared with national boundaries.
+
